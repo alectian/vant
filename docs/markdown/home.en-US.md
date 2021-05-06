@@ -1,8 +1,8 @@
 <div class="card">
   <div class="van-doc-intro">
-    <img class="van-doc-intro__logo" style="width: 120px; height: 120px;" src="https://img.yzcdn.cn/vant/logo.png">
-    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Vant</h2>
-    <p>Mobile UI Components built on Vue</p>
+    <img class="van-doc-intro__logo" style="width: 120px; height: 120px;" src="https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png">
+    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">组件库Title</h2>
+    <p>可靠的移动端组件库</p>
   </div>
 </div>
 

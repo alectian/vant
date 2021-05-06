@@ -3,10 +3,10 @@
     <van-tab :title="t('demo')">
       <demo-block :title="t('basicUsage')">
         <van-row>
-          <van-col span="6" @click="copy(demoIcon)">
+          <van-col span="6">
             <van-icon :name="demoIcon" />
           </van-col>
-          <van-col span="6" @click="copy(demoImage)">
+          <van-col span="6">
             <van-icon :name="demoImage" />
           </van-col>
         </van-row>
@@ -14,7 +14,7 @@
 
       <demo-block :title="t('badge')">
         <van-row>
-          <van-col span="6" @click="copy(demoIcon, { dot: true })">
+          <van-col span="6">
             <van-icon :name="demoIcon" dot />
           </van-col>
           <van-col span="6" @click="copy(demoIcon, { badge: '9' })">

@@ -3,11 +3,11 @@ module.exports = {
   build: {
     srcDir: 'src',
     skipInstall: ['lazyload'],
-    site: {
-      publicPath:
-        (typeof window === 'undefined' && process.env.PUBLIC_PATH) ||
-        'https://b.yzcdn.cn/vant/',
-    },
+    // site: {
+    //   publicPath:
+    //     (typeof window === 'undefined' && process.env.PUBLIC_PATH) ||
+    //     'https://b.yzcdn.cn/vant/',
+    // },
     vetur: {
       tagPrefix: 'van-',
     },
@@ -29,16 +29,16 @@ module.exports = {
     },
     locales: {
       'zh-CN': {
-        title: 'Vant',
-        description: '轻量、可靠的移动端 Vue 组件库',
-        logo: 'https://img.yzcdn.cn/vant/logo.png',
+        title: '组件库title',
+        description: '组件库description',
+        logo: 'https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png',
         langLabel: '中',
-        links: [
-          {
-            logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
-            url: 'https://github.com/youzan/vant',
-          },
-        ],
+        // links: [
+        //   {
+        //     logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
+        //     url: 'https://github.com/youzan/vant',
+        //   },
+        // ],
         // TODO
         // searchConfig: {
         //   apiKey: '90067aecdaa2c85220e2783cd305caac',
@@ -410,16 +410,16 @@ module.exports = {
         ],
       },
       'en-US': {
-        title: 'Vant',
-        description: 'Mobile UI Components built on Vue',
-        logo: 'https://img.yzcdn.cn/vant/logo.png',
+        title: '组件库title',
+        description: '可靠的移动端组件库',
+        logo: 'https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png',
         langLabel: 'EN',
-        links: [
-          {
-            logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
-            url: 'https://github.com/youzan/vant',
-          },
-        ],
+        // links: [
+        //   {
+        //     logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
+        //     url: 'https://github.com/youzan/vant',
+        //   },
+        // ],
         // TODO
         // searchConfig: {
         //   apiKey: '90067aecdaa2c85220e2783cd305caac',

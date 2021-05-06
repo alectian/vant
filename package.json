@@ -1,7 +1,7 @@
 {
   "name": "vant",
   "version": "3.0.0",
-  "description": "Mobile UI Components built on Vue",
+  "description": "可靠的移动端组件库",
   "main": "lib/index.js",
   "module": "es/index.js",
   "style": "lib/index.css",
@@ -68,8 +68,8 @@
   "devDependencies": {
     "@vant/cli": "^3.1.5",
     "@vue/compiler-sfc": "3.0.3",
-    "vue": "3.0.3",
-    "prettier": "2.1.0"
+    "prettier": "2.1.0",
+    "vue": "3.0.3"
   },
   "sideEffects": [
     "es/**/style/*",

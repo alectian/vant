@@ -11,7 +11,7 @@
     <van-switch v-model="show" size="24px" />
     <van-skeleton title avatar :row="3" :loading="!show">
       <div class="demo-preview">
-        <img src="https://img.yzcdn.cn/vant/logo.png" />
+        <img src="https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png" />
         <div class="demo-content">
           <h3>{{ t('title') }}</h3>
           <p>{{ t('desc') }}</p>
@@ -37,7 +37,7 @@ const i18n = {
     showAvatar: 'Show Avatar',
     showChildren: 'Show Children',
     title: 'About Vant',
-    desc: 'Vant is a set of Mobile UI Components built on Vue.',
+    desc: 'Vant is a set of 可靠的移动端组件库.',
   },
 };
 
