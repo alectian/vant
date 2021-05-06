@@ -17,10 +17,10 @@
           <van-col span="6">
             <van-icon :name="demoIcon" dot />
           </van-col>
-          <van-col span="6" @click="copy(demoIcon, { badge: '9' })">
+          <van-col span="6">
             <van-icon :name="demoIcon" badge="9" />
           </van-col>
-          <van-col span="6" @click="copy(demoIcon, { badge: '99+' })">
+          <van-col span="6">
             <van-icon :name="demoIcon" badge="99+" />
           </van-col>
         </van-row>
@@ -28,10 +28,10 @@
 
       <demo-block :title="t('color')">
         <van-row>
-          <van-col span="6" @click="copy(demoIcon, { color: '#1989fa' })">
+          <van-col span="6">
             <van-icon name="cart-o" color="#1989fa" />
           </van-col>
-          <van-col span="6" @click="copy(demoIcon, { color: RED })">
+          <van-col span="6">
             <van-icon name="fire-o" :color="RED" />
           </van-col>
         </van-row>
@@ -39,10 +39,10 @@
 
       <demo-block :title="t('size')">
         <van-row>
-          <van-col span="6" @click="copy(demoIcon, { size: '40' })">
+          <van-col span="6">
             <van-icon :name="demoIcon" size="40" />
           </van-col>
-          <van-col span="6" @click="copy(demoIcon, { size: '3rem' })">
+          <van-col span="6">
             <van-icon :name="demoIcon" size="3rem" />
           </van-col>
         </van-row>
@@ -55,7 +55,6 @@
           v-for="icon in icons.basic"
           :key="icon"
           span="6"
-          @click="copy(icon)"
         >
           <van-icon :name="icon" />
           <span>{{ icon }}</span>
@@ -69,7 +68,6 @@
           v-for="icon in icons.outline"
           :key="icon"
           span="6"
-          @click="copy(icon)"
         >
           <van-icon :name="icon" />
           <span>{{ icon }}</span>
@@ -83,7 +81,6 @@
           v-for="icon in icons.filled"
           :key="icon"
           span="6"
-          @click="copy(icon)"
         >
           <van-icon :name="icon" />
           <span>{{ icon }}</span>
