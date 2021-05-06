@@ -51,7 +51,7 @@
       <van-grid-item
         icon="search"
         :text="t('urlRoute')"
-        url="/vant/mobile.html"
+        url="https://www.baidu.com"
       />
     </van-grid>
   </demo-block>
