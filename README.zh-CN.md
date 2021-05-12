@@ -56,8 +56,8 @@ npm i vant@next -S
 
 ```js
 import { createApp } from 'vue';
-import { Button } from 'vant';
-import 'vant/lib/index.css';
+import { Button } from 'icloudata';
+import 'icloudata/lib/index.css';
 
 const app = createApp();
 app.use(Button);

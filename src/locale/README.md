@@ -12,7 +12,7 @@ Vant supports multiple languages with the Locale component, and the `Locale.use`
 
 ```js
 import { Locale } from 'cloudata';
-import enUS from 'vant/es/locale/lang/en-US';
+import enUS from 'icloudata/es/locale/lang/en-US';
 
 Locale.use('en-US', enUS);
 ```

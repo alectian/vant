@@ -225,7 +225,7 @@ Vue 3.0 中增加了 `Teleport` 组件，提供将组件渲染到任意 DOM 位�
 Vant 2.x 中默认提供了 `$toast`、`$dialog` 等全局方法，但 Vue 3.0 不再支持直接在 Vue 的原型链上挂载方法，因此从 Vant 3.0 开始，使用全局方法前必须先通过 `app.use` 将组件注册到对应的 app 上。
 
 ```js
-import { Toast, Dialog, Notify } from 'vant';
+import { Toast, Dialog, Notify } from 'icloudata';
 
 // 将 Toast 等组件注册到 app 上
 app.use(Toast);

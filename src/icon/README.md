@@ -55,7 +55,7 @@ Use `size` prop to set icon size.
 Icon uses font file in `yzcdn.cn` by default，if you want to use the local font file，please import the following css file.
 
 ```js
-import 'vant/lib/icon/local.css';
+import 'icloudata/lib/icon/local.css';
 ```
 
 > Tips: Starting from version 2.10.13, Vant will use local font files in woff2 format by default

@@ -13,7 +13,7 @@ Vant 通过 Locale 组件实现多语言支持，使用 `Locale.use` 方法可�
 ```js
 import { Locale } from 'cloudata';
 // 引入英文语言包
-import enUS from 'vant/es/locale/lang/en-US';
+import enUS from 'icloudata/es/locale/lang/en-US';
 
 Locale.use('en-US', enUS);
 ```

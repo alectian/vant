@@ -116,10 +116,10 @@ module.exports = {
 
 ```js
 // 引入全部样式
-import 'vant/lib/index.less';
+import 'icloudata/lib/index.less';
 
 // 引入单个组件样式
-import 'vant/lib/button/style/less';
+import 'icloudata/lib/button/style/less';
 ```
 
 ### 步骤二 修改样式变量

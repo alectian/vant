@@ -60,51 +60,51 @@ module.exports = {
         //   },
         // },
         nav: [
-          // {
-          //   title: '开发指南',
-          //   items: [
-          //     {
-          //       path: 'home',
-          //       title: '介绍',
-          //     },
-          //     {
-          //       path: 'quickstart',
-          //       title: '快速上手',
-          //     },
-          //     {
-          //       path: 'advanced-usage',
-          //       title: '进阶用法',
-          //     },
-          //     {
-          //       path: 'changelog-v3',
-          //       title: '更新日志',
-          //     },
-          //     {
-          //       path: 'migrate-from-v2',
-          //       title: '从 v2 升级',
-          //     },
-          //     {
-          //       path: 'theme',
-          //       title: '定制主题',
-          //     },
-          //     {
-          //       path: 'contribution',
-          //       title: '开发指南',
-          //     },
-          //     {
-          //       path: 'design',
-          //       title: '设计资源',
-          //     },
-          //     {
-          //       path: 'style-guide',
-          //       title: '风格指南',
-          //     },
-          //     {
-          //       path: 'locale',
-          //       title: '国际化',
-          //     },
-          //   ],
-          // },
+          {
+            title: '开发指南',
+            items: [
+              {
+                path: 'home',
+                title: '介绍',
+              },
+              {
+                path: 'quickstart',
+                title: '快速上手',
+              },
+              {
+                path: 'advanced-usage',
+                title: '进阶用法',
+              },
+              {
+                path: 'changelog-v3',
+                title: '更新日志',
+              },
+              {
+                path: 'migrate-from-v2',
+                title: '从 v2 升级',
+              },
+              {
+                path: 'theme',
+                title: '定制主题',
+              },
+              {
+                path: 'contribution',
+                title: '开发指南',
+              },
+              {
+                path: 'design',
+                title: '设计资源',
+              },
+              {
+                path: 'style-guide',
+                title: '风格指南',
+              },
+              {
+                path: 'locale',
+                title: '国际化',
+              },
+            ],
+          },
           {
             title: '基础组件',
             items: [

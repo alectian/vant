@@ -101,7 +101,7 @@ module.exports = {
 
 ```js
 // Then you can import components from vant
-import { Button } from 'vant';
+import { Button } from 'icloudata';
 ```
 
 > If you are using TypeScript，please use [ts-import-plugin](https://github.com/Brooooooklyn/ts-import-plugin) instead.
@@ -109,16 +109,16 @@ import { Button } from 'vant';
 ### 2. Manually import
 
 ```js
-import Button from 'vant/lib/button';
-import 'vant/lib/button/style';
+import Button from 'icloudata/lib/button';
+import 'icloudata/lib/button/style';
 ```
 
 ### 3. Import all components
 
 ```js
 import { createApp } from 'vue';
-import Vant from 'vant';
-import 'vant/lib/index.css';
+import Vant from 'icloudata';
+import 'icloudata/lib/index.css';
 
 const app = createApp();
 app.use(Vant);

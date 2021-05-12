@@ -57,7 +57,7 @@ app.use(Icon);
 Icon 组件默认引用有赞 CDN 提供的字体文件，并通过网络下载。如果需要在项目中使用本地字体文件，请引入下面的 CSS 文件，并在项目中配置 `url-loader`。
 
 ```js
-import 'vant/lib/icon/local.css';
+import 'icloudata/lib/icon/local.css';
 ```
 
 > Tips: Vant 默认使用 woff2 格式的本地字体文件，只有在不支持 woff2 字体的低端浏览器上才会加载有赞 CDN 的网络图标。

@@ -110,10 +110,10 @@ module.exports = {
 
 ```js
 // import all styles
-import 'vant/lib/index.less';
+import 'icloudata/lib/index.less';
 
 // import style of single component
-import 'vant/lib/button/style/less';
+import 'icloudata/lib/button/style/less';
 ```
 
 ### Step 2: modify less variables
