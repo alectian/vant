@@ -26,7 +26,7 @@ Use `autoplay` prop to set autoplay interval.
 </icloudata-swipe>
 
 <style>
-  .my-swipe .van-swipe-item {
+  .my-swipe .icloudata-swipe-item {
     color: #fff;
     font-size: 20px;
     line-height: 150px;

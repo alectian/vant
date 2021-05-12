@@ -153,7 +153,7 @@ export default {
 ```html
 <icloudata-uploader v-model="fileList">
   <template #preview-cover="{ file }">
-    <div class="preview-cover van-ellipsis">{{ file.name }}</div>
+    <div class="preview-cover icloudata-ellipsis">{{ file.name }}</div>
   </template>
 </icloudata-uploader>
 

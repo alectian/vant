@@ -26,9 +26,9 @@
 
 <!-- ### 介绍
 
-Vant 是**有赞前端团队**开源的移动端组件库，于 2017 年开源，已持续维护 4 年时间。Vant 对内承载了有赞所有核心业务，对外服务十多万开发者，是业界主流的移动端组件库之一。
+icloudata 是**有赞前端团队**开源的移动端组件库，于 2017 年开源，已持续维护 4 年时间。icloudata 对内承载了有赞所有核心业务，对外服务十多万开发者，是业界主流的移动端组件库之一。
 
-目前 Vant 官方提供了 [Vue 2 版本](https://vant-contrib.gitee.io/vant)、[Vue 3 版本](https://vant-contrib.gitee.io/vant/next)和[微信小程序版本](http://vant-contrib.gitee.io/vant-weapp)，并由社区团队维护 [React 版本](https://github.com/mxdi9i7/vant-react)和[支付宝小程序版本](https://github.com/ant-move/Vant-Aliapp)。 -->
+目前 icloudata 官方提供了 [Vue 2 版本](https://vant-contrib.gitee.io/vant)、[Vue 3 版本](https://vant-contrib.gitee.io/vant/next)和[微信小程序版本](http://vant-contrib.gitee.io/vant-weapp)，并由社区团队维护 [React 版本](https://github.com/mxdi9i7/vant-react)和[支付宝小程序版本](https://github.com/ant-move/icloudata-Aliapp)。 -->
 
 ## 特性
 
@@ -45,10 +45,10 @@ Vant 是**有赞前端团队**开源的移动端组件库，于 2017 年开源�
 ## 安装
 
 ```bash
-# Vue 2 项目，安装 Vant 2.x 版本：
+# Vue 2 项目，安装 icloudata 2.x 版本：
 npm i vant -S
 
-# Vue 3 项目，安装 Vant 3.x 版本：
+# Vue 3 项目，安装 icloudata 3.x 版本：
 npm i vant@next -S
 ```
 
@@ -93,14 +93,14 @@ vant 也支持按需引入、CDN 引入等方式，详细说明见 [快速上手
 
 | 项目 | 描述 |
 | --- | --- |
-| [vant-weapp](https://github.com/youzan/vant-weapp) | Vant 微信小程序版 |
-| [vant-aliapp](https://github.com/ant-move/Vant-Aliapp) | Vant 支付宝小程序版（由社区维护） |
-| [vant-react](https://github.com/mxdi9i7/vant-react) | Vant React 版（由社区维护） |
-| [vant-use](https://youzan.github.io/vant/vant-use/) | Vant Composition API 合集 |
-| [vant-demo](https://github.com/youzan/vant-demo) | Vant 官方示例合集 |
+| [vant-weapp](https://github.com/youzan/vant-weapp) | icloudata 微信小程序版 |
+| [vant-aliapp](https://github.com/ant-move/icloudata-Aliapp) | icloudata 支付宝小程序版（由社区维护） |
+| [vant-react](https://github.com/mxdi9i7/vant-react) | icloudata React 版（由社区维护） |
+| [vant-use](https://youzan.github.io/vant/vant-use/) | icloudata Composition API 合集 |
+| [vant-demo](https://github.com/youzan/vant-demo) | icloudata 官方示例合集 |
 | [vant-cli](https://github.com/youzan/vant/tree/dev/packages/vant-cli) | 开箱即用的组件库搭建工具 |
-| [vant-icons](https://github.com/youzan/vant/tree/dev/packages/vant-icons) | Vant 图标库 |
-| [vant-touch-emulator](https://github.com/youzan/vant/tree/dev/packages/vant-touch-emulator) | 在桌面端使用 Vant 的辅助库 |
+| [vant-icons](https://github.com/youzan/vant/tree/dev/packages/vant-icons) | icloudata 图标库 |
+| [vant-touch-emulator](https://github.com/youzan/vant/tree/dev/packages/vant-touch-emulator) | 在桌面端使用 icloudata 的辅助库 |
 
 ## 链接
 
@@ -108,7 +108,7 @@ vant 也支持按需引入、CDN 引入等方式，详细说明见 [快速上手
 - [更新日志](https://vant-contrib.gitee.io/vant#/zh-CN/changelog)
 - [Gitter 讨论组](https://gitter.im/vant-contrib/discuss?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 
-## 手机预览
+<!-- ## 手机预览
 
 可以手机扫码以下二维码访问手机端 demo：
 
@@ -116,10 +116,10 @@ vant 也支持按需引入、CDN 引入等方式，详细说明见 [快速上手
 
 ## 微信讨论群
 
-欢迎大家加入 Vant 交流群一起讨论，添加下方微信并注明『加入 Vant 交流群』即可
+欢迎大家加入 icloudata 交流群一起讨论，添加下方微信并注明『加入 icloudata 交流群』即可
 
 <img src="https://img.yzcdn.cn/vant/wechat_20180606.png" width="220" height="292" >
 
 ## 开源协议
 
-本项目基于 [MIT](https://zh.wikipedia.org/wiki/MIT%E8%A8%B1%E5%8F%AF%E8%AD%89) 协议，请自由地享受和参与开源。
+本项目基于 [MIT](https://zh.wikipedia.org/wiki/MIT%E8%A8%B1%E5%8F%AF%E8%AD%89) 协议，请自由地享受和参与开源。 -->

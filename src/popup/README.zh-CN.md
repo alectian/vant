@@ -143,7 +143,7 @@ export default {
 | transition | 动画类名，等价于 [transtion](https://v3.cn.vuejs.org/api/built-in-components.html#transition) 的`name`属性 | _string_ | - |
 | transition-appear `v2.10.14` | 是否在初始渲染时启用过渡动画 | _boolean_ | `false` |
 | teleport | 指定挂载的节点 | _string \| Element_ | - |
-| safe-area-inset-bottom | 是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei) | _boolean_ | `false` |
+| safe-area-inset-bottom | 是否开启底部安全区适配 | _boolean_ | `false` |
 
 ### Events
 
@@ -159,7 +159,7 @@ export default {
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称                           | 默认值                               | 描述 |
 | ------------------------------ | ------------------------------------ | ---- |

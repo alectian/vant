@@ -105,14 +105,14 @@ app.use(Button);
 <icloudata-button type="primary" block>块级元素</icloudata-button>
 ```
 
-### 页面导航
+<!-- ### 页面导航
 
 可以通过 `url` 属性进行 URL 跳转，或通过 `to` 属性进行路由跳转。
 
 ```html
 <icloudata-button type="primary" url="/vant/mobile.html">URL 跳转</icloudata-button>
 <icloudata-button type="primary" to="index">路由跳转</icloudata-button>
-```
+``` -->
 
 ### 自定义颜色
 
@@ -137,7 +137,7 @@ app.use(Button);
 | text | 按钮文字 | _string_ | - |
 | color | 按钮颜色，支持传入 `linear-gradient` 渐变色 | _string_ | - |
 | icon | 左侧[图标名称](#/zh-CN/icon)或图片链接 | _string_ | - |
-| icon-prefix `v2.6.0` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `van-icon` |
+| icon-prefix `v2.6.0` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `icloudata-icon` |
 | icon-position `v2.10.7` | 图标展示位置，可选值为 `right` | _string_ | `left` |
 | tag | 按钮根节点的 HTML 标签 | _string_ | `button` |
 | native-type | 原生 button 标签的 type 属性 | _string_ | `button` |
@@ -171,7 +171,7 @@ app.use(Button);
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称                             | 默认值               | 描述 |
 | -------------------------------- | -------------------- | ---- |

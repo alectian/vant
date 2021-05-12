@@ -2,9 +2,9 @@
 
 ### 介绍
 
-感谢你使用 Vant。
+感谢你使用 icloudata。
 
-以下是关于向 Vant 提交反馈或代码的指南。在向 Vant 提交 issue 或者 PR 之前，请先花几分钟时间阅读以下文字。
+以下是关于向 icloudata 提交反馈或代码的指南。在向 icloudata 提交 issue 或者 PR 之前，请先花几分钟时间阅读以下文字。
 
 ### Issue 规范
 
@@ -15,12 +15,12 @@
 
 ### 本地开发
 
-按照下面的步骤操作，即可在本地开发 Vant 组件。
+按照下面的步骤操作，即可在本地开发 icloudata 组件。
 
 ```bash
 # 克隆仓库
-# 默认为 dev 分支，包含 Vant 3.x 的代码
-# 如果需要在 Vant 2.x 上进行更改，请基于 2.x 分支进行开发
+# 默认为 dev 分支，包含 icloudata 3.x 的代码
+# 如果需要在 icloudata 2.x 上进行更改，请基于 2.x 分支进行开发
 git clone git@github.com:youzan/vant.git
 
 # 安装依赖
@@ -76,7 +76,7 @@ src
 2. 基于 fork 后仓库的 dev 分支新建一个分支，比如`feature/button_color`
 3. 在新分支上进行开发，开发完成后，提 Pull Request 到主仓库的 dev 分支
 4. Pull Request 会在 Review 通过后被合并到主仓库
-5. 等待 Vant 发布版本，一般是每周一次
+5. 等待 icloudata 发布版本，一般是每周一次
 
 ### 同步最新代码
 

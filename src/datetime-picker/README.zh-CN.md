@@ -342,7 +342,7 @@ export default {
 
 ### 方法
 
-通过 ref 可以获取到 DatetimePicker 实例并调用实例方法，详见[组件实例方法](#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa)。
+通过 ref 可以获取到 DatetimePicker 实例并调用实例方法。
 
 | 方法名 | 说明 | 参数 | 返回值 |
 | --- | --- | --- | --- |
@@ -360,11 +360,11 @@ export default {
 
 如果你遇到了在 iOS 上无法渲染组件的问题，请确认在创建 Date 对象时没有使用`new Date('2020-01-01')`这样的写法，iOS 不支持以中划线分隔的日期格式，正确写法是`new Date('2020/01/01')`。
 
-对此问题的详细解释：[stackoverflow](https://stackoverflow.com/questions/13363673/javascript-date-is-invalid-on-ios)。
+<!-- 对此问题的详细解释：[stackoverflow](https://stackoverflow.com/questions/13363673/javascript-date-is-invalid-on-ios)。 -->
 
-### 在桌面端无法操作组件？
+<!-- ### 在桌面端无法操作组件？
 
-参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。
+参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。 -->
 
 ### 是否有年份或月份选择器？
 

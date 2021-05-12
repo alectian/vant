@@ -184,7 +184,7 @@ export default {
 | --- | --- | --- | --- |
 | name | Identifier | _number \| string_ | Item index |
 | icon | Icon name | _string_ | - |
-| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `van-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `icloudata-icon` |
 | dot | Whether to show red dot | _boolean_ | - |
 | badge `v2.5.6` | Content of the badge | _number \| string_ | `''` |
 | url | Link | _string_ | - |

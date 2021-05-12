@@ -85,13 +85,13 @@ export default {
 </icloudata-action-bar>
 ```
 
-## API
+<!-- ## API
 
 ### ActionBar Props
 
 | 参数 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| safe-area-inset-bottom | 是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei) | _boolean_ | `true` |
+| safe-area-inset-bottom | 是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei) | _boolean_ | `true` | -->
 
 ### ActionBarIcon Props
 
@@ -136,7 +136,7 @@ export default {
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称                             | 默认值             | 描述 |
 | -------------------------------- | ------------------ | ---- |

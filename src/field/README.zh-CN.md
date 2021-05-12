@@ -286,7 +286,7 @@ export default {
 | autosize | 是否自适应内容高度，只对 textarea 有效，<br>可传入对象,如 { maxHeight: 100, minHeight: 50 }，<br>单位为`px` | _boolean \| object_ | `false` |
 | left-icon | 左侧[图标名称](#/zh-CN/icon)或图片链接 | _string_ | - |
 | right-icon | 右侧[图标名称](#/zh-CN/icon)或图片链接 | _string_ | - |
-| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `van-icon` |
+| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `icloudata-icon` |
 | rules `v2.5.0` | 表单校验规则，详见 [Form 组件](#/zh-CN/form#rule-shu-ju-jie-gou) | _Rule[]_ | - |
 
 ### Events
@@ -304,7 +304,7 @@ export default {
 
 ### 方法
 
-通过 ref 可以获取到 Field 实例并调用实例方法，详见[组件实例方法](#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa)。
+通过 ref 可以获取到 Field 实例并调用实例方法。
 
 | 方法名 | 说明           | 参数 | 返回值 |
 | ------ | -------------- | ---- | ------ |
@@ -324,7 +324,7 @@ export default {
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称                             | 默认值          | 描述 |
 | -------------------------------- | --------------- | ---- |
@@ -352,7 +352,7 @@ export default {
 ### 设置 type 为 number 后，为什么 input 标签的类型仍为 text?
 
 HTML 原生的 `type="number"` 属性在 iOS 和 Android 系统上都存在一定问题，比如 maxlength 属性不生效、无法获取到完整的输入内容等。因此设置 type 为 `number` 时，Field 不会使用原生的 `type="number"` 属性，而是用现代浏览器支持的 [inputmode 属性](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/inputmode)来控制输入键盘的类型。
-
+<!-- 
 ### 在桌面端点击清除按钮无效？
 
-清除按钮监听是的移动端 Touch 事件，参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。
+清除按钮监听是的移动端 Touch 事件，参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。 -->

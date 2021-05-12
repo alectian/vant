@@ -174,8 +174,8 @@ export default {
 | close-button-loading `v2.7.0` | 是否将关闭按钮设置为加载中状态，仅在 `theme="custom"` 时有效 | _boolean_ | `false` |
 | show-delete-key `v2.5.9` | 是否展示删除图标 | _boolean_ | `true` |
 | hide-on-click-outside | 点击外部时是否收起键盘 | _boolean_ | `true` |
-| teleport `v2.10.0` | 指定挂载的节点，[用法示例](#/zh-CN/popup#zhi-ding-gua-zai-wei-zhi) | _string \| Element_ | - |
-| safe-area-inset-bottom | 是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei) | _boolean_ | `true` |
+| teleport `v2.10.0` | 指定挂载的节点，用法示例 | _string \| Element_ | - |
+| safe-area-inset-bottom | 是否开启底部安全区适配 | _boolean_ | `true` |
 
 ### Events
 
@@ -198,7 +198,7 @@ export default {
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称                                       | 默认值             | 描述 |
 | ------------------------------------------ | ------------------ | ---- |
@@ -220,9 +220,9 @@ export default {
 | @number-keyboard-cursor-height             | `40%`              | -    |
 | @number-keyboard-cursor-animation-duration | `1s`               | -    |
 | @number-keyboard-z-index                   | `100`              | -    |
-
+<!-- 
 ## 常见问题
 
 ### 在桌面端无法操作组件？
 
-参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。
+参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。 -->

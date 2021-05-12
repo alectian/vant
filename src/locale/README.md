@@ -2,13 +2,13 @@
 
 ### Intro
 
-Vant uses Chinese as the default language. If you want to use other languages, please follow the instructions below.
+icloudata uses Chinese as the default language. If you want to use other languages, please follow the instructions below.
 
 ## Usage
 
 ### Switch languages
 
-Vant supports multiple languages with the Locale component, and the `Locale.use` method allows you to switch to different languages.
+icloudata supports multiple languages with the Locale component, and the `Locale.use` method allows you to switch to different languages.
 
 ```js
 import { Locale } from 'cloudata';

@@ -198,7 +198,7 @@ export default {
 
 ### 方法
 
-通过 ref 可以获取到 List 实例并调用实例方法，详见[组件实例方法](#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa)。
+通过 ref 可以获取到 List 实例并调用实例方法。
 
 | 方法名 | 说明 | 参数 | 返回值 |
 | --- | --- | --- | --- |
@@ -215,7 +215,7 @@ export default {
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称                    | 默认值          | 描述 |
 | ----------------------- | --------------- | ---- |
@@ -250,11 +250,11 @@ List 初始化后会触发一次 load 事件，用于加载第一屏的数据，
 
 ### 使用 float 布局后一直触发加载？
 
-若 List 的内容使用了 float 布局，可以在容器上添加`van-clearfix`类名来清除浮动，使得 List 能正确判断元素位置
+若 List 的内容使用了 float 布局，可以在容器上添加`icloudata-clearfix`类名来清除浮动，使得 List 能正确判断元素位置
 
 ```html
 <icloudata-list>
-  <div class="van-clearfix">
+  <div class="icloudata-clearfix">
     <div class="float-item" />
     <div class="float-item" />
     <div class="float-item" />

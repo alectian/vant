@@ -90,7 +90,7 @@ app.use(Area);
 
 ### 方法
 
-通过 ref 可以获取到 Area 实例并调用实例方法，详见[组件实例方法](#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa)。
+通过 ref 可以获取到 Area 实例并调用实例方法。
 
 | 方法名 | 说明 | 参数 | 返回值 |
 | --- | --- | --- | --- |
@@ -131,7 +131,7 @@ app.use(Area);
 }
 ```
 
-完整数据见 [Area.json](https://github.com/youzan/vant/blob/dev/src/area/demo/area.js)
+<!-- 完整数据见 [Area.json](https://github.com/youzan/vant/blob/dev/src/area/demo/area.js) -->
 
 ### 点击完成时返回的数据格式
 
@@ -156,8 +156,8 @@ app.use(Area);
 ];
 ```
 
-## 常见问题
+<!-- ## 常见问题
 
 ### 在桌面端无法操作组件？
 
-参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。
+参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。 -->

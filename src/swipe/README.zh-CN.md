@@ -30,7 +30,7 @@ app.use(SwipeItem);
 </icloudata-swipe>
 
 <style>
-  .my-swipe .van-swipe-item {
+  .my-swipe .icloudata-swipe-item {
     color: #fff;
     font-size: 20px;
     line-height: 150px;
@@ -193,7 +193,7 @@ export default {
 
 ### Swipe 方法
 
-通过 ref 可以获取到 Swipe 实例并调用实例方法，详见[组件实例方法](#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa)。
+通过 ref 可以获取到 Swipe 实例并调用实例方法。
 
 | 方法名 | 说明 | 参数 | 返回值 |
 | --- | --- | --- | --- |
@@ -217,7 +217,7 @@ export default {
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称                                       | 默认值          | 描述 |
 | ------------------------------------------ | --------------- | ---- |
@@ -236,13 +236,13 @@ export default {
 
 将 Swipe 组件的 stop-propagation 属性设置为 false 即可避免该问题。
 
-### 在桌面端无法操作组件？
+<!-- ### 在桌面端无法操作组件？
 
-参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。
+参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。 -->
 
 ### Swipe 组件功能太少，无法实现复杂效果？
 
-Vant 中的 Swipe 组件是比较轻量的，因此功能也比较基础。如果需要更复杂的轮播效果，推荐使用社区里一些优质的轮播库，比如 [vue-awesome-swiper](https://github.com/surmon-china/vue-awesome-swiper)。
+icloudata 中的 Swipe 组件是比较轻量的，因此功能也比较基础。如果需要更复杂的轮播效果，推荐使用社区里一些优质的轮播库，比如 [vue-awesome-swiper](https://github.com/surmon-china/vue-awesome-swiper)。
 
 ### 组件从隐藏状态切换到显示状态时，无法正确渲染？
 

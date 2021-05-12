@@ -2,7 +2,7 @@
 
 ## 源代码目录
 
-基于 Vant Cli 搭建的组件库的基本目录结构如下所示：
+基于 icloudata Cli 搭建的组件库的基本目录结构如下所示：
 
 ```
 project
@@ -15,7 +15,7 @@ project
 │   └─ changelog.md  # 更新日志
 │
 ├─ babel.config.js    # Babel 配置文件
-├─ vant.config.js     # Vant Cli 配置文件
+├─ vant.config.js     # icloudata Cli 配置文件
 ├─ pacakge.json
 └─ README.md
 ```

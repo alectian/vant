@@ -83,12 +83,12 @@ app.use(Button);
 <icloudata-button type="primary" block>Block Element</icloudata-button>
 ```
 
-### Route
+<!-- ### Route
 
 ```html
 <icloudata-button type="primary" url="/vant/mobile.html">URL</icloudata-button>
 <icloudata-button type="primary" to="index">Vue Router</icloudata-button>
-```
+``` -->
 
 ### Custom Color
 
@@ -111,7 +111,7 @@ app.use(Button);
 | text | Text | _string_ | - |
 | color | Color, support linear-gradient | _string_ | - |
 | icon | Left Icon | _string_ | - |
-| icon-prefix `v2.6.0` | Icon className prefix | _string_ | `van-icon` |
+| icon-prefix `v2.6.0` | Icon className prefix | _string_ | `icloudata-icon` |
 | icon-position `v2.10.7` | Icon position, can be set to `right` | _string_ | `left` |
 | tag | HTML Tag | _string_ | `button` |
 | native-type | Native Type Attribute | _string_ | `button` |

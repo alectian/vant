@@ -166,7 +166,7 @@ Toast.resetDefaultOptions('loading');
 | position | 位置，可选值为 `top` `bottom` | _string_ | `middle` |
 | message | 文本内容，支持通过`\n`换行 | _string_ | `''` | - |
 | icon | 自定义图标，支持传入[图标名称](#/zh-CN/icon)或图片链接 | _string_ | - |
-| iconPrefix | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `van-icon` |
+| iconPrefix | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `icloudata-icon` |
 | overlay | 是否显示背景遮罩层 | _boolean_ | `false` |
 | forbidClick | 是否禁止背景点击 | _boolean_ | `false` |
 | closeOnClick | 是否在点击后关闭 | _boolean_ | `false` |
@@ -176,12 +176,12 @@ Toast.resetDefaultOptions('loading');
 | className | 自定义类名 | _any_ | - |
 | onOpened | 完全展示后的回调函数 | _Function_ | - |
 | onClose | 关闭时的回调函数 | _Function_ | - |
-| transition | 动画类名，等价于 [transtion](https://v3.cn.vuejs.org/api/built-in-components.html#transition) 的`name`属性 | _string_ | `van-fade` |
+| transition | 动画类名，等价于 [transtion](https://v3.cn.vuejs.org/api/built-in-components.html#transition) 的`name`属性 | _string_ | `icloudata-fade` |
 | teleport | 指定挂载的节点，[用法示例](#/zh-CN/popup#zhi-ding-gua-zai-wei-zhi) | _string \| Element_ | `body` |
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称                            | 默认值                    | 描述 |
 | ------------------------------- | ------------------------- | ---- |

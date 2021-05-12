@@ -1,8 +1,8 @@
 # 设计资源
 
-### 介绍
+<!-- ### 介绍
 
-Vant 是基于有赞 [Zan Design System](https://design.youzan.com/) 视觉规范实现的组件库，在这里可以下载 Vant 的设计资源。
+icloudata 是基于有赞 [Zan Design System](https://design.youzan.com/) 视觉规范实现的组件库，在这里可以下载 icloudata 的设计资源。 -->
 
 ## 设计稿
 

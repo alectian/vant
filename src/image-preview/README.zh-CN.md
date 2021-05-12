@@ -213,7 +213,7 @@ export default {
 
 ### 方法
 
-通过组件调用 `ImagePreview` 时，通过 ref 可以获取到 ImagePreview 实例并调用实例方法，详见[组件实例方法](#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa)。
+通过组件调用 `ImagePreview` 时，通过 ref 可以获取到 ImagePreview 实例并调用实例方法。
 
 | 方法名          | 说明           | 参数                            | 返回值 |
 | --------------- | -------------- | ------------------------------- | ------ |
@@ -244,7 +244,7 @@ export default {
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称                                    | 默认值               | 描述 |
 | --------------------------------------- | -------------------- | ---- |
@@ -258,9 +258,9 @@ export default {
 | @image-preview-close-icon-active-color  | `@gray-6`            | -    |
 | @image-preview-close-icon-margin        | `@padding-md`        | -    |
 | @image-preview-close-icon-z-index       | `1`                  | -    |
-
+<!-- 
 ## 常见问题
 
 ### 在桌面端无法操作组件？
 
-参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。
+参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。 -->

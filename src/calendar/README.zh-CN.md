@@ -281,8 +281,8 @@ export default {
 | round | 是否显示圆角弹窗 | _boolean_ | `true` |
 | close-on-popstate `v2.4.4` | 是否在页面回退时自动关闭 | _boolean_ | `true` |
 | close-on-click-overlay | 是否在点击遮罩层后关闭 | _boolean_ | `true` |
-| safe-area-inset-bottom | 是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei) | _boolean_ | `true` |
-| teleport `v2.4.4` | 指定挂载的节点，[用法示例](#/zh-CN/popup#zhi-ding-gua-zai-wei-zhi) | _string \| Element_ | - |
+| safe-area-inset-bottom | 是否开启底部安全区适配 | _boolean_ | `true` |
+| teleport `v2.4.4` | 指定挂载的节点 | _string \| Element_ | - |
 
 ### Range Props
 
@@ -338,7 +338,7 @@ export default {
 
 ### 方法
 
-通过 ref 可以获取到 Calendar 实例并调用实例方法，详见[组件实例方法](#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa)。
+通过 ref 可以获取到 Calendar 实例并调用实例方法。
 
 | 方法名 | 说明                   | 参数 | 返回值 |
 | ------ | ---------------------- | ---- | ------ |
@@ -346,7 +346,7 @@ export default {
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称 | 默认值 | 描述 |
 | --- | --- | --- |
@@ -382,4 +382,4 @@ export default {
 
 如果你遇到了在 iOS 上无法渲染组件的问题，请确认在创建 Date 对象时没有使用`new Date('2020-01-01')`这样的写法，iOS 不支持以中划线分隔的日期格式，正确写法是`new Date('2020/01/01')`。
 
-对此问题的详细解释：[stackoverflow](https://stackoverflow.com/questions/13363673/javascript-date-is-invalid-on-ios)。
+<!-- 对此问题的详细解释：[stackoverflow](https://stackoverflow.com/questions/13363673/javascript-date-is-invalid-on-ios)。 -->

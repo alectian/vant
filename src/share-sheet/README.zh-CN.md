@@ -188,8 +188,8 @@ export default {
 | lazy-render | 是否在显示弹层时才渲染内容 | _boolean_ | `true` |
 | close-on-popstate | 是否在页面回退时自动关闭 | _boolean_ | `true` |
 | close-on-click-overlay | 是否在点击遮罩层后关闭 | _boolean_ | `true` |
-| safe-area-inset-bottom | 是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei) | _boolean_ | `true` |
-| teleport | 指定挂载的节点，[用法示例](#/zh-CN/popup#zhi-ding-gua-zai-wei-zhi) | _string \| Element_ | - |
+| safe-area-inset-bottom | 是否开启底部安全区适配 | _boolean_ | `true` |
+| teleport | 指定挂载的节点 | _string \| Element_ | - |
 
 ### Option 数据结构
 
@@ -219,7 +219,7 @@ export default {
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称 | 默认值 | 描述 |
 | --- | --- | --- |

@@ -2,17 +2,17 @@
 
 ### 介绍
 
-本文档提供了从 Vant 2 到 Vant 3 的升级指南。
+本文档提供了从 icloudata 2 到 icloudata 3 的升级指南。
 
 ### 升级步骤
 
 #### 1. 升级 Vue 3
 
-Vant 3 是基于 Vue 3 开发的，在使用 Vant 3 前，请将项目中的 Vue 升级到 3.0 以上版本。
+icloudata 3 是基于 Vue 3 开发的，在使用 icloudata 3 前，请将项目中的 Vue 升级到 3.0 以上版本。
 
 #### 2. 处理不兼容更新
 
-Vant 2 到 Vant 3 存在一些不兼容更新，请仔细阅读下方的不兼容更新内容，并依次处理。
+icloudata 2 到 icloudata 3 存在一些不兼容更新，请仔细阅读下方的不兼容更新内容，并依次处理。
 
 ## 不兼容更新
 
@@ -21,13 +21,13 @@ Vant 2 到 Vant 3 存在一些不兼容更新，请仔细阅读下方的不兼�
 GoodsAction 商品导航组件重命名为 **ActionBar 行动栏**。
 
 ```html
-<!-- Vant 2 -->
+<!-- icloudata 2 -->
 <icloudata-goods-action>
   <icloudata-goods-action-icon text="图标" />
   <icloudata-goods-action-button text="按钮" />
 </icloudata-goods-action>
 
-<!-- Vant 3 -->
+<!-- icloudata 3 -->
 <icloudata-action-bar>
   <icloudata-action-bar-icon text="图标" />
   <icloudata-action-bar-button text="按钮" />
@@ -39,10 +39,10 @@ GoodsAction 商品导航组件重命名为 **ActionBar 行动栏**。
 移除 SwitchCell 组件，可以直接使用 Cell 和 Switch 组件代替。
 
 ```html
-<!-- Vant 2 -->
+<!-- icloudata 2 -->
 <icloudata-switch-cell title="标题" v-model="checked" />
 
-<!-- Vant 3 -->
+<!-- icloudata 3 -->
 <icloudata-cell center title="标题">
   <template #right-icon>
     <icloudata-switch v-model="checked" size="24" />
@@ -64,10 +64,10 @@ GoodsAction 商品导航组件重命名为 **ActionBar 行动栏**。
 - ShareSheet
 
 ```html
-<!-- Vant 2 -->
+<!-- icloudata 2 -->
 <icloudata-popup v-model="show" />
 
-<!-- Vant 3 -->
+<!-- icloudata 3 -->
 <icloudata-popup v-model:show="show" />
 ```
 
@@ -89,10 +89,10 @@ GoodsAction 商品导航组件重命名为 **ActionBar 行动栏**。
 - Uploader
 
 ```html
-<!-- Vant 2 -->
+<!-- icloudata 2 -->
 <icloudata-field :value="value" @input="onInput" />
 
-<!-- Vant 3 -->
+<!-- icloudata 3 -->
 <icloudata-field :model-value="value" @update:model-value="onInput" />
 ```
 
@@ -120,19 +120,19 @@ GoodsAction 商品导航组件重命名为 **ActionBar 行动栏**。
 同时内部使用的 Info 组件也会重命名为 Badge。
 
 ```html
-<!-- Vant 2 -->
+<!-- icloudata 2 -->
 <icloudata-icon info="5" />
 
-<!-- Vant 3 -->
+<!-- icloudata 3 -->
 <icloudata-icon badge="5" />
 ```
 
 ### 重命名 get-container 属性
 
-Vue 3.0 中增加了 `Teleport` 组件，提供将组件渲染到任意 DOM 位置的能力，Vant 2.x 也通过 `get-container` 属性提供了类似的能力。为了与官方的 API 保持一致，Vant 中的 `get-container` 属性将重命名为 `teleport`。
+Vue 3.0 中增加了 `Teleport` 组件，提供将组件渲染到任意 DOM 位置的能力，icloudata 2.x 也通过 `get-container` 属性提供了类似的能力。为了与官方的 API 保持一致，icloudata 中的 `get-container` 属性将重命名为 `teleport`。
 
 ```html
-<!-- Vant 2 -->
+<!-- icloudata 2 -->
 <template>
   <icloudata-popup get-container="body" />
   <icloudata-popup :get-container="getContainer" />
@@ -147,7 +147,7 @@ Vue 3.0 中增加了 `Teleport` 组件，提供将组件渲染到任意 DOM 位�
   };
 </script>
 
-<!-- Vant 3 -->
+<!-- icloudata 3 -->
 <template>
   <icloudata-popup teleport="body" />
   <icloudata-popup :teleport="container" />
@@ -222,7 +222,7 @@ Vue 3.0 中增加了 `Teleport` 组件，提供将组件渲染到任意 DOM 位�
 
 ### 注册全局方法
 
-Vant 2.x 中默认提供了 `$toast`、`$dialog` 等全局方法，但 Vue 3.0 不再支持直接在 Vue 的原型链上挂载方法，因此从 Vant 3.0 开始，使用全局方法前必须先通过 `app.use` 将组件注册到对应的 app 上。
+icloudata 2.x 中默认提供了 `$toast`、`$dialog` 等全局方法，但 Vue 3.0 不再支持直接在 Vue 的原型链上挂载方法，因此从 icloudata 3.0 开始，使用全局方法前必须先通过 `app.use` 将组件注册到对应的 app 上。
 
 ```js
 import { Toast, Dialog, Notify } from 'icloudata';

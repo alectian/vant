@@ -14,7 +14,7 @@ npm i vant@next -S
 
 ### CDN
 
-The easiest way to use Vant is to include a CDN link in the html file, after which you can access all components via the global variable `vant`.
+The easiest way to use icloudata is to include a CDN link in the html file, after which you can access all components via the global variable `vant`.
 
 ```html
 <!-- import style -->
@@ -117,11 +117,11 @@ import 'icloudata/lib/button/style';
 
 ```js
 import { createApp } from 'vue';
-import Vant from 'icloudata';
+import icloudata from 'icloudata';
 import 'icloudata/lib/index.css';
 
 const app = createApp();
-app.use(Vant);
+app.use(icloudata);
 ```
 
 > If you configured babel-plugin-import, you won't be allowed to import all components.

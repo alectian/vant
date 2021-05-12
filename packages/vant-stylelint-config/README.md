@@ -1,4 +1,4 @@
-# Stylelint Config of Vant
+# Stylelint Config of icloudata
 
 ## Install
 

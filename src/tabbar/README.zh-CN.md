@@ -177,7 +177,7 @@ export default {
 | inactive-color | 未选中标签的颜色 | _string_ | `#7d7e80` |
 | route | 是否开启路由模式 | _boolean_ | `false` |
 | placeholder `v2.6.0` | 固定在底部时，是否在标签位置生成一个等高的占位元素 | _boolean_ | `false` |
-| safe-area-inset-bottom | 是否开启[底部安全区适配](#/zh-CN/advanced-usage#di-bu-an-quan-qu-gua-pei)，设置 fixed 时默认开启 | _boolean_ | `false` |
+| safe-area-inset-bottom | 是否开启底部安全区适配，设置 fixed 时默认开启 | _boolean_ | `false` |
 | before-change `v2.10.4` | 切换标签前的回调函数，返回 `false` 可阻止切换，支持返回 Promise | _(name) => boolean \| Promise_ | - |
 
 ### Tabbar Events
@@ -192,7 +192,7 @@ export default {
 | --- | --- | --- | --- |
 | name | 标签名称，作为匹配的标识符 | _number \| string_ | 当前标签的索引值 |
 | icon | [图标名称](#/zh-CN/icon)或图片链接 | _string_ | - |
-| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `van-icon` |
+| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `icloudata-icon` |
 | dot | 是否显示图标右上角小红点 | _boolean_ | `false` |
 | badge `v2.5.6` | 图标右上角徽标的内容 | _number \| string_ | - |
 | url | 点击后跳转的链接地址 | _string_ | - |
@@ -207,7 +207,7 @@ export default {
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称                                 | 默认值                     | 描述 |
 | ------------------------------------ | -------------------------- | ---- |

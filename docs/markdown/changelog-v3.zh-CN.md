@@ -2,11 +2,11 @@
 
 ### 提示
 
-当前文档为 Vant 3.x 版本的更新日志，如需查询 Vant 2.x 的更新内容，请访问 [Vant 2.x 更新日志](https://youzan.github.io/vant/#/zh-CN/changelog)。
+当前文档为 icloudata 3.x 版本的更新日志，如需查询 icloudata 2.x 的更新内容，请访问 [icloudata 2.x 更新日志](https://youzan.github.io/vant/#/zh-CN/changelog)。
 
 ### 介绍
 
-Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
+icloudata 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 
 **发布节奏**
 
@@ -22,7 +22,7 @@ Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 
 **更新内容**
 
-请参考 [Vant 3.0 正式发布：全面拥抱 Vue 3](https://github.com/youzan/vant/issues/7797)。
+请参考 [icloudata 3.0 正式发布：全面拥抱 Vue 3](https://github.com/youzan/vant/issues/7797)。
 
 ### [v3.0.0-rc.4](https://github.com/youzan/vant/compare/v2.12.0-beta.0...v3.0.0-rc.4)
 
@@ -225,7 +225,7 @@ Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 
 **Bug Fixes**
 
-- 修复引入 Vant 时提示 'global is not defined' 的问题 [7007fc](https://github.com/youzan/vant/commit/7007fcf9eaea239f5e680068d59d8e9f8202ec3b)
+- 修复引入 icloudata 时提示 'global is not defined' 的问题 [7007fc](https://github.com/youzan/vant/commit/7007fcf9eaea239f5e680068d59d8e9f8202ec3b)
 
 ### [v3.0.0-beta.1](https://github.com/youzan/vant/compare/v2.10.8...v3.0.0-beta.1)
 

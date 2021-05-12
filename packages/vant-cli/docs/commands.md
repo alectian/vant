@@ -1,6 +1,6 @@
 # 命令
 
-Vant Cli 中内置了一系列的命令，可以将命令添加到 npm scripts 中进行使用。
+icloudata Cli 中内置了一系列的命令，可以将命令添加到 npm scripts 中进行使用。
 
 ```json
 // package.json
@@ -25,7 +25,7 @@ npx vant-cli dev
 
 运行本地开发环境。
 
-运行 dev 命令时，Vant Cli 会通过 [webpack-dev-server](https://github.com/webpack/webpack-dev-server) 启动一个本地服务器，用于在开发过程中对文档和示例进行预览。
+运行 dev 命令时，icloudata Cli 会通过 [webpack-dev-server](https://github.com/webpack/webpack-dev-server) 启动一个本地服务器，用于在开发过程中对文档和示例进行预览。
 
 ### build
 

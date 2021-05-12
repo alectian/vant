@@ -111,7 +111,7 @@ app.use(Lazyload);
 | show-loading | 是否展示图片加载中提示 | _boolean_ | `true` |
 | error-icon `v2.4.2` | 失败时提示的[图标名称](#/zh-CN/icon)或图片链接 | _string_ | `photo-fail` |
 | loading-icon `v2.4.2` | 加载时提示的[图标名称](#/zh-CN/icon)或图片链接 | _string_ | `photo` |
-| icon-prefix `v2.10.12` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `van-icon` |
+| icon-prefix `v2.10.12` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `icloudata-icon` |
 
 ### 图片填充模式 
 
@@ -141,7 +141,7 @@ app.use(Lazyload);
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称                                | 默认值              | 描述 |
 | ----------------------------------- | ------------------- | ---- |

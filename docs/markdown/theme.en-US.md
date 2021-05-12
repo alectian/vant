@@ -2,7 +2,7 @@
 
 ### Intro
 
-Vant use [Less](http://lesscss.org/) as css preprocessor，you can override the default less variables to custom theme.
+icloudata use [Less](http://lesscss.org/) as css preprocessor，you can override the default less variables to custom theme.
 
 ### Less variables
 

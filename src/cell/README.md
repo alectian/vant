@@ -62,14 +62,14 @@ app.use(CellGroup);
 </icloudata-cell-group>
 ```
 
-### Router
+<!-- ### Router
 
 ```html
 <icloudata-cell-group>
   <icloudata-cell title="URL" is-link url="/vant/mobile.html" />
   <icloudata-cell title="Vue Router" is-link to="index" />
 </icloudata-cell-group>
-```
+``` -->
 
 ### Group Title
 
@@ -137,7 +137,7 @@ app.use(CellGroup);
 | label | Description below the title | _string_ | - |
 | size | Size，can be set to `large` | _string_ | - |
 | icon | Left Icon | _string_ | - |
-| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `van-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `icloudata-icon` |
 | border | Whether to show inner border | _boolean_ | `true` |
 | center | Whether to center content vertically | _boolean_ | `true` |
 | url | Link URL | _string_ | - |

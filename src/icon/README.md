@@ -58,7 +58,7 @@ Icon uses font file in `yzcdn.cn` by default，if you want to use the local font
 import 'icloudata/lib/icon/local.css';
 ```
 
-> Tips: Starting from version 2.10.13, Vant will use local font files in woff2 format by default
+> Tips: Starting from version 2.10.13, icloudata will use local font files in woff2 format by default
 
 ### Add custom iconfont
 
@@ -92,7 +92,7 @@ import 'icloudata/lib/icon/local.css';
 | badge `v2.5.6` | Content of the badge    | _number \| string_ | `''`       |
 | color          | Icon color              | _string_           | `inherit`  |
 | size           | Icon size               | _number \| string_ | `inherit`  |
-| class-prefix   | ClassName prefix        | _string_           | `van-icon` |
+| class-prefix   | ClassName prefix        | _string_           | `icloudata-icon` |
 | tag            | HTML Tag                | _string_           | `i`        |
 
 ### Events

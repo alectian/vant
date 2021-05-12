@@ -1,6 +1,6 @@
-# Contributing to Vant
+# Contributing to icloudata
 
-The following is a set of guidelines for contributing to Vant. Please spend several minutes in reading these guidelines before you create an issue or pull request.
+The following is a set of guidelines for contributing to icloudata. Please spend several minutes in reading these guidelines before you create an issue or pull request.
 
 Anyway, these are just guidelines, not rules, use your best judgment and feel free to propose changes to this document in a pull request.
 

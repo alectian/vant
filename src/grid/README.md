@@ -74,14 +74,14 @@ app.use(GridItem);
 </icloudata-grid>
 ```
 
-### Route
+<!-- ### Route
 
 ```html
 <icloudata-grid clickable :column-num="2">
   <icloudata-grid-item icon="home-o" text="Vue Router" to="/" />
   <icloudata-grid-item icon="search" text="URL" url="/vant/mobile.html" />
 </icloudata-grid>
-```
+``` -->
 
 ### Show Badge
 
@@ -113,7 +113,7 @@ app.use(GridItem);
 | --- | --- | --- | --- |
 | text | Text | _string_ | - |
 | icon | Icon name or URL | _string_ | - |
-| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `van-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `icloudata-icon` |
 | dot | Whether to show red dot | _boolean_ | `false` |
 | badge `v2.5.6` | Content of the badge | _number \| string_ | - |
 | url | Link URL | _string_ | - |

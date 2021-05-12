@@ -153,7 +153,7 @@ Toast.resetDefaultOptions('loading');
 | position | Can be set to `top` `middle` `bottom` | _string_ | `middle` |
 | message | Message | _string_ | `''` |
 | icon | Custom icon | _string_ | - |
-| iconPrefix | Icon className prefix | _string_ | `van-icon` |
+| iconPrefix | Icon className prefix | _string_ | `icloudata-icon` |
 | overlay | Whether to show overlay | _boolean_ | `false` |
 | forbidClick | Whether to forbid click background | _boolean_ | `false` |
 | closeOnClick | Whether to close after clicked | _boolean_ | `false` |
@@ -163,7 +163,7 @@ Toast.resetDefaultOptions('loading');
 | className | Custom className | _any_ | - |
 | onOpened | Callback function after opened | _Function_ | - |
 | onClose | Callback function after close | _Function_ | - |
-| transition | Transition, equivalent to `name` prop of [transtion](https://v3.vuejs.org/api/built-in-components.html#transition) | _string_ | `van-fade` |
+| transition | Transition, equivalent to `name` prop of [transtion](https://v3.vuejs.org/api/built-in-components.html#transition) | _string_ | `icloudata-fade` |
 | teleport | Return the mount node for Toast | _string \| Element_ | `body` |
 
 ### Less Variables

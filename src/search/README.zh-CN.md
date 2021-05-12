@@ -73,7 +73,7 @@ export default {
 };
 ```
 
-> Tips: 在 van-search 外层增加 form 标签，且 action 不为空，即可在 iOS 输入法中显示搜索按钮。
+> Tips: 在 icloudata-search 外层增加 form 标签，且 action 不为空，即可在 iOS 输入法中显示搜索按钮。
 
 ### 搜索框内容对齐
 
@@ -162,7 +162,7 @@ export default {
 
 ### 方法
 
-通过 ref 可以获取到 Search 实例并调用实例方法，详见[组件实例方法](#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa)。
+通过 ref 可以获取到 Search 实例并调用实例方法。
 
 | 方法名 | 说明           | 参数 | 返回值 |
 | ------ | -------------- | ---- | ------ |
@@ -181,7 +181,7 @@ export default {
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称                             | 默认值             | 描述 |
 | -------------------------------- | ------------------ | ---- |
@@ -197,8 +197,8 @@ export default {
 | @search-action-text-color        | `@text-color`      | -    |
 | @search-action-font-size         | `@font-size-md`    | -    |
 
-## 常见问题
+<!-- ## 常见问题
 
 ### 在桌面端点击清除按钮无效？
 
-清除按钮监听是的移动端 Touch 事件，参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。
+清除按钮监听是的移动端 Touch 事件，参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。 -->

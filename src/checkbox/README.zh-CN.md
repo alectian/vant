@@ -306,7 +306,7 @@ export default {
 
 ### CheckboxGroup 方法
 
-通过 ref 可以获取到 CheckboxGroup 实例并调用实例方法，详见[组件实例方法](#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa)。
+通过 ref 可以获取到 CheckboxGroup 实例并调用实例方法。
 
 | 方法名 | 说明 | 参数 | 返回值 |
 | --- | --- | --- | --- |
@@ -337,7 +337,7 @@ checkboxGroup.toggleAll({
 
 ### Checkbox 方法
 
-通过 ref 可以获取到 Checkbox 实例并调用实例方法，详见[组件实例方法](#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa)。
+通过 ref 可以获取到 Checkbox 实例并调用实例方法。
 
 | 方法名 | 说明 | 参数 | 返回值 |
 | --- | --- | --- | --- |
@@ -345,7 +345,7 @@ checkboxGroup.toggleAll({
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称                                | 默认值                     | 描述 |
 | ----------------------------------- | -------------------------- | ---- |

@@ -71,7 +71,7 @@ By default more than 5 tabs, you can scroll through the tabs. You can set `swipe
 
 ### Disabled Tab
 
-You can set `disabled` attribute on the corresponding `van-tab`.
+You can set `disabled` attribute on the corresponding `icloudata-tab`.
 
 ```html
 <icloudata-tabs @disabled="onClickDisabled">

@@ -1,4 +1,4 @@
-# Eslint Config of Vant
+# Eslint Config of icloudata
 
 ## Install
 

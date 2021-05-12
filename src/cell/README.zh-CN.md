@@ -63,14 +63,14 @@ app.use(CellGroup);
 <icloudata-cell title="单元格" is-link arrow-direction="down" value="内容" />
 ```
 
-### 页面导航
+<!-- ### 页面导航
 
 可以通过 `url` 属性进行 URL 跳转，或通过 `to` 属性进行路由跳转。
 
 ```html
 <icloudata-cell title="URL 跳转" is-link url="/vant/mobile.html" />
 <icloudata-cell title="路由跳转" is-link to="index" />
-```
+``` -->
 
 ### 分组标题
 
@@ -144,7 +144,7 @@ app.use(CellGroup);
 | label | 标题下方的描述信息 | _string_ | - |
 | size | 单元格大小，可选值为 `large` | _string_ | - |
 | icon | 左侧[图标名称](#/zh-CN/icon)或图片链接 | _string_ | - |
-| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `van-icon` |
+| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `icloudata-icon` |
 | url | 点击后跳转的链接地址 | _string_ | - |
 | to | 点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to) | _string \| object_ | - |
 | border | 是否显示内边框 | _boolean_ | `true` |
@@ -185,7 +185,7 @@ app.use(CellGroup);
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称                          | 默认值                                | 描述 |
 | ----------------------------- | ------------------------------------- | ---- |

@@ -1,6 +1,6 @@
 <div class="card">
-  <div class="van-doc-intro">
-    <img class="van-doc-intro__logo" style="width: 120px; height: 120px;" src="https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png">
+  <div class="icloudata-doc-intro">
+    <img class="icloudata-doc-intro__logo" style="width: 120px; height: 120px;" src="https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png">
     <h2 style="margin: 0; font-size: 36px; line-height: 60px;">icloudata</h2>
     <p>可靠的移动端组件库</p>
   </div>
@@ -36,12 +36,12 @@ Modern browsers and Android 4.0+, iOS 8.0+.
 | Project | Description |
 | --- | --- |
 | [vant-weapp](https://github.com/youzan/vant-weapp) | WeChat MiniProgram UI |
-| [vant-aliapp](https://github.com/ant-move/Vant-Aliapp) | Alipay MiniProgram UI (maintained by the community) |
-| [vant-react](https://github.com/mxdi9i7/vant-react) | Vant React (maintained by the community) |
-| [vant-use](https://youzan.github.io/vant/vant-use/) | Collection of Vant Composition APIs |
-| [vant-demo](https://github.com/youzan/vant-demo) | Collection of Vant demos |
+| [vant-aliapp](https://github.com/ant-move/icloudata-Aliapp) | Alipay MiniProgram UI (maintained by the community) |
+| [vant-react](https://github.com/mxdi9i7/vant-react) | icloudata React (maintained by the community) |
+| [vant-use](https://youzan.github.io/vant/vant-use/) | Collection of icloudata Composition APIs |
+| [vant-demo](https://github.com/youzan/vant-demo) | Collection of icloudata demos |
 | [vant-cli](https://github.com/youzan/vant/tree/dev/packages/vant-cli) | Scaffold for UI library |
-| [vant-icons](https://github.com/youzan/vant/tree/dev/packages/vant-icons) | Vant icons |
+| [vant-icons](https://github.com/youzan/vant/tree/dev/packages/vant-icons) | icloudata icons |
 | [vant-touch-emulator](https://github.com/youzan/vant/tree/dev/packages/vant-touch-emulator) | Using vant in desktop browsers |
 
 ### Links

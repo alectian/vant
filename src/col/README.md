@@ -2,7 +2,7 @@
 
 ### Intro
 
-Quickly and easily create layouts with `van-row` and `van-col`.
+Quickly and easily create layouts with `icloudata-row` and `icloudata-col`.
 
 ### Install
 

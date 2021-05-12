@@ -138,7 +138,7 @@ export default {
 
 ### 样式变量
 
-组件提供了下列 Less 变量，可用于自定义样式，使用方法请参考[主题定制](#/zh-CN/theme)。
+组件提供了下列 Less 变量，可用于自定义样式。
 
 | 名称                          | 默认值          | 描述 |
 | ----------------------------- | --------------- | ---- |
@@ -155,7 +155,7 @@ export default {
 ```html
 <icloudata-pull-refresh style="min-height: 100vh;" />
 ```
-
+<!-- 
 ### 在桌面端无法操作组件？
 
-参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。
+参见[桌面端适配](#/zh-CN/advanced-usage#zhuo-mian-duan-gua-pei)。 -->

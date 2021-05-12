@@ -1,18 +1,18 @@
-# Vant Use
+# icloudata Use
 
-Vant Use 是 Vant 团队提供的 Vue Composition API 库。
+icloudata Use 是 icloudata 团队提供的 Vue Composition API 库。
 
 ## 特性
 
-- 从 Vant 实际应用场景中沉淀
+- 从 icloudata 实际应用场景中沉淀
 - 基于 TypeScript 开发，提供完备的类型定义
 - 完善的单元测试，提供稳定性保障
 
 ## 安装
 
-如果项目中已经安装了 Vant 3，则无须手动安装 Vant Use。
+如果项目中已经安装了 icloudata 3，则无须手动安装 icloudata Use。
 
-如果项目中未使用 Vant，可以通过 `npm` 或 `yarn` 手动安装 Vant Use。
+如果项目中未使用 icloudata，可以通过 `npm` 或 `yarn` 手动安装 icloudata Use。
 
 ```bash
 # 通过 npm 安装
