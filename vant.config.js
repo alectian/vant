@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'vant',
+  name: 'hello',
   build: {
     srcDir: 'src',
     skipInstall: ['lazyload'],
@@ -9,16 +9,16 @@ module.exports = {
     //     'https://b.yzcdn.cn/vant/',
     // },
     vetur: {
-      tagPrefix: 'van-',
+      tagPrefix: 'hello-',
     },
   },
   site: {
-    defaultLang: 'en-US',
-    versions: [
-      { label: 'Vant 1.x', link: '/vant/1.x/' },
-      { label: 'Vant 2.x', link: '/vant/' },
-      { label: 'Vant Weapp', link: '/vant-weapp/' },
-    ],
+    // defaultLang: 'en-US',
+    // versions: [
+    //   { label: 'Vant 1.x', link: '/vant/1.x/' },
+    //   { label: 'Vant 2.x', link: '/vant/' },
+    //   { label: 'Vant Weapp', link: '/vant-weapp/' },
+    // ],
     baiduAnalytics: {
       seed: 'ad6b5732c36321f2dafed737ac2da92f',
     },
@@ -60,51 +60,51 @@ module.exports = {
         //   },
         // },
         nav: [
-          {
-            title: '开发指南',
-            items: [
-              {
-                path: 'home',
-                title: '介绍',
-              },
-              {
-                path: 'quickstart',
-                title: '快速上手',
-              },
-              {
-                path: 'advanced-usage',
-                title: '进阶用法',
-              },
-              {
-                path: 'changelog-v3',
-                title: '更新日志',
-              },
-              {
-                path: 'migrate-from-v2',
-                title: '从 v2 升级',
-              },
-              {
-                path: 'theme',
-                title: '定制主题',
-              },
-              {
-                path: 'contribution',
-                title: '开发指南',
-              },
-              {
-                path: 'design',
-                title: '设计资源',
-              },
-              {
-                path: 'style-guide',
-                title: '风格指南',
-              },
-              {
-                path: 'locale',
-                title: '国际化',
-              },
-            ],
-          },
+          // {
+          //   title: '开发指南',
+          //   items: [
+          //     {
+          //       path: 'home',
+          //       title: '介绍',
+          //     },
+          //     {
+          //       path: 'quickstart',
+          //       title: '快速上手',
+          //     },
+          //     {
+          //       path: 'advanced-usage',
+          //       title: '进阶用法',
+          //     },
+          //     {
+          //       path: 'changelog-v3',
+          //       title: '更新日志',
+          //     },
+          //     {
+          //       path: 'migrate-from-v2',
+          //       title: '从 v2 升级',
+          //     },
+          //     {
+          //       path: 'theme',
+          //       title: '定制主题',
+          //     },
+          //     {
+          //       path: 'contribution',
+          //       title: '开发指南',
+          //     },
+          //     {
+          //       path: 'design',
+          //       title: '设计资源',
+          //     },
+          //     {
+          //       path: 'style-guide',
+          //       title: '风格指南',
+          //     },
+          //     {
+          //       path: 'locale',
+          //       title: '国际化',
+          //     },
+          //   ],
+          // },
           {
             title: '基础组件',
             items: [
