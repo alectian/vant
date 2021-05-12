@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { AddressEdit } from 'vant';
+import { AddressEdit } from 'hello';
 
 const app = createApp();
 app.use(AddressEdit);
@@ -31,7 +31,7 @@ app.use(AddressEdit);
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

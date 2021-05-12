@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 const app = createApp();
 app.use(Toast);

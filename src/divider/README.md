@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Divider } from 'vant';
+import { Divider } from 'hello';
 
 const app = createApp();
 app.use(Divider);

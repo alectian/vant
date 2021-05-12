@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Sticky } from 'vant';
+import { Sticky } from 'hello';
 
 const app = createApp();
 app.use(Sticky);

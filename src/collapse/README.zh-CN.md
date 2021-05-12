@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Collapse, CollapseItem } from 'vant';
+import { Collapse, CollapseItem } from 'hello';
 
 const app = createApp();
 app.use(Collapse);

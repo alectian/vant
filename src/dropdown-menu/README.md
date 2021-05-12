@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { DropdownMenu, DropdownItem } from 'vant';
+import { DropdownMenu, DropdownItem } from 'hello';
 
 const app = createApp();
 app.use(DropdownMenu);

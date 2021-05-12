@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { TreeSelect } from 'vant';
+import { TreeSelect } from 'hello';
 
 const app = createApp();
 app.use(TreeSelect);

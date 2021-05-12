@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { ContactCard } from 'vant';
+import { ContactCard } from 'hello';
 
 const app = createApp();
 app.use(ContactCard);
@@ -19,7 +19,7 @@ app.use(ContactCard);
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {
@@ -46,7 +46,7 @@ export default {
 
 ```js
 import { reactive } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

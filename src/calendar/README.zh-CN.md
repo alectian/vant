@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Calendar } from 'vant';
+import { Calendar } from 'hello';
 
 const app = createApp();
 app.use(Calendar);

@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Switch } from 'vant';
+import { Switch } from 'hello';
 
 const app = createApp();
 app.use(Switch);
@@ -61,7 +61,7 @@ export default {
 
 ```js
 import { ref } from 'vue';
-import { Dialog } from 'vant';
+import { Dialog } from 'hello';
 
 export default {
   setup() {

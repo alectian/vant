@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Cascader } from 'vant';
+import { Cascader } from 'hello';
 
 const app = createApp();
 app.use(Cascader);

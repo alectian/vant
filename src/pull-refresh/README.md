@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { PullRefresh } from 'vant';
+import { PullRefresh } from 'hello';
 
 const app = createApp();
 app.use(PullRefresh);
@@ -24,7 +24,7 @@ The `refresh` event will be Emitted when pull refresh, you should set `v-model` 
 
 ```js
 import { reactive } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

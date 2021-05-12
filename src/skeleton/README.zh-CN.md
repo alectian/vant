@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Skeleton } from 'vant';
+import { Skeleton } from 'hello';
 
 const app = createApp();
 app.use(Skeleton);

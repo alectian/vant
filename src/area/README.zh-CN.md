@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Area } from 'vant';
+import { Area } from 'hello';
 
 const app = createApp();
 app.use(Area);

@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { PasswordInput, NumberKeyboard } from 'vant';
+import { PasswordInput, NumberKeyboard } from 'hello';
 
 const app = createApp();
 app.use(PasswordInput);

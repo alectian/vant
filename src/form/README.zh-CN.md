@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Form } from 'vant';
+import { Form } from 'hello';
 
 const app = createApp();
 app.use(Form);
@@ -101,7 +101,7 @@ export default {
 
 ```js
 import { reactive } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

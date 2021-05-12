@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Slider } from 'vant';
+import { Slider } from 'hello';
 
 const app = createApp();
 app.use(Slider);
@@ -24,7 +24,7 @@ app.use(Slider);
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {
@@ -50,7 +50,7 @@ export default {
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {
@@ -132,7 +132,7 @@ export default {
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

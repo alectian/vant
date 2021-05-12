@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { IndexBar } from 'vant';
+import { IndexBar } from 'hello';
 
 const app = createApp();
 app.use(IndexBar);

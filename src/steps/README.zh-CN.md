@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Step, Steps } from 'vant';
+import { Step, Steps } from 'hello';
 
 const app = createApp();
 app.use(Step);

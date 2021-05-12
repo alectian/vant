@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { ActionBar, ActionBarIcon, ActionBarButton } from 'vant';
+import { ActionBar, ActionBarIcon, ActionBarButton } from 'hello';
 
 const app = createApp();
 app.use(ActionBar);
@@ -26,7 +26,7 @@ app.use(ActionBarButton);
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

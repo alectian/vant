@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { NoticeBar } from 'vant';
+import { NoticeBar } from 'hello';
 
 const app = createApp();
 app.use(NoticeBar);

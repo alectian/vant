@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { CountDown } from 'vant';
+import { CountDown } from 'hello';
 
 const app = createApp();
 app.use(CountDown);
@@ -90,7 +90,7 @@ export default {
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

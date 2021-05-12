@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Swipe, SwipeItem } from 'vant';
+import { Swipe, SwipeItem } from 'hello';
 
 const app = createApp();
 app.use(Swipe);
@@ -72,7 +72,7 @@ export default {
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

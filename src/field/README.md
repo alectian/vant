@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Field } from 'vant';
+import { Field } from 'hello';
 
 const app = createApp();
 app.use(Field);

@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Tag } from 'vant';
+import { Tag } from 'hello';
 
 const app = createApp();
 app.use(Tag);

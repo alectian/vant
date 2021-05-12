@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Cell, CellGroup } from 'vant';
+import { Cell, CellGroup } from 'hello';
 
 const app = createApp();
 app.use(Cell);

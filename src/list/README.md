@@ -8,7 +8,7 @@ A list component to show items and control loading status.
 
 ```js
 import { createApp } from 'vue';
-import { List } from 'vant';
+import { List } from 'hello';
 
 const app = createApp();
 app.use(List);

@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Overlay } from 'vant';
+import { Overlay } from 'hello';
 
 const app = createApp();
 app.use(Overlay);

@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Search } from 'vant';
+import { Search } from 'hello';
 
 const app = createApp();
 app.use(Search);
@@ -53,7 +53,7 @@ Search 组件提供了 `search` 和 `cancel` 事件，`search` 事件在点击�
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

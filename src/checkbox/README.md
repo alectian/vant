@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Checkbox, CheckboxGroup } from 'vant';
+import { Checkbox, CheckboxGroup } from 'hello';
 
 const app = createApp();
 app.use(Checkbox);

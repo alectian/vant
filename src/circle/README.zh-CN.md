@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Circle } from 'vant';
+import { Circle } from 'hello';
 
 const app = createApp();
 app.use(Circle);

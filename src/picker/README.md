@@ -8,7 +8,7 @@ The Picker component is usually used with [Popup](#/en-US/popup) Component.
 
 ```js
 import { createApp } from 'vue';
-import { Picker } from 'vant';
+import { Picker } from 'hello';
 
 const app = createApp();
 app.use(Picker);
@@ -29,7 +29,7 @@ app.use(Picker);
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

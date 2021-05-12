@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { NumberKeyboard } from 'vant';
+import { NumberKeyboard } from 'hello';
 
 const app = createApp();
 app.use(NumberKeyboard);
@@ -26,7 +26,7 @@ app.use(NumberKeyboard);
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

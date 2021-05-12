@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { SwipeCell } from 'vant';
+import { SwipeCell } from 'hello';
 
 const app = createApp();
 app.use(SwipeCell);
@@ -71,7 +71,7 @@ app.use(SwipeCell);
 ```
 
 ```js
-import { Dialog } from 'vant';
+import { Dialog } from 'hello';
 
 export default {
   setup() {

@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { DatetimePicker } from 'vant';
+import { DatetimePicker } from 'hello';
 
 const app = createApp();
 app.use(DatetimePicker);

@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Lazyload } from 'vant';
+import { Lazyload } from 'hello';
 
 const app = createApp();
 app.use(Lazyload);

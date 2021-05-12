@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Button } from 'vant';
+import { Button } from 'hello';
 
 const app = createApp();
 app.use(Button);

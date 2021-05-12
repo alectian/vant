@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { ActionSheet } from 'vant';
+import { ActionSheet } from 'hello';
 
 const app = createApp();
 app.use(ActionSheet);
@@ -27,7 +27,7 @@ app.use(ActionSheet);
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {
@@ -69,7 +69,7 @@ export default {
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

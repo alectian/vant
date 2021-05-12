@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Tab, Tabs } from 'vant';
+import { Tab, Tabs } from 'hello';
 
 const app = createApp();
 app.use(Tab);
@@ -85,7 +85,7 @@ export default {
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {
@@ -124,7 +124,7 @@ export default {
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Grid, GridItem } from 'vant';
+import { Grid, GridItem } from 'hello';
 
 const app = createApp();
 app.use(Grid);

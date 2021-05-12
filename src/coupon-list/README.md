@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { CouponCell, CouponList } from 'vant';
+import { CouponCell, CouponList } from 'hello';
 
 const app = createApp();
 app.use(CouponCell);

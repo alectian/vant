@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Pagination } from 'vant';
+import { Pagination } from 'hello';
 
 const app = createApp();
 app.use(Pagination);

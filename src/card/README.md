@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Card } from 'vant';
+import { Card } from 'hello';
 
 const app = createApp();
 app.use(Card);

@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { ContactList } from 'vant';
+import { ContactList } from 'hello';
 
 const app = createApp();
 app.use(ContactList);
@@ -31,7 +31,7 @@ app.use(ContactList);
 
 ```js
 import { reactive } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

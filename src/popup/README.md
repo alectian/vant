@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Popup } from 'vant';
+import { Popup } from 'hello';
 
 const app = createApp();
 app.use(Popup);

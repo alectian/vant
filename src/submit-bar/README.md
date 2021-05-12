@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { SubmitBar } from 'vant';
+import { SubmitBar } from 'hello';
 
 const app = createApp();
 app.use(SubmitBar);
@@ -19,7 +19,7 @@ app.use(SubmitBar);
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {
@@ -69,7 +69,7 @@ Use slot to add custom contents.
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Search } from 'vant';
+import { Search } from 'hello';
 
 const app = createApp();
 app.use(Search);
@@ -47,7 +47,7 @@ export default {
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

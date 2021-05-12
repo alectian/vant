@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Rate } from 'vant';
+import { Rate } from 'hello';
 
 const app = createApp();
 app.use(Rate);
@@ -94,7 +94,7 @@ export default {
 
 ```javascript
 import { ref } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

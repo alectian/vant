@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { NavBar } from 'vant';
+import { NavBar } from 'hello';
 
 const app = createApp();
 app.use(NavBar);
@@ -26,7 +26,7 @@ app.use(NavBar);
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {

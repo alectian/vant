@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { RadioGroup, Radio } from 'vant';
+import { RadioGroup, Radio } from 'hello';
 
 const app = createApp();
 app.use(Radio);

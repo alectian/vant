@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Progress } from 'vant';
+import { Progress } from 'hello';
 
 const app = createApp();
 app.use(Progress);

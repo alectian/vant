@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Tabbar, TabbarItem } from 'vant';
+import { Tabbar, TabbarItem } from 'hello';
 
 const app = createApp();
 app.use(Tabbar);
@@ -127,7 +127,7 @@ export default {
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'vant';
+import { Toast } from 'hello';
 
 export default {
   setup() {
