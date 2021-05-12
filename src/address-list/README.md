@@ -15,7 +15,7 @@ app.use(AddressList);
 ### Basic Usage
 
 ```html
-<van-address-list
+<hello-address-list
   v-model="chosenAddressId"
   :list="list"
   :disabled-list="disabledList"

@@ -16,11 +16,11 @@ app.use(TabbarItem);
 ### Basic Usage
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">Tab</van-tabbar-item>
+<hello-tabbar v-model="active">
+  <hello-tabbar-item icon="home-o">Tab</van-tabbar-item>
+  <hello-tabbar-item icon="search">Tab</van-tabbar-item>
+  <hello-tabbar-item icon="friends-o">Tab</van-tabbar-item>
+  <hello-tabbar-item icon="setting-o">Tab</van-tabbar-item>
 </van-tabbar>
 ```
 
@@ -38,11 +38,11 @@ export default {
 ### Match by name
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item name="home" icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item name="search" icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item name="friends" icon="friends-o">Tab</van-tabbar-item>
-  <van-tabbar-item name="setting" icon="setting-o">Tab</van-tabbar-item>
+<hello-tabbar v-model="active">
+  <hello-tabbar-item name="home" icon="home-o">Tab</van-tabbar-item>
+  <hello-tabbar-item name="search" icon="search">Tab</van-tabbar-item>
+  <hello-tabbar-item name="friends" icon="friends-o">Tab</van-tabbar-item>
+  <hello-tabbar-item name="setting" icon="setting-o">Tab</van-tabbar-item>
 </van-tabbar>
 ```
 
@@ -60,11 +60,11 @@ export default {
 ### Show Badge
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="search" dot>Tab</van-tabbar-item>
-  <van-tabbar-item icon="friends-o" badge="5">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o" badge="20">Tab</van-tabbar-item>
+<hello-tabbar v-model="active">
+  <hello-tabbar-item icon="home-o">Tab</van-tabbar-item>
+  <hello-tabbar-item icon="search" dot>Tab</van-tabbar-item>
+  <hello-tabbar-item icon="friends-o" badge="5">Tab</van-tabbar-item>
+  <hello-tabbar-item icon="setting-o" badge="20">Tab</van-tabbar-item>
 </van-tabbar>
 ```
 
@@ -73,15 +73,15 @@ export default {
 Use `icon` slot to custom icon.
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item badge="3">
+<hello-tabbar v-model="active">
+  <hello-tabbar-item badge="3">
     <span>Custom</span>
     <template #icon="props">
       <img :src="props.active ? icon.active : icon.inactive" />
     </template>
   </van-tabbar-item>
-  <van-tabbar-item icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">Tab</van-tabbar-item>
+  <hello-tabbar-item icon="search">Tab</van-tabbar-item>
+  <hello-tabbar-item icon="setting-o">Tab</van-tabbar-item>
 </van-tabbar>
 ```
 
@@ -106,22 +106,22 @@ export default {
 ### Custom Color
 
 ```html
-<van-tabbar v-model="active" active-color="#ee0a24" inactive-color="#000">
-  <van-tabbar-item icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="search">Tab</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">Tab</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">Tab</van-tabbar-item>
+<hello-tabbar v-model="active" active-color="#ee0a24" inactive-color="#000">
+  <hello-tabbar-item icon="home-o">Tab</van-tabbar-item>
+  <hello-tabbar-item icon="search">Tab</van-tabbar-item>
+  <hello-tabbar-item icon="friends-o">Tab</van-tabbar-item>
+  <hello-tabbar-item icon="setting-o">Tab</van-tabbar-item>
 </van-tabbar>
 ```
 
 ### Change Event
 
 ```html
-<van-tabbar v-model="active" @change="onChange">
-  <van-tabbar-item icon="home-o">Tab 1</van-tabbar-item>
-  <van-tabbar-item icon="search">Tab 2</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">Tab 3</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">Tab 4</van-tabbar-item>
+<hello-tabbar v-model="active" @change="onChange">
+  <hello-tabbar-item icon="home-o">Tab 1</van-tabbar-item>
+  <hello-tabbar-item icon="search">Tab 2</van-tabbar-item>
+  <hello-tabbar-item icon="friends-o">Tab 3</van-tabbar-item>
+  <hello-tabbar-item icon="setting-o">Tab 4</van-tabbar-item>
 </van-tabbar>
 ```
 
@@ -149,9 +149,9 @@ export default {
 ```html
 <router-view />
 
-<van-tabbar route>
-  <van-tabbar-item replace to="/home" icon="home-o">Tab</van-tabbar-item>
-  <van-tabbar-item replace to="/search" icon="search">Tab</van-tabbar-item>
+<hello-tabbar route>
+  <hello-tabbar-item replace to="/home" icon="home-o">Tab</van-tabbar-item>
+  <hello-tabbar-item replace to="/search" icon="search">Tab</van-tabbar-item>
 </van-tabbar>
 ```
 

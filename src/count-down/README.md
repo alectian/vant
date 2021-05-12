@@ -15,7 +15,7 @@ app.use(CountDown);
 ### Basic Usage
 
 ```html
-<van-count-down :time="time" />
+<hello-count-down :time="time" />
 ```
 
 ```js
@@ -32,19 +32,19 @@ export default {
 ### Custom Format
 
 ```html
-<van-count-down :time="time" format="DD Day, HH:mm:ss" />
+<hello-count-down :time="time" format="DD Day, HH:mm:ss" />
 ```
 
 ### Millisecond
 
 ```html
-<van-count-down millisecond :time="time" format="HH:mm:ss:SS" />
+<hello-count-down millisecond :time="time" format="HH:mm:ss:SS" />
 ```
 
 ### Custom Style
 
 ```html
-<van-count-down :time="time">
+<hello-count-down :time="time">
   <template #default="timeData">
     <span class="block">{{ timeData.hours }}</span>
     <span class="colon">:</span>
@@ -74,7 +74,7 @@ export default {
 ### Manual Control
 
 ```html
-<van-count-down
+<hello-count-down
   ref="countDown"
   millisecond
   :time="3000"
@@ -82,10 +82,10 @@ export default {
   format="ss:SSS"
   @finish="onFinish"
 />
-<van-grid clickable :column-num="3">
-  <van-grid-item text="Start" icon="play-circle-o" @click="start" />
-  <van-grid-item text="Pause" icon="pause-circle-o" @click="pause" />
-  <van-grid-item text="Reset" icon="replay" @click="reset" />
+<hello-grid clickable :column-num="3">
+  <hello-grid-item text="Start" icon="play-circle-o" @click="start" />
+  <hello-grid-item text="Pause" icon="pause-circle-o" @click="pause" />
+  <hello-grid-item text="Reset" icon="replay" @click="reset" />
 </van-grid>
 ```
 

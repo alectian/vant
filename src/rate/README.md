@@ -15,7 +15,7 @@ app.use(Rate);
 ### Basic Usage
 
 ```html
-<van-rate v-model="value" />
+<hello-rate v-model="value" />
 ```
 
 ```js
@@ -32,13 +32,13 @@ export default {
 ### Custom Icon
 
 ```html
-<van-rate v-model="value" icon="like" void-icon="like-o" />
+<hello-rate v-model="value" icon="like" void-icon="like-o" />
 ```
 
 ### Custom Style
 
 ```html
-<van-rate
+<hello-rate
   v-model="value"
   :size="25"
   color="#ffd21e"
@@ -50,7 +50,7 @@ export default {
 ### Half Star
 
 ```html
-<van-rate v-model="value" allow-half void-icon="star" void-color="#eee" />
+<hello-rate v-model="value" allow-half void-icon="star" void-color="#eee" />
 ```
 
 ```js
@@ -67,25 +67,25 @@ export default {
 ### Custom Count
 
 ```html
-<van-rate v-model="value" :count="6" />
+<hello-rate v-model="value" :count="6" />
 ```
 
 ### Disabled
 
 ```html
-<van-rate v-model="value" disabled />
+<hello-rate v-model="value" disabled />
 ```
 
 ### Readonly
 
 ```html
-<van-rate v-model="value" readonly />
+<hello-rate v-model="value" readonly />
 ```
 
 ### Change Event
 
 ```html
-<van-rate v-model="value" @change="onChange" />
+<hello-rate v-model="value" @change="onChange" />
 ```
 
 ```javascript

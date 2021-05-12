@@ -17,19 +17,19 @@ app.use(Progress);
 Use `percentage` prop to set current progress.
 
 ```html
-<van-progress :percentage="50" />
+<hello-progress :percentage="50" />
 ```
 
 ### Stroke Width
 
 ```html
-<van-progress :percentage="50" stroke-width="8" />
+<hello-progress :percentage="50" stroke-width="8" />
 ```
 
 ### Inactive
 
 ```html
-<van-progress inactive :percentage="50" />
+<hello-progress inactive :percentage="50" />
 ```
 
 ### Custom Style
@@ -37,9 +37,9 @@ Use `percentage` prop to set current progress.
 Use `pivot-text` to custom text，use `color` to custom bar color.
 
 ```html
-<van-progress pivot-text="Orange" color="#f2826a" :percentage="25" />
-<van-progress pivot-text="Red" color="#ee0a24" :percentage="50" />
-<van-progress
+<hello-progress pivot-text="Orange" color="#f2826a" :percentage="25" />
+<hello-progress pivot-text="Red" color="#ee0a24" :percentage="50" />
+<hello-progress
   :percentage="75"
   pivot-text="Purple"
   pivot-color="#7232dd"

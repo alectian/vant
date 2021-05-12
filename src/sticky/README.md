@@ -15,16 +15,16 @@ app.use(Sticky);
 ### Basic Usage
 
 ```html
-<van-sticky>
-  <van-button type="primary">Basic Usage</van-button>
+<hello-sticky>
+  <hello-button type="primary">Basic Usage</van-button>
 </van-sticky>
 ```
 
 ### Offset Top
 
 ```html
-<van-sticky :offset-top="50">
-  <van-button type="primary">Offset Top</van-button>
+<hello-sticky :offset-top="50">
+  <hello-button type="primary">Offset Top</van-button>
 </van-sticky>
 ```
 
@@ -32,8 +32,8 @@ app.use(Sticky);
 
 ```html
 <div ref="container" style="height: 150px;">
-  <van-sticky :container="container">
-    <van-button type="warning">Set Container</van-button>
+  <hello-sticky :container="container">
+    <hello-button type="warning">Set Container</van-button>
   </van-sticky>
 </div>
 ```

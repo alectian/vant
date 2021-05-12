@@ -21,16 +21,16 @@ app.use(Badge);
 设置 `content` 属性后，Badge 会在子元素的右上角显示对应的徽标，也可以通过 `dot` 来显示小红点。
 
 ```html
-<van-badge :content="5">
+<hello-badge :content="5">
   <div class="child" />
 </van-badge>
-<van-badge :content="10">
+<hello-badge :content="10">
   <div class="child" />
 </van-badge>
-<van-badge content="Hot">
+<hello-badge content="Hot">
   <div class="child" />
 </van-badge>
-<van-badge dot>
+<hello-badge dot>
   <div class="child" />
 </van-badge>
 
@@ -49,13 +49,13 @@ app.use(Badge);
 设置 `max` 属性后，当 `content` 的数值超过最大值时，会自动显示为 `{max}+`。
 
 ```html
-<van-badge :content="20" max="9">
+<hello-badge :content="20" max="9">
   <div class="child" />
 </van-badge>
-<van-badge :content="50" max="20">
+<hello-badge :content="50" max="20">
   <div class="child" />
 </van-badge>
-<van-badge :content="200" max="99">
+<hello-badge :content="200" max="99">
   <div class="child" />
 </van-badge>
 ```
@@ -65,13 +65,13 @@ app.use(Badge);
 通过 `color` 属性来设置徽标的颜色。
 
 ```html
-<van-badge :content="5" color="#1989fa">
+<hello-badge :content="5" color="#1989fa">
   <div class="child" />
 </van-badge>
-<van-badge :content="10" color="#1989fa">
+<hello-badge :content="10" color="#1989fa">
   <div class="child" />
 </van-badge>
-<van-badge dot color="#1989fa">
+<hello-badge dot color="#1989fa">
   <div class="child" />
 </van-badge>
 ```
@@ -81,22 +81,22 @@ app.use(Badge);
 通过 `content` 插槽可以自定义徽标的内容，比如插入一个图标。
 
 ```html
-<van-badge>
+<hello-badge>
   <div class="child" />
   <template #content>
-    <van-icon name="success" class="badge-icon" />
+    <hello-icon name="success" class="badge-icon" />
   </template>
 </van-badge>
-<van-badge>
+<hello-badge>
   <div class="child" />
   <template #content>
-    <van-icon name="cross" class="badge-icon" />
+    <hello-icon name="cross" class="badge-icon" />
   </template>
 </van-badge>
-<van-badge>
+<hello-badge>
   <div class="child" />
   <template #content>
-    <van-icon name="down" class="badge-icon" />
+    <hello-icon name="down" class="badge-icon" />
   </template>
 </van-badge>
 ```
@@ -114,9 +114,9 @@ app.use(Badge);
 当 Badge 没有子元素时，会作为一个独立的元素进行展示。
 
 ```html
-<van-badge :content="20" />
+<hello-badge :content="20" />
 
-<van-badge :content="200" max="99" />
+<hello-badge :content="200" max="99" />
 ```
 
 ## API

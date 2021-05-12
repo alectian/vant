@@ -15,7 +15,7 @@ app.use(Cascader);
 ### Basic Usage
 
 ```html
-<van-field
+<hello-field
   v-model="state.fieldValue"
   is-link
   readonly
@@ -23,8 +23,8 @@ app.use(Cascader);
   placeholder="Select Area"
   @click="state.show = true"
 />
-<van-popup v-model="state.show" round position="bottom">
-  <van-cascader
+<hello-popup v-model="state.show" round position="bottom">
+  <hello-cascader
     v-model="state.cascaderValue"
     title="Select Area"
     :options="options"
@@ -73,7 +73,7 @@ export default {
 ### Custom Color
 
 ```html
-<van-cascader
+<hello-cascader
   v-model="state.cascaderValue"
   title="Select Area"
   :options="options"
@@ -86,7 +86,7 @@ export default {
 ### Async Options
 
 ```html
-<van-field
+<hello-field
   v-model="state.fieldValue"
   is-link
   readonly
@@ -94,8 +94,8 @@ export default {
   placeholder="Select Area"
   @click="state.show = true"
 />
-<van-popup v-model="state.show" round position="bottom">
-  <van-cascader
+<hello-popup v-model="state.show" round position="bottom">
+  <hello-cascader
     v-model="state.cascaderValue"
     title="Select Area"
     :options="state.options"

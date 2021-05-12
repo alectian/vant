@@ -23,13 +23,13 @@ app.use(NumberKeyboard);
 
 ```html
 <!-- 密码输入框 -->
-<van-password-input
+<hello-password-input
   :value="value"
   :focused="showKeyboard"
   @focus="showKeyboard = true"
 />
 <!-- 数字键盘 -->
-<van-number-keyboard
+<hello-number-keyboard
   v-model="value"
   :show="showKeyboard"
   @blur="showKeyboard = false"
@@ -57,7 +57,7 @@ export default {
 通过 `length` 属性来设置密码长度。
 
 ```html
-<van-password-input
+<hello-password-input
   :value="value"
   :length="4"
   :focused="showKeyboard"
@@ -70,7 +70,7 @@ export default {
 通过 `gutter` 属性来设置格子之间的间距。
 
 ```html
-<van-password-input
+<hello-password-input
   :value="value"
   :gutter="10"
   :focused="showKeyboard"
@@ -83,7 +83,7 @@ export default {
 将 `mask` 设置为 `false` 可以明文展示输入的内容，适用于短信验证码等场景。
 
 ```html
-<van-password-input
+<hello-password-input
   :value="value"
   :mask="false"
   :focused="showKeyboard"
@@ -96,14 +96,14 @@ export default {
 通过 `info` 属性设置提示信息，通过 `error-info` 属性设置错误提示，例如当输入六位时提示密码错误。
 
 ```html
-<van-password-input
+<hello-password-input
   :value="value"
   info="密码为 6 位数字"
   :error-info="errorInfo"
   :focused="showKeyboard"
   @focus="showKeyboard = true"
 />
-<van-number-keyboard
+<hello-number-keyboard
   v-model="value"
   :show="showKeyboard"
   @blur="showKeyboard = false"

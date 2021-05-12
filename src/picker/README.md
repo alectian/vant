@@ -19,7 +19,7 @@ app.use(Picker);
 ### Basic Usage
 
 ```html
-<van-picker
+<hello-picker
   title="Title"
   :columns="columns"
   @confirm="onConfirm"
@@ -58,13 +58,13 @@ export default {
 ### Default Index
 
 ```html
-<van-picker title="Title" :columns="columns" :default-index="2" />
+<hello-picker title="Title" :columns="columns" :default-index="2" />
 ```
 
 ### Multiple Columns
 
 ```html
-<van-picker title="Title" :columns="columns" />
+<hello-picker title="Title" :columns="columns" />
 ```
 
 ```js
@@ -89,7 +89,7 @@ export default {
 ### Cascade
 
 ```html
-<van-picker title="Title" :columns="columns" />
+<hello-picker title="Title" :columns="columns" />
 ```
 
 ```js
@@ -132,7 +132,7 @@ export default {
 ### Disable option
 
 ```html
-<van-picker :columns="columns" />
+<hello-picker :columns="columns" />
 ```
 
 ```js
@@ -152,7 +152,7 @@ export default {
 ### Set Column Values
 
 ```html
-<van-picker ref="picker" title="Title" :columns="columns" @change="onChange" />
+<hello-picker ref="picker" title="Title" :columns="columns" @change="onChange" />
 ```
 
 ```js
@@ -189,7 +189,7 @@ export default {
 When Picker columns data is acquired asynchronously, use `loading` prop to show loading prompt.
 
 ```html
-<van-picker title="Title" :columns="columns" :loading="loading" />
+<hello-picker title="Title" :columns="columns" :loading="loading" />
 ```
 
 ```js
@@ -215,7 +215,7 @@ export default {
 ### With Popup
 
 ```html
-<van-field
+<hello-field
   readonly
   clickable
   label="City"
@@ -223,8 +223,8 @@ export default {
   placeholder="Choose City"
   @click="showPicker = true"
 />
-<van-popup v-model:show="showPicker" round position="bottom">
-  <van-picker
+<hello-popup v-model:show="showPicker" round position="bottom">
+  <hello-picker
     title="Title"
     :columns="columns"
     @cancel="showPicker = false"

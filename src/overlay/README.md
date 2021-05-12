@@ -15,8 +15,8 @@ app.use(Overlay);
 ### Basic Usage
 
 ```html
-<van-button type="primary" text="Show Overlay" @click="show = true" />
-<van-overlay :show="show" @click="show = false" />
+<hello-button type="primary" text="Show Overlay" @click="show = true" />
+<hello-overlay :show="show" @click="show = false" />
 ```
 
 ```js
@@ -33,7 +33,7 @@ export default {
 ### Embedded Content
 
 ```html
-<van-overlay :show="show" @click="show = false">
+<hello-overlay :show="show" @click="show = false">
   <div class="wrapper" @click.stop>
     <div class="block" />
   </div>

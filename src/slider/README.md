@@ -15,7 +15,7 @@ app.use(Slider);
 ### Basic Usage
 
 ```html
-<van-slider v-model="value" @change="onChange" />
+<hello-slider v-model="value" @change="onChange" />
 ```
 
 ```js
@@ -41,7 +41,7 @@ export default {
 Add `range` attribute to open dual thumb mode.
 
 ```html
-<van-slider v-model="value" range @change="onChange" />
+<hello-slider v-model="value" range @change="onChange" />
 ```
 
 ```js
@@ -66,31 +66,31 @@ export default {
 ### Range
 
 ```html
-<van-slider v-model="value" :min="-50" :max="50" />
+<hello-slider v-model="value" :min="-50" :max="50" />
 ```
 
 ### Disabled
 
 ```html
-<van-slider v-model="value" disabled />
+<hello-slider v-model="value" disabled />
 ```
 
 ### Step size
 
 ```html
-<van-slider v-model="value" :step="10" />
+<hello-slider v-model="value" :step="10" />
 ```
 
 ### Custom style
 
 ```html
-<van-slider v-model="value" bar-height="4px" active-color="#ee0a24" />
+<hello-slider v-model="value" bar-height="4px" active-color="#ee0a24" />
 ```
 
 ### Custom button
 
 ```html
-<van-slider v-model="value" active-color="#ee0a24">
+<hello-slider v-model="value" active-color="#ee0a24">
   <template #button>
     <div class="custom-button">{{ value }}</div>
   </template>
@@ -113,8 +113,8 @@ export default {
 
 ```html
 <div :style="{ height: '150px' }">
-  <van-slider v-model="value" vertical @change="onChange" />
-  <van-slider
+  <hello-slider v-model="value" vertical @change="onChange" />
+  <hello-slider
     v-model="value2"
     range
     vertical

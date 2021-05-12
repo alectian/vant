@@ -15,7 +15,7 @@ app.use(NavBar);
 ### 基础用法
 
 ```html
-<van-nav-bar
+<hello-nav-bar
   title="标题"
   left-text="返回"
   right-text="按钮"
@@ -49,9 +49,9 @@ export default {
 通过插槽自定义导航栏两侧的内容。
 
 ```html
-<van-nav-bar title="标题" left-text="返回" left-arrow>
+<hello-nav-bar title="标题" left-text="返回" left-arrow>
   <template #right>
-    <van-icon name="search" size="18" />
+    <hello-icon name="search" size="18" />
   </template>
 </van-nav-bar>
 ```

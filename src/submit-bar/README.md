@@ -15,7 +15,7 @@ app.use(SubmitBar);
 ### Basic Usage
 
 ```html
-<van-submit-bar :price="3050" button-text="Submit" @submit="onSubmit" />
+<hello-submit-bar :price="3050" button-text="Submit" @submit="onSubmit" />
 ```
 
 ```js
@@ -39,7 +39,7 @@ export default {
 `submit` event will not triggerd when disabled.
 
 ```html
-<van-submit-bar
+<hello-submit-bar
   disabled
   :price="3050"
   button-text="Submit"
@@ -54,7 +54,7 @@ export default {
 `submit` event will not triggerd when loading.
 
 ```html
-<van-submit-bar loading :price="3050" button-text="Submit" @submit="onSubmit" />
+<hello-submit-bar loading :price="3050" button-text="Submit" @submit="onSubmit" />
 ```
 
 ### Advanced Usage
@@ -62,8 +62,8 @@ export default {
 Use slot to add custom contents.
 
 ```html
-<van-submit-bar :price="3050" button-text="Submit" @submit="onSubmit">
-  <van-checkbox v-model="checked">Check</van-checkbox>
+<hello-submit-bar :price="3050" button-text="Submit" @submit="onSubmit">
+  <hello-checkbox v-model="checked">Check</van-checkbox>
   <template #tip> Some tips, <span @click="onClickLink">Link</span> </template>
 </van-submit-bar>
 ```

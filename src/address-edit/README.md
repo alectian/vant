@@ -15,7 +15,7 @@ app.use(AddressEdit);
 ### Basic Usage
 
 ```html
-<van-address-edit
+<hello-address-edit
   :area-list="areaList"
   show-postal
   show-delete

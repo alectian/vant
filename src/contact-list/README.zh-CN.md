@@ -19,7 +19,7 @@ app.use(ContactList);
 ### 基础用法
 
 ```html
-<van-contact-list
+<hello-contact-list
   v-model="state.chosenContactId"
   :list="state.list"
   default-tag-text="默认"

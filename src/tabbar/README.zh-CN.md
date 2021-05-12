@@ -18,11 +18,11 @@ app.use(TabbarItem);
 `v-model` 默认绑定选中标签的索引值，通过修改 `v-model` 即可切换选中的标签。
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="search">标签</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
+<hello-tabbar v-model="active">
+  <hello-tabbar-item icon="home-o">标签</van-tabbar-item>
+  <hello-tabbar-item icon="search">标签</van-tabbar-item>
+  <hello-tabbar-item icon="friends-o">标签</van-tabbar-item>
+  <hello-tabbar-item icon="setting-o">标签</van-tabbar-item>
 </van-tabbar>
 ```
 
@@ -42,11 +42,11 @@ export default {
 在标签指定 `name` 属性的情况下，`v-model` 的值为当前标签的 `name`。
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item name="home" icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item name="search" icon="search">标签</van-tabbar-item>
-  <van-tabbar-item name="friends" icon="friends-o">标签</van-tabbar-item>
-  <van-tabbar-item name="setting" icon="setting-o">标签</van-tabbar-item>
+<hello-tabbar v-model="active">
+  <hello-tabbar-item name="home" icon="home-o">标签</van-tabbar-item>
+  <hello-tabbar-item name="search" icon="search">标签</van-tabbar-item>
+  <hello-tabbar-item name="friends" icon="friends-o">标签</van-tabbar-item>
+  <hello-tabbar-item name="setting" icon="setting-o">标签</van-tabbar-item>
 </van-tabbar>
 ```
 
@@ -66,11 +66,11 @@ export default {
 设置 `dot` 属性后，会在图标右上角展示一个小红点；设置 `badge` 属性后，会在图标右上角展示相应的徽标。
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="search" dot>标签</van-tabbar-item>
-  <van-tabbar-item icon="friends-o" badge="5">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o" badge="20">标签</van-tabbar-item>
+<hello-tabbar v-model="active">
+  <hello-tabbar-item icon="home-o">标签</van-tabbar-item>
+  <hello-tabbar-item icon="search" dot>标签</van-tabbar-item>
+  <hello-tabbar-item icon="friends-o" badge="5">标签</van-tabbar-item>
+  <hello-tabbar-item icon="setting-o" badge="20">标签</van-tabbar-item>
 </van-tabbar>
 ```
 
@@ -79,15 +79,15 @@ export default {
 通过 `icon` 插槽自定义图标，可以通过 `slot-scope` 判断标签是否选中。
 
 ```html
-<van-tabbar v-model="active">
-  <van-tabbar-item badge="3">
+<hello-tabbar v-model="active">
+  <hello-tabbar-item badge="3">
     <span>自定义</span>
     <template #icon="props">
       <img :src="props.active ? icon.active : icon.inactive" />
     </template>
   </van-tabbar-item>
-  <van-tabbar-item icon="search">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
+  <hello-tabbar-item icon="search">标签</van-tabbar-item>
+  <hello-tabbar-item icon="setting-o">标签</van-tabbar-item>
 </van-tabbar>
 ```
 
@@ -112,22 +112,22 @@ export default {
 ### 自定义颜色
 
 ```html
-<van-tabbar v-model="active" active-color="#ee0a24" inactive-color="#000">
-  <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="search">标签</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
+<hello-tabbar v-model="active" active-color="#ee0a24" inactive-color="#000">
+  <hello-tabbar-item icon="home-o">标签</van-tabbar-item>
+  <hello-tabbar-item icon="search">标签</van-tabbar-item>
+  <hello-tabbar-item icon="friends-o">标签</van-tabbar-item>
+  <hello-tabbar-item icon="setting-o">标签</van-tabbar-item>
 </van-tabbar>
 ```
 
 ### 监听切换事件
 
 ```html
-<van-tabbar v-model="active" @change="onChange">
-  <van-tabbar-item icon="home-o">标签 1</van-tabbar-item>
-  <van-tabbar-item icon="search">标签 2</van-tabbar-item>
-  <van-tabbar-item icon="friends-o">标签 3</van-tabbar-item>
-  <van-tabbar-item icon="setting-o">标签 4</van-tabbar-item>
+<hello-tabbar v-model="active" @change="onChange">
+  <hello-tabbar-item icon="home-o">标签 1</van-tabbar-item>
+  <hello-tabbar-item icon="search">标签 2</van-tabbar-item>
+  <hello-tabbar-item icon="friends-o">标签 3</van-tabbar-item>
+  <hello-tabbar-item icon="setting-o">标签 4</van-tabbar-item>
 </van-tabbar>
 ```
 
@@ -157,9 +157,9 @@ export default {
 ```html
 <router-view />
 
-<van-tabbar route>
-  <van-tabbar-item replace to="/home" icon="home-o">标签</van-tabbar-item>
-  <van-tabbar-item replace to="/search" icon="search">标签</van-tabbar-item>
+<hello-tabbar route>
+  <hello-tabbar-item replace to="/home" icon="home-o">标签</van-tabbar-item>
+  <hello-tabbar-item replace to="/search" icon="search">标签</van-tabbar-item>
 </van-tabbar>
 ```
 

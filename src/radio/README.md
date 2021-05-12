@@ -18,9 +18,9 @@ app.use(RadioGroup);
 Use `v-model` to bind the name of checked radio.
 
 ```html
-<van-radio-group v-model="checked">
-  <van-radio name="1">Radio 1</van-radio>
-  <van-radio name="2">Radio 2</van-radio>
+<hello-radio-group v-model="checked">
+  <hello-radio name="1">Radio 1</van-radio>
+  <hello-radio name="2">Radio 2</van-radio>
 </van-radio-group>
 ```
 
@@ -38,45 +38,45 @@ export default {
 ### Horizontal
 
 ```html
-<van-radio-group v-model="checked" direction="horizontal">
-  <van-radio name="1">Radio 1</van-radio>
-  <van-radio name="2">Radio 2</van-radio>
+<hello-radio-group v-model="checked" direction="horizontal">
+  <hello-radio name="1">Radio 1</van-radio>
+  <hello-radio name="2">Radio 2</van-radio>
 </van-radio-group>
 ```
 
 ### Disabled
 
 ```html
-<van-radio-group v-model="checked" disabled>
-  <van-radio name="1">Radio 1</van-radio>
-  <van-radio name="2">Radio 2</van-radio>
+<hello-radio-group v-model="checked" disabled>
+  <hello-radio name="1">Radio 1</van-radio>
+  <hello-radio name="2">Radio 2</van-radio>
 </van-radio-group>
 ```
 
 ### Custom Shape
 
 ```html
-<van-radio-group v-model="checked">
-  <van-radio name="1" shape="square">Radio 1</van-radio>
-  <van-radio name="2" shape="square">Radio 2</van-radio>
+<hello-radio-group v-model="checked">
+  <hello-radio name="1" shape="square">Radio 1</van-radio>
+  <hello-radio name="2" shape="square">Radio 2</van-radio>
 </van-radio-group>
 ```
 
 ### Custom Color
 
 ```html
-<van-radio-group v-model="checked">
-  <van-radio name="1" checked-color="#ee0a24">Radio 1</van-radio>
-  <van-radio name="2" checked-color="#ee0a24">Radio 2</van-radio>
+<hello-radio-group v-model="checked">
+  <hello-radio name="1" checked-color="#ee0a24">Radio 1</van-radio>
+  <hello-radio name="2" checked-color="#ee0a24">Radio 2</van-radio>
 </van-radio-group>
 ```
 
 ### Custom Icon Size
 
 ```html
-<van-radio-group v-model="checked">
-  <van-radio name="1" icon-size="24px">Radio 1</van-radio>
-  <van-radio name="2" icon-size="24px">Radio 2</van-radio>
+<hello-radio-group v-model="checked">
+  <hello-radio name="1" icon-size="24px">Radio 1</van-radio>
+  <hello-radio name="2" icon-size="24px">Radio 2</van-radio>
 </van-radio-group>
 ```
 
@@ -85,14 +85,14 @@ export default {
 Use icon slot to custom icon
 
 ```html
-<van-radio-group v-model="checked">
-  <van-radio name="1">
+<hello-radio-group v-model="checked">
+  <hello-radio name="1">
     Radio 1
     <template #icon="props">
       <img class="img-icon" :src="props.checked ? activeIcon : inactiveIcon" />
     </template>
   </van-radio>
-  <van-radio name="2">
+  <hello-radio name="2">
     Radio 2
     <template #icon="props">
       <img class="img-icon" :src="props.checked ? activeIcon : inactiveIcon" />
@@ -125,25 +125,25 @@ export default {
 ### Disable Label Click
 
 ```html
-<van-radio-group v-model="checked">
-  <van-radio name="1" label-disabled>Radio 1</van-radio>
-  <van-radio name="2" label-disabled>Radio 2</van-radio>
+<hello-radio-group v-model="checked">
+  <hello-radio name="1" label-disabled>Radio 1</van-radio>
+  <hello-radio name="2" label-disabled>Radio 2</van-radio>
 </van-radio-group>
 ```
 
 ### Inside a Cell
 
 ```html
-<van-radio-group v-model="checked">
-  <van-cell-group>
-    <van-cell title="Radio 1" clickable @click="checked = '1'">
+<hello-radio-group v-model="checked">
+  <hello-cell-group>
+    <hello-cell title="Radio 1" clickable @click="checked = '1'">
       <template #right-icon>
-        <van-radio name="1" />
+        <hello-radio name="1" />
       </template>
     </van-cell>
-    <van-cell title="Radio 2" clickable @click="checked = '2'">
+    <hello-cell title="Radio 2" clickable @click="checked = '2'">
       <template #right-icon>
-        <van-radio name="2" />
+        <hello-radio name="2" />
       </template>
     </van-cell>
   </van-cell-group>

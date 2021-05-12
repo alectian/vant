@@ -11,7 +11,7 @@
 Vant 提供了丰富的组件插槽，通过插槽可以对组件的某一部分进行个性化定制。如果你对 Vue 的插槽不太熟悉，可以阅读 Vue 官方文档中的[插槽章节](https://v3.cn.vuejs.org/guide/component-slots.html)。下面是通过插槽来定制 Checkbox 图标的示例：
 
 ```html
-<van-checkbox v-model="checked">
+<hello-checkbox v-model="checked">
   <!-- 使用组件提供的 icon 插槽 -->
   <!-- 将默认图标替换为个性化图片 -->
   <template #icon="props">
@@ -38,7 +38,7 @@ Vant 中的许多组件提供了实例方法，调用实例方法时，我们需
 
 ```html
 <!-- 通过 ref 属性将组件绑定到 this.$refs.checkbox 上 -->
-<van-checkbox v-model="checked" ref="checkbox">
+<hello-checkbox v-model="checked" ref="checkbox">
   复选框
 </van-checkbox>
 ```
@@ -114,10 +114,10 @@ iPhone X 等机型底部存在底部指示条，指示条的操作区域与页�
 />
 
 <!-- 开启顶部安全区适配 -->
-<van-nav-bar safe-area-inset-top />
+<hello-nav-bar safe-area-inset-top />
 
 <!-- 开启底部安全区适配 -->
-<van-number-keyboard safe-area-inset-bottom />
+<hello-number-keyboard safe-area-inset-bottom />
 ```
 
 <img src="https://img.yzcdn.cn/vant/safearea.png">

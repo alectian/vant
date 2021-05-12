@@ -21,11 +21,11 @@ app.use(Button);
 按钮支持 `default`、`primary`、`success`、`warning`、`danger` 五种类型，默认为 `default`。
 
 ```html
-<van-button type="primary">主要按钮</van-button>
-<van-button type="success">成功按钮</van-button>
-<van-button type="default">默认按钮</van-button>
-<van-button type="warning">警告按钮</van-button>
-<van-button type="danger">危险按钮</van-button>
+<hello-button type="primary">主要按钮</van-button>
+<hello-button type="success">成功按钮</van-button>
+<hello-button type="default">默认按钮</van-button>
+<hello-button type="warning">警告按钮</van-button>
+<hello-button type="danger">危险按钮</van-button>
 ```
 
 ### 朴素按钮
@@ -33,8 +33,8 @@ app.use(Button);
 通过 `plain` 属性将按钮设置为朴素按钮，朴素按钮的文字为按钮颜色，背景为白色。
 
 ```html
-<van-button plain type="primary">朴素按钮</van-button>
-<van-button plain type="primary">朴素按钮</van-button>
+<hello-button plain type="primary">朴素按钮</van-button>
+<hello-button plain type="primary">朴素按钮</van-button>
 ```
 
 ### 细边框
@@ -42,8 +42,8 @@ app.use(Button);
 设置 `hairline` 属性可以展示 0.5px 的细边框。
 
 ```html
-<van-button plain hairline type="primary">细边框按钮</van-button>
-<van-button plain hairline type="primary">细边框按钮</van-button>
+<hello-button plain hairline type="primary">细边框按钮</van-button>
+<hello-button plain hairline type="primary">细边框按钮</van-button>
 ```
 
 ### 禁用状态
@@ -51,8 +51,8 @@ app.use(Button);
 通过 `disabled` 属性来禁用按钮，禁用状态下按钮不可点击。
 
 ```html
-<van-button disabled type="primary">禁用状态</van-button>
-<van-button disabled type="primary">禁用状态</van-button>
+<hello-button disabled type="primary">禁用状态</van-button>
+<hello-button disabled type="primary">禁用状态</van-button>
 ```
 
 ### 加载状态
@@ -60,9 +60,9 @@ app.use(Button);
 通过 `loading` 属性设置按钮为加载状态，加载状态下默认会隐藏按钮文字，可以通过 `loading-text` 设置加载状态下的文字。
 
 ```html
-<van-button loading type="primary" />
-<van-button loading type="primary" loading-type="spinner" />
-<van-button loading type="primary" loading-text="加载中..." />
+<hello-button loading type="primary" />
+<hello-button loading type="primary" loading-type="spinner" />
+<hello-button loading type="primary" loading-text="加载中..." />
 ```
 
 ### 按钮形状
@@ -70,8 +70,8 @@ app.use(Button);
 通过 `square` 设置方形按钮，通过 `round` 设置圆形按钮。
 
 ```html
-<van-button square type="primary">方形按钮</van-button>
-<van-button round type="primary">圆形按钮</van-button>
+<hello-button square type="primary">方形按钮</van-button>
+<hello-button round type="primary">圆形按钮</van-button>
 ```
 
 ### 图标按钮
@@ -79,9 +79,9 @@ app.use(Button);
 通过 `icon` 属性设置按钮图标，支持 Icon 组件里的所有图标，也可以传入图标 URL。
 
 ```html
-<van-button icon="plus" type="primary" />
-<van-button icon="plus" type="primary">按钮</van-button>
-<van-button icon="https://img.yzcdn.cn/vant/user-active.png" type="primary">
+<hello-button icon="plus" type="primary" />
+<hello-button icon="plus" type="primary">按钮</van-button>
+<hello-button icon="https://img.yzcdn.cn/vant/user-active.png" type="primary">
   按钮
 </van-button>
 ```
@@ -91,10 +91,10 @@ app.use(Button);
 支持 `large`、`normal`、`small`、`mini` 四种尺寸，默认为 `normal`。
 
 ```html
-<van-button type="primary" size="large">大号按钮</van-button>
-<van-button type="primary" size="normal">普通按钮</van-button>
-<van-button type="primary" size="small">小型按钮</van-button>
-<van-button type="primary" size="mini">迷你按钮</van-button>
+<hello-button type="primary" size="large">大号按钮</van-button>
+<hello-button type="primary" size="normal">普通按钮</van-button>
+<hello-button type="primary" size="small">小型按钮</van-button>
+<hello-button type="primary" size="mini">迷你按钮</van-button>
 ```
 
 ### 块级元素
@@ -102,7 +102,7 @@ app.use(Button);
 按钮在默认情况下为行内块级元素，通过 `block` 属性可以将按钮的元素类型设置为块级元素。
 
 ```html
-<van-button type="primary" block>块级元素</van-button>
+<hello-button type="primary" block>块级元素</van-button>
 ```
 
 ### 页面导航
@@ -110,8 +110,8 @@ app.use(Button);
 可以通过 `url` 属性进行 URL 跳转，或通过 `to` 属性进行路由跳转。
 
 ```html
-<van-button type="primary" url="/vant/mobile.html">URL 跳转</van-button>
-<van-button type="primary" to="index">路由跳转</van-button>
+<hello-button type="primary" url="/vant/mobile.html">URL 跳转</van-button>
+<hello-button type="primary" to="index">路由跳转</van-button>
 ```
 
 ### 自定义颜色
@@ -119,9 +119,9 @@ app.use(Button);
 通过 `color` 属性可以自定义按钮的颜色。
 
 ```html
-<van-button color="#7232dd">单色按钮</van-button>
-<van-button color="#7232dd" plain>单色按钮</van-button>
-<van-button color="linear-gradient(to right, #ff6034, #ee0a24)">
+<hello-button color="#7232dd">单色按钮</van-button>
+<hello-button color="#7232dd" plain>单色按钮</van-button>
+<hello-button color="linear-gradient(to right, #ff6034, #ee0a24)">
   渐变色按钮
 </van-button>
 ```

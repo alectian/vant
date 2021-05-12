@@ -22,11 +22,11 @@ app.use(SwipeItem);
 每个 SwipeItem 代表一张轮播卡片，可以通过 `autoplay` 属性设置自动轮播的间隔。
 
 ```html
-<van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<hello-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+  <hello-swipe-item>1</van-swipe-item>
+  <hello-swipe-item>2</van-swipe-item>
+  <hello-swipe-item>3</van-swipe-item>
+  <hello-swipe-item>4</van-swipe-item>
 </van-swipe>
 
 <style>
@@ -45,8 +45,8 @@ app.use(SwipeItem);
 当 Swipe 中含有图片时，可以通过 `lazy-render` 属性来开启懒加载模式。在懒加载模式下，只会渲染当前页和下一页。
 
 ```html
-<van-swipe :autoplay="3000" lazy-render>
-  <van-swipe-item v-for="image in images" :key="image">
+<hello-swipe :autoplay="3000" lazy-render>
+  <hello-swipe-item v-for="image in images" :key="image">
     <img :src="image" />
   </van-swipe-item>
 </van-swipe>
@@ -67,11 +67,11 @@ export default {
 ### 监听 change 事件
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<hello-swipe @change="onChange">
+  <hello-swipe-item>1</van-swipe-item>
+  <hello-swipe-item>2</van-swipe-item>
+  <hello-swipe-item>3</van-swipe-item>
+  <hello-swipe-item>4</van-swipe-item>
 </van-swipe>
 ```
 
@@ -93,11 +93,11 @@ export default {
 设置 `vertical` 属性后滑块会纵向排列，此时需要指定滑块容器的高度。
 
 ```html
-<van-swipe style="height: 200px;" vertical>
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<hello-swipe style="height: 200px;" vertical>
+  <hello-swipe-item>1</van-swipe-item>
+  <hello-swipe-item>2</van-swipe-item>
+  <hello-swipe-item>3</van-swipe-item>
+  <hello-swipe-item>4</van-swipe-item>
 </van-swipe>
 ```
 
@@ -106,11 +106,11 @@ export default {
 滑块默认宽度为 `100%`，可以通过 `width` 属性设置单个滑块的宽度。纵向滚动模式下，可以通过 `height` 属性设置单个滑块的高度。
 
 ```html
-<van-swipe :loop="false" :width="300">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<hello-swipe :loop="false" :width="300">
+  <hello-swipe-item>1</van-swipe-item>
+  <hello-swipe-item>2</van-swipe-item>
+  <hello-swipe-item>3</van-swipe-item>
+  <hello-swipe-item>4</van-swipe-item>
 </van-swipe>
 ```
 
@@ -121,11 +121,11 @@ export default {
 通过 `indicator` 插槽可以自定义指示器的样式。
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<hello-swipe @change="onChange">
+  <hello-swipe-item>1</van-swipe-item>
+  <hello-swipe-item>2</van-swipe-item>
+  <hello-swipe-item>3</van-swipe-item>
+  <hello-swipe-item>4</van-swipe-item>
   <template #indicator>
     <div class="custom-indicator">{{ current + 1 }}/4</div>
   </template>
@@ -254,15 +254,15 @@ Swipe 组件在挂载时，会获取自身的宽度，并计算出轮播图的�
 
 ```html
 <!-- Before -->
-<van-swipe v-show="show" />
+<hello-swipe v-show="show" />
 <!-- After -->
-<van-swipe v-if="show" />
+<hello-swipe v-if="show" />
 ```
 
 方法二，调用组件的 resize 方法来主动触发重绘：
 
 ```html
-<van-swipe v-show="show" ref="swipe" />
+<hello-swipe v-show="show" ref="swipe" />
 ```
 
 ```js

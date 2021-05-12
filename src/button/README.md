@@ -15,55 +15,55 @@ app.use(Button);
 ### Type
 
 ```html
-<van-button type="primary">Primary</van-button>
-<van-button type="success">Success</van-button>
-<van-button type="default">Default</van-button>
-<van-button type="danger">Danger</van-button>
-<van-button type="warning">Warning</van-button>
+<hello-button type="primary">Primary</van-button>
+<hello-button type="success">Success</van-button>
+<hello-button type="default">Default</van-button>
+<hello-button type="danger">Danger</van-button>
+<hello-button type="warning">Warning</van-button>
 ```
 
 ### Plain
 
 ```html
-<van-button plain type="primary">Primary</van-button>
-<van-button plain type="primary">Danger</van-button>
+<hello-button plain type="primary">Primary</van-button>
+<hello-button plain type="primary">Danger</van-button>
 ```
 
 ### Hairline
 
 ```html
-<van-button plain hairline type="primary">Hairline</van-button>
-<van-button plain hairline type="primary">Hairline</van-button>
+<hello-button plain hairline type="primary">Hairline</van-button>
+<hello-button plain hairline type="primary">Hairline</van-button>
 ```
 
 ### Disabled
 
 ```html
-<van-button disabled type="primary">Diabled</van-button>
-<van-button disabled type="primary">Diabled</van-button>
+<hello-button disabled type="primary">Diabled</van-button>
+<hello-button disabled type="primary">Diabled</van-button>
 ```
 
 ### Loading
 
 ```html
-<van-button loading type="primary" />
-<van-button loading type="primary" loading-type="spinner" />
-<van-button loading type="primary" loading-text="Loading..." />
+<hello-button loading type="primary" />
+<hello-button loading type="primary" loading-type="spinner" />
+<hello-button loading type="primary" loading-text="Loading..." />
 ```
 
 ### Shape
 
 ```html
-<van-button square type="primary">Square</van-button>
-<van-button round type="primary">Round</van-button>
+<hello-button square type="primary">Square</van-button>
+<hello-button round type="primary">Round</van-button>
 ```
 
 ### Icon
 
 ```html
-<van-button icon="plus" type="primary" />
-<van-button icon="plus" type="primary">Button</van-button>
-<van-button icon="https://img.yzcdn.cn/vant/user-active.png" type="primary">
+<hello-button icon="plus" type="primary" />
+<hello-button icon="plus" type="primary">Button</van-button>
+<hello-button icon="https://img.yzcdn.cn/vant/user-active.png" type="primary">
   Button
 </van-button>
 ```
@@ -71,31 +71,31 @@ app.use(Button);
 ### Size
 
 ```html
-<van-button type="primary" size="large">Large</van-button>
-<van-button type="primary" size="normal">Normal</van-button>
-<van-button type="primary" size="small">Small</van-button>
-<van-button type="primary" size="mini">Mini</van-button>
+<hello-button type="primary" size="large">Large</van-button>
+<hello-button type="primary" size="normal">Normal</van-button>
+<hello-button type="primary" size="small">Small</van-button>
+<hello-button type="primary" size="mini">Mini</van-button>
 ```
 
 ### Block Element
 
 ```html
-<van-button type="primary" block>Block Element</van-button>
+<hello-button type="primary" block>Block Element</van-button>
 ```
 
 ### Route
 
 ```html
-<van-button type="primary" url="/vant/mobile.html">URL</van-button>
-<van-button type="primary" to="index">Vue Router</van-button>
+<hello-button type="primary" url="/vant/mobile.html">URL</van-button>
+<hello-button type="primary" to="index">Vue Router</van-button>
 ```
 
 ### Custom Color
 
 ```html
-<van-button color="#7232dd">Pure</van-button>
-<van-button color="#7232dd" plain>Pure</van-button>
-<van-button color="linear-gradient(to right, #ff6034, #ee0a24)">
+<hello-button color="#7232dd">Pure</van-button>
+<hello-button color="#7232dd" plain>Pure</van-button>
+<hello-button color="linear-gradient(to right, #ff6034, #ee0a24)">
   Gradient
 </van-button>
 ```

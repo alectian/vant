@@ -21,8 +21,8 @@ app.use(Sticky);
 将内容包裹在 `Sticky` 组件内即可。
 
 ```html
-<van-sticky>
-  <van-button type="primary">基础用法</van-button>
+<hello-sticky>
+  <hello-button type="primary">基础用法</van-button>
 </van-sticky>
 ```
 
@@ -31,8 +31,8 @@ app.use(Sticky);
 通过 `offset-top` 属性可以设置组件在吸顶时与顶部的距离。
 
 ```html
-<van-sticky :offset-top="50">
-  <van-button type="primary">吸顶距离</van-button>
+<hello-sticky :offset-top="50">
+  <hello-button type="primary">吸顶距离</van-button>
 </van-sticky>
 ```
 
@@ -42,8 +42,8 @@ app.use(Sticky);
 
 ```html
 <div ref="container" style="height: 150px;">
-  <van-sticky :container="container">
-    <van-button type="warning">指定容器</van-button>
+  <hello-sticky :container="container">
+    <hello-button type="warning">指定容器</van-button>
   </van-sticky>
 </div>
 ```

@@ -15,7 +15,7 @@ app.use(Pagination);
 ### Basic Usage
 
 ```html
-<van-pagination v-model="currentPage" :total-items="24" :items-per-page="5" />
+<hello-pagination v-model="currentPage" :total-items="24" :items-per-page="5" />
 ```
 
 ```js
@@ -32,13 +32,13 @@ export default {
 ### Simple mode
 
 ```html
-<van-pagination v-model="currentPage" :page-count="12" mode="simple" />
+<hello-pagination v-model="currentPage" :page-count="12" mode="simple" />
 ```
 
 ### Show ellipses
 
 ```html
-<van-pagination
+<hello-pagination
   v-model="currentPage"
   :total-items="125"
   :show-page-size="3"
@@ -49,12 +49,12 @@ export default {
 ### Custom Button
 
 ```html
-<van-pagination v-model="currentPage" :total-items="50" :show-page-size="5">
+<hello-pagination v-model="currentPage" :total-items="50" :show-page-size="5">
   <template #prev-text>
-    <van-icon name="arrow-left" />
+    <hello-icon name="arrow-left" />
   </template>
   <template #next-text>
-    <van-icon name="arrow" />
+    <hello-icon name="arrow" />
   </template>
   <template #page="{ text }">{{ text }}</template>
 </van-pagination>

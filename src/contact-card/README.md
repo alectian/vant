@@ -15,7 +15,7 @@ app.use(ContactCard);
 ### Add Contact
 
 ```html
-<van-contact-card type="add" @click="onAdd" />
+<hello-contact-card type="add" @click="onAdd" />
 ```
 
 ```js
@@ -36,7 +36,7 @@ export default {
 ### Edit Contact
 
 ```html
-<van-contact-card
+<hello-contact-card
   type="edit"
   :name="currentContact.name"
   :tel="currentContact.tel"
@@ -70,7 +70,7 @@ export default {
 ### Uneditable
 
 ```html
-<van-contact-card
+<hello-contact-card
   type="edit"
   name="John Snow"
   tel="13000000000"

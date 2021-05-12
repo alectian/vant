@@ -19,13 +19,13 @@ app.use(List);
 ### Basic Usage
 
 ```html
-<van-list
+<hello-list
   v-model:loading="state.loading"
   :finished="state.finished"
   finished-text="Finished"
   @load="onLoad"
 >
-  <van-cell v-for="item in state.list" :key="item" :title="item" />
+  <hello-cell v-for="item in state.list" :key="item" :title="item" />
 </van-list>
 ```
 
@@ -64,13 +64,13 @@ export default {
 ### Error Info
 
 ```html
-<van-list
+<hello-list
   v-model:loading="state.loading"
   v-model:error="state.error"
   error-text="Request failed. Click to reload"
   @load="onLoad"
 >
-  <van-cell v-for="item in state.list" :key="item" :title="item" />
+  <hello-cell v-for="item in state.list" :key="item" :title="item" />
 </van-list>
 ```
 
@@ -102,14 +102,14 @@ export default {
 ### PullRefresh
 
 ```html
-<van-pull-refresh v-model="state.refreshing" @refresh="onRefresh">
-  <van-list
+<hello-pull-refresh v-model="state.refreshing" @refresh="onRefresh">
+  <hello-list
     v-model:loading="state.loading"
     :finished="state.finished"
     finished-text="Finished"
     @load="onLoad"
   >
-    <van-cell v-for="item in state.list" :key="item" :title="item" />
+    <hello-cell v-for="item in state.list" :key="item" :title="item" />
   </van-list>
 </van-pull-refresh>
 ```

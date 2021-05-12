@@ -17,7 +17,7 @@ app.use(PullRefresh);
 The `refresh` event will be Emitted when pull refresh, you should set `v-model` to `false` to reset loading status after process refresh event.
 
 ```html
-<van-pull-refresh v-model="state.loading" @refresh="onRefresh">
+<hello-pull-refresh v-model="state.loading" @refresh="onRefresh">
   <p>Refresh Count: {{ state.count }}</p>
 </van-pull-refresh>
 ```
@@ -53,7 +53,7 @@ export default {
 Use `success-text` to set the success prompt after the refresh is successful
 
 ```html
-<van-pull-refresh
+<hello-pull-refresh
   v-model="isLoading"
   success-text="Refresh success"
   @refresh="onRefresh"
@@ -67,7 +67,7 @@ Use `success-text` to set the success prompt after the refresh is successful
 Use slots to custom tips.
 
 ```html
-<van-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
+<hello-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
   <template #pulling="props">
     <img
       class="doge"

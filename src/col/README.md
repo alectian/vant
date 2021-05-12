@@ -22,20 +22,20 @@ app.use(Row);
 Layout are based on 24-column. The attribute `span` in `Col` means the number of column the grid spans. Of course, You can use `offset` attribute to set number of spacing on the left side of the grid.
 
 ```html
-<van-row>
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
+<hello-row>
+  <hello-col span="8">span: 8</van-col>
+  <hello-col span="8">span: 8</van-col>
+  <hello-col span="8">span: 8</van-col>
 </van-row>
 
-<van-row>
-  <van-col span="4">span: 4</van-col>
-  <van-col span="10" offset="4">offset: 4, span: 10</van-col>
-  <van-col span="6">span: 6</van-col>
+<hello-row>
+  <hello-col span="4">span: 4</van-col>
+  <hello-col span="10" offset="4">offset: 4, span: 10</van-col>
+  <hello-col span="6">span: 6</van-col>
 </van-row>
 
-<van-row>
-  <van-col offset="12" span="12">offset: 12, span: 12</van-col>
+<hello-row>
+  <hello-col offset="12" span="12">offset: 12, span: 12</van-col>
 </van-row>
 ```
 
@@ -44,38 +44,38 @@ Layout are based on 24-column. The attribute `span` in `Col` means the number of
 Set grid spacing using `gutter` attribute. The default value is 0.
 
 ```html
-<van-row gutter="20">
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
+<hello-row gutter="20">
+  <hello-col span="8">span: 8</van-col>
+  <hello-col span="8">span: 8</van-col>
+  <hello-col span="8">span: 8</van-col>
 </van-row>
 ```
 
 ### Justify Content
 
 ```html
-<van-row justify="center">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
+<hello-row justify="center">
+  <hello-col span="6">span: 6</van-col>
+  <hello-col span="6">span: 6</van-col>
+  <hello-col span="6">span: 6</van-col>
 </van-row>
 
-<van-row justify="end">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
+<hello-row justify="end">
+  <hello-col span="6">span: 6</van-col>
+  <hello-col span="6">span: 6</van-col>
+  <hello-col span="6">span: 6</van-col>
 </van-row>
 
-<van-row justify="space-between">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
+<hello-row justify="space-between">
+  <hello-col span="6">span: 6</van-col>
+  <hello-col span="6">span: 6</van-col>
+  <hello-col span="6">span: 6</van-col>
 </van-row>
 
-<van-row justify="space-around">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
+<hello-row justify="space-around">
+  <hello-col span="6">span: 6</van-col>
+  <hello-col span="6">span: 6</van-col>
+  <hello-col span="6">span: 6</van-col>
 </van-row>
 ```
 

@@ -17,8 +17,8 @@ app.use(Field);
 The value of field is bound with v-model.
 
 ```html
-<van-cell-group>
-  <van-field v-model="value" label="Label" placeholder="Text" />
+<hello-cell-group>
+  <hello-field v-model="value" label="Label" placeholder="Text" />
 </van-cell-group>
 ```
 
@@ -38,11 +38,11 @@ export default {
 Use `type` prop to custom different type fields.
 
 ```html
-<van-field v-model="state.text" label="Text" />
-<van-field v-model="state.tel" type="tel" label="Phone" />
-<van-field v-model="state.digit" type="digit" label="Digit" />
-<van-field v-model="state.number" type="number" label="Number" />
-<van-field v-model="state.password" type="password" label="Password" />
+<hello-field v-model="state.text" label="Text" />
+<hello-field v-model="state.tel" type="tel" label="Phone" />
+<hello-field v-model="state.digit" type="digit" label="Digit" />
+<hello-field v-model="state.number" type="number" label="Number" />
+<hello-field v-model="state.password" type="password" label="Password" />
 ```
 
 ```js
@@ -66,24 +66,24 @@ export default {
 ### Disabled
 
 ```html
-<van-cell-group>
-  <van-field label="Text" value="Input Readonly" readonly />
-  <van-field label="Text" value="Input Disabled" disabled />
+<hello-cell-group>
+  <hello-field label="Text" value="Input Readonly" readonly />
+  <hello-field label="Text" value="Input Disabled" disabled />
 </van-cell-group>
 ```
 
 ### Show Icon
 
 ```html
-<van-cell-group>
-  <van-field
+<hello-cell-group>
+  <hello-field
     v-model="state.value1"
     label="Text"
     left-icon="smile-o"
     right-icon="warning-o"
     placeholder="Show Icon"
   />
-  <van-field
+  <hello-field
     v-model="state.value2"
     clearable
     label="Text"
@@ -113,15 +113,15 @@ export default {
 Use `error` or `error-message` to show error info.
 
 ```html
-<van-cell-group>
-  <van-field
+<hello-cell-group>
+  <hello-field
     v-model="username"
     error
     required
     label="Username"
     placeholder="Username"
   />
-  <van-field
+  <hello-field
     v-model="phone"
     required
     label="Phone"
@@ -136,9 +136,9 @@ Use `error` or `error-message` to show error info.
 Use button slot to insert button.
 
 ```html
-<van-field v-model="sms" center clearable label="SMS" placeholder="SMS">
+<hello-field v-model="sms" center clearable label="SMS" placeholder="SMS">
   <template #button>
-    <van-button size="small" type="primary">Send SMS</van-button>
+    <hello-button size="small" type="primary">Send SMS</van-button>
   </template>
 </van-field>
 ```
@@ -148,13 +148,13 @@ Use button slot to insert button.
 Use `formatter` prop to format the input value.
 
 ```html
-<van-field
+<hello-field
   v-model="state.value1"
   label="Text"
   :formatter="formatter"
   placeholder="Format On Change"
 />
-<van-field
+<hello-field
   v-model="state.value2"
   label="Text"
   :formatter="formatter"
@@ -187,7 +187,7 @@ export default {
 Textarea Field can be auto resize when has `autosize` prop.
 
 ```html
-<van-field
+<hello-field
   v-model="message"
   label="Message"
   type="textarea"
@@ -200,7 +200,7 @@ Textarea Field can be auto resize when has `autosize` prop.
 ### Show Word Limit
 
 ```html
-<van-field
+<hello-field
   v-model="message"
   rows="2"
   autosize
@@ -217,7 +217,7 @@ Textarea Field can be auto resize when has `autosize` prop.
 Use `input-align` prop to align the input value.
 
 ```html
-<van-field
+<hello-field
   v-model="value"
   label="Text"
   placeholder="Input Align Right"

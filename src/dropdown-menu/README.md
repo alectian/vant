@@ -16,9 +16,9 @@ app.use(DropdownItem);
 ### Basic Usage
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="state.value1" :options="option1" />
-  <van-dropdown-item v-model="state.value2" :options="option2" />
+<hello-dropdown-menu>
+  <hello-dropdown-item v-model="state.value1" :options="option1" />
+  <hello-dropdown-item v-model="state.value2" :options="option2" />
 </van-dropdown-menu>
 ```
 
@@ -54,21 +54,21 @@ export default {
 ### Custom Content
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="state.value" :options="option" />
-  <van-dropdown-item title="Title" ref="item">
-    <van-cell center title="Title">
+<hello-dropdown-menu>
+  <hello-dropdown-item v-model="state.value" :options="option" />
+  <hello-dropdown-item title="Title" ref="item">
+    <hello-cell center title="Title">
       <template #right-icon>
-        <van-switch v-model="state.switch1" size="24" active-color="#ee0a24" />
+        <hello-switch v-model="state.switch1" size="24" active-color="#ee0a24" />
       </template>
     </van-cell>
-    <van-cell center title="Title">
+    <hello-cell center title="Title">
       <template #right-icon>
-        <van-switch v-model="state.switch2" size="24" active-color="#ee0a24" />
+        <hello-switch v-model="state.switch2" size="24" active-color="#ee0a24" />
       </template>
     </van-cell>
     <div style="padding: 5px 16px;">
-      <van-button type="danger" block round @click="onConfirm">
+      <hello-button type="danger" block round @click="onConfirm">
         Confirm
       </van-button>
     </div>
@@ -111,27 +111,27 @@ export default {
 Use `active-color` prop to custom active color of the title and options.
 
 ```html
-<van-dropdown-menu active-color="#1989fa">
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
+<hello-dropdown-menu active-color="#1989fa">
+  <hello-dropdown-item v-model="value1" :options="option1" />
+  <hello-dropdown-item v-model="value2" :options="option2" />
 </van-dropdown-menu>
 ```
 
 ### Expand Direction
 
 ```html
-<van-dropdown-menu direction="up">
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
+<hello-dropdown-menu direction="up">
+  <hello-dropdown-item v-model="value1" :options="option1" />
+  <hello-dropdown-item v-model="value2" :options="option2" />
 </van-dropdown-menu>
 ```
 
 ### Disabled
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value1" disabled :options="option1" />
-  <van-dropdown-item v-model="value2" disabled :options="option2" />
+<hello-dropdown-menu>
+  <hello-dropdown-item v-model="value1" disabled :options="option1" />
+  <hello-dropdown-item v-model="value2" disabled :options="option2" />
 </van-dropdown-menu>
 ```
 

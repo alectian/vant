@@ -21,7 +21,7 @@ app.use(Area);
 To initailize `Area` component, `area-list` property is required. Data structure will be introduced later.
 
 ```html
-<van-area title="Title" :area-list="areaList" />
+<hello-area title="Title" :area-list="areaList" />
 ```
 
 ### Initial Value
@@ -29,7 +29,7 @@ To initailize `Area` component, `area-list` property is required. Data structure
 To have a selected value，simply pass the `code` of target area to `value` property.
 
 ```html
-<van-area title="Title" :area-list="areaList" value="110101" />
+<hello-area title="Title" :area-list="areaList" value="110101" />
 ```
 
 ### Columns Number
@@ -37,7 +37,7 @@ To have a selected value，simply pass the `code` of target area to `value` prop
 `columns-num` property is used to config number of columns to be displayed. This component has 3 columns corresponding to a 3 level picker by default. Set `columns-num` with 2, you'll have a 2 level picker.
 
 ```html
-<van-area title="Title" :area-list="areaList" :columns-num="2" />
+<hello-area title="Title" :area-list="areaList" :columns-num="2" />
 ```
 
 ### Columns Placeholder
@@ -45,7 +45,7 @@ To have a selected value，simply pass the `code` of target area to `value` prop
 `columns-placeholder` property is used to config placeholder of columns.
 
 ```html
-<van-area
+<hello-area
   title="Title"
   :area-list="areaList"
   :columns-placeholder="['Choose', 'Choose', 'Choose']"

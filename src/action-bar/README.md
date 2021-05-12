@@ -17,11 +17,11 @@ app.use(ActionBarButton);
 ### Basic Usage
 
 ```html
-<van-action-bar>
-  <van-action-bar-icon icon="chat-o" text="Icon1" @click="onClickIcon" />
-  <van-action-bar-icon icon="cart-o" text="Icon2" @click="onClickIcon" />
-  <van-action-bar-icon icon="shop-o" text="Icon3" @click="onClickIcon" />
-  <van-action-bar-button type="danger" text="Button" @click="onClickButton" />
+<hello-action-bar>
+  <hello-action-bar-icon icon="chat-o" text="Icon1" @click="onClickIcon" />
+  <hello-action-bar-icon icon="cart-o" text="Icon2" @click="onClickIcon" />
+  <hello-action-bar-icon icon="shop-o" text="Icon3" @click="onClickIcon" />
+  <hello-action-bar-button type="danger" text="Button" @click="onClickButton" />
 </van-action-bar>
 ```
 
@@ -49,35 +49,35 @@ export default {
 Use `badge` prop to show badge in icon.
 
 ```html
-<van-action-bar>
-  <van-action-bar-icon icon="chat-o" text="Icon1" dot />
-  <van-action-bar-icon icon="cart-o" text="Icon2" badge="5" />
-  <van-action-bar-icon icon="shop-o" text="Icon3" badge="12" />
-  <van-action-bar-button type="warning" text="Button" />
-  <van-action-bar-button type="danger" text="Button" />
+<hello-action-bar>
+  <hello-action-bar-icon icon="chat-o" text="Icon1" dot />
+  <hello-action-bar-icon icon="cart-o" text="Icon2" badge="5" />
+  <hello-action-bar-icon icon="shop-o" text="Icon3" badge="12" />
+  <hello-action-bar-button type="warning" text="Button" />
+  <hello-action-bar-button type="danger" text="Button" />
 </van-action-bar>
 ```
 
 ### Custom Icon Color
 
 ```html
-<van-action-bar>
-  <van-action-bar-icon icon="chat-o" text="Icon1" color="#ee0a24" />
-  <van-action-bar-icon icon="cart-o" text="Icon2" />
-  <van-action-bar-icon icon="star" text="Collected" color="#ff5000" />
-  <van-action-bar-button type="warning" text="Button" />
-  <van-action-bar-button type="danger" text="Button" />
+<hello-action-bar>
+  <hello-action-bar-icon icon="chat-o" text="Icon1" color="#ee0a24" />
+  <hello-action-bar-icon icon="cart-o" text="Icon2" />
+  <hello-action-bar-icon icon="star" text="Collected" color="#ff5000" />
+  <hello-action-bar-button type="warning" text="Button" />
+  <hello-action-bar-button type="danger" text="Button" />
 </van-action-bar>
 ```
 
 ### Custom Button Color
 
 ```html
-<van-action-bar>
-  <van-action-bar-icon icon="chat-o" text="Icon1" />
-  <van-action-bar-icon icon="shop-o" text="Icon2" />
-  <van-action-bar-button color="#be99ff" type="warning" text="Button" />
-  <van-action-bar-button color="#7232dd" type="danger" text="Button" />
+<hello-action-bar>
+  <hello-action-bar-icon icon="chat-o" text="Icon1" />
+  <hello-action-bar-icon icon="shop-o" text="Icon2" />
+  <hello-action-bar-button color="#be99ff" type="warning" text="Button" />
+  <hello-action-bar-button color="#7232dd" type="danger" text="Button" />
 </van-action-bar>
 ```
 

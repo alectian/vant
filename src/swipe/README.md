@@ -18,11 +18,11 @@ app.use(SwipeItem);
 Use `autoplay` prop to set autoplay interval.
 
 ```html
-<van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<hello-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+  <hello-swipe-item>1</van-swipe-item>
+  <hello-swipe-item>2</van-swipe-item>
+  <hello-swipe-item>3</van-swipe-item>
+  <hello-swipe-item>4</van-swipe-item>
 </van-swipe>
 
 <style>
@@ -41,8 +41,8 @@ Use `autoplay` prop to set autoplay interval.
 Use `lazy-render` prop to enable lazy rendering.
 
 ```html
-<van-swipe :autoplay="3000" lazy-render>
-  <van-swipe-item v-for="image in images" :key="image">
+<hello-swipe :autoplay="3000" lazy-render>
+  <hello-swipe-item v-for="image in images" :key="image">
     <img :src="image" />
   </van-swipe-item>
 </van-swipe>
@@ -63,11 +63,11 @@ export default {
 ### Change Event
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<hello-swipe @change="onChange">
+  <hello-swipe-item>1</van-swipe-item>
+  <hello-swipe-item>2</van-swipe-item>
+  <hello-swipe-item>3</van-swipe-item>
+  <hello-swipe-item>4</van-swipe-item>
 </van-swipe>
 ```
 
@@ -87,22 +87,22 @@ export default {
 ### Vertical Scrolling
 
 ```html
-<van-swipe :autoplay="3000" vertical>
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<hello-swipe :autoplay="3000" vertical>
+  <hello-swipe-item>1</van-swipe-item>
+  <hello-swipe-item>2</van-swipe-item>
+  <hello-swipe-item>3</van-swipe-item>
+  <hello-swipe-item>4</van-swipe-item>
 </van-swipe>
 ```
 
 ### Set SwipeItem Size
 
 ```html
-<van-swipe :loop="false" :width="300">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<hello-swipe :loop="false" :width="300">
+  <hello-swipe-item>1</van-swipe-item>
+  <hello-swipe-item>2</van-swipe-item>
+  <hello-swipe-item>3</van-swipe-item>
+  <hello-swipe-item>4</van-swipe-item>
 </van-swipe>
 ```
 
@@ -111,11 +111,11 @@ export default {
 ### Custom Indicator
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<hello-swipe @change="onChange">
+  <hello-swipe-item>1</van-swipe-item>
+  <hello-swipe-item>2</van-swipe-item>
+  <hello-swipe-item>3</van-swipe-item>
+  <hello-swipe-item>4</van-swipe-item>
   <template #indicator>
     <div class="custom-indicator">{{ current + 1 }}/4</div>
   </template>

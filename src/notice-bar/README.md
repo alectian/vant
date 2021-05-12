@@ -15,17 +15,17 @@ app.use(NoticeBar);
 ### Basic Usage
 
 ```html
-<van-notice-bar text="Notice Content" left-icon="volume-o" />
+<hello-notice-bar text="Notice Content" left-icon="volume-o" />
 ```
 
 ### Scrollable
 
 ```html
 <!-- Enable scroll when text is short -->
-<van-notice-bar scrollable text="Notice Content" />
+<hello-notice-bar scrollable text="Notice Content" />
 
 <!-- Disable scroll when text is long -->
-<van-notice-bar
+<hello-notice-bar
   :scrollable="false"
   text="Technology is the common soul of the people who developed it."
 />
@@ -34,21 +34,21 @@ app.use(NoticeBar);
 ### Wrapable
 
 ```html
-<van-notice-bar wrapable :scrollable="false">Notice Content</van-notice-bar>
+<hello-notice-bar wrapable :scrollable="false">Notice Content</van-notice-bar>
 ```
 
 ### Mode
 
 ```html
-<van-notice-bar mode="closeable">Notice Content</van-notice-bar>
+<hello-notice-bar mode="closeable">Notice Content</van-notice-bar>
 
-<van-notice-bar mode="link">Notice Content</van-notice-bar>
+<hello-notice-bar mode="link">Notice Content</van-notice-bar>
 ```
 
 ### Custom Style
 
 ```html
-<van-notice-bar color="#1989fa" background="#ecf9ff" left-icon="info-o">
+<hello-notice-bar color="#1989fa" background="#ecf9ff" left-icon="info-o">
   Notice Content
 </van-notice-bar>
 ```
@@ -56,16 +56,16 @@ app.use(NoticeBar);
 ### Vertical Scroll
 
 ```html
-<van-notice-bar left-icon="volume-o" :scrollable="false">
-  <van-swipe
+<hello-notice-bar left-icon="volume-o" :scrollable="false">
+  <hello-swipe
     vertical
     class="notice-swipe"
     :autoplay="3000"
     :show-indicators="false"
   >
-    <van-swipe-item>Content 1</van-swipe-item>
-    <van-swipe-item>Content 2</van-swipe-item>
-    <van-swipe-item>Content 3</van-swipe-item>
+    <hello-swipe-item>Content 1</van-swipe-item>
+    <hello-swipe-item>Content 2</van-swipe-item>
+    <hello-swipe-item>Content 3</van-swipe-item>
   </van-swipe>
 </van-notice-bar>
 

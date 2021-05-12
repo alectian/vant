@@ -16,18 +16,18 @@ app.use(CellGroup);
 ### Basic Usage
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" value="Content" />
-  <van-cell title="Cell title" value="Content" label="Description" />
+<hello-cell-group>
+  <hello-cell title="Cell title" value="Content" />
+  <hello-cell title="Cell title" value="Content" label="Description" />
 </van-cell-group>
 ```
 
 ### Size
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" value="Content" size="large" />
-  <van-cell
+<hello-cell-group>
+  <hello-cell title="Cell title" value="Content" size="large" />
+  <hello-cell
     title="Cell title"
     value="Content"
     size="large"
@@ -39,64 +39,64 @@ app.use(CellGroup);
 ### Left Icon
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" icon="location-o" />
+<hello-cell-group>
+  <hello-cell title="Cell title" icon="location-o" />
 </van-cell-group>
 ```
 
 ### Value only
 
 ```html
-<van-cell-group>
-  <van-cell value="Content" />
+<hello-cell-group>
+  <hello-cell value="Content" />
 </van-cell-group>
 ```
 
 ### Link
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" is-link />
-  <van-cell title="Cell title" is-link value="Content" />
-  <van-cell title="Cell title" is-link arrow-direction="down" value="Content" />
+<hello-cell-group>
+  <hello-cell title="Cell title" is-link />
+  <hello-cell title="Cell title" is-link value="Content" />
+  <hello-cell title="Cell title" is-link arrow-direction="down" value="Content" />
 </van-cell-group>
 ```
 
 ### Router
 
 ```html
-<van-cell-group>
-  <van-cell title="URL" is-link url="/vant/mobile.html" />
-  <van-cell title="Vue Router" is-link to="index" />
+<hello-cell-group>
+  <hello-cell title="URL" is-link url="/vant/mobile.html" />
+  <hello-cell title="Vue Router" is-link to="index" />
 </van-cell-group>
 ```
 
 ### Group Title
 
 ```html
-<van-cell-group title="Group 1">
-  <van-cell title="Cell title" value="Content" />
+<hello-cell-group title="Group 1">
+  <hello-cell title="Cell title" value="Content" />
 </van-cell-group>
-<van-cell-group title="Group 2">
-  <van-cell title="Cell title" value="Content" />
+<hello-cell-group title="Group 2">
+  <hello-cell title="Cell title" value="Content" />
 </van-cell-group>
 ```
 
 ### Use Slots
 
 ```html
-<van-cell value="Content" is-link>
+<hello-cell value="Content" is-link>
   <!-- Use the title slot to customize the title -->
   <template #title>
     <span class="custom-title">Title</span>
-    <van-tag type="danger">Tag</van-tag>
+    <hello-tag type="danger">Tag</van-tag>
   </template>
 </van-cell>
 
-<van-cell title="Title" icon="shop-o">
+<hello-cell title="Title" icon="shop-o">
   <!-- Use the right-icon slot to customize the right icon -->
   <template #right-icon>
-    <van-icon name="search" class="search-icon" />
+    <hello-icon name="search" class="search-icon" />
   </template>
 </van-cell>
 
@@ -116,7 +116,7 @@ app.use(CellGroup);
 ### Vertical Center
 
 ```html
-<van-cell center title="Cell title" value="Content" label="Description" />
+<hello-cell center title="Cell title" value="Content" label="Description" />
 ```
 
 ## API

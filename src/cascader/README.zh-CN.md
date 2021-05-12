@@ -21,7 +21,7 @@ app.use(Cascader);
 级联选择组件可以搭配 Field 和 Popup 组件使用，示例如下：
 
 ```html
-<van-field
+<hello-field
   v-model="state.fieldValue"
   is-link
   readonly
@@ -29,8 +29,8 @@ app.use(Cascader);
   placeholder="请选择所在地区"
   @click="state.show = true"
 />
-<van-popup v-model:show="state.show" round position="bottom">
-  <van-cascader
+<hello-popup v-model:show="state.show" round position="bottom">
+  <hello-cascader
     v-model="state.cascaderValue"
     title="请选择所在地区"
     :options="options"
@@ -83,7 +83,7 @@ export default {
 通过 `active-color` 属性来设置选中状态的高亮颜色。
 
 ```html
-<van-cascader
+<hello-cascader
   v-model="state.cascaderValue"
   title="请选择所在地区"
   :options="options"
@@ -98,7 +98,7 @@ export default {
 可以监听 `change` 事件并动态设置 `options`，实现异步加载选项。
 
 ```html
-<van-field
+<hello-field
   v-model="state.fieldValue"
   is-link
   readonly
@@ -106,8 +106,8 @@ export default {
   placeholder="请选择所在地区"
   @click="state.show = true"
 />
-<van-popup v-model:show="state.show" round position="bottom">
-  <van-cascader
+<hello-popup v-model:show="state.show" round position="bottom">
+  <hello-cascader
     v-model="state.cascaderValue"
     title="请选择所在地区"
     :options="state.options"

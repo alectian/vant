@@ -22,15 +22,15 @@ GoodsAction 商品导航组件重命名为 **ActionBar 行动栏**。
 
 ```html
 <!-- Vant 2 -->
-<van-goods-action>
-  <van-goods-action-icon text="图标" />
-  <van-goods-action-button text="按钮" />
+<hello-goods-action>
+  <hello-goods-action-icon text="图标" />
+  <hello-goods-action-button text="按钮" />
 </van-goods-action>
 
 <!-- Vant 3 -->
-<van-action-bar>
-  <van-action-bar-icon text="图标" />
-  <van-action-bar-button text="按钮" />
+<hello-action-bar>
+  <hello-action-bar-icon text="图标" />
+  <hello-action-bar-button text="按钮" />
 </van-action-bar>
 ```
 
@@ -40,12 +40,12 @@ GoodsAction 商品导航组件重命名为 **ActionBar 行动栏**。
 
 ```html
 <!-- Vant 2 -->
-<van-switch-cell title="标题" v-model="checked" />
+<hello-switch-cell title="标题" v-model="checked" />
 
 <!-- Vant 3 -->
-<van-cell center title="标题">
+<hello-cell center title="标题">
   <template #right-icon>
-    <van-switch v-model="checked" size="24" />
+    <hello-switch v-model="checked" size="24" />
   </template>
 </van-cell>
 ```
@@ -65,10 +65,10 @@ GoodsAction 商品导航组件重命名为 **ActionBar 行动栏**。
 
 ```html
 <!-- Vant 2 -->
-<van-popup v-model="show" />
+<hello-popup v-model="show" />
 
 <!-- Vant 3 -->
-<van-popup v-model:show="show" />
+<hello-popup v-model:show="show" />
 ```
 
 ### 表单型组件 v-model 内部值变更
@@ -90,10 +90,10 @@ GoodsAction 商品导航组件重命名为 **ActionBar 行动栏**。
 
 ```html
 <!-- Vant 2 -->
-<van-field :value="value" @input="onInput" />
+<hello-field :value="value" @input="onInput" />
 
 <!-- Vant 3 -->
-<van-field :model-value="value" @update:model-value="onInput" />
+<hello-field :model-value="value" @update:model-value="onInput" />
 ```
 
 ### 其他 v-model 调整
@@ -121,10 +121,10 @@ GoodsAction 商品导航组件重命名为 **ActionBar 行动栏**。
 
 ```html
 <!-- Vant 2 -->
-<van-icon info="5" />
+<hello-icon info="5" />
 
 <!-- Vant 3 -->
-<van-icon badge="5" />
+<hello-icon badge="5" />
 ```
 
 ### 重命名 get-container 属性
@@ -134,8 +134,8 @@ Vue 3.0 中增加了 `Teleport` 组件，提供将组件渲染到任意 DOM 位�
 ```html
 <!-- Vant 2 -->
 <template>
-  <van-popup get-container="body" />
-  <van-popup :get-container="getContainer" />
+  <hello-popup get-container="body" />
+  <hello-popup :get-container="getContainer" />
 </template>
 <script>
   export default {
@@ -149,8 +149,8 @@ Vue 3.0 中增加了 `Teleport` 组件，提供将组件渲染到任意 DOM 位�
 
 <!-- Vant 3 -->
 <template>
-  <van-popup teleport="body" />
-  <van-popup :teleport="container" />
+  <hello-popup teleport="body" />
+  <hello-popup :teleport="container" />
 </template>
 <script>
   export default {

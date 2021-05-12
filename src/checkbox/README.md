@@ -16,7 +16,7 @@ app.use(CheckboxGroup);
 ### Basic Usage
 
 ```html
-<van-checkbox v-model="checked">Checkbox</van-checkbox>
+<hello-checkbox v-model="checked">Checkbox</van-checkbox>
 ```
 
 ```js
@@ -35,25 +35,25 @@ export default {
 ### Disabled
 
 ```html
-<van-checkbox v-model="checked" disabled>Checkbox</van-checkbox>
+<hello-checkbox v-model="checked" disabled>Checkbox</van-checkbox>
 ```
 
 ### Custom Shape
 
 ```html
-<van-checkbox v-model="checked" shape="square">Checkbox</van-checkbox>
+<hello-checkbox v-model="checked" shape="square">Checkbox</van-checkbox>
 ```
 
 ### Custom Color
 
 ```html
-<van-checkbox v-model="checked" checked-color="#ee0a24">Checkbox</van-checkbox>
+<hello-checkbox v-model="checked" checked-color="#ee0a24">Checkbox</van-checkbox>
 ```
 
 ### Custom Icon Size
 
 ```html
-<van-checkbox v-model="checked" icon-size="24px">Checkbox</van-checkbox>
+<hello-checkbox v-model="checked" icon-size="24px">Checkbox</van-checkbox>
 ```
 
 ### Custom Icon
@@ -61,7 +61,7 @@ export default {
 Use icon slot to custom icon.
 
 ```html
-<van-checkbox v-model="checked">
+<hello-checkbox v-model="checked">
   customize icon
   <template #icon="props">
     <img class="img-icon" :src="props.checked ? activeIcon : inactiveIcon" />
@@ -93,7 +93,7 @@ export default {
 ### Disable Label Click
 
 ```html
-<van-checkbox v-model="checked" label-disabled>Checkbox</van-checkbox>
+<hello-checkbox v-model="checked" label-disabled>Checkbox</van-checkbox>
 ```
 
 ### Checkbox Group
@@ -101,9 +101,9 @@ export default {
 When Checkboxes are inside a CheckboxGroup, the checked checkboxes's name is an array and bound with CheckboxGroup by v-model.
 
 ```html
-<van-checkbox-group v-model="checked">
-  <van-checkbox name="a">Checkbox a</van-checkbox>
-  <van-checkbox name="b">Checkbox b</van-checkbox>
+<hello-checkbox-group v-model="checked">
+  <hello-checkbox name="a">Checkbox a</van-checkbox>
+  <hello-checkbox name="b">Checkbox b</van-checkbox>
 </van-checkbox-group>
 ```
 
@@ -121,9 +121,9 @@ export default {
 ### Horizontal
 
 ```html
-<van-checkbox-group v-model="checked" direction="horizontal">
-  <van-checkbox name="a">Checkbox a</van-checkbox>
-  <van-checkbox name="b">Checkbox b</van-checkbox>
+<hello-checkbox-group v-model="checked" direction="horizontal">
+  <hello-checkbox name="a">Checkbox a</van-checkbox>
+  <hello-checkbox name="b">Checkbox b</van-checkbox>
 </van-checkbox-group>
 ```
 
@@ -141,24 +141,24 @@ export default {
 ### Maximum amount of checked options
 
 ```html
-<van-checkbox-group v-model="result" :max="2">
-  <van-checkbox name="a">Checkbox a</van-checkbox>
-  <van-checkbox name="b">Checkbox b</van-checkbox>
-  <van-checkbox name="c">Checkbox c</van-checkbox>
+<hello-checkbox-group v-model="result" :max="2">
+  <hello-checkbox name="a">Checkbox a</van-checkbox>
+  <hello-checkbox name="b">Checkbox b</van-checkbox>
+  <hello-checkbox name="c">Checkbox c</van-checkbox>
 </van-checkbox-group>
 ```
 
 ### Toggle All
 
 ```html
-<van-checkbox-group v-model="checked" ref="checkboxGroup">
-  <van-checkbox name="a">Checkbox a</van-checkbox>
-  <van-checkbox name="b">Checkbox b</van-checkbox>
-  <van-checkbox name="c">Checkbox c</van-checkbox>
+<hello-checkbox-group v-model="checked" ref="checkboxGroup">
+  <hello-checkbox name="a">Checkbox a</van-checkbox>
+  <hello-checkbox name="b">Checkbox b</van-checkbox>
+  <hello-checkbox name="c">Checkbox c</van-checkbox>
 </van-checkbox-group>
 
-<van-button type="primary" @click="checkAll">Check All</van-button>
-<van-button type="primary" @click="toggleAll">Toggle All</van-button>
+<hello-button type="primary" @click="checkAll">Check All</van-button>
+<hello-button type="primary" @click="toggleAll">Toggle All</van-button>
 ```
 
 ```js
@@ -189,9 +189,9 @@ export default {
 ### Inside a Cell
 
 ```html
-<van-checkbox-group v-model="checked">
-  <van-cell-group>
-    <van-cell
+<hello-checkbox-group v-model="checked">
+  <hello-cell-group>
+    <hello-cell
       v-for="(item, index) in list"
       clickable
       :key="item"
@@ -199,7 +199,7 @@ export default {
       @click="toggle(index)"
     >
       <template #right-icon>
-        <van-checkbox
+        <hello-checkbox
           :name="item"
           :ref="el => checkboxRefs[index] = el"
           @click.stop

@@ -21,15 +21,15 @@ app.use(Form);
 在表单中，每个 [Field 组件](#/zh-CN/field) 代表一个表单项，使用 Field 的 `rules` 属性定义校验规则。
 
 ```html
-<van-form @submit="onSubmit">
-  <van-field
+<hello-form @submit="onSubmit">
+  <hello-field
     v-model="state.username"
     name="用户名"
     label="用户名"
     placeholder="用户名"
     :rules="[{ required: true, message: '请填写用户名' }]"
   />
-  <van-field
+  <hello-field
     v-model="state.password"
     type="password"
     name="密码"
@@ -38,7 +38,7 @@ app.use(Form);
     :rules="[{ required: true, message: '请填写密码' }]"
   />
   <div style="margin: 16px;">
-    <van-button round block type="info" native-type="submit">提交</van-button>
+    <hello-button round block type="info" native-type="submit">提交</van-button>
   </div>
 </van-form>
 ```
@@ -69,30 +69,30 @@ export default {
 通过 `rules` 定义表单校验规则，可用字段见[下方表格](#/zh-CN/form#rule-shu-ju-jie-gou)。
 
 ```html
-<van-form validate-first @failed="onFailed">
+<hello-form validate-first @failed="onFailed">
   <!-- 通过 pattern 进行正则校验 -->
-  <van-field
+  <hello-field
     v-model="state.value1"
     name="pattern"
     placeholder="正则校验"
     :rules="[{ pattern, message: '请输入正确内容' }]"
   />
   <!-- 通过 validator 进行函数校验 -->
-  <van-field
+  <hello-field
     v-model="state.value2"
     name="validator"
     placeholder="函数校验"
     :rules="[{ validator, message: '请输入正确内容' }]"
   />
   <!-- 通过 validator 进行异步函数校验 -->
-  <van-field
+  <hello-field
     v-model="state.value3"
     name="asyncValidator"
     placeholder="异步函数校验"
     :rules="[{ validator: asyncValidator, message: '请输入正确内容' }]"
   />
   <div style="margin: 16px;">
-    <van-button round block type="primary" native-type="submit"
+    <hello-button round block type="primary" native-type="submit"
       >提交</van-button
     >
   </div>
@@ -146,9 +146,9 @@ export default {
 在表单中使用 [Switch 组件](#/zh-CN/switch)。
 
 ```html
-<van-field name="switch" label="开关">
+<hello-field name="switch" label="开关">
   <template #input>
-    <van-switch v-model="checked" size="20" />
+    <hello-switch v-model="checked" size="20" />
   </template>
 </van-field>
 ```
@@ -169,16 +169,16 @@ export default {
 在表单中使用 [Checkbox 组件](#/zh-CN/checkbox)。
 
 ```html
-<van-field name="checkbox" label="复选框">
+<hello-field name="checkbox" label="复选框">
   <template #input>
-    <van-checkbox v-model="checked" shape="square" />
+    <hello-checkbox v-model="checked" shape="square" />
   </template>
 </van-field>
-<van-field name="checkboxGroup" label="复选框组">
+<hello-field name="checkboxGroup" label="复选框组">
   <template #input>
-    <van-checkbox-group v-model="groupChecked" direction="horizontal">
-      <van-checkbox name="1" shape="square">复选框 1</van-checkbox>
-      <van-checkbox name="2" shape="square">复选框 2</van-checkbox>
+    <hello-checkbox-group v-model="groupChecked" direction="horizontal">
+      <hello-checkbox name="1" shape="square">复选框 1</van-checkbox>
+      <hello-checkbox name="2" shape="square">复选框 2</van-checkbox>
     </van-checkbox-group>
   </template>
 </van-field>
@@ -204,11 +204,11 @@ export default {
 在表单中使用 [Radio 组件](#/zh-CN/radio)。
 
 ```html
-<van-field name="radio" label="单选框">
+<hello-field name="radio" label="单选框">
   <template #input>
-    <van-radio-group v-model="checked" direction="horizontal">
-      <van-radio name="1">单选框 1</van-radio>
-      <van-radio name="2">单选框 2</van-radio>
+    <hello-radio-group v-model="checked" direction="horizontal">
+      <hello-radio name="1">单选框 1</van-radio>
+      <hello-radio name="2">单选框 2</van-radio>
     </van-radio-group>
   </template>
 </van-field>
@@ -230,9 +230,9 @@ export default {
 在表单中使用 [Stepper 组件](#/zh-CN/stepper)。
 
 ```html
-<van-field name="stepper" label="步进器">
+<hello-field name="stepper" label="步进器">
   <template #input>
-    <van-stepper v-model="value" />
+    <hello-stepper v-model="value" />
   </template>
 </van-field>
 ```
@@ -253,9 +253,9 @@ export default {
 在表单中使用 [Rate 组件](#/zh-CN/rate)。
 
 ```html
-<van-field name="rate" label="评分">
+<hello-field name="rate" label="评分">
   <template #input>
-    <van-rate v-model="value" />
+    <hello-rate v-model="value" />
   </template>
 </van-field>
 ```
@@ -276,9 +276,9 @@ export default {
 在表单中使用 [Slider 组件](#/zh-CN/slider)。
 
 ```html
-<van-field name="slider" label="滑块">
+<hello-field name="slider" label="滑块">
   <template #input>
-    <van-slider v-model="value" />
+    <hello-slider v-model="value" />
   </template>
 </van-field>
 ```
@@ -299,9 +299,9 @@ export default {
 在表单中使用 [Uploader 组件](#/zh-CN/uploader)。
 
 ```html
-<van-field name="uploader" label="文件上传">
+<hello-field name="uploader" label="文件上传">
   <template #input>
-    <van-uploader v-model="value" />
+    <hello-uploader v-model="value" />
   </template>
 </van-field>
 ```
@@ -322,7 +322,7 @@ export default {
 在表单中使用 [Picker 组件](#/zh-CN/picker)。
 
 ```html
-<van-field
+<hello-field
   readonly
   clickable
   name="picker"
@@ -331,8 +331,8 @@ export default {
   placeholder="点击选择城市"
   @click="state.showPicker = true"
 />
-<van-popup v-model:show="state.showPicker" position="bottom">
-  <van-picker
+<hello-popup v-model:show="state.showPicker" position="bottom">
+  <hello-picker
     :columns="columns"
     @confirm="onConfirm"
     @cancel="state.showPicker = false"
@@ -370,7 +370,7 @@ export default {
 在表单中使用 [DatetimePicker 组件](#/zh-CN/datetime-picker)。
 
 ```html
-<van-field
+<hello-field
   readonly
   clickable
   name="datetimePicker"
@@ -379,8 +379,8 @@ export default {
   placeholder="点击选择时间"
   @click="state.showPicker = true"
 />
-<van-popup v-model:show="state.showPicker" position="bottom">
-  <van-datetime-picker
+<hello-popup v-model:show="state.showPicker" position="bottom">
+  <hello-datetime-picker
     type="time"
     @confirm="onConfirm"
     @cancel="state.showPicker = false"
@@ -415,7 +415,7 @@ export default {
 在表单中使用 [Area 组件](#/zh-CN/area)。
 
 ```html
-<van-field
+<hello-field
   readonly
   clickable
   name="area"
@@ -424,8 +424,8 @@ export default {
   placeholder="点击选择省市区"
   @click="state.showArea = true"
 />
-<van-popup v-model:show="state.showArea" position="bottom">
-  <van-area
+<hello-popup v-model:show="state.showArea" position="bottom">
+  <hello-area
     :area-list="areaList"
     @confirm="onConfirm"
     @cancel="state.showArea = false"
@@ -464,7 +464,7 @@ export default {
 在表单中使用 [Calendar 组件](#/zh-CN/calendar)。
 
 ```html
-<van-field
+<hello-field
   readonly
   clickable
   name="calendar"
@@ -473,7 +473,7 @@ export default {
   placeholder="点击选择日期"
   @click="state.showCalendar = true"
 />
-<van-calendar v-model="state.showCalendar" @confirm="onConfirm" />
+<hello-calendar v-model="state.showCalendar" @confirm="onConfirm" />
 ```
 
 ```js

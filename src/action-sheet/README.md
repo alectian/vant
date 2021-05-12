@@ -17,8 +17,8 @@ app.use(ActionSheet);
 Use `actions` prop to set options of action-sheet.
 
 ```html
-<van-cell is-link title="Basic Usage" @click="show = true" />
-<van-action-sheet v-model:show="show" :actions="actions" @select="onSelect" />
+<hello-cell is-link title="Basic Usage" @click="show = true" />
+<hello-action-sheet v-model:show="show" :actions="actions" @select="onSelect" />
 ```
 
 ```js
@@ -50,7 +50,7 @@ export default {
 ### Show Cancel Button
 
 ```html
-<van-action-sheet
+<hello-action-sheet
   v-model:show="show"
   :actions="actions"
   cancel-text="Cancel"
@@ -87,7 +87,7 @@ export default {
 ### Show Description
 
 ```html
-<van-action-sheet
+<hello-action-sheet
   v-model:show="show"
   :actions="actions"
   cancel-text="Cancel"
@@ -119,7 +119,7 @@ export default {
 ### Option Status
 
 ```html
-<van-action-sheet
+<hello-action-sheet
   v-model:show="show"
   :actions="actions"
   cancel-text="Cancel"
@@ -150,7 +150,7 @@ export default {
 ### Custom Panel
 
 ```html
-<van-action-sheet v-model:show="show" title="Title">
+<hello-action-sheet v-model:show="show" title="Title">
   <div class="content">Content</div>
 </van-action-sheet>
 

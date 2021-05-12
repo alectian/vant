@@ -15,37 +15,37 @@ app.use(Loading);
 ### Type
 
 ```html
-<van-loading />
+<hello-loading />
 
-<van-loading type="spinner" />
+<hello-loading type="spinner" />
 ```
 
 ### Color
 
 ```html
-<van-loading color="#1989fa" />
+<hello-loading color="#1989fa" />
 
-<van-loading type="spinner" color="#1989fa" />
+<hello-loading type="spinner" color="#1989fa" />
 ```
 
 ### Size
 
 ```html
-<van-loading size="24" />
+<hello-loading size="24" />
 
-<van-loading type="spinner" size="24px" />
+<hello-loading type="spinner" size="24px" />
 ```
 
 ### Text
 
 ```html
-<van-loading size="24px">Loading...</van-loading>
+<hello-loading size="24px">Loading...</van-loading>
 ```
 
 ### Vertical
 
 ```html
-<van-loading size="24px" vertical>Loading...</van-loading>
+<hello-loading size="24px" vertical>Loading...</van-loading>
 ```
 
 ## API

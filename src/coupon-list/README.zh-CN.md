@@ -17,19 +17,19 @@ app.use(CouponList);
 
 ```html
 <!-- 优惠券单元格 -->
-<van-coupon-cell
+<hello-coupon-cell
   :coupons="state.coupons"
   :chosen-coupon="state.chosenCoupon"
   @click="state.showList = true"
 />
 <!-- 优惠券列表 -->
-<van-popup
+<hello-popup
   v-model="state.showList"
   round
   position="bottom"
   style="height: 90%; padding-top: 4px;"
 >
-  <van-coupon-list
+  <hello-coupon-list
     :coupons="state.coupons"
     :chosen-coupon="state.chosenCoupon"
     :disabled-coupons="disabledCoupons"

@@ -15,32 +15,32 @@ app.use(Divider);
 ### Basic Usage
 
 ```html
-<van-divider />
+<hello-divider />
 ```
 
 ### With Text
 
 ```html
-<van-divider>Text</van-divider>
+<hello-divider>Text</van-divider>
 ```
 
 ### Content Position
 
 ```html
-<van-divider content-position="left">Text</van-divider>
-<van-divider content-position="right">Text</van-divider>
+<hello-divider content-position="left">Text</van-divider>
+<hello-divider content-position="right">Text</van-divider>
 ```
 
 ### Dashed
 
 ```html
-<van-divider dashed>Text</van-divider>
+<hello-divider dashed>Text</van-divider>
 ```
 
 ### Custom Style
 
 ```html
-<van-divider
+<hello-divider
   :style="{ color: '#1989fa', borderColor: '#1989fa', padding: '0 16px' }"
 >
   Text

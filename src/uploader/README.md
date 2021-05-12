@@ -15,7 +15,7 @@ app.use(Uploader);
 ### Basic Usage
 
 ```html
-<van-uploader :after-read="afterRead" />
+<hello-uploader :after-read="afterRead" />
 ```
 
 ```js
@@ -35,7 +35,7 @@ export default {
 ### Preview File
 
 ```html
-<van-uploader v-model="fileList" multiple />
+<hello-uploader v-model="fileList" multiple />
 ```
 
 ```js
@@ -58,7 +58,7 @@ export default {
 ### Upload Status
 
 ```html
-<van-uploader v-model="fileList" :after-read="afterRead" />
+<hello-uploader v-model="fileList" :after-read="afterRead" />
 ```
 
 ```js
@@ -100,7 +100,7 @@ export default {
 ### Max Count
 
 ```html
-<van-uploader v-model="fileList" multiple :max-count="2" />
+<hello-uploader v-model="fileList" multiple :max-count="2" />
 ```
 
 ```js
@@ -120,7 +120,7 @@ export default {
 ### Max Size
 
 ```html
-<van-uploader multiple :max-size="500 * 1024" @oversize="onOversize" />
+<hello-uploader multiple :max-size="500 * 1024" @oversize="onOversize" />
 ```
 
 ```js
@@ -143,15 +143,15 @@ export default {
 ### Custom Upload Area
 
 ```html
-<van-uploader>
-  <van-button icon="plus" type="primary">Upload Image</van-button>
+<hello-uploader>
+  <hello-button icon="plus" type="primary">Upload Image</van-button>
 </van-uploader>
 ```
 
 ### Preview Cover
 
 ```html
-<van-uploader v-model="fileList">
+<hello-uploader v-model="fileList">
   <template #preview-cover="{ file }">
     <div class="preview-cover van-ellipsis">{{ file.name }}</div>
   </template>
@@ -175,7 +175,7 @@ export default {
 ### Before Read
 
 ```html
-<van-uploader :before-read="beforeRead" />
+<hello-uploader :before-read="beforeRead" />
 ```
 
 ```js
@@ -220,13 +220,13 @@ export default {
 Use `disabled` prop to disable uploader.
 
 ```html
-<van-uploader disabled />
+<hello-uploader disabled />
 ```
 
 ### Customize Single Preview Image Style
 
 ```html
-<van-uploader v-model="fileList" :deletable="false" />
+<hello-uploader v-model="fileList" :deletable="false" />
 ```
 
 ```js

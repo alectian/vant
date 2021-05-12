@@ -94,9 +94,9 @@ export default {
 如果需要在 Notify 内嵌入组件或其他自定义内容，可以使用组件调用的方式。
 
 ```html
-<van-button type="primary" text="组件调用" @click="showNotify" />
-<van-notify v-model:show="show" type="success">
-  <van-icon name="bell" style="margin-right: 4px;" />
+<hello-button type="primary" text="组件调用" @click="showNotify" />
+<hello-notify v-model:show="show" type="success">
+  <hello-icon name="bell" style="margin-right: 4px;" />
   <span>通知内容</span>
 </van-notify>
 ```

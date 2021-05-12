@@ -15,9 +15,9 @@ app.use(Popover);
 ### Basic Usage
 
 ```html
-<van-popover v-model:show="showPopover" :actions="actions" @select="onSelect">
+<hello-popover v-model:show="showPopover" :actions="actions" @select="onSelect">
   <template #reference>
-    <van-button type="primary">Light Theme</van-button>
+    <hello-button type="primary">Light Theme</van-button>
   </template>
 </van-popover>
 ```
@@ -53,9 +53,9 @@ export default {
 Using the `theme` prop to change the style of Popover.
 
 ```html
-<van-popover v-model:show="showPopover" theme="dark" :actions="actions">
+<hello-popover v-model:show="showPopover" theme="dark" :actions="actions">
   <template #reference>
-    <van-button type="primary">Dark Theme</van-button>
+    <hello-button type="primary">Dark Theme</van-button>
   </template>
 </van-popover>
 ```
@@ -83,7 +83,7 @@ export default {
 ### Placement
 
 ```html
-<van-popover placement="top" />
+<hello-popover placement="top" />
 ```
 
 `placement` supports the following values:
@@ -106,9 +106,9 @@ bottom-end    # Bottom right
 ### Show Icon
 
 ```html
-<van-popover v-model:show="showPopover" :actions="actions">
+<hello-popover v-model:show="showPopover" :actions="actions">
   <template #reference>
-    <van-button type="primary">Show Icon</van-button>
+    <hello-button type="primary">Show Icon</van-button>
   </template>
 </van-popover>
 ```
@@ -138,9 +138,9 @@ export default {
 Using the `disabled` option to disable an action.
 
 ```html
-<van-popover v-model:show="showPopover" :actions="actions">
+<hello-popover v-model:show="showPopover" :actions="actions">
   <template #reference>
-    <van-button type="primary">Disable Action</van-button>
+    <hello-button type="primary">Disable Action</van-button>
   </template>
 </van-popover>
 ```
@@ -168,15 +168,15 @@ export default {
 ### Custom Content
 
 ```html
-<van-popover v-model:show="showPopover">
-  <van-grid
+<hello-popover v-model:show="showPopover">
+  <hello-grid
     square
     clickable
     :border="false"
     column-num="3"
     style="width: 240px;"
   >
-    <van-grid-item
+    <hello-grid-item
       v-for="i in 6"
       :key="i"
       text="Option"
@@ -185,7 +185,7 @@ export default {
     />
   </van-grid>
   <template #reference>
-    <van-button type="primary">Custom Content</van-button>
+    <hello-button type="primary">Custom Content</van-button>
   </template>
 </van-popover>
 ```

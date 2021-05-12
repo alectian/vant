@@ -15,7 +15,7 @@ app.use(NavBar);
 ### Basic Usage
 
 ```html
-<van-nav-bar
+<hello-nav-bar
   title="Title"
   left-text="Back"
   right-text="Button"
@@ -47,9 +47,9 @@ export default {
 ### Use Slot
 
 ```html
-<van-nav-bar title="Title" left-text="Back" left-arrow>
+<hello-nav-bar title="Title" left-text="Back" left-arrow>
   <template #right>
-    <van-icon name="search" />
+    <hello-icon name="search" />
   </template>
 </van-nav-bar>
 ```

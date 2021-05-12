@@ -19,7 +19,7 @@ app.use(Rate);
 ### 基础用法
 
 ```html
-<van-rate v-model="value" />
+<hello-rate v-model="value" />
 ```
 
 ```js
@@ -36,13 +36,13 @@ export default {
 ### 自定义图标
 
 ```html
-<van-rate v-model="value" icon="like" void-icon="like-o" />
+<hello-rate v-model="value" icon="like" void-icon="like-o" />
 ```
 
 ### 自定义样式
 
 ```html
-<van-rate
+<hello-rate
   v-model="value"
   :size="25"
   color="#ffd21e"
@@ -54,7 +54,7 @@ export default {
 ### 半星
 
 ```html
-<van-rate v-model="value" allow-half void-icon="star" void-color="#eee" />
+<hello-rate v-model="value" allow-half void-icon="star" void-color="#eee" />
 ```
 
 ```js
@@ -71,25 +71,25 @@ export default {
 ### 自定义数量
 
 ```html
-<van-rate v-model="value" :count="6" />
+<hello-rate v-model="value" :count="6" />
 ```
 
 ### 禁用状态
 
 ```html
-<van-rate v-model="value" disabled />
+<hello-rate v-model="value" disabled />
 ```
 
 ### 只读状态
 
 ```html
-<van-rate v-model="value" readonly />
+<hello-rate v-model="value" readonly />
 ```
 
 ### 监听 change 事件
 
 ```html
-<van-rate v-model="value" @change="onChange" />
+<hello-rate v-model="value" @change="onChange" />
 ```
 
 ```javascript

@@ -20,9 +20,9 @@ app.use(DropdownItem);
 ### 基础用法
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="state.value1" :options="option1" />
-  <van-dropdown-item v-model="state.value2" :options="option2" />
+<hello-dropdown-menu>
+  <hello-dropdown-item v-model="state.value1" :options="option1" />
+  <hello-dropdown-item v-model="state.value2" :options="option2" />
 </van-dropdown-menu>
 ```
 
@@ -60,21 +60,21 @@ export default {
 通过插槽可以自定义 `DropdownItem` 的内容，此时需要使用实例上的 `toggle` 方法手动控制菜单的显示。
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value" :options="option" />
-  <van-dropdown-item title="筛选" ref="item">
-    <van-cell center title="包邮">
+<hello-dropdown-menu>
+  <hello-dropdown-item v-model="value" :options="option" />
+  <hello-dropdown-item title="筛选" ref="item">
+    <hello-cell center title="包邮">
       <template #right-icon>
-        <van-switch v-model="switch1" size="24" active-color="#ee0a24" />
+        <hello-switch v-model="switch1" size="24" active-color="#ee0a24" />
       </template>
     </van-cell>
-    <van-cell center title="团购">
+    <hello-cell center title="团购">
       <template #right-icon>
-        <van-switch v-model="switch2" size="24" active-color="#ee0a24" />
+        <hello-switch v-model="switch2" size="24" active-color="#ee0a24" />
       </template>
     </van-cell>
     <div style="padding: 5px 16px;">
-      <van-button type="danger" block round @click="onConfirm">
+      <hello-button type="danger" block round @click="onConfirm">
         确认
       </van-button>
     </div>
@@ -117,9 +117,9 @@ export default {
 通过 `active-color` 属性可以自定义菜单标题和选项的选中态颜色。
 
 ```html
-<van-dropdown-menu active-color="#1989fa">
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
+<hello-dropdown-menu active-color="#1989fa">
+  <hello-dropdown-item v-model="value1" :options="option1" />
+  <hello-dropdown-item v-model="value2" :options="option2" />
 </van-dropdown-menu>
 ```
 
@@ -128,18 +128,18 @@ export default {
 将 `direction` 属性值设置为 `up`，菜单即可向上展开。
 
 ```html
-<van-dropdown-menu direction="up">
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
+<hello-dropdown-menu direction="up">
+  <hello-dropdown-item v-model="value1" :options="option1" />
+  <hello-dropdown-item v-model="value2" :options="option2" />
 </van-dropdown-menu>
 ```
 
 ### 禁用菜单
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value1" disabled :options="option1" />
-  <van-dropdown-item v-model="value2" disabled :options="option2" />
+<hello-dropdown-menu>
+  <hello-dropdown-item v-model="value1" disabled :options="option1" />
+  <hello-dropdown-item v-model="value2" disabled :options="option2" />
 </van-dropdown-menu>
 ```
 

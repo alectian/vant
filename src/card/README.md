@@ -15,7 +15,7 @@ app.use(Card);
 ### Basic Usage
 
 ```html
-<van-card
+<hello-card
   num="2"
   price="2.00"
   title="Title"
@@ -27,7 +27,7 @@ app.use(Card);
 ### Discount Info
 
 ```html
-<van-card
+<hello-card
   num="2"
   tag="Tag"
   price="2.00"
@@ -43,7 +43,7 @@ app.use(Card);
 Use slot to custom content.
 
 ```html
-<van-card
+<hello-card
   num="2"
   title="Title"
   desc="Description"
@@ -51,12 +51,12 @@ Use slot to custom content.
   thumb="https://img.yzcdn.cn/vant/ipad.jpeg"
 >
   <template #tags>
-    <van-tag plain type="danger">Tag</van-tag>
-    <van-tag plain type="danger">Tag</van-tag>
+    <hello-tag plain type="danger">Tag</van-tag>
+    <hello-tag plain type="danger">Tag</van-tag>
   </template>
   <template #footer>
-    <van-button size="mini">Button</van-button>
-    <van-button size="mini">Button</van-button>
+    <hello-button size="mini">Button</van-button>
+    <hello-button size="mini">Button</van-button>
   </template>
 </van-card>
 ```

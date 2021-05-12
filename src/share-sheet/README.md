@@ -15,8 +15,8 @@ app.use(ShareSheet);
 ### Basic Usage
 
 ```html
-<van-cell title="Show ShareSheet" @click="showShare = true" />
-<van-share-sheet
+<hello-cell title="Show ShareSheet" @click="showShare = true" />
+<hello-share-sheet
   v-model:show="showShare"
   title="Share"
   :options="options"
@@ -56,7 +56,7 @@ export default {
 ### Multi Line
 
 ```html
-<van-share-sheet v-model:show="showShare" title="Share" :options="options" />
+<hello-share-sheet v-model:show="showShare" title="Share" :options="options" />
 ```
 
 ```js
@@ -90,7 +90,7 @@ export default {
 ### Custom Icon
 
 ```html
-<van-share-sheet v-model:show="showShare" :options="options" />
+<hello-share-sheet v-model:show="showShare" :options="options" />
 ```
 
 ```js
@@ -125,7 +125,7 @@ export default {
 ### Show Description
 
 ```html
-<van-share-sheet
+<hello-share-sheet
   v-model:show="showShare"
   :options="options"
   title="Share"

@@ -21,7 +21,7 @@ app.use(Circle);
 `rate` 属性表示进度条的目标进度，`v-model:current-rate` 表示动画过程中的实时进度。当 `rate` 发生变化时，`v-model:current-rate` 会以 `speed` 的速度变化，直至达到 `rate` 设定的值。
 
 ```html
-<van-circle
+<hello-circle
   v-model:current-rate="currentRate"
   :rate="30"
   :speed="100"
@@ -50,7 +50,7 @@ export default {
 通过 `stroke-width` 属性来控制进度条宽度。
 
 ```html
-<van-circle
+<hello-circle
   v-model:current-rate="currentRate"
   :rate="rate"
   :stroke-width="60"
@@ -63,7 +63,7 @@ export default {
 通过 `color` 属性来控制进度条颜色，`layer-color` 属性来控制轨道颜色。
 
 ```html
-<van-circle
+<hello-circle
   v-model:current-rate="currentRate"
   :rate="rate"
   layer-color="#ebedf0"
@@ -76,7 +76,7 @@ export default {
 `color` 属性支持传入对象格式来定义渐变色。
 
 ```html
-<van-circle
+<hello-circle
   v-model:current-rate="currentRate"
   :rate="rate"
   :color="gradientColor"
@@ -108,7 +108,7 @@ export default {
 将 `clockwise` 设置为 `false`，进度会从逆时针方向开始。
 
 ```html
-<van-circle
+<hello-circle
   v-model:current-rate="currentRate"
   :rate="rate"
   :clockwise="false"
@@ -121,7 +121,7 @@ export default {
 通过 `size` 属性设置圆环直径。
 
 ```html
-<van-circle
+<hello-circle
   v-model:current-rate="currentRate"
   :rate="rate"
   size="120px"

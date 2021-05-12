@@ -18,8 +18,8 @@ app.use(Tabs);
 The first tab is actived by default, you can set `v-model:active` to active specified tab.
 
 ```html
-<van-tabs v-model:active="active">
-  <van-tab v-for="index in 4" :title="'tab' + index">
+<hello-tabs v-model:active="active">
+  <hello-tab v-for="index in 4" :title="'tab' + index">
     content of tab {{ index }}
   </van-tab>
 </van-tabs>
@@ -39,10 +39,10 @@ export default {
 ### Match By Name
 
 ```html
-<van-tabs v-model:active="activeName">
-  <van-tab title="tab 1" name="a">content of tab 1</van-tab>
-  <van-tab title="tab 2" name="b">content of tab 2</van-tab>
-  <van-tab title="tab 3" name="c">content of tab 3</van-tab>
+<hello-tabs v-model:active="activeName">
+  <hello-tab title="tab 1" name="a">content of tab 1</van-tab>
+  <hello-tab title="tab 2" name="b">content of tab 2</van-tab>
+  <hello-tab title="tab 3" name="c">content of tab 3</van-tab>
 </van-tabs>
 ```
 
@@ -62,8 +62,8 @@ export default {
 By default more than 5 tabs, you can scroll through the tabs. You can set `swipe-threshold` attribute to customize threshold number.
 
 ```html
-<van-tabs>
-  <van-tab v-for="index in 8" :title="'tab' + index">
+<hello-tabs>
+  <hello-tab v-for="index in 8" :title="'tab' + index">
     content of tab {{ index }}
   </van-tab>
 </van-tabs>
@@ -74,8 +74,8 @@ By default more than 5 tabs, you can scroll through the tabs. You can set `swipe
 You can set `disabled` attribute on the corresponding `van-tab`.
 
 ```html
-<van-tabs @disabled="onClickDisabled">
-  <van-tab v-for="index in 3" :title="'tab' + index" :disabled="index === 2">
+<hello-tabs @disabled="onClickDisabled">
+  <hello-tab v-for="index in 3" :title="'tab' + index" :disabled="index === 2">
     content of tab {{ index }}
   </van-tab>
 </van-tabs>
@@ -102,8 +102,8 @@ export default {
 Tabs styled as cards.
 
 ```html
-<van-tabs type="card">
-  <van-tab v-for="index in 3" :title="'tab' + index">
+<hello-tabs type="card">
+  <hello-tab v-for="index in 3" :title="'tab' + index">
     content of tab {{ index }}
   </van-tab>
 </van-tabs>
@@ -112,8 +112,8 @@ Tabs styled as cards.
 ### Click Event
 
 ```html
-<van-tabs @click="onClick">
-  <van-tab v-for="index in 2" :title="'tab' + index">
+<hello-tabs @click="onClick">
+  <hello-tab v-for="index in 2" :title="'tab' + index">
     content of tab {{ index }}
   </van-tab>
 </van-tabs>
@@ -140,8 +140,8 @@ export default {
 In sticky mode, the tab will be fixed to top when scroll to top.
 
 ```html
-<van-tabs v-model:active="active" sticky>
-  <van-tab v-for="index in 4" :title="'tab ' + index">
+<hello-tabs v-model:active="active" sticky>
+  <hello-tab v-for="index in 4" :title="'tab ' + index">
     content {{ index }}
   </van-tab>
 </van-tabs>
@@ -152,9 +152,9 @@ In sticky mode, the tab will be fixed to top when scroll to top.
 Use title slot to custom tab title.
 
 ```html
-<van-tabs v-model:active="active">
-  <van-tab v-for="index in 2" :key="index">
-    <template #title> <van-icon name="more-o" />tab </template>
+<hello-tabs v-model:active="active">
+  <hello-tab v-for="index in 2" :key="index">
+    <template #title> <hello-icon name="more-o" />tab </template>
     content {{ index }}
   </van-tab>
 </van-tabs>
@@ -165,8 +165,8 @@ Use title slot to custom tab title.
 Use `animated` props to change tabs with animation.
 
 ```html
-<van-tabs v-model:active="active" animated>
-  <van-tab v-for="index in 4" :title="'tab ' + index">
+<hello-tabs v-model:active="active" animated>
+  <hello-tab v-for="index in 4" :title="'tab ' + index">
     content {{ index }}
   </van-tab>
 </van-tabs>
@@ -177,8 +177,8 @@ Use `animated` props to change tabs with animation.
 In swipeable mode, you can switch tabs with swipe gestrue in the content.
 
 ```html
-<van-tabs v-model:active="active" swipeable>
-  <van-tab v-for="index in 4" :title="'tab ' + index">
+<hello-tabs v-model:active="active" swipeable>
+  <hello-tab v-for="index in 4" :title="'tab ' + index">
     content {{ index }}
   </van-tab>
 </van-tabs>
@@ -189,8 +189,8 @@ In swipeable mode, you can switch tabs with swipe gestrue in the content.
 In scrollspy mode, the list of content will be tiled.
 
 ```html
-<van-tabs v-model:active="active" scrollspy sticky>
-  <van-tab v-for="index in 8" :title="'tab ' + index">
+<hello-tabs v-model:active="active" scrollspy sticky>
+  <hello-tab v-for="index in 8" :title="'tab ' + index">
     content {{ index }}
   </van-tab>
 </van-tabs>
@@ -199,8 +199,8 @@ In scrollspy mode, the list of content will be tiled.
 ### Before Change
 
 ```html
-<van-tabs :before-change="beforeChange">
-  <van-tab v-for="index in 4" :title="'tab ' + index">
+<hello-tabs :before-change="beforeChange">
+  <hello-tab v-for="index in 4" :title="'tab ' + index">
     content {{ index }}
   </van-tab>
 </van-tabs>

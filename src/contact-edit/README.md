@@ -15,7 +15,7 @@ app.use(ContactEdit);
 ### Basic Usage
 
 ```html
-<van-contact-edit
+<hello-contact-edit
   is-edit
   show-set-default
   :contact-info="editingContact"

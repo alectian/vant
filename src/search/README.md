@@ -15,7 +15,7 @@ app.use(Search);
 ### Basic Usage
 
 ```html
-<van-search v-model="value" placeholder="Placeholder" />
+<hello-search v-model="value" placeholder="Placeholder" />
 ```
 
 ```js
@@ -35,7 +35,7 @@ export default {
 
 ```html
 <form action="/">
-  <van-search
+  <hello-search
     v-model="value"
     show-action
     placeholder="Placeholder"
@@ -72,19 +72,19 @@ export default {
 ### Input Align
 
 ```html
-<van-search v-model="value" input-align="center" placeholder="Placeholder" />
+<hello-search v-model="value" input-align="center" placeholder="Placeholder" />
 ```
 
 ### Disabled
 
 ```html
-<van-search v-model="value" disabled placeholder="Placeholder" />
+<hello-search v-model="value" disabled placeholder="Placeholder" />
 ```
 
 ### Custom Background Color
 
 ```html
-<van-search
+<hello-search
   v-model="value"
   shape="round"
   background="#4fc08d"
@@ -97,7 +97,7 @@ export default {
 Use `action` slot to custom right button, `cancel` event will no longer be Emitted when use this slot.
 
 ```html
-<van-search
+<hello-search
   v-model="value"
   show-action
   label="Address"

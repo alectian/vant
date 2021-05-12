@@ -15,13 +15,13 @@ app.use(VanImage);
 ### Basic Usage
 
 ```html
-<van-image width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+<hello-image width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" />
 ```
 
 ### Fit Mode
 
 ```html
-<van-image
+<hello-image
   width="10rem"
   height="10rem"
   fit="contain"
@@ -34,7 +34,7 @@ app.use(VanImage);
 Show round image, it may not works at `fit=contain` and `fit=scale-down`.
 
 ```html
-<van-image
+<hello-image
   round
   width="10rem"
   height="10rem"
@@ -45,7 +45,7 @@ Show round image, it may not works at `fit=contain` and `fit=scale-down`.
 ### Lazy Load
 
 ```html
-<van-image
+<hello-image
   width="100"
   height="100"
   lazy-load

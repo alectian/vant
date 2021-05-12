@@ -19,7 +19,7 @@ app.use(ContactCard);
 ### 添加联系人
 
 ```html
-<van-contact-card type="add" @click="onAdd" />
+<hello-contact-card type="add" @click="onAdd" />
 ```
 
 ```js
@@ -40,7 +40,7 @@ export default {
 ### 编辑联系人
 
 ```html
-<van-contact-card
+<hello-contact-card
   type="edit"
   :name="currentContact.name"
   :tel="currentContact.tel"
@@ -74,7 +74,7 @@ export default {
 ### 不可编辑
 
 ```html
-<van-contact-card type="edit" name="张三" tel="13000000000" :editable="false" />
+<hello-contact-card type="edit" name="张三" tel="13000000000" :editable="false" />
 ```
 
 ## API

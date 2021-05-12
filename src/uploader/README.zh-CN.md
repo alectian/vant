@@ -21,7 +21,7 @@ app.use(Uploader);
 文件上传完毕后会触发 `after-read` 回调函数，获取到对应的 `file` 对象。
 
 ```html
-<van-uploader :after-read="afterRead" />
+<hello-uploader :after-read="afterRead" />
 ```
 
 ```js
@@ -44,7 +44,7 @@ export default {
 通过 `v-model` 可以绑定已经上传的文件列表，并展示文件列表的预览图。
 
 ```html
-<van-uploader v-model="fileList" multiple />
+<hello-uploader v-model="fileList" multiple />
 ```
 
 ```js
@@ -71,7 +71,7 @@ export default {
 通过 `status` 属性可以标识上传状态，`uploading` 表示上传中，`failed` 表示上传失败，`done` 表示上传完成。
 
 ```html
-<van-uploader v-model="fileList" :after-read="afterRead" />
+<hello-uploader v-model="fileList" :after-read="afterRead" />
 ```
 
 ```js
@@ -115,7 +115,7 @@ export default {
 通过 `max-count` 属性可以限制上传文件的数量，上传数量达到限制后，会自动隐藏上传区域。
 
 ```html
-<van-uploader v-model="fileList" multiple :max-count="2" />
+<hello-uploader v-model="fileList" multiple :max-count="2" />
 ```
 
 ```js
@@ -137,7 +137,7 @@ export default {
 通过 `max-size` 属性可以限制上传文件的大小，超过大小的文件会被自动过滤，这些文件信息可以通过 `oversize` 事件获取。
 
 ```html
-<van-uploader multiple :max-size="500 * 1024" @oversize="onOversize" />
+<hello-uploader multiple :max-size="500 * 1024" @oversize="onOversize" />
 ```
 
 ```js
@@ -162,8 +162,8 @@ export default {
 通过默认插槽可以自定义上传区域的样式。
 
 ```html
-<van-uploader>
-  <van-button icon="plus" type="primary">上传文件</van-button>
+<hello-uploader>
+  <hello-button icon="plus" type="primary">上传文件</van-button>
 </van-uploader>
 ```
 
@@ -172,7 +172,7 @@ export default {
 通过 `preview-cover` 插槽可以自定义覆盖在预览区域上方的内容。
 
 ```html
-<van-uploader v-model="fileList">
+<hello-uploader v-model="fileList">
   <template #preview-cover="{ file }">
     <div class="preview-cover van-ellipsis">{{ file.name }}</div>
   </template>
@@ -198,7 +198,7 @@ export default {
 通过传入 `beforeRead` 函数可以在上传前进行校验和处理，返回 `true` 表示校验通过，返回 `false` 表示校验失败。支持返回 `Promise` 对 file 对象进行自定义处理，例如压缩图片。
 
 ```html
-<van-uploader :before-read="beforeRead" />
+<hello-uploader :before-read="beforeRead" />
 ```
 
 ```js
@@ -243,7 +243,7 @@ export default {
 通过 `disabled` 属性禁用文件上传。
 
 ```html
-<van-uploader disabled />
+<hello-uploader disabled />
 ```
 
 ### 自定义单个图片预览
@@ -251,7 +251,7 @@ export default {
 在 `v-model` 数组中设置单个预览图片属性，支持 `imageFit` `deletable` `previewSize` `beforeDelete`。
 
 ```html
-<van-uploader v-model="fileList" :deletable="false" />
+<hello-uploader v-model="fileList" :deletable="false" />
 ```
 
 ```js

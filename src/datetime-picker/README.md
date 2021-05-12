@@ -19,7 +19,7 @@ app.use(DatetimePicker);
 ### Choose Date
 
 ```html
-<van-datetime-picker
+<hello-datetime-picker
   v-model="currentDate"
   type="date"
   title="Choose Date"
@@ -46,7 +46,7 @@ export default {
 ### Choose Year-Month
 
 ```html
-<van-datetime-picker
+<hello-datetime-picker
   v-model="currentDate"
   type="year-month"
   title="Choose Year-Month"
@@ -85,7 +85,7 @@ export default {
 ### Choose Month-Day
 
 ```html
-<van-datetime-picker
+<hello-datetime-picker
   v-model="currentDate"
   type="month-day"
   title="Choose Month-Day"
@@ -124,7 +124,7 @@ export default {
 ### Choose Time
 
 ```html
-<van-datetime-picker
+<hello-datetime-picker
   v-model="currentTime"
   type="time"
   title="Choose Time"
@@ -147,7 +147,7 @@ export default {
 ### Choose DateTime
 
 ```html
-<van-datetime-picker
+<hello-datetime-picker
   v-model="currentDate"
   type="datetime"
   title="Choose DateTime"
@@ -174,7 +174,7 @@ export default {
 ### Choose DateHour
 
 ```html
-<van-datetime-picker
+<hello-datetime-picker
   v-model="currentDate"
   type="datehour"
   title="Choose DateTime"
@@ -201,7 +201,7 @@ export default {
 ### Option Filter
 
 ```html
-<van-datetime-picker
+<hello-datetime-picker
   v-model="currentTime"
   type="time"
   title="Option Filter"
@@ -234,7 +234,7 @@ export default {
 ### Columns Order
 
 ```html
-<van-datetime-picker
+<hello-datetime-picker
   v-model="currentDate"
   type="date"
   title="自定义列排序"

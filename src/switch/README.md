@@ -15,7 +15,7 @@ app.use(Switch);
 ### Basic Usage
 
 ```html
-<van-switch v-model="checked" />
+<hello-switch v-model="checked" />
 ```
 
 ```js
@@ -32,31 +32,31 @@ export default {
 ### Disabled
 
 ```html
-<van-switch v-model="checked" disabled />
+<hello-switch v-model="checked" disabled />
 ```
 
 ### Loading
 
 ```html
-<van-switch v-model="checked" loading />
+<hello-switch v-model="checked" loading />
 ```
 
 ### Custom Size
 
 ```html
-<van-switch v-model="checked" size="24px" />
+<hello-switch v-model="checked" size="24px" />
 ```
 
 ### Custom Color
 
 ```html
-<van-switch v-model="checked" active-color="#ee0a24" inactive-color="#dcdee0" />
+<hello-switch v-model="checked" active-color="#ee0a24" inactive-color="#dcdee0" />
 ```
 
 ### Async Control
 
 ```html
-<van-switch :model-value="checked" @update:model-value="onUpdateValue" />
+<hello-switch :model-value="checked" @update:model-value="onUpdateValue" />
 ```
 
 ```js
@@ -86,9 +86,9 @@ export default {
 ### Inside a Cell
 
 ```html
-<van-cell center title="Title">
+<hello-cell center title="Title">
   <template #right-icon>
-    <van-switch v-model="checked" size="24" />
+    <hello-switch v-model="checked" size="24" />
   </template>
 </van-cell>
 ```

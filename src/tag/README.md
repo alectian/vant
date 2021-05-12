@@ -15,34 +15,34 @@ app.use(Tag);
 ### Basic Usage
 
 ```html
-<van-tag type="primary">Tag</van-tag>
-<van-tag type="success">Tag</van-tag>
-<van-tag type="danger">Tag</van-tag>
-<van-tag type="warning">Tag</van-tag>
+<hello-tag type="primary">Tag</van-tag>
+<hello-tag type="success">Tag</van-tag>
+<hello-tag type="danger">Tag</van-tag>
+<hello-tag type="warning">Tag</van-tag>
 ```
 
 ### Plain style
 
 ```html
-<van-tag plain type="primary">Tag</van-tag>
+<hello-tag plain type="primary">Tag</van-tag>
 ```
 
 ### Round style
 
 ```html
-<van-tag round type="primary">Tag</van-tag>
+<hello-tag round type="primary">Tag</van-tag>
 ```
 
 ### Mark style
 
 ```html
-<van-tag mark type="primary">Tag</van-tag>
+<hello-tag mark type="primary">Tag</van-tag>
 ```
 
 ### Closeable
 
 ```html
-<van-tag :show="show" closeable size="medium" type="primary" @close="close">
+<hello-tag :show="show" closeable size="medium" type="primary" @close="close">
   Tag
 </van-tag>
 ```
@@ -68,17 +68,17 @@ export default {
 ### Custom Size
 
 ```html
-<van-tag type="primary">Tag</van-tag>
-<van-tag type="primary" size="medium">Tag</van-tag>
-<van-tag type="primary" size="large">Tag</van-tag>
+<hello-tag type="primary">Tag</van-tag>
+<hello-tag type="primary" size="medium">Tag</van-tag>
+<hello-tag type="primary" size="large">Tag</van-tag>
 ```
 
 ### Custom Color
 
 ```html
-<van-tag color="#7232dd">Tag</van-tag>
-<van-tag color="#ffe1e1" text-color="#ad0000">Tag</van-tag>
-<van-tag color="#7232dd" plain>Tag</van-tag>
+<hello-tag color="#7232dd">Tag</van-tag>
+<hello-tag color="#ffe1e1" text-color="#ad0000">Tag</van-tag>
+<hello-tag color="#7232dd" plain>Tag</van-tag>
 ```
 
 ## API

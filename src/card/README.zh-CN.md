@@ -19,7 +19,7 @@ app.use(Card);
 ### 基础用法
 
 ```html
-<van-card
+<hello-card
   num="2"
   price="2.00"
   desc="描述信息"
@@ -33,7 +33,7 @@ app.use(Card);
 通过 `origin-price` 设置商品原价，通过 `tag` 设置商品左上角标签。
 
 ```html
-<van-card
+<hello-card
   num="2"
   tag="标签"
   price="2.00"
@@ -49,7 +49,7 @@ app.use(Card);
 `Card` 组件提供了多个插槽，可以灵活地自定义内容。
 
 ```html
-<van-card
+<hello-card
   num="2"
   price="2.00"
   desc="描述信息"
@@ -57,12 +57,12 @@ app.use(Card);
   thumb="https://img.yzcdn.cn/vant/ipad.jpeg"
 >
   <template #tags>
-    <van-tag plain type="danger">标签</van-tag>
-    <van-tag plain type="danger">标签</van-tag>
+    <hello-tag plain type="danger">标签</van-tag>
+    <hello-tag plain type="danger">标签</van-tag>
   </template>
   <template #footer>
-    <van-button size="mini">按钮</van-button>
-    <van-button size="mini">按钮</van-button>
+    <hello-button size="mini">按钮</van-button>
+    <hello-button size="mini">按钮</van-button>
   </template>
 </van-card>
 ```

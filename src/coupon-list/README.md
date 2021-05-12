@@ -17,19 +17,19 @@ app.use(CouponList);
 
 ```html
 <!-- Coupon Cell -->
-<van-coupon-cell
+<hello-coupon-cell
   :coupons="state.coupons"
   :chosen-coupon="state.chosenCoupon"
   @click="state.showList = true"
 />
 <!-- Coupon List -->
-<van-popup
+<hello-popup
   v-model="state.showList"
   round
   position="bottom"
   style="height: 90%; padding-top: 4px;"
 >
-  <van-coupon-list
+  <hello-coupon-list
     :coupons="state.coupons"
     :chosen-coupon="state.chosenCoupon"
     :disabled-coupons="disabledCoupons"

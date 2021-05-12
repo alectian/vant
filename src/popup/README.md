@@ -15,8 +15,8 @@ app.use(Popup);
 ### Basic Usage
 
 ```html
-<van-cell is-link @click="showPopup">Show Popup</van-cell>
-<van-popup v-model:show="show">Content</van-popup>
+<hello-cell is-link @click="showPopup">Show Popup</van-cell>
+<hello-popup v-model:show="show">Content</van-popup>
 ```
 
 ```js
@@ -41,20 +41,20 @@ export default {
 Use `position` prop to set popup display position.
 
 ```html
-<van-popup v-model:show="show" position="top" :style="{ height: '30%' }" />
+<hello-popup v-model:show="show" position="top" :style="{ height: '30%' }" />
 ```
 
 ### Close Icon
 
 ```html
-<van-popup
+<hello-popup
   v-model:show="show"
   closeable
   position="bottom"
   :style="{ height: '30%' }"
 />
 <!-- Custom Icon -->
-<van-popup
+<hello-popup
   v-model:show="show"
   closeable
   close-icon="close"
@@ -62,7 +62,7 @@ Use `position` prop to set popup display position.
   :style="{ height: '30%' }"
 />
 <!-- Icon Position -->
-<van-popup
+<hello-popup
   v-model:show="show"
   closeable
   close-icon-position="top-left"
@@ -74,7 +74,7 @@ Use `position` prop to set popup display position.
 ### Round Corner
 
 ```html
-<van-popup
+<hello-popup
   v-model:show="show"
   round
   position="bottom"
@@ -88,13 +88,13 @@ Use `teleport` prop to specify mount location.
 
 ```html
 <!-- teleport to body -->
-<van-popup v-model:show="show" teleport="body" />
+<hello-popup v-model:show="show" teleport="body" />
 
 <!-- teleport to #app -->
-<van-popup v-model:show="show" teleport="#app" />
+<hello-popup v-model:show="show" teleport="#app" />
 
 <!-- teleport to Element -->
-<van-popup v-model:show="show" :teleport="myContainer" />
+<hello-popup v-model:show="show" :teleport="myContainer" />
 ```
 
 ```js

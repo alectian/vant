@@ -16,34 +16,34 @@ app.use(GridItem);
 ### Basic Usage
 
 ```html
-<van-grid>
-  <van-grid-item icon="photo-o" text="Text" />
-  <van-grid-item icon="photo-o" text="Text" />
-  <van-grid-item icon="photo-o" text="Text" />
-  <van-grid-item icon="photo-o" text="Text" />
+<hello-grid>
+  <hello-grid-item icon="photo-o" text="Text" />
+  <hello-grid-item icon="photo-o" text="Text" />
+  <hello-grid-item icon="photo-o" text="Text" />
+  <hello-grid-item icon="photo-o" text="Text" />
 </van-grid>
 ```
 
 ### Column Num
 
 ```html
-<van-grid :column-num="3">
-  <van-grid-item v-for="value in 6" :key="value" icon="photo-o" text="Text" />
+<hello-grid :column-num="3">
+  <hello-grid-item v-for="value in 6" :key="value" icon="photo-o" text="Text" />
 </van-grid>
 ```
 
 ### Custom Content
 
 ```html
-<van-grid :border="false" :column-num="3">
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
+<hello-grid :border="false" :column-num="3">
+  <hello-grid-item>
+    <hello-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
   </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
+  <hello-grid-item>
+    <hello-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
   </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
+  <hello-grid-item>
+    <hello-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
   </van-grid-item>
 </van-grid>
 ```
@@ -51,44 +51,44 @@ app.use(GridItem);
 ### Square
 
 ```html
-<van-grid square>
-  <van-grid-item v-for="value in 8" :key="value" icon="photo-o" text="Text" />
+<hello-grid square>
+  <hello-grid-item v-for="value in 8" :key="value" icon="photo-o" text="Text" />
 </van-grid>
 ```
 
 ### Gutter
 
 ```html
-<van-grid :gutter="10">
-  <van-grid-item v-for="value in 8" :key="value" icon="photo-o" text="Text" />
+<hello-grid :gutter="10">
+  <hello-grid-item v-for="value in 8" :key="value" icon="photo-o" text="Text" />
 </van-grid>
 ```
 
 ### Horizontal
 
 ```html
-<van-grid direction="horizontal" :column-num="2">
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
+<hello-grid direction="horizontal" :column-num="2">
+  <hello-grid-item icon="photo-o" text="文字" />
+  <hello-grid-item icon="photo-o" text="文字" />
+  <hello-grid-item icon="photo-o" text="文字" />
 </van-grid>
 ```
 
 ### Route
 
 ```html
-<van-grid clickable :column-num="2">
-  <van-grid-item icon="home-o" text="Vue Router" to="/" />
-  <van-grid-item icon="search" text="URL" url="/vant/mobile.html" />
+<hello-grid clickable :column-num="2">
+  <hello-grid-item icon="home-o" text="Vue Router" to="/" />
+  <hello-grid-item icon="search" text="URL" url="/vant/mobile.html" />
 </van-grid>
 ```
 
 ### Show Badge
 
 ```html
-<van-grid :column-num="2">
-  <van-grid-item icon="home-o" text="Text" dot />
-  <van-grid-item icon="search" text="Text" badge="99+" />
+<hello-grid :column-num="2">
+  <hello-grid-item icon="home-o" text="Text" dot />
+  <hello-grid-item icon="search" text="Text" badge="99+" />
 </van-grid>
 ```
 

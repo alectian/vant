@@ -19,7 +19,7 @@ app.use(AddressList);
 ### 基础用法
 
 ```html
-<van-address-list
+<hello-address-list
   v-model="chosenAddressId"
   :list="list"
   :disabled-list="disabledList"

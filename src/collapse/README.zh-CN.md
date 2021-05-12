@@ -22,10 +22,10 @@ app.use(CollapseItem);
 通过 `v-model` 控制展开的面板列表，`activeNames` 为数组格式。
 
 ```html
-<van-collapse v-model="activeNames">
-  <van-collapse-item title="标题1" name="1">内容</van-collapse-item>
-  <van-collapse-item title="标题2" name="2">内容</van-collapse-item>
-  <van-collapse-item title="标题3" name="3">内容</van-collapse-item>
+<hello-collapse v-model="activeNames">
+  <hello-collapse-item title="标题1" name="1">内容</van-collapse-item>
+  <hello-collapse-item title="标题2" name="2">内容</van-collapse-item>
+  <hello-collapse-item title="标题3" name="3">内容</van-collapse-item>
 </van-collapse>
 ```
 
@@ -45,10 +45,10 @@ export default {
 通过 `accordion` 可以设置为手风琴模式，最多展开一个面板，此时 `activeName` 为字符串格式。
 
 ```html
-<van-collapse v-model="activeName" accordion>
-  <van-collapse-item title="标题1" name="1">内容</van-collapse-item>
-  <van-collapse-item title="标题2" name="2">内容</van-collapse-item>
-  <van-collapse-item title="标题3" name="3">内容</van-collapse-item>
+<hello-collapse v-model="activeName" accordion>
+  <hello-collapse-item title="标题1" name="1">内容</van-collapse-item>
+  <hello-collapse-item title="标题2" name="2">内容</van-collapse-item>
+  <hello-collapse-item title="标题3" name="3">内容</van-collapse-item>
 </van-collapse>
 ```
 
@@ -68,10 +68,10 @@ export default {
 通过 `disabled` 属性来禁用单个面板。
 
 ```html
-<van-collapse v-model="activeNames">
-  <van-collapse-item title="标题1" name="1">内容</van-collapse-item>
-  <van-collapse-item title="标题2" name="2" disabled>内容</van-collapse-item>
-  <van-collapse-item title="标题3" name="3" disabled>内容</van-collapse-item>
+<hello-collapse v-model="activeNames">
+  <hello-collapse-item title="标题1" name="1">内容</van-collapse-item>
+  <hello-collapse-item title="标题2" name="2" disabled>内容</van-collapse-item>
+  <hello-collapse-item title="标题3" name="3" disabled>内容</van-collapse-item>
 </van-collapse>
 ```
 
@@ -80,14 +80,14 @@ export default {
 通过 `title` 插槽可以自定义标题栏的内容。
 
 ```html
-<van-collapse v-model="activeNames">
-  <van-collapse-item name="1">
+<hello-collapse v-model="activeNames">
+  <hello-collapse-item name="1">
     <template #title>
-      <div>标题1 <van-icon name="question-o" /></div>
+      <div>标题1 <hello-icon name="question-o" /></div>
     </template>
     内容
   </van-collapse-item>
-  <van-collapse-item title="标题2" name="2" icon="shop-o">
+  <hello-collapse-item title="标题2" name="2" icon="shop-o">
     内容
   </van-collapse-item>
 </van-collapse>

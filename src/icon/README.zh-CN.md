@@ -21,8 +21,8 @@ app.use(Icon);
 `Icon` 的 `name` 属性支持传入图标名称或图片链接，所有可用的图标名称见右侧示例。
 
 ```html
-<van-icon name="chat-o" />
-<van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png" />
+<hello-icon name="chat-o" />
+<hello-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png" />
 ```
 
 ### 徽标提示
@@ -30,9 +30,9 @@ app.use(Icon);
 设置 `dot` 属性后，会在图标右上角展示一个小红点；设置 `badge` 属性后，会在图标右上角展示相应的徽标。
 
 ```html
-<van-icon name="chat-o" dot />
-<van-icon name="chat-o" badge="9" />
-<van-icon name="chat-o" badge="99+" />
+<hello-icon name="chat-o" dot />
+<hello-icon name="chat-o" badge="9" />
+<hello-icon name="chat-o" badge="99+" />
 ```
 
 ### 图标颜色
@@ -40,8 +40,8 @@ app.use(Icon);
 `Icon` 的 `color` 属性用来设置图标的颜色。
 
 ```html
-<van-icon name="cart-o" color="#1989fa" />
-<van-icon name="fire-o" color="#ee0a24" />
+<hello-icon name="cart-o" color="#1989fa" />
+<hello-icon name="fire-o" color="#ee0a24" />
 ```
 
 ### 图标大小
@@ -49,7 +49,7 @@ app.use(Icon);
 `Icon` 的 `size` 属性用来设置图标的尺寸大小，默认单位为 `px`。
 
 ```html
-<van-icon name="chat-o" size="40" /> <van-icon name="chat-o" size="3rem" />
+<hello-icon name="chat-o" size="40" /> <hello-icon name="chat-o" size="3rem" />
 ```
 
 ### 使用本地字体文件
@@ -84,7 +84,7 @@ import 'vant/lib/icon/local.css';
 
 ```html
 <!-- 通过 class-prefix 指定类名为 my-icon -->
-<van-icon class-prefix="my-icon" name="extra" />
+<hello-icon class-prefix="my-icon" name="extra" />
 ```
 
 ## API

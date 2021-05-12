@@ -15,7 +15,7 @@ app.use(ContactList);
 ### Basic Usage
 
 ```html
-<van-contact-list
+<hello-contact-list
   v-model="chosenContactId"
   :list="list"
   default-tag-text="default"

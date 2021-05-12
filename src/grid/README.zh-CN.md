@@ -22,11 +22,11 @@ app.use(GridItem);
 通过 `icon` 属性设置格子内的图标，`text` 属性设置文字内容。
 
 ```html
-<van-grid>
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
+<hello-grid>
+  <hello-grid-item icon="photo-o" text="文字" />
+  <hello-grid-item icon="photo-o" text="文字" />
+  <hello-grid-item icon="photo-o" text="文字" />
+  <hello-grid-item icon="photo-o" text="文字" />
 </van-grid>
 ```
 
@@ -35,8 +35,8 @@ app.use(GridItem);
 默认一行展示四个格子，可以通过 `column-num` 自定义列数。
 
 ```html
-<van-grid :column-num="3">
-  <van-grid-item v-for="value in 6" :key="value" icon="photo-o" text="文字" />
+<hello-grid :column-num="3">
+  <hello-grid-item v-for="value in 6" :key="value" icon="photo-o" text="文字" />
 </van-grid>
 ```
 
@@ -45,15 +45,15 @@ app.use(GridItem);
 通过插槽可以自定义格子展示的内容。
 
 ```html
-<van-grid :border="false" :column-num="3">
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
+<hello-grid :border="false" :column-num="3">
+  <hello-grid-item>
+    <hello-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
   </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
+  <hello-grid-item>
+    <hello-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
   </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
+  <hello-grid-item>
+    <hello-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
   </van-grid-item>
 </van-grid>
 ```
@@ -63,8 +63,8 @@ app.use(GridItem);
 设置 `square` 属性后，格子的高度会和宽度保持一致。
 
 ```html
-<van-grid square>
-  <van-grid-item v-for="value in 8" :key="value" icon="photo-o" text="文字" />
+<hello-grid square>
+  <hello-grid-item v-for="value in 8" :key="value" icon="photo-o" text="文字" />
 </van-grid>
 ```
 
@@ -73,8 +73,8 @@ app.use(GridItem);
 通过 `gutter` 属性设置格子之间的距离。
 
 ```html
-<van-grid :gutter="10">
-  <van-grid-item v-for="value in 8" :key="value" icon="photo-o" text="文字" />
+<hello-grid :gutter="10">
+  <hello-grid-item v-for="value in 8" :key="value" icon="photo-o" text="文字" />
 </van-grid>
 ```
 
@@ -83,10 +83,10 @@ app.use(GridItem);
 将 `direction` 属性设置为 `horizontal`，可以让宫格的内容呈横向排列。
 
 ```html
-<van-grid direction="horizontal" :column-num="2">
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="photo-o" text="文字" />
+<hello-grid direction="horizontal" :column-num="2">
+  <hello-grid-item icon="photo-o" text="文字" />
+  <hello-grid-item icon="photo-o" text="文字" />
+  <hello-grid-item icon="photo-o" text="文字" />
 </van-grid>
 ```
 
@@ -95,9 +95,9 @@ app.use(GridItem);
 通过 `to` 属性设置 `vue-router` 跳转链接，通过 `url` 属性设置 URL 跳转链接。
 
 ```html
-<van-grid clickable :column-num="2">
-  <van-grid-item icon="home-o" text="路由跳转" to="/" />
-  <van-grid-item icon="search" text="URL 跳转" url="/vant/mobile.html" />
+<hello-grid clickable :column-num="2">
+  <hello-grid-item icon="home-o" text="路由跳转" to="/" />
+  <hello-grid-item icon="search" text="URL 跳转" url="/vant/mobile.html" />
 </van-grid>
 ```
 
@@ -106,9 +106,9 @@ app.use(GridItem);
 设置 `dot` 属性后，会在图标右上角展示一个小红点。设置 `badge` 属性后，会在图标右上角展示相应的徽标。
 
 ```html
-<van-grid :column-num="2">
-  <van-grid-item icon="home-o" text="文字" dot />
-  <van-grid-item icon="search" text="文字" badge="99+" />
+<hello-grid :column-num="2">
+  <hello-grid-item icon="home-o" text="文字" dot />
+  <hello-grid-item icon="search" text="文字" badge="99+" />
 </van-grid>
 ```
 

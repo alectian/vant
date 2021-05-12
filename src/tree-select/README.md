@@ -15,7 +15,7 @@ app.use(TreeSelect);
 ### Radio Mode
 
 ```html
-<van-tree-select
+<hello-tree-select
   v-model:active-id="state.activeId"
   v-model:main-active-index="state.activeIndex"
   :items="items"
@@ -59,7 +59,7 @@ export default {
 ### Multiple Mode
 
 ```html
-<van-tree-select
+<hello-tree-select
   v-model:active-id="state.activeIds"
   v-model:main-active-index="state.activeIndex"
   :items="items"
@@ -103,17 +103,17 @@ export default {
 ### Custom Content
 
 ```html
-<van-tree-select
+<hello-tree-select
   v-model:main-active-index="activeIndex"
   height="55vw"
   :items="items"
 >
   <template #content>
-    <van-image
+    <hello-image
       v-if="activeIndex === 0"
       src="https://img.yzcdn.cn/vant/apple-1.jpg"
     />
-    <van-image
+    <hello-image
       v-if="activeIndex === 1"
       src="https://img.yzcdn.cn/vant/apple-2.jpg"
     />
@@ -138,7 +138,7 @@ export default {
 ### Show Badge
 
 ```html
-<van-tree-select
+<hello-tree-select
   v-model:main-active-index="activeIndex"
   height="55vw"
   :items="items"

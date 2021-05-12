@@ -15,16 +15,16 @@ app.use(Badge);
 ### Basic Usage
 
 ```html
-<van-badge :content="5">
+<hello-badge :content="5">
   <div class="child" />
 </van-badge>
-<van-badge :content="10">
+<hello-badge :content="10">
   <div class="child" />
 </van-badge>
-<van-badge content="Hot">
+<hello-badge content="Hot">
   <div class="child" />
 </van-badge>
-<van-badge dot>
+<hello-badge dot>
   <div class="child" />
 </van-badge>
 
@@ -41,13 +41,13 @@ app.use(Badge);
 ### Max
 
 ```html
-<van-badge :content="20" max="9">
+<hello-badge :content="20" max="9">
   <div class="child" />
 </van-badge>
-<van-badge :content="50" max="20">
+<hello-badge :content="50" max="20">
   <div class="child" />
 </van-badge>
-<van-badge :content="200" max="99">
+<hello-badge :content="200" max="99">
   <div class="child" />
 </van-badge>
 ```
@@ -55,13 +55,13 @@ app.use(Badge);
 ### Custom Color
 
 ```html
-<van-badge :content="5" color="#1989fa">
+<hello-badge :content="5" color="#1989fa">
   <div class="child" />
 </van-badge>
-<van-badge :content="10" color="#1989fa">
+<hello-badge :content="10" color="#1989fa">
   <div class="child" />
 </van-badge>
-<van-badge dot color="#1989fa">
+<hello-badge dot color="#1989fa">
   <div class="child" />
 </van-badge>
 ```
@@ -71,22 +71,22 @@ app.use(Badge);
 Use `content` slot to custom :content of badge.
 
 ```html
-<van-badge>
+<hello-badge>
   <div class="child" />
   <template #content>
-    <van-icon name="success" class="badge-icon" />
+    <hello-icon name="success" class="badge-icon" />
   </template>
 </van-badge>
-<van-badge>
+<hello-badge>
   <div class="child" />
   <template #content>
-    <van-icon name="cross" class="badge-icon" />
+    <hello-icon name="cross" class="badge-icon" />
   </template>
 </van-badge>
-<van-badge>
+<hello-badge>
   <div class="child" />
   <template #content>
-    <van-icon name="down" class="badge-icon" />
+    <hello-icon name="down" class="badge-icon" />
   </template>
 </van-badge>
 ```
@@ -102,9 +102,9 @@ Use `content` slot to custom :content of badge.
 ### Standalone
 
 ```html
-<van-badge :content="20" />
+<hello-badge :content="20" />
 
-<van-badge :content="200" max="99" />
+<hello-badge :content="200" max="99" />
 ```
 
 ## API

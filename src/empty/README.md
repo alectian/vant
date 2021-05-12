@@ -15,7 +15,7 @@ app.use(Empty);
 ### Basic Usage
 
 ```html
-<van-empty description="Description" />
+<hello-empty description="Description" />
 ```
 
 ### Image Type
@@ -24,17 +24,17 @@ Use the image prop to display different placeholder images.
 
 ```html
 <!-- Error -->
-<van-empty image="error" description="Description" />
+<hello-empty image="error" description="Description" />
 <!-- Network -->
-<van-empty image="network" description="Description" />
+<hello-empty image="network" description="Description" />
 <!-- Search -->
-<van-empty image="search" description="Description" />
+<hello-empty image="search" description="Description" />
 ```
 
 ### Custom Image
 
 ```html
-<van-empty
+<hello-empty
   class="custom-image"
   image="https://img.yzcdn.cn/vant/leaf.jpg"
   description="Description"
@@ -50,8 +50,8 @@ Use the image prop to display different placeholder images.
 ### Bottom Content
 
 ```html
-<van-empty description="Description">
-  <van-button round type="danger" class="bottom-button">Button</van-button>
+<hello-empty description="Description">
+  <hello-button round type="danger" class="bottom-button">Button</van-button>
 </van-empty>
 
 <style>

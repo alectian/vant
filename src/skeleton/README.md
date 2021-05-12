@@ -15,19 +15,19 @@ app.use(Skeleton);
 ### Basic Usage
 
 ```html
-<van-skeleton title :row="3" />
+<hello-skeleton title :row="3" />
 ```
 
 ### Show Avatar
 
 ```html
-<van-skeleton title avatar :row="3" />
+<hello-skeleton title avatar :row="3" />
 ```
 
 ### Show Children
 
 ```html
-<van-skeleton title avatar :row="3" :loading="loading">
+<hello-skeleton title avatar :row="3" :loading="loading">
   <div>Content</div>
 </van-skeleton>
 ```

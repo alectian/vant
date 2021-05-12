@@ -16,10 +16,10 @@ app.use(SidebarItem);
 ### Basic Usage
 
 ```html
-<van-sidebar v-model="active">
-  <van-sidebar-item title="Title" />
-  <van-sidebar-item title="Title" />
-  <van-sidebar-item title="Title" />
+<hello-sidebar v-model="active">
+  <hello-sidebar-item title="Title" />
+  <hello-sidebar-item title="Title" />
+  <hello-sidebar-item title="Title" />
 </van-sidebar>
 ```
 
@@ -37,30 +37,30 @@ export default {
 ### Show Badge
 
 ```html
-<van-sidebar v-model="active">
-  <van-sidebar-item title="Title" dot />
-  <van-sidebar-item title="Title" badge="5" />
-  <van-sidebar-item title="Title" badge="20" />
+<hello-sidebar v-model="active">
+  <hello-sidebar-item title="Title" dot />
+  <hello-sidebar-item title="Title" badge="5" />
+  <hello-sidebar-item title="Title" badge="20" />
 </van-sidebar>
 ```
 
 ### Disabled
 
 ```html
-<van-sidebar v-model="active">
-  <van-sidebar-item title="Title" />
-  <van-sidebar-item title="Title" disabled />
-  <van-sidebar-item title="Title" />
+<hello-sidebar v-model="active">
+  <hello-sidebar-item title="Title" />
+  <hello-sidebar-item title="Title" disabled />
+  <hello-sidebar-item title="Title" />
 </van-sidebar>
 ```
 
 ### Change Event
 
 ```html
-<van-sidebar v-model="active" @change="onChange">
-  <van-sidebar-item title="Title 1" />
-  <van-sidebar-item title="Title 2" />
-  <van-sidebar-item title="Title 3" />
+<hello-sidebar v-model="active" @change="onChange">
+  <hello-sidebar-item title="Title 1" />
+  <hello-sidebar-item title="Title 2" />
+  <hello-sidebar-item title="Title 3" />
 </van-sidebar>
 ```
 

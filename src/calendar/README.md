@@ -21,8 +21,8 @@ app.use(Calendar);
 The `confirm` event will be emitted after the date selection is completed.
 
 ```html
-<van-cell title="Select Single Date" :value="date" @click="show = true" />
-<van-calendar v-model:show="show" @confirm="onConfirm" />
+<hello-cell title="Select Single Date" :value="date" @click="show = true" />
+<hello-calendar v-model:show="show" @confirm="onConfirm" />
 ```
 
 ```js
@@ -51,8 +51,8 @@ export default {
 ### Select Multiple Date
 
 ```html
-<van-cell title="Select Multiple Date" :value="text" @click="show = true" />
-<van-calendar v-model:show="show" type="multiple" @confirm="onConfirm" />
+<hello-cell title="Select Multiple Date" :value="text" @click="show = true" />
+<hello-calendar v-model:show="show" type="multiple" @confirm="onConfirm" />
 ```
 
 ```js
@@ -82,8 +82,8 @@ export default {
 You can select a date range after setting `type` to`range`. In range mode, the date returned by the `confirm` event is an array, the first item in the array is the start time and the second item is the end time.
 
 ```html
-<van-cell title="Select Date Range" :value="date" @click="show = true" />
-<van-calendar v-model:show="show" type="range" @confirm="onConfirm" />
+<hello-cell title="Select Date Range" :value="date" @click="show = true" />
+<hello-calendar v-model:show="show" type="range" @confirm="onConfirm" />
 ```
 
 ```js
@@ -115,7 +115,7 @@ export default {
 Set `show-confirm` to `false` to hide the confirm button. In this case, the `confirm` event will be emitted immediately after the selection is completed.
 
 ```html
-<van-calendar v-model:show="show" :show-confirm="false" />
+<hello-calendar v-model:show="show" :show-confirm="false" />
 ```
 
 ### Custom Color
@@ -123,7 +123,7 @@ Set `show-confirm` to `false` to hide the confirm button. In this case, the `con
 Use `color` prop to custom calendar color.
 
 ```html
-<van-calendar v-model:show="show" color="#1989fa" />
+<hello-calendar v-model:show="show" color="#1989fa" />
 ```
 
 ### Custom Date Range
@@ -131,7 +131,7 @@ Use `color` prop to custom calendar color.
 Use `min-date` and `max-date` to custom date range.
 
 ```html
-<van-calendar v-model:show="show" :min-date="minDate" :max-date="maxDate" />
+<hello-calendar v-model:show="show" :min-date="minDate" :max-date="maxDate" />
 ```
 
 ```js
@@ -155,7 +155,7 @@ export default {
 Use `confirm-text` and `confirm-disabled-text` to custom confirm text.
 
 ```html
-<van-calendar
+<hello-calendar
   v-model:show="show"
   type="range"
   confirm-text="OK"
@@ -168,7 +168,7 @@ Use `confirm-text` and `confirm-disabled-text` to custom confirm text.
 Use `formatter` to custom day text.
 
 ```html
-<van-calendar v-model:show="show" type="range" :formatter="formatter" />
+<hello-calendar v-model:show="show" type="range" :formatter="formatter" />
 ```
 
 ```js
@@ -209,7 +209,7 @@ export default {
 Use `position` to custom popup position，can be set to `top`、`left`、`right`.
 
 ```html
-<van-calendar v-model:show="show" :round="false" position="right" />
+<hello-calendar v-model:show="show" :round="false" position="right" />
 ```
 
 ### Max Range
@@ -217,7 +217,7 @@ Use `position` to custom popup position，can be set to `top`、`left`、`right`
 When selecting a date range, you can use the `max-range` prop to specify the maximum number of selectable days.
 
 ```html
-<van-calendar type="range" :max-range="3" :style="{ height: '500px' }" />
+<hello-calendar type="range" :max-range="3" :style="{ height: '500px' }" />
 ```
 
 ### Custom First Day Of Week
@@ -225,7 +225,7 @@ When selecting a date range, you can use the `max-range` prop to specify the max
 Use `first-day-of-week` to custom the start day of week
 
 ```html
-<van-calendar first-day-of-week="1" />
+<hello-calendar first-day-of-week="1" />
 ```
 
 ### Tiled display
@@ -233,7 +233,7 @@ Use `first-day-of-week` to custom the start day of week
 Set `poppable` to `false`, the calendar will be displayed directly on the page instead of appearing as a popup
 
 ```html
-<van-calendar
+<hello-calendar
   title="Calendar"
   :poppable="false"
   :show-confirm="false"

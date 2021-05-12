@@ -16,16 +16,16 @@ app.use(IndexAnchor);
 ### Basic Usage
 
 ```html
-<van-index-bar>
-  <van-index-anchor index="A" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+<hello-index-bar>
+  <hello-index-anchor index="A" />
+  <hello-cell title="Text" />
+  <hello-cell title="Text" />
+  <hello-cell title="Text" />
 
-  <van-index-anchor index="B" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+  <hello-index-anchor index="B" />
+  <hello-cell title="Text" />
+  <hello-cell title="Text" />
+  <hello-cell title="Text" />
 
   ...
 </van-index-bar>
@@ -34,16 +34,16 @@ app.use(IndexAnchor);
 ### Custom Index List
 
 ```html
-<van-index-bar :index-list="indexList">
-  <van-index-anchor index="1">Title 1</van-index-anchor>
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+<hello-index-bar :index-list="indexList">
+  <hello-index-anchor index="1">Title 1</van-index-anchor>
+  <hello-cell title="Text" />
+  <hello-cell title="Text" />
+  <hello-cell title="Text" />
 
-  <van-index-anchor index="2">Title 2</van-index-anchor>
-  <van-cell title="Text" />
-  <van-cell title="Text" />
-  <van-cell title="Text" />
+  <hello-index-anchor index="2">Title 2</van-index-anchor>
+  <hello-cell title="Text" />
+  <hello-cell title="Text" />
+  <hello-cell title="Text" />
 
   ...
 </van-index-bar>
