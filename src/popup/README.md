@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Popup } from 'hello';
+import { Popup } from 'cloudata';
 
 const app = createApp();
 app.use(Popup);
@@ -15,8 +15,8 @@ app.use(Popup);
 ### Basic Usage
 
 ```html
-<hello-cell is-link @click="showPopup">Show Popup</van-cell>
-<hello-popup v-model:show="show">Content</van-popup>
+<icloudata-cell is-link @click="showPopup">Show Popup</icloudata-cell>
+<icloudata-popup v-model:show="show">Content</icloudata-popup>
 ```
 
 ```js
@@ -41,20 +41,20 @@ export default {
 Use `position` prop to set popup display position.
 
 ```html
-<hello-popup v-model:show="show" position="top" :style="{ height: '30%' }" />
+<icloudata-popup v-model:show="show" position="top" :style="{ height: '30%' }" />
 ```
 
 ### Close Icon
 
 ```html
-<hello-popup
+<icloudata-popup
   v-model:show="show"
   closeable
   position="bottom"
   :style="{ height: '30%' }"
 />
 <!-- Custom Icon -->
-<hello-popup
+<icloudata-popup
   v-model:show="show"
   closeable
   close-icon="close"
@@ -62,7 +62,7 @@ Use `position` prop to set popup display position.
   :style="{ height: '30%' }"
 />
 <!-- Icon Position -->
-<hello-popup
+<icloudata-popup
   v-model:show="show"
   closeable
   close-icon-position="top-left"
@@ -74,7 +74,7 @@ Use `position` prop to set popup display position.
 ### Round Corner
 
 ```html
-<hello-popup
+<icloudata-popup
   v-model:show="show"
   round
   position="bottom"
@@ -88,13 +88,13 @@ Use `teleport` prop to specify mount location.
 
 ```html
 <!-- teleport to body -->
-<hello-popup v-model:show="show" teleport="body" />
+<icloudata-popup v-model:show="show" teleport="body" />
 
 <!-- teleport to #app -->
-<hello-popup v-model:show="show" teleport="#app" />
+<icloudata-popup v-model:show="show" teleport="#app" />
 
 <!-- teleport to Element -->
-<hello-popup v-model:show="show" :teleport="myContainer" />
+<icloudata-popup v-model:show="show" :teleport="myContainer" />
 ```
 
 ```js

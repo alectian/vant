@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Switch } from 'hello';
+import { Switch } from 'cloudata';
 
 const app = createApp();
 app.use(Switch);
@@ -15,7 +15,7 @@ app.use(Switch);
 ### Basic Usage
 
 ```html
-<hello-switch v-model="checked" />
+<icloudata-switch v-model="checked" />
 ```
 
 ```js
@@ -32,36 +32,36 @@ export default {
 ### Disabled
 
 ```html
-<hello-switch v-model="checked" disabled />
+<icloudata-switch v-model="checked" disabled />
 ```
 
 ### Loading
 
 ```html
-<hello-switch v-model="checked" loading />
+<icloudata-switch v-model="checked" loading />
 ```
 
 ### Custom Size
 
 ```html
-<hello-switch v-model="checked" size="24px" />
+<icloudata-switch v-model="checked" size="24px" />
 ```
 
 ### Custom Color
 
 ```html
-<hello-switch v-model="checked" active-color="#ee0a24" inactive-color="#dcdee0" />
+<icloudata-switch v-model="checked" active-color="#ee0a24" inactive-color="#dcdee0" />
 ```
 
 ### Async Control
 
 ```html
-<hello-switch :model-value="checked" @update:model-value="onUpdateValue" />
+<icloudata-switch :model-value="checked" @update:model-value="onUpdateValue" />
 ```
 
 ```js
 import { ref } from 'vue';
-import { Dialog } from 'hello';
+import { Dialog } from 'cloudata';
 
 export default {
   setup() {
@@ -86,11 +86,11 @@ export default {
 ### Inside a Cell
 
 ```html
-<hello-cell center title="Title">
+<icloudata-cell center title="Title">
   <template #right-icon>
-    <hello-switch v-model="checked" size="24" />
+    <icloudata-switch v-model="checked" size="24" />
   </template>
-</van-cell>
+</icloudata-cell>
 ```
 
 ## API

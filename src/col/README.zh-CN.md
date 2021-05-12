@@ -8,7 +8,7 @@ Layout 提供了 `van-row` 和 `van-col` 两个组件来进行行列布局。
 
 ```js
 import { createApp } from 'vue';
-import { Col, Row } from 'hello';
+import { Col, Row } from 'cloudata';
 
 const app = createApp();
 app.use(Col);
@@ -22,20 +22,20 @@ app.use(Row);
 Layout 组件提供了 `24列栅格`，通过在 `Col` 上添加 `span` 属性设置列所占的宽度百分比。此外，添加 `offset` 属性可以设置列的偏移宽度，计算方式与 span 相同。
 
 ```html
-<hello-row>
-  <hello-col span="8">span: 8</van-col>
-  <hello-col span="8">span: 8</van-col>
-  <hello-col span="8">span: 8</van-col>
-</van-row>
+<icloudata-row>
+  <icloudata-col span="8">span: 8</icloudata-col>
+  <icloudata-col span="8">span: 8</icloudata-col>
+  <icloudata-col span="8">span: 8</icloudata-col>
+</icloudata-row>
 
-<hello-row>
-  <hello-col span="4">span: 4</van-col>
-  <hello-col span="10" offset="4">offset: 4, span: 10</van-col>
-</van-row>
+<icloudata-row>
+  <icloudata-col span="4">span: 4</icloudata-col>
+  <icloudata-col span="10" offset="4">offset: 4, span: 10</icloudata-col>
+</icloudata-row>
 
-<hello-row>
-  <hello-col offset="12" span="12">offset: 12, span: 12</van-col>
-</van-row>
+<icloudata-row>
+  <icloudata-col offset="12" span="12">offset: 12, span: 12</icloudata-col>
+</icloudata-row>
 ```
 
 ### 设置列元素间距
@@ -43,11 +43,11 @@ Layout 组件提供了 `24列栅格`，通过在 `Col` 上添加 `span` 属性�
 通过 `gutter` 属性可以设置列元素之间的间距，默认间距为 0。
 
 ```html
-<hello-row gutter="20">
-  <hello-col span="8">span: 8</van-col>
-  <hello-col span="8">span: 8</van-col>
-  <hello-col span="8">span: 8</van-col>
-</van-row>
+<icloudata-row gutter="20">
+  <icloudata-col span="8">span: 8</icloudata-col>
+  <icloudata-col span="8">span: 8</icloudata-col>
+  <icloudata-col span="8">span: 8</icloudata-col>
+</icloudata-row>
 ```
 
 ### 对齐方式
@@ -56,32 +56,32 @@ Layout 组件提供了 `24列栅格`，通过在 `Col` 上添加 `span` 属性�
 
 ```html
 <!-- 居中 -->
-<hello-row justify="center">
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-</van-row>
+<icloudata-row justify="center">
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+</icloudata-row>
 
 <!-- 右对齐 -->
-<hello-row justify="end">
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-</van-row>
+<icloudata-row justify="end">
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+</icloudata-row>
 
 <!-- 两端对齐 -->
-<hello-row justify="space-between">
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-</van-row>
+<icloudata-row justify="space-between">
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+</icloudata-row>
 
 <!-- 每个元素的两侧间隔相等 -->
-<hello-row justify="space-around">
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-</van-row>
+<icloudata-row justify="space-around">
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+</icloudata-row>
 ```
 
 ## API

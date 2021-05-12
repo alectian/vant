@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Checkbox, CheckboxGroup } from 'hello';
+import { Checkbox, CheckboxGroup } from 'cloudata';
 
 const app = createApp();
 app.use(Checkbox);
@@ -16,7 +16,7 @@ app.use(CheckboxGroup);
 ### Basic Usage
 
 ```html
-<hello-checkbox v-model="checked">Checkbox</van-checkbox>
+<icloudata-checkbox v-model="checked">Checkbox</icloudata-checkbox>
 ```
 
 ```js
@@ -35,25 +35,25 @@ export default {
 ### Disabled
 
 ```html
-<hello-checkbox v-model="checked" disabled>Checkbox</van-checkbox>
+<icloudata-checkbox v-model="checked" disabled>Checkbox</icloudata-checkbox>
 ```
 
 ### Custom Shape
 
 ```html
-<hello-checkbox v-model="checked" shape="square">Checkbox</van-checkbox>
+<icloudata-checkbox v-model="checked" shape="square">Checkbox</icloudata-checkbox>
 ```
 
 ### Custom Color
 
 ```html
-<hello-checkbox v-model="checked" checked-color="#ee0a24">Checkbox</van-checkbox>
+<icloudata-checkbox v-model="checked" checked-color="#ee0a24">Checkbox</icloudata-checkbox>
 ```
 
 ### Custom Icon Size
 
 ```html
-<hello-checkbox v-model="checked" icon-size="24px">Checkbox</van-checkbox>
+<icloudata-checkbox v-model="checked" icon-size="24px">Checkbox</icloudata-checkbox>
 ```
 
 ### Custom Icon
@@ -61,12 +61,12 @@ export default {
 Use icon slot to custom icon.
 
 ```html
-<hello-checkbox v-model="checked">
+<icloudata-checkbox v-model="checked">
   customize icon
   <template #icon="props">
     <img class="img-icon" :src="props.checked ? activeIcon : inactiveIcon" />
   </template>
-</van-checkbox>
+</icloudata-checkbox>
 
 <style>
   .img-icon {
@@ -93,7 +93,7 @@ export default {
 ### Disable Label Click
 
 ```html
-<hello-checkbox v-model="checked" label-disabled>Checkbox</van-checkbox>
+<icloudata-checkbox v-model="checked" label-disabled>Checkbox</icloudata-checkbox>
 ```
 
 ### Checkbox Group
@@ -101,10 +101,10 @@ export default {
 When Checkboxes are inside a CheckboxGroup, the checked checkboxes's name is an array and bound with CheckboxGroup by v-model.
 
 ```html
-<hello-checkbox-group v-model="checked">
-  <hello-checkbox name="a">Checkbox a</van-checkbox>
-  <hello-checkbox name="b">Checkbox b</van-checkbox>
-</van-checkbox-group>
+<icloudata-checkbox-group v-model="checked">
+  <icloudata-checkbox name="a">Checkbox a</icloudata-checkbox>
+  <icloudata-checkbox name="b">Checkbox b</icloudata-checkbox>
+</icloudata-checkbox-group>
 ```
 
 ```js
@@ -121,10 +121,10 @@ export default {
 ### Horizontal
 
 ```html
-<hello-checkbox-group v-model="checked" direction="horizontal">
-  <hello-checkbox name="a">Checkbox a</van-checkbox>
-  <hello-checkbox name="b">Checkbox b</van-checkbox>
-</van-checkbox-group>
+<icloudata-checkbox-group v-model="checked" direction="horizontal">
+  <icloudata-checkbox name="a">Checkbox a</icloudata-checkbox>
+  <icloudata-checkbox name="b">Checkbox b</icloudata-checkbox>
+</icloudata-checkbox-group>
 ```
 
 ```js
@@ -141,24 +141,24 @@ export default {
 ### Maximum amount of checked options
 
 ```html
-<hello-checkbox-group v-model="result" :max="2">
-  <hello-checkbox name="a">Checkbox a</van-checkbox>
-  <hello-checkbox name="b">Checkbox b</van-checkbox>
-  <hello-checkbox name="c">Checkbox c</van-checkbox>
-</van-checkbox-group>
+<icloudata-checkbox-group v-model="result" :max="2">
+  <icloudata-checkbox name="a">Checkbox a</icloudata-checkbox>
+  <icloudata-checkbox name="b">Checkbox b</icloudata-checkbox>
+  <icloudata-checkbox name="c">Checkbox c</icloudata-checkbox>
+</icloudata-checkbox-group>
 ```
 
 ### Toggle All
 
 ```html
-<hello-checkbox-group v-model="checked" ref="checkboxGroup">
-  <hello-checkbox name="a">Checkbox a</van-checkbox>
-  <hello-checkbox name="b">Checkbox b</van-checkbox>
-  <hello-checkbox name="c">Checkbox c</van-checkbox>
-</van-checkbox-group>
+<icloudata-checkbox-group v-model="checked" ref="checkboxGroup">
+  <icloudata-checkbox name="a">Checkbox a</icloudata-checkbox>
+  <icloudata-checkbox name="b">Checkbox b</icloudata-checkbox>
+  <icloudata-checkbox name="c">Checkbox c</icloudata-checkbox>
+</icloudata-checkbox-group>
 
-<hello-button type="primary" @click="checkAll">Check All</van-button>
-<hello-button type="primary" @click="toggleAll">Toggle All</van-button>
+<icloudata-button type="primary" @click="checkAll">Check All</icloudata-button>
+<icloudata-button type="primary" @click="toggleAll">Toggle All</icloudata-button>
 ```
 
 ```js
@@ -189,9 +189,9 @@ export default {
 ### Inside a Cell
 
 ```html
-<hello-checkbox-group v-model="checked">
-  <hello-cell-group>
-    <hello-cell
+<icloudata-checkbox-group v-model="checked">
+  <icloudata-cell-group>
+    <icloudata-cell
       v-for="(item, index) in list"
       clickable
       :key="item"
@@ -199,15 +199,15 @@ export default {
       @click="toggle(index)"
     >
       <template #right-icon>
-        <hello-checkbox
+        <icloudata-checkbox
           :name="item"
           :ref="el => checkboxRefs[index] = el"
           @click.stop
         />
       </template>
-    </van-cell>
-  </van-cell-group>
-</van-checkbox-group>
+    </icloudata-cell>
+  </icloudata-cell-group>
+</icloudata-checkbox-group>
 ```
 
 ```js

@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { AddressEdit } from 'hello';
+import { AddressEdit } from 'cloudata';
 
 const app = createApp();
 app.use(AddressEdit);
@@ -15,7 +15,7 @@ app.use(AddressEdit);
 ### Basic Usage
 
 ```html
-<hello-address-edit
+<icloudata-address-edit
   :area-list="areaList"
   show-postal
   show-delete
@@ -31,7 +31,7 @@ app.use(AddressEdit);
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

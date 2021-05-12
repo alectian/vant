@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Circle } from 'hello';
+import { Circle } from 'cloudata';
 
 const app = createApp();
 app.use(Circle);
@@ -15,7 +15,7 @@ app.use(Circle);
 ### Basic Usage
 
 ```html
-<hello-circle
+<icloudata-circle
   v-model:current-rate="currentRate"
   :rate="30"
   :speed="100"
@@ -42,7 +42,7 @@ export default {
 ### Custom Width
 
 ```html
-<hello-circle
+<icloudata-circle
   v-model:current-rate="currentRate"
   :rate="rate"
   :stroke-width="60"
@@ -53,7 +53,7 @@ export default {
 ### Custom Color
 
 ```html
-<hello-circle
+<icloudata-circle
   v-model:current-rate="currentRate"
   :rate="rate"
   layer-color="#ebedf0"
@@ -64,7 +64,7 @@ export default {
 ### Gradient
 
 ```html
-<hello-circle
+<icloudata-circle
   v-model:current-rate="currentRate"
   :rate="rate"
   :color="gradientColor"
@@ -94,7 +94,7 @@ export default {
 ### Counter Clockwise
 
 ```html
-<hello-circle
+<icloudata-circle
   v-model:current-rate="currentRate"
   :rate="rate"
   :clockwise="false"
@@ -105,7 +105,7 @@ export default {
 ### Custom Size
 
 ```html
-<hello-circle
+<icloudata-circle
   v-model:current-rate="currentRate"
   :rate="rate"
   size="120px"

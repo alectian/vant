@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { DropdownMenu, DropdownItem } from 'hello';
+import { DropdownMenu, DropdownItem } from 'cloudata';
 
 const app = createApp();
 app.use(DropdownMenu);
@@ -16,10 +16,10 @@ app.use(DropdownItem);
 ### Basic Usage
 
 ```html
-<hello-dropdown-menu>
-  <hello-dropdown-item v-model="state.value1" :options="option1" />
-  <hello-dropdown-item v-model="state.value2" :options="option2" />
-</van-dropdown-menu>
+<icloudata-dropdown-menu>
+  <icloudata-dropdown-item v-model="state.value1" :options="option1" />
+  <icloudata-dropdown-item v-model="state.value2" :options="option2" />
+</icloudata-dropdown-menu>
 ```
 
 ```js
@@ -54,26 +54,26 @@ export default {
 ### Custom Content
 
 ```html
-<hello-dropdown-menu>
-  <hello-dropdown-item v-model="state.value" :options="option" />
-  <hello-dropdown-item title="Title" ref="item">
-    <hello-cell center title="Title">
+<icloudata-dropdown-menu>
+  <icloudata-dropdown-item v-model="state.value" :options="option" />
+  <icloudata-dropdown-item title="Title" ref="item">
+    <icloudata-cell center title="Title">
       <template #right-icon>
-        <hello-switch v-model="state.switch1" size="24" active-color="#ee0a24" />
+        <icloudata-switch v-model="state.switch1" size="24" active-color="#ee0a24" />
       </template>
-    </van-cell>
-    <hello-cell center title="Title">
+    </icloudata-cell>
+    <icloudata-cell center title="Title">
       <template #right-icon>
-        <hello-switch v-model="state.switch2" size="24" active-color="#ee0a24" />
+        <icloudata-switch v-model="state.switch2" size="24" active-color="#ee0a24" />
       </template>
-    </van-cell>
+    </icloudata-cell>
     <div style="padding: 5px 16px;">
-      <hello-button type="danger" block round @click="onConfirm">
+      <icloudata-button type="danger" block round @click="onConfirm">
         Confirm
-      </van-button>
+      </icloudata-button>
     </div>
-  </van-dropdown-item>
-</van-dropdown-menu>
+  </icloudata-dropdown-item>
+</icloudata-dropdown-menu>
 ```
 
 ```js
@@ -111,28 +111,28 @@ export default {
 Use `active-color` prop to custom active color of the title and options.
 
 ```html
-<hello-dropdown-menu active-color="#1989fa">
-  <hello-dropdown-item v-model="value1" :options="option1" />
-  <hello-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<icloudata-dropdown-menu active-color="#1989fa">
+  <icloudata-dropdown-item v-model="value1" :options="option1" />
+  <icloudata-dropdown-item v-model="value2" :options="option2" />
+</icloudata-dropdown-menu>
 ```
 
 ### Expand Direction
 
 ```html
-<hello-dropdown-menu direction="up">
-  <hello-dropdown-item v-model="value1" :options="option1" />
-  <hello-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<icloudata-dropdown-menu direction="up">
+  <icloudata-dropdown-item v-model="value1" :options="option1" />
+  <icloudata-dropdown-item v-model="value2" :options="option2" />
+</icloudata-dropdown-menu>
 ```
 
 ### Disabled
 
 ```html
-<hello-dropdown-menu>
-  <hello-dropdown-item v-model="value1" disabled :options="option1" />
-  <hello-dropdown-item v-model="value2" disabled :options="option2" />
-</van-dropdown-menu>
+<icloudata-dropdown-menu>
+  <icloudata-dropdown-item v-model="value1" disabled :options="option1" />
+  <icloudata-dropdown-item v-model="value2" disabled :options="option2" />
+</icloudata-dropdown-menu>
 ```
 
 ## API

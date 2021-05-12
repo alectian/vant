@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { DropdownMenu, DropdownItem } from 'hello';
+import { DropdownMenu, DropdownItem } from 'cloudata';
 
 const app = createApp();
 app.use(DropdownMenu);
@@ -20,10 +20,10 @@ app.use(DropdownItem);
 ### 基础用法
 
 ```html
-<hello-dropdown-menu>
-  <hello-dropdown-item v-model="state.value1" :options="option1" />
-  <hello-dropdown-item v-model="state.value2" :options="option2" />
-</van-dropdown-menu>
+<icloudata-dropdown-menu>
+  <icloudata-dropdown-item v-model="state.value1" :options="option1" />
+  <icloudata-dropdown-item v-model="state.value2" :options="option2" />
+</icloudata-dropdown-menu>
 ```
 
 ```js
@@ -60,26 +60,26 @@ export default {
 通过插槽可以自定义 `DropdownItem` 的内容，此时需要使用实例上的 `toggle` 方法手动控制菜单的显示。
 
 ```html
-<hello-dropdown-menu>
-  <hello-dropdown-item v-model="value" :options="option" />
-  <hello-dropdown-item title="筛选" ref="item">
-    <hello-cell center title="包邮">
+<icloudata-dropdown-menu>
+  <icloudata-dropdown-item v-model="value" :options="option" />
+  <icloudata-dropdown-item title="筛选" ref="item">
+    <icloudata-cell center title="包邮">
       <template #right-icon>
-        <hello-switch v-model="switch1" size="24" active-color="#ee0a24" />
+        <icloudata-switch v-model="switch1" size="24" active-color="#ee0a24" />
       </template>
-    </van-cell>
-    <hello-cell center title="团购">
+    </icloudata-cell>
+    <icloudata-cell center title="团购">
       <template #right-icon>
-        <hello-switch v-model="switch2" size="24" active-color="#ee0a24" />
+        <icloudata-switch v-model="switch2" size="24" active-color="#ee0a24" />
       </template>
-    </van-cell>
+    </icloudata-cell>
     <div style="padding: 5px 16px;">
-      <hello-button type="danger" block round @click="onConfirm">
+      <icloudata-button type="danger" block round @click="onConfirm">
         确认
-      </van-button>
+      </icloudata-button>
     </div>
-  </van-dropdown-item>
-</van-dropdown-menu>
+  </icloudata-dropdown-item>
+</icloudata-dropdown-menu>
 ```
 
 ```js
@@ -117,10 +117,10 @@ export default {
 通过 `active-color` 属性可以自定义菜单标题和选项的选中态颜色。
 
 ```html
-<hello-dropdown-menu active-color="#1989fa">
-  <hello-dropdown-item v-model="value1" :options="option1" />
-  <hello-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<icloudata-dropdown-menu active-color="#1989fa">
+  <icloudata-dropdown-item v-model="value1" :options="option1" />
+  <icloudata-dropdown-item v-model="value2" :options="option2" />
+</icloudata-dropdown-menu>
 ```
 
 ### 向上展开
@@ -128,19 +128,19 @@ export default {
 将 `direction` 属性值设置为 `up`，菜单即可向上展开。
 
 ```html
-<hello-dropdown-menu direction="up">
-  <hello-dropdown-item v-model="value1" :options="option1" />
-  <hello-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<icloudata-dropdown-menu direction="up">
+  <icloudata-dropdown-item v-model="value1" :options="option1" />
+  <icloudata-dropdown-item v-model="value2" :options="option2" />
+</icloudata-dropdown-menu>
 ```
 
 ### 禁用菜单
 
 ```html
-<hello-dropdown-menu>
-  <hello-dropdown-item v-model="value1" disabled :options="option1" />
-  <hello-dropdown-item v-model="value2" disabled :options="option2" />
-</van-dropdown-menu>
+<icloudata-dropdown-menu>
+  <icloudata-dropdown-item v-model="value1" disabled :options="option1" />
+  <icloudata-dropdown-item v-model="value2" disabled :options="option2" />
+</icloudata-dropdown-menu>
 ```
 
 ## API

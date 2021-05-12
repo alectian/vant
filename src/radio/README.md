@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { RadioGroup, Radio } from 'hello';
+import { RadioGroup, Radio } from 'cloudata';
 
 const app = createApp();
 app.use(Radio);
@@ -18,10 +18,10 @@ app.use(RadioGroup);
 Use `v-model` to bind the name of checked radio.
 
 ```html
-<hello-radio-group v-model="checked">
-  <hello-radio name="1">Radio 1</van-radio>
-  <hello-radio name="2">Radio 2</van-radio>
-</van-radio-group>
+<icloudata-radio-group v-model="checked">
+  <icloudata-radio name="1">Radio 1</icloudata-radio>
+  <icloudata-radio name="2">Radio 2</icloudata-radio>
+</icloudata-radio-group>
 ```
 
 ```js
@@ -38,46 +38,46 @@ export default {
 ### Horizontal
 
 ```html
-<hello-radio-group v-model="checked" direction="horizontal">
-  <hello-radio name="1">Radio 1</van-radio>
-  <hello-radio name="2">Radio 2</van-radio>
-</van-radio-group>
+<icloudata-radio-group v-model="checked" direction="horizontal">
+  <icloudata-radio name="1">Radio 1</icloudata-radio>
+  <icloudata-radio name="2">Radio 2</icloudata-radio>
+</icloudata-radio-group>
 ```
 
 ### Disabled
 
 ```html
-<hello-radio-group v-model="checked" disabled>
-  <hello-radio name="1">Radio 1</van-radio>
-  <hello-radio name="2">Radio 2</van-radio>
-</van-radio-group>
+<icloudata-radio-group v-model="checked" disabled>
+  <icloudata-radio name="1">Radio 1</icloudata-radio>
+  <icloudata-radio name="2">Radio 2</icloudata-radio>
+</icloudata-radio-group>
 ```
 
 ### Custom Shape
 
 ```html
-<hello-radio-group v-model="checked">
-  <hello-radio name="1" shape="square">Radio 1</van-radio>
-  <hello-radio name="2" shape="square">Radio 2</van-radio>
-</van-radio-group>
+<icloudata-radio-group v-model="checked">
+  <icloudata-radio name="1" shape="square">Radio 1</icloudata-radio>
+  <icloudata-radio name="2" shape="square">Radio 2</icloudata-radio>
+</icloudata-radio-group>
 ```
 
 ### Custom Color
 
 ```html
-<hello-radio-group v-model="checked">
-  <hello-radio name="1" checked-color="#ee0a24">Radio 1</van-radio>
-  <hello-radio name="2" checked-color="#ee0a24">Radio 2</van-radio>
-</van-radio-group>
+<icloudata-radio-group v-model="checked">
+  <icloudata-radio name="1" checked-color="#ee0a24">Radio 1</icloudata-radio>
+  <icloudata-radio name="2" checked-color="#ee0a24">Radio 2</icloudata-radio>
+</icloudata-radio-group>
 ```
 
 ### Custom Icon Size
 
 ```html
-<hello-radio-group v-model="checked">
-  <hello-radio name="1" icon-size="24px">Radio 1</van-radio>
-  <hello-radio name="2" icon-size="24px">Radio 2</van-radio>
-</van-radio-group>
+<icloudata-radio-group v-model="checked">
+  <icloudata-radio name="1" icon-size="24px">Radio 1</icloudata-radio>
+  <icloudata-radio name="2" icon-size="24px">Radio 2</icloudata-radio>
+</icloudata-radio-group>
 ```
 
 ### Custom Icon
@@ -85,20 +85,20 @@ export default {
 Use icon slot to custom icon
 
 ```html
-<hello-radio-group v-model="checked">
-  <hello-radio name="1">
+<icloudata-radio-group v-model="checked">
+  <icloudata-radio name="1">
     Radio 1
     <template #icon="props">
       <img class="img-icon" :src="props.checked ? activeIcon : inactiveIcon" />
     </template>
-  </van-radio>
-  <hello-radio name="2">
+  </icloudata-radio>
+  <icloudata-radio name="2">
     Radio 2
     <template #icon="props">
       <img class="img-icon" :src="props.checked ? activeIcon : inactiveIcon" />
     </template>
-  </van-radio>
-</van-radio-group>
+  </icloudata-radio>
+</icloudata-radio-group>
 
 <style>
   .img-icon {
@@ -125,29 +125,29 @@ export default {
 ### Disable Label Click
 
 ```html
-<hello-radio-group v-model="checked">
-  <hello-radio name="1" label-disabled>Radio 1</van-radio>
-  <hello-radio name="2" label-disabled>Radio 2</van-radio>
-</van-radio-group>
+<icloudata-radio-group v-model="checked">
+  <icloudata-radio name="1" label-disabled>Radio 1</icloudata-radio>
+  <icloudata-radio name="2" label-disabled>Radio 2</icloudata-radio>
+</icloudata-radio-group>
 ```
 
 ### Inside a Cell
 
 ```html
-<hello-radio-group v-model="checked">
-  <hello-cell-group>
-    <hello-cell title="Radio 1" clickable @click="checked = '1'">
+<icloudata-radio-group v-model="checked">
+  <icloudata-cell-group>
+    <icloudata-cell title="Radio 1" clickable @click="checked = '1'">
       <template #right-icon>
-        <hello-radio name="1" />
+        <icloudata-radio name="1" />
       </template>
-    </van-cell>
-    <hello-cell title="Radio 2" clickable @click="checked = '2'">
+    </icloudata-cell>
+    <icloudata-cell title="Radio 2" clickable @click="checked = '2'">
       <template #right-icon>
-        <hello-radio name="2" />
+        <icloudata-radio name="2" />
       </template>
-    </van-cell>
-  </van-cell-group>
-</van-radio-group>
+    </icloudata-cell>
+  </icloudata-cell-group>
+</icloudata-radio-group>
 ```
 
 ## API

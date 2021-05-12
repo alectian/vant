@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { NoticeBar } from 'hello';
+import { NoticeBar } from 'cloudata';
 
 const app = createApp();
 app.use(NoticeBar);
@@ -15,17 +15,17 @@ app.use(NoticeBar);
 ### Basic Usage
 
 ```html
-<hello-notice-bar text="Notice Content" left-icon="volume-o" />
+<icloudata-notice-bar text="Notice Content" left-icon="volume-o" />
 ```
 
 ### Scrollable
 
 ```html
 <!-- Enable scroll when text is short -->
-<hello-notice-bar scrollable text="Notice Content" />
+<icloudata-notice-bar scrollable text="Notice Content" />
 
 <!-- Disable scroll when text is long -->
-<hello-notice-bar
+<icloudata-notice-bar
   :scrollable="false"
   text="Technology is the common soul of the people who developed it."
 />
@@ -34,40 +34,40 @@ app.use(NoticeBar);
 ### Wrapable
 
 ```html
-<hello-notice-bar wrapable :scrollable="false">Notice Content</van-notice-bar>
+<icloudata-notice-bar wrapable :scrollable="false">Notice Content</icloudata-notice-bar>
 ```
 
 ### Mode
 
 ```html
-<hello-notice-bar mode="closeable">Notice Content</van-notice-bar>
+<icloudata-notice-bar mode="closeable">Notice Content</icloudata-notice-bar>
 
-<hello-notice-bar mode="link">Notice Content</van-notice-bar>
+<icloudata-notice-bar mode="link">Notice Content</icloudata-notice-bar>
 ```
 
 ### Custom Style
 
 ```html
-<hello-notice-bar color="#1989fa" background="#ecf9ff" left-icon="info-o">
+<icloudata-notice-bar color="#1989fa" background="#ecf9ff" left-icon="info-o">
   Notice Content
-</van-notice-bar>
+</icloudata-notice-bar>
 ```
 
 ### Vertical Scroll
 
 ```html
-<hello-notice-bar left-icon="volume-o" :scrollable="false">
-  <hello-swipe
+<icloudata-notice-bar left-icon="volume-o" :scrollable="false">
+  <icloudata-swipe
     vertical
     class="notice-swipe"
     :autoplay="3000"
     :show-indicators="false"
   >
-    <hello-swipe-item>Content 1</van-swipe-item>
-    <hello-swipe-item>Content 2</van-swipe-item>
-    <hello-swipe-item>Content 3</van-swipe-item>
-  </van-swipe>
-</van-notice-bar>
+    <icloudata-swipe-item>Content 1</icloudata-swipe-item>
+    <icloudata-swipe-item>Content 2</icloudata-swipe-item>
+    <icloudata-swipe-item>Content 3</icloudata-swipe-item>
+  </icloudata-swipe>
+</icloudata-notice-bar>
 
 <style>
   .notice-swipe {

@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { ActionBar, ActionBarIcon, ActionBarButton } from 'hello';
+import { ActionBar, ActionBarIcon, ActionBarButton } from 'cloudata';
 
 const app = createApp();
 app.use(ActionBar);
@@ -17,16 +17,16 @@ app.use(ActionBarButton);
 ### Basic Usage
 
 ```html
-<hello-action-bar>
-  <hello-action-bar-icon icon="chat-o" text="Icon1" @click="onClickIcon" />
-  <hello-action-bar-icon icon="cart-o" text="Icon2" @click="onClickIcon" />
-  <hello-action-bar-icon icon="shop-o" text="Icon3" @click="onClickIcon" />
-  <hello-action-bar-button type="danger" text="Button" @click="onClickButton" />
-</van-action-bar>
+<icloudata-action-bar>
+  <icloudata-action-bar-icon icon="chat-o" text="Icon1" @click="onClickIcon" />
+  <icloudata-action-bar-icon icon="cart-o" text="Icon2" @click="onClickIcon" />
+  <icloudata-action-bar-icon icon="shop-o" text="Icon3" @click="onClickIcon" />
+  <icloudata-action-bar-button type="danger" text="Button" @click="onClickButton" />
+</icloudata-action-bar>
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -49,36 +49,36 @@ export default {
 Use `badge` prop to show badge in icon.
 
 ```html
-<hello-action-bar>
-  <hello-action-bar-icon icon="chat-o" text="Icon1" dot />
-  <hello-action-bar-icon icon="cart-o" text="Icon2" badge="5" />
-  <hello-action-bar-icon icon="shop-o" text="Icon3" badge="12" />
-  <hello-action-bar-button type="warning" text="Button" />
-  <hello-action-bar-button type="danger" text="Button" />
-</van-action-bar>
+<icloudata-action-bar>
+  <icloudata-action-bar-icon icon="chat-o" text="Icon1" dot />
+  <icloudata-action-bar-icon icon="cart-o" text="Icon2" badge="5" />
+  <icloudata-action-bar-icon icon="shop-o" text="Icon3" badge="12" />
+  <icloudata-action-bar-button type="warning" text="Button" />
+  <icloudata-action-bar-button type="danger" text="Button" />
+</icloudata-action-bar>
 ```
 
 ### Custom Icon Color
 
 ```html
-<hello-action-bar>
-  <hello-action-bar-icon icon="chat-o" text="Icon1" color="#ee0a24" />
-  <hello-action-bar-icon icon="cart-o" text="Icon2" />
-  <hello-action-bar-icon icon="star" text="Collected" color="#ff5000" />
-  <hello-action-bar-button type="warning" text="Button" />
-  <hello-action-bar-button type="danger" text="Button" />
-</van-action-bar>
+<icloudata-action-bar>
+  <icloudata-action-bar-icon icon="chat-o" text="Icon1" color="#ee0a24" />
+  <icloudata-action-bar-icon icon="cart-o" text="Icon2" />
+  <icloudata-action-bar-icon icon="star" text="Collected" color="#ff5000" />
+  <icloudata-action-bar-button type="warning" text="Button" />
+  <icloudata-action-bar-button type="danger" text="Button" />
+</icloudata-action-bar>
 ```
 
 ### Custom Button Color
 
 ```html
-<hello-action-bar>
-  <hello-action-bar-icon icon="chat-o" text="Icon1" />
-  <hello-action-bar-icon icon="shop-o" text="Icon2" />
-  <hello-action-bar-button color="#be99ff" type="warning" text="Button" />
-  <hello-action-bar-button color="#7232dd" type="danger" text="Button" />
-</van-action-bar>
+<icloudata-action-bar>
+  <icloudata-action-bar-icon icon="chat-o" text="Icon1" />
+  <icloudata-action-bar-icon icon="shop-o" text="Icon2" />
+  <icloudata-action-bar-button color="#be99ff" type="warning" text="Button" />
+  <icloudata-action-bar-button color="#7232dd" type="danger" text="Button" />
+</icloudata-action-bar>
 ```
 
 ## API

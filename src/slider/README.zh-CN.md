@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Slider } from 'hello';
+import { Slider } from 'cloudata';
 
 const app = createApp();
 app.use(Slider);
@@ -19,12 +19,12 @@ app.use(Slider);
 ### 基础用法
 
 ```html
-<hello-slider v-model="value" @change="onChange" />
+<icloudata-slider v-model="value" @change="onChange" />
 ```
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -45,12 +45,12 @@ export default {
 添加 `range` 属性就可以开启双滑块模式，确保 `value` 的值是一个数组。
 
 ```html
-<hello-slider v-model="value" range @change="onChange" />
+<icloudata-slider v-model="value" range @change="onChange" />
 ```
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -70,35 +70,35 @@ export default {
 ### 指定选择范围
 
 ```html
-<hello-slider v-model="value" :min="-50" :max="50" />
+<icloudata-slider v-model="value" :min="-50" :max="50" />
 ```
 
 ### 禁用
 
 ```html
-<hello-slider v-model="value" disabled />
+<icloudata-slider v-model="value" disabled />
 ```
 
 ### 指定步长
 
 ```html
-<hello-slider v-model="value" :step="10" />
+<icloudata-slider v-model="value" :step="10" />
 ```
 
 ### 自定义样式
 
 ```html
-<hello-slider v-model="value" bar-height="4px" active-color="#ee0a24" />
+<icloudata-slider v-model="value" bar-height="4px" active-color="#ee0a24" />
 ```
 
 ### 自定义按钮
 
 ```html
-<hello-slider v-model="value" active-color="#ee0a24">
+<icloudata-slider v-model="value" active-color="#ee0a24">
   <template #button>
     <div class="custom-button">{{ value }}</div>
   </template>
-</van-slider>
+</icloudata-slider>
 
 <style>
   .custom-button {
@@ -119,8 +119,8 @@ export default {
 
 ```html
 <div :style="{ height: '150px' }">
-  <hello-slider v-model="value" vertical @change="onChange" />
-  <hello-slider
+  <icloudata-slider v-model="value" vertical @change="onChange" />
+  <icloudata-slider
     v-model="value2"
     range
     vertical
@@ -132,7 +132,7 @@ export default {
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

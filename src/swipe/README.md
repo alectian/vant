@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Swipe, SwipeItem } from 'hello';
+import { Swipe, SwipeItem } from 'cloudata';
 
 const app = createApp();
 app.use(Swipe);
@@ -18,12 +18,12 @@ app.use(SwipeItem);
 Use `autoplay` prop to set autoplay interval.
 
 ```html
-<hello-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-  <hello-swipe-item>1</van-swipe-item>
-  <hello-swipe-item>2</van-swipe-item>
-  <hello-swipe-item>3</van-swipe-item>
-  <hello-swipe-item>4</van-swipe-item>
-</van-swipe>
+<icloudata-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+  <icloudata-swipe-item>1</icloudata-swipe-item>
+  <icloudata-swipe-item>2</icloudata-swipe-item>
+  <icloudata-swipe-item>3</icloudata-swipe-item>
+  <icloudata-swipe-item>4</icloudata-swipe-item>
+</icloudata-swipe>
 
 <style>
   .my-swipe .van-swipe-item {
@@ -41,11 +41,11 @@ Use `autoplay` prop to set autoplay interval.
 Use `lazy-render` prop to enable lazy rendering.
 
 ```html
-<hello-swipe :autoplay="3000" lazy-render>
-  <hello-swipe-item v-for="image in images" :key="image">
+<icloudata-swipe :autoplay="3000" lazy-render>
+  <icloudata-swipe-item v-for="image in images" :key="image">
     <img :src="image" />
-  </van-swipe-item>
-</van-swipe>
+  </icloudata-swipe-item>
+</icloudata-swipe>
 ```
 
 ```js
@@ -63,16 +63,16 @@ export default {
 ### Change Event
 
 ```html
-<hello-swipe @change="onChange">
-  <hello-swipe-item>1</van-swipe-item>
-  <hello-swipe-item>2</van-swipe-item>
-  <hello-swipe-item>3</van-swipe-item>
-  <hello-swipe-item>4</van-swipe-item>
-</van-swipe>
+<icloudata-swipe @change="onChange">
+  <icloudata-swipe-item>1</icloudata-swipe-item>
+  <icloudata-swipe-item>2</icloudata-swipe-item>
+  <icloudata-swipe-item>3</icloudata-swipe-item>
+  <icloudata-swipe-item>4</icloudata-swipe-item>
+</icloudata-swipe>
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -87,23 +87,23 @@ export default {
 ### Vertical Scrolling
 
 ```html
-<hello-swipe :autoplay="3000" vertical>
-  <hello-swipe-item>1</van-swipe-item>
-  <hello-swipe-item>2</van-swipe-item>
-  <hello-swipe-item>3</van-swipe-item>
-  <hello-swipe-item>4</van-swipe-item>
-</van-swipe>
+<icloudata-swipe :autoplay="3000" vertical>
+  <icloudata-swipe-item>1</icloudata-swipe-item>
+  <icloudata-swipe-item>2</icloudata-swipe-item>
+  <icloudata-swipe-item>3</icloudata-swipe-item>
+  <icloudata-swipe-item>4</icloudata-swipe-item>
+</icloudata-swipe>
 ```
 
 ### Set SwipeItem Size
 
 ```html
-<hello-swipe :loop="false" :width="300">
-  <hello-swipe-item>1</van-swipe-item>
-  <hello-swipe-item>2</van-swipe-item>
-  <hello-swipe-item>3</van-swipe-item>
-  <hello-swipe-item>4</van-swipe-item>
-</van-swipe>
+<icloudata-swipe :loop="false" :width="300">
+  <icloudata-swipe-item>1</icloudata-swipe-item>
+  <icloudata-swipe-item>2</icloudata-swipe-item>
+  <icloudata-swipe-item>3</icloudata-swipe-item>
+  <icloudata-swipe-item>4</icloudata-swipe-item>
+</icloudata-swipe>
 ```
 
 > It's not supported to set SwipeItem size in the loop mode.
@@ -111,15 +111,15 @@ export default {
 ### Custom Indicator
 
 ```html
-<hello-swipe @change="onChange">
-  <hello-swipe-item>1</van-swipe-item>
-  <hello-swipe-item>2</van-swipe-item>
-  <hello-swipe-item>3</van-swipe-item>
-  <hello-swipe-item>4</van-swipe-item>
+<icloudata-swipe @change="onChange">
+  <icloudata-swipe-item>1</icloudata-swipe-item>
+  <icloudata-swipe-item>2</icloudata-swipe-item>
+  <icloudata-swipe-item>3</icloudata-swipe-item>
+  <icloudata-swipe-item>4</icloudata-swipe-item>
   <template #indicator>
     <div class="custom-indicator">{{ current + 1 }}/4</div>
   </template>
-</van-swipe>
+</icloudata-swipe>
 
 <style>
   .custom-indicator {

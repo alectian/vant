@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { ContactList } from 'hello';
+import { ContactList } from 'cloudata';
 
 const app = createApp();
 app.use(ContactList);
@@ -19,7 +19,7 @@ app.use(ContactList);
 ### 基础用法
 
 ```html
-<hello-contact-list
+<icloudata-contact-list
   v-model="state.chosenContactId"
   :list="state.list"
   default-tag-text="默认"
@@ -31,7 +31,7 @@ app.use(ContactList);
 
 ```js
 import { reactive } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

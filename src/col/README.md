@@ -8,7 +8,7 @@ Quickly and easily create layouts with `van-row` and `van-col`.
 
 ```js
 import { createApp } from 'vue';
-import { Col, Row } from 'hello';
+import { Col, Row } from 'cloudata';
 
 const app = createApp();
 app.use(Col);
@@ -22,21 +22,21 @@ app.use(Row);
 Layout are based on 24-column. The attribute `span` in `Col` means the number of column the grid spans. Of course, You can use `offset` attribute to set number of spacing on the left side of the grid.
 
 ```html
-<hello-row>
-  <hello-col span="8">span: 8</van-col>
-  <hello-col span="8">span: 8</van-col>
-  <hello-col span="8">span: 8</van-col>
-</van-row>
+<icloudata-row>
+  <icloudata-col span="8">span: 8</icloudata-col>
+  <icloudata-col span="8">span: 8</icloudata-col>
+  <icloudata-col span="8">span: 8</icloudata-col>
+</icloudata-row>
 
-<hello-row>
-  <hello-col span="4">span: 4</van-col>
-  <hello-col span="10" offset="4">offset: 4, span: 10</van-col>
-  <hello-col span="6">span: 6</van-col>
-</van-row>
+<icloudata-row>
+  <icloudata-col span="4">span: 4</icloudata-col>
+  <icloudata-col span="10" offset="4">offset: 4, span: 10</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+</icloudata-row>
 
-<hello-row>
-  <hello-col offset="12" span="12">offset: 12, span: 12</van-col>
-</van-row>
+<icloudata-row>
+  <icloudata-col offset="12" span="12">offset: 12, span: 12</icloudata-col>
+</icloudata-row>
 ```
 
 ### Column Spacing
@@ -44,39 +44,39 @@ Layout are based on 24-column. The attribute `span` in `Col` means the number of
 Set grid spacing using `gutter` attribute. The default value is 0.
 
 ```html
-<hello-row gutter="20">
-  <hello-col span="8">span: 8</van-col>
-  <hello-col span="8">span: 8</van-col>
-  <hello-col span="8">span: 8</van-col>
-</van-row>
+<icloudata-row gutter="20">
+  <icloudata-col span="8">span: 8</icloudata-col>
+  <icloudata-col span="8">span: 8</icloudata-col>
+  <icloudata-col span="8">span: 8</icloudata-col>
+</icloudata-row>
 ```
 
 ### Justify Content
 
 ```html
-<hello-row justify="center">
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-</van-row>
+<icloudata-row justify="center">
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+</icloudata-row>
 
-<hello-row justify="end">
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-</van-row>
+<icloudata-row justify="end">
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+</icloudata-row>
 
-<hello-row justify="space-between">
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-</van-row>
+<icloudata-row justify="space-between">
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+</icloudata-row>
 
-<hello-row justify="space-around">
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-  <hello-col span="6">span: 6</van-col>
-</van-row>
+<icloudata-row justify="space-around">
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+  <icloudata-col span="6">span: 6</icloudata-col>
+</icloudata-row>
 ```
 
 ## API

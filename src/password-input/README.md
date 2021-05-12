@@ -8,7 +8,7 @@ The PasswordInput component is usually used with [NumberKeyboard](#/en-US/number
 
 ```js
 import { createApp } from 'vue';
-import { PasswordInput, NumberKeyboard } from 'hello';
+import { PasswordInput, NumberKeyboard } from 'cloudata';
 
 const app = createApp();
 app.use(PasswordInput);
@@ -20,12 +20,12 @@ app.use(NumberKeyboard);
 ### Basic Usage
 
 ```html
-<hello-password-input
+<icloudata-password-input
   :value="value"
   :focused="showKeyboard"
   @focus="showKeyboard = true"
 />
-<hello-number-keyboard
+<icloudata-number-keyboard
   v-model="value"
   :show="showKeyboard"
   @blur="showKeyboard = false"
@@ -51,7 +51,7 @@ export default {
 ### Custom Length
 
 ```html
-<hello-password-input
+<icloudata-password-input
   :value="value"
   :gutter="15"
   :focused="showKeyboard"
@@ -62,7 +62,7 @@ export default {
 ### Add Gutter
 
 ```html
-<hello-password-input
+<icloudata-password-input
   :value="value"
   :gutter="10"
   :focused="showKeyboard"
@@ -73,7 +73,7 @@ export default {
 ### Without Mask
 
 ```html
-<hello-password-input
+<icloudata-password-input
   :value="value"
   :mask="false"
   :focused="showKeyboard"
@@ -86,14 +86,14 @@ export default {
 Use `info` to set info message, use `error-info` prop to set error message.
 
 ```html
-<hello-password-input
+<icloudata-password-input
   :value="value"
   info="Some tips"
   :error-info="errorInfo"
   :focused="showKeyboard"
   @focus="showKeyboard = true"
 />
-<hello-number-keyboard
+<icloudata-number-keyboard
   v-model="value"
   :show="showKeyboard"
   @blur="showKeyboard = false"

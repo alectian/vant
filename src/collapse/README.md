@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Collapse, CollapseItem } from 'hello';
+import { Collapse, CollapseItem } from 'cloudata';
 
 const app = createApp();
 app.use(Collapse);
@@ -18,11 +18,11 @@ app.use(CollapseItem);
 Use `v-model` to control the name of active panels.
 
 ```html
-<hello-collapse v-model="activeNames">
-  <hello-collapse-item title="Title1" name="1">Content</van-collapse-item>
-  <hello-collapse-item title="Title2" name="2">Content</van-collapse-item>
-  <hello-collapse-item title="Title3" name="3">Content</van-collapse-item>
-</van-collapse>
+<icloudata-collapse v-model="activeNames">
+  <icloudata-collapse-item title="Title1" name="1">Content</icloudata-collapse-item>
+  <icloudata-collapse-item title="Title2" name="2">Content</icloudata-collapse-item>
+  <icloudata-collapse-item title="Title3" name="3">Content</icloudata-collapse-item>
+</icloudata-collapse>
 ```
 
 ```js
@@ -41,11 +41,11 @@ export default {
 In accordion mode, only one panel can be expanded at the same time.
 
 ```html
-<hello-collapse v-model="activeName" accordion>
-  <hello-collapse-item title="Title1" name="1">Content</van-collapse-item>
-  <hello-collapse-item title="Title2" name="2">Content</van-collapse-item>
-  <hello-collapse-item title="Title3" name="3">Content</van-collapse-item>
-</van-collapse>
+<icloudata-collapse v-model="activeName" accordion>
+  <icloudata-collapse-item title="Title1" name="1">Content</icloudata-collapse-item>
+  <icloudata-collapse-item title="Title2" name="2">Content</icloudata-collapse-item>
+  <icloudata-collapse-item title="Title3" name="3">Content</icloudata-collapse-item>
+</icloudata-collapse>
 ```
 
 ```js
@@ -64,31 +64,31 @@ export default {
 Use the `disabled` prop to disable CollaseItem.
 
 ```html
-<hello-collapse v-model="activeNames">
-  <hello-collapse-item title="Title1" name="1">Content</van-collapse-item>
-  <hello-collapse-item title="Title2" name="2" disabled>
+<icloudata-collapse v-model="activeNames">
+  <icloudata-collapse-item title="Title1" name="1">Content</icloudata-collapse-item>
+  <icloudata-collapse-item title="Title2" name="2" disabled>
     Content
-  </van-collapse-item>
-  <hello-collapse-item title="Title3" name="3" disabled>
+  </icloudata-collapse-item>
+  <icloudata-collapse-item title="Title3" name="3" disabled>
     Content
-  </van-collapse-item>
-</van-collapse>
+  </icloudata-collapse-item>
+</icloudata-collapse>
 ```
 
 ### Custom title
 
 ```html
-<hello-collapse v-model="activeNames">
-  <hello-collapse-item name="1">
+<icloudata-collapse v-model="activeNames">
+  <icloudata-collapse-item name="1">
     <template #title>
-      <div>Title1 <hello-icon name="question-o" /></div>
+      <div>Title1 <icloudata-icon name="question-o" /></div>
     </template>
     Content
-  </van-collapse-item>
-  <hello-collapse-item title="Title2" name="2" icon="shop-o">
+  </icloudata-collapse-item>
+  <icloudata-collapse-item title="Title2" name="2" icon="shop-o">
     Content
-  </van-collapse-item>
-</van-collapse>
+  </icloudata-collapse-item>
+</icloudata-collapse>
 ```
 
 ```js

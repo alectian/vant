@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Uploader } from 'hello';
+import { Uploader } from 'cloudata';
 
 const app = createApp();
 app.use(Uploader);
@@ -21,7 +21,7 @@ app.use(Uploader);
 文件上传完毕后会触发 `after-read` 回调函数，获取到对应的 `file` 对象。
 
 ```html
-<hello-uploader :after-read="afterRead" />
+<icloudata-uploader :after-read="afterRead" />
 ```
 
 ```js
@@ -44,7 +44,7 @@ export default {
 通过 `v-model` 可以绑定已经上传的文件列表，并展示文件列表的预览图。
 
 ```html
-<hello-uploader v-model="fileList" multiple />
+<icloudata-uploader v-model="fileList" multiple />
 ```
 
 ```js
@@ -71,7 +71,7 @@ export default {
 通过 `status` 属性可以标识上传状态，`uploading` 表示上传中，`failed` 表示上传失败，`done` 表示上传完成。
 
 ```html
-<hello-uploader v-model="fileList" :after-read="afterRead" />
+<icloudata-uploader v-model="fileList" :after-read="afterRead" />
 ```
 
 ```js
@@ -115,7 +115,7 @@ export default {
 通过 `max-count` 属性可以限制上传文件的数量，上传数量达到限制后，会自动隐藏上传区域。
 
 ```html
-<hello-uploader v-model="fileList" multiple :max-count="2" />
+<icloudata-uploader v-model="fileList" multiple :max-count="2" />
 ```
 
 ```js
@@ -137,11 +137,11 @@ export default {
 通过 `max-size` 属性可以限制上传文件的大小，超过大小的文件会被自动过滤，这些文件信息可以通过 `oversize` 事件获取。
 
 ```html
-<hello-uploader multiple :max-size="500 * 1024" @oversize="onOversize" />
+<icloudata-uploader multiple :max-size="500 * 1024" @oversize="onOversize" />
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -162,9 +162,9 @@ export default {
 通过默认插槽可以自定义上传区域的样式。
 
 ```html
-<hello-uploader>
-  <hello-button icon="plus" type="primary">上传文件</van-button>
-</van-uploader>
+<icloudata-uploader>
+  <icloudata-button icon="plus" type="primary">上传文件</icloudata-button>
+</icloudata-uploader>
 ```
 
 ### 自定义预览样式
@@ -172,11 +172,11 @@ export default {
 通过 `preview-cover` 插槽可以自定义覆盖在预览区域上方的内容。
 
 ```html
-<hello-uploader v-model="fileList">
+<icloudata-uploader v-model="fileList">
   <template #preview-cover="{ file }">
     <div class="preview-cover van-ellipsis">{{ file.name }}</div>
   </template>
-</van-uploader>
+</icloudata-uploader>
 
 <style>
   .preview-cover {
@@ -198,11 +198,11 @@ export default {
 通过传入 `beforeRead` 函数可以在上传前进行校验和处理，返回 `true` 表示校验通过，返回 `false` 表示校验失败。支持返回 `Promise` 对 file 对象进行自定义处理，例如压缩图片。
 
 ```html
-<hello-uploader :before-read="beforeRead" />
+<icloudata-uploader :before-read="beforeRead" />
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -243,7 +243,7 @@ export default {
 通过 `disabled` 属性禁用文件上传。
 
 ```html
-<hello-uploader disabled />
+<icloudata-uploader disabled />
 ```
 
 ### 自定义单个图片预览
@@ -251,12 +251,12 @@ export default {
 在 `v-model` 数组中设置单个预览图片属性，支持 `imageFit` `deletable` `previewSize` `beforeDelete`。
 
 ```html
-<hello-uploader v-model="fileList" :deletable="false" />
+<icloudata-uploader v-model="fileList" :deletable="false" />
 ```
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

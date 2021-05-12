@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { ShareSheet } from 'hello';
+import { ShareSheet } from 'cloudata';
 
 const app = createApp();
 app.use(ShareSheet);
@@ -15,8 +15,8 @@ app.use(ShareSheet);
 ### Basic Usage
 
 ```html
-<hello-cell title="Show ShareSheet" @click="showShare = true" />
-<hello-share-sheet
+<icloudata-cell title="Show ShareSheet" @click="showShare = true" />
+<icloudata-share-sheet
   v-model:show="showShare"
   title="Share"
   :options="options"
@@ -26,7 +26,7 @@ app.use(ShareSheet);
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -56,7 +56,7 @@ export default {
 ### Multi Line
 
 ```html
-<hello-share-sheet v-model:show="showShare" title="Share" :options="options" />
+<icloudata-share-sheet v-model:show="showShare" title="Share" :options="options" />
 ```
 
 ```js
@@ -90,7 +90,7 @@ export default {
 ### Custom Icon
 
 ```html
-<hello-share-sheet v-model:show="showShare" :options="options" />
+<icloudata-share-sheet v-model:show="showShare" :options="options" />
 ```
 
 ```js
@@ -125,7 +125,7 @@ export default {
 ### Show Description
 
 ```html
-<hello-share-sheet
+<icloudata-share-sheet
   v-model:show="showShare"
   :options="options"
   title="Share"

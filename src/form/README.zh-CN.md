@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Form } from 'hello';
+import { Form } from 'cloudata';
 
 const app = createApp();
 app.use(Form);
@@ -21,15 +21,15 @@ app.use(Form);
 在表单中，每个 [Field 组件](#/zh-CN/field) 代表一个表单项，使用 Field 的 `rules` 属性定义校验规则。
 
 ```html
-<hello-form @submit="onSubmit">
-  <hello-field
+<icloudata-form @submit="onSubmit">
+  <icloudata-field
     v-model="state.username"
     name="用户名"
     label="用户名"
     placeholder="用户名"
     :rules="[{ required: true, message: '请填写用户名' }]"
   />
-  <hello-field
+  <icloudata-field
     v-model="state.password"
     type="password"
     name="密码"
@@ -38,9 +38,9 @@ app.use(Form);
     :rules="[{ required: true, message: '请填写密码' }]"
   />
   <div style="margin: 16px;">
-    <hello-button round block type="info" native-type="submit">提交</van-button>
+    <icloudata-button round block type="info" native-type="submit">提交</icloudata-button>
   </div>
-</van-form>
+</icloudata-form>
 ```
 
 ```js
@@ -69,39 +69,39 @@ export default {
 通过 `rules` 定义表单校验规则，可用字段见[下方表格](#/zh-CN/form#rule-shu-ju-jie-gou)。
 
 ```html
-<hello-form validate-first @failed="onFailed">
+<icloudata-form validate-first @failed="onFailed">
   <!-- 通过 pattern 进行正则校验 -->
-  <hello-field
+  <icloudata-field
     v-model="state.value1"
     name="pattern"
     placeholder="正则校验"
     :rules="[{ pattern, message: '请输入正确内容' }]"
   />
   <!-- 通过 validator 进行函数校验 -->
-  <hello-field
+  <icloudata-field
     v-model="state.value2"
     name="validator"
     placeholder="函数校验"
     :rules="[{ validator, message: '请输入正确内容' }]"
   />
   <!-- 通过 validator 进行异步函数校验 -->
-  <hello-field
+  <icloudata-field
     v-model="state.value3"
     name="asyncValidator"
     placeholder="异步函数校验"
     :rules="[{ validator: asyncValidator, message: '请输入正确内容' }]"
   />
   <div style="margin: 16px;">
-    <hello-button round block type="primary" native-type="submit"
-      >提交</van-button
+    <icloudata-button round block type="primary" native-type="submit"
+      >提交</icloudata-button
     >
   </div>
-</van-form>
+</icloudata-form>
 ```
 
 ```js
 import { reactive } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -146,11 +146,11 @@ export default {
 在表单中使用 [Switch 组件](#/zh-CN/switch)。
 
 ```html
-<hello-field name="switch" label="开关">
+<icloudata-field name="switch" label="开关">
   <template #input>
-    <hello-switch v-model="checked" size="20" />
+    <icloudata-switch v-model="checked" size="20" />
   </template>
-</van-field>
+</icloudata-field>
 ```
 
 ```js
@@ -169,19 +169,19 @@ export default {
 在表单中使用 [Checkbox 组件](#/zh-CN/checkbox)。
 
 ```html
-<hello-field name="checkbox" label="复选框">
+<icloudata-field name="checkbox" label="复选框">
   <template #input>
-    <hello-checkbox v-model="checked" shape="square" />
+    <icloudata-checkbox v-model="checked" shape="square" />
   </template>
-</van-field>
-<hello-field name="checkboxGroup" label="复选框组">
+</icloudata-field>
+<icloudata-field name="checkboxGroup" label="复选框组">
   <template #input>
-    <hello-checkbox-group v-model="groupChecked" direction="horizontal">
-      <hello-checkbox name="1" shape="square">复选框 1</van-checkbox>
-      <hello-checkbox name="2" shape="square">复选框 2</van-checkbox>
-    </van-checkbox-group>
+    <icloudata-checkbox-group v-model="groupChecked" direction="horizontal">
+      <icloudata-checkbox name="1" shape="square">复选框 1</icloudata-checkbox>
+      <icloudata-checkbox name="2" shape="square">复选框 2</icloudata-checkbox>
+    </icloudata-checkbox-group>
   </template>
-</van-field>
+</icloudata-field>
 ```
 
 ```js
@@ -204,14 +204,14 @@ export default {
 在表单中使用 [Radio 组件](#/zh-CN/radio)。
 
 ```html
-<hello-field name="radio" label="单选框">
+<icloudata-field name="radio" label="单选框">
   <template #input>
-    <hello-radio-group v-model="checked" direction="horizontal">
-      <hello-radio name="1">单选框 1</van-radio>
-      <hello-radio name="2">单选框 2</van-radio>
-    </van-radio-group>
+    <icloudata-radio-group v-model="checked" direction="horizontal">
+      <icloudata-radio name="1">单选框 1</icloudata-radio>
+      <icloudata-radio name="2">单选框 2</icloudata-radio>
+    </icloudata-radio-group>
   </template>
-</van-field>
+</icloudata-field>
 ```
 
 ```js
@@ -230,11 +230,11 @@ export default {
 在表单中使用 [Stepper 组件](#/zh-CN/stepper)。
 
 ```html
-<hello-field name="stepper" label="步进器">
+<icloudata-field name="stepper" label="步进器">
   <template #input>
-    <hello-stepper v-model="value" />
+    <icloudata-stepper v-model="value" />
   </template>
-</van-field>
+</icloudata-field>
 ```
 
 ```js
@@ -253,11 +253,11 @@ export default {
 在表单中使用 [Rate 组件](#/zh-CN/rate)。
 
 ```html
-<hello-field name="rate" label="评分">
+<icloudata-field name="rate" label="评分">
   <template #input>
-    <hello-rate v-model="value" />
+    <icloudata-rate v-model="value" />
   </template>
-</van-field>
+</icloudata-field>
 ```
 
 ```js
@@ -276,11 +276,11 @@ export default {
 在表单中使用 [Slider 组件](#/zh-CN/slider)。
 
 ```html
-<hello-field name="slider" label="滑块">
+<icloudata-field name="slider" label="滑块">
   <template #input>
-    <hello-slider v-model="value" />
+    <icloudata-slider v-model="value" />
   </template>
-</van-field>
+</icloudata-field>
 ```
 
 ```js
@@ -299,11 +299,11 @@ export default {
 在表单中使用 [Uploader 组件](#/zh-CN/uploader)。
 
 ```html
-<hello-field name="uploader" label="文件上传">
+<icloudata-field name="uploader" label="文件上传">
   <template #input>
-    <hello-uploader v-model="value" />
+    <icloudata-uploader v-model="value" />
   </template>
-</van-field>
+</icloudata-field>
 ```
 
 ```js
@@ -322,7 +322,7 @@ export default {
 在表单中使用 [Picker 组件](#/zh-CN/picker)。
 
 ```html
-<hello-field
+<icloudata-field
   readonly
   clickable
   name="picker"
@@ -331,13 +331,13 @@ export default {
   placeholder="点击选择城市"
   @click="state.showPicker = true"
 />
-<hello-popup v-model:show="state.showPicker" position="bottom">
-  <hello-picker
+<icloudata-popup v-model:show="state.showPicker" position="bottom">
+  <icloudata-picker
     :columns="columns"
     @confirm="onConfirm"
     @cancel="state.showPicker = false"
   />
-</van-popup>
+</icloudata-popup>
 ```
 
 ```js
@@ -370,7 +370,7 @@ export default {
 在表单中使用 [DatetimePicker 组件](#/zh-CN/datetime-picker)。
 
 ```html
-<hello-field
+<icloudata-field
   readonly
   clickable
   name="datetimePicker"
@@ -379,13 +379,13 @@ export default {
   placeholder="点击选择时间"
   @click="state.showPicker = true"
 />
-<hello-popup v-model:show="state.showPicker" position="bottom">
-  <hello-datetime-picker
+<icloudata-popup v-model:show="state.showPicker" position="bottom">
+  <icloudata-datetime-picker
     type="time"
     @confirm="onConfirm"
     @cancel="state.showPicker = false"
   />
-</van-popup>
+</icloudata-popup>
 ```
 
 ```js
@@ -415,7 +415,7 @@ export default {
 在表单中使用 [Area 组件](#/zh-CN/area)。
 
 ```html
-<hello-field
+<icloudata-field
   readonly
   clickable
   name="area"
@@ -424,13 +424,13 @@ export default {
   placeholder="点击选择省市区"
   @click="state.showArea = true"
 />
-<hello-popup v-model:show="state.showArea" position="bottom">
-  <hello-area
+<icloudata-popup v-model:show="state.showArea" position="bottom">
+  <icloudata-area
     :area-list="areaList"
     @confirm="onConfirm"
     @cancel="state.showArea = false"
   />
-</van-popup>
+</icloudata-popup>
 ```
 
 ```js
@@ -464,7 +464,7 @@ export default {
 在表单中使用 [Calendar 组件](#/zh-CN/calendar)。
 
 ```html
-<hello-field
+<icloudata-field
   readonly
   clickable
   name="calendar"
@@ -473,7 +473,7 @@ export default {
   placeholder="点击选择日期"
   @click="state.showCalendar = true"
 />
-<hello-calendar v-model="state.showCalendar" @confirm="onConfirm" />
+<icloudata-calendar v-model="state.showCalendar" @confirm="onConfirm" />
 ```
 
 ```js

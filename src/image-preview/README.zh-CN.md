@@ -9,7 +9,7 @@
 ImagePreview 是一个函数，调用函数后会直接在页面中展示图片预览界面。
 
 ```js
-import { ImagePreview } from 'hello';
+import { ImagePreview } from 'cloudata';
 
 ImagePreview(['https://img.yzcdn.cn/vant/apple-1.jpg']);
 ```
@@ -20,7 +20,7 @@ ImagePreview(['https://img.yzcdn.cn/vant/apple-1.jpg']);
 
 ```js
 import { createApp } from 'vue';
-import { ImagePreview } from 'hello';
+import { ImagePreview } from 'cloudata';
 
 // 全局注册
 const app = createApp();
@@ -80,7 +80,7 @@ ImagePreview({
 通过 `onClose` 选项监听图片预览的关闭事件。
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 ImagePreview({
   images: [
@@ -117,13 +117,13 @@ setTimeout(() => {
 如果需要在图片预览内嵌入组件或其他自定义内容，可以使用组件调用的方式，调用前需要通过 `app.use` 注册组件。
 
 ```html
-<hello-image-preview
+<icloudata-image-preview
   v-model:show="state.show"
   :images="state.images"
   @change="onChange"
 >
   <template v-slot:index>第{{ index }}页</template>
-</van-image-preview>
+</icloudata-image-preview>
 ```
 
 ```js

@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Tab, Tabs } from 'hello';
+import { Tab, Tabs } from 'cloudata';
 
 const app = createApp();
 app.use(Tab);
@@ -18,11 +18,11 @@ app.use(Tabs);
 The first tab is actived by default, you can set `v-model:active` to active specified tab.
 
 ```html
-<hello-tabs v-model:active="active">
-  <hello-tab v-for="index in 4" :title="'tab' + index">
+<icloudata-tabs v-model:active="active">
+  <icloudata-tab v-for="index in 4" :title="'tab' + index">
     content of tab {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ```js
@@ -39,11 +39,11 @@ export default {
 ### Match By Name
 
 ```html
-<hello-tabs v-model:active="activeName">
-  <hello-tab title="tab 1" name="a">content of tab 1</van-tab>
-  <hello-tab title="tab 2" name="b">content of tab 2</van-tab>
-  <hello-tab title="tab 3" name="c">content of tab 3</van-tab>
-</van-tabs>
+<icloudata-tabs v-model:active="activeName">
+  <icloudata-tab title="tab 1" name="a">content of tab 1</icloudata-tab>
+  <icloudata-tab title="tab 2" name="b">content of tab 2</icloudata-tab>
+  <icloudata-tab title="tab 3" name="c">content of tab 3</icloudata-tab>
+</icloudata-tabs>
 ```
 
 ```js
@@ -62,11 +62,11 @@ export default {
 By default more than 5 tabs, you can scroll through the tabs. You can set `swipe-threshold` attribute to customize threshold number.
 
 ```html
-<hello-tabs>
-  <hello-tab v-for="index in 8" :title="'tab' + index">
+<icloudata-tabs>
+  <icloudata-tab v-for="index in 8" :title="'tab' + index">
     content of tab {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ### Disabled Tab
@@ -74,15 +74,15 @@ By default more than 5 tabs, you can scroll through the tabs. You can set `swipe
 You can set `disabled` attribute on the corresponding `van-tab`.
 
 ```html
-<hello-tabs @disabled="onClickDisabled">
-  <hello-tab v-for="index in 3" :title="'tab' + index" :disabled="index === 2">
+<icloudata-tabs @disabled="onClickDisabled">
+  <icloudata-tab v-for="index in 3" :title="'tab' + index" :disabled="index === 2">
     content of tab {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -102,25 +102,25 @@ export default {
 Tabs styled as cards.
 
 ```html
-<hello-tabs type="card">
-  <hello-tab v-for="index in 3" :title="'tab' + index">
+<icloudata-tabs type="card">
+  <icloudata-tab v-for="index in 3" :title="'tab' + index">
     content of tab {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ### Click Event
 
 ```html
-<hello-tabs @click="onClick">
-  <hello-tab v-for="index in 2" :title="'tab' + index">
+<icloudata-tabs @click="onClick">
+  <icloudata-tab v-for="index in 2" :title="'tab' + index">
     content of tab {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -140,11 +140,11 @@ export default {
 In sticky mode, the tab will be fixed to top when scroll to top.
 
 ```html
-<hello-tabs v-model:active="active" sticky>
-  <hello-tab v-for="index in 4" :title="'tab ' + index">
+<icloudata-tabs v-model:active="active" sticky>
+  <icloudata-tab v-for="index in 4" :title="'tab ' + index">
     content {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ### Custom title
@@ -152,12 +152,12 @@ In sticky mode, the tab will be fixed to top when scroll to top.
 Use title slot to custom tab title.
 
 ```html
-<hello-tabs v-model:active="active">
-  <hello-tab v-for="index in 2" :key="index">
-    <template #title> <hello-icon name="more-o" />tab </template>
+<icloudata-tabs v-model:active="active">
+  <icloudata-tab v-for="index in 2" :key="index">
+    <template #title> <icloudata-icon name="more-o" />tab </template>
     content {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ### Switch Animation
@@ -165,11 +165,11 @@ Use title slot to custom tab title.
 Use `animated` props to change tabs with animation.
 
 ```html
-<hello-tabs v-model:active="active" animated>
-  <hello-tab v-for="index in 4" :title="'tab ' + index">
+<icloudata-tabs v-model:active="active" animated>
+  <icloudata-tab v-for="index in 4" :title="'tab ' + index">
     content {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ### Swipeable
@@ -177,11 +177,11 @@ Use `animated` props to change tabs with animation.
 In swipeable mode, you can switch tabs with swipe gestrue in the content.
 
 ```html
-<hello-tabs v-model:active="active" swipeable>
-  <hello-tab v-for="index in 4" :title="'tab ' + index">
+<icloudata-tabs v-model:active="active" swipeable>
+  <icloudata-tab v-for="index in 4" :title="'tab ' + index">
     content {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ### Scrollspy
@@ -189,21 +189,21 @@ In swipeable mode, you can switch tabs with swipe gestrue in the content.
 In scrollspy mode, the list of content will be tiled.
 
 ```html
-<hello-tabs v-model:active="active" scrollspy sticky>
-  <hello-tab v-for="index in 8" :title="'tab ' + index">
+<icloudata-tabs v-model:active="active" scrollspy sticky>
+  <icloudata-tab v-for="index in 8" :title="'tab ' + index">
     content {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ### Before Change
 
 ```html
-<hello-tabs :before-change="beforeChange">
-  <hello-tab v-for="index in 4" :title="'tab ' + index">
+<icloudata-tabs :before-change="beforeChange">
+  <icloudata-tab v-for="index in 4" :title="'tab ' + index">
     content {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ```js

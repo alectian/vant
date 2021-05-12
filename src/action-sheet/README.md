@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { ActionSheet } from 'hello';
+import { ActionSheet } from 'cloudata';
 
 const app = createApp();
 app.use(ActionSheet);
@@ -17,13 +17,13 @@ app.use(ActionSheet);
 Use `actions` prop to set options of action-sheet.
 
 ```html
-<hello-cell is-link title="Basic Usage" @click="show = true" />
-<hello-action-sheet v-model:show="show" :actions="actions" @select="onSelect" />
+<icloudata-cell is-link title="Basic Usage" @click="show = true" />
+<icloudata-action-sheet v-model:show="show" :actions="actions" @select="onSelect" />
 ```
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -50,7 +50,7 @@ export default {
 ### Show Cancel Button
 
 ```html
-<hello-action-sheet
+<icloudata-action-sheet
   v-model:show="show"
   :actions="actions"
   cancel-text="Cancel"
@@ -61,7 +61,7 @@ export default {
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -87,7 +87,7 @@ export default {
 ### Show Description
 
 ```html
-<hello-action-sheet
+<icloudata-action-sheet
   v-model:show="show"
   :actions="actions"
   cancel-text="Cancel"
@@ -119,7 +119,7 @@ export default {
 ### Option Status
 
 ```html
-<hello-action-sheet
+<icloudata-action-sheet
   v-model:show="show"
   :actions="actions"
   cancel-text="Cancel"
@@ -150,9 +150,9 @@ export default {
 ### Custom Panel
 
 ```html
-<hello-action-sheet v-model:show="show" title="Title">
+<icloudata-action-sheet v-model:show="show" title="Title">
   <div class="content">Content</div>
-</van-action-sheet>
+</icloudata-action-sheet>
 
 <style>
   .content {

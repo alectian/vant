@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { NavBar } from 'hello';
+import { NavBar } from 'cloudata';
 
 const app = createApp();
 app.use(NavBar);
@@ -15,7 +15,7 @@ app.use(NavBar);
 ### Basic Usage
 
 ```html
-<hello-nav-bar
+<icloudata-nav-bar
   title="Title"
   left-text="Back"
   right-text="Button"
@@ -26,7 +26,7 @@ app.use(NavBar);
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -47,11 +47,11 @@ export default {
 ### Use Slot
 
 ```html
-<hello-nav-bar title="Title" left-text="Back" left-arrow>
+<icloudata-nav-bar title="Title" left-text="Back" left-arrow>
   <template #right>
-    <hello-icon name="search" />
+    <icloudata-icon name="search" />
   </template>
-</van-nav-bar>
+</icloudata-nav-bar>
 ```
 
 ## API

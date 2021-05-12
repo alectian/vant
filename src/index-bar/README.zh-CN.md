@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { IndexBar, IndexAnchor } from 'hello';
+import { IndexBar, IndexAnchor } from 'cloudata';
 
 const app = createApp();
 app.use(IndexBar);
@@ -18,19 +18,19 @@ app.use(IndexAnchor);
 点击索引栏时，会自动跳转到对应的 `IndexAnchor` 锚点位置。
 
 ```html
-<hello-index-bar>
-  <hello-index-anchor index="A" />
-  <hello-cell title="文本" />
-  <hello-cell title="文本" />
-  <hello-cell title="文本" />
+<icloudata-index-bar>
+  <icloudata-index-anchor index="A" />
+  <icloudata-cell title="文本" />
+  <icloudata-cell title="文本" />
+  <icloudata-cell title="文本" />
 
-  <hello-index-anchor index="B" />
-  <hello-cell title="文本" />
-  <hello-cell title="文本" />
-  <hello-cell title="文本" />
+  <icloudata-index-anchor index="B" />
+  <icloudata-cell title="文本" />
+  <icloudata-cell title="文本" />
+  <icloudata-cell title="文本" />
 
   ...
-</van-index-bar>
+</icloudata-index-bar>
 ```
 
 ### 自定义索引列表
@@ -38,19 +38,19 @@ app.use(IndexAnchor);
 可以通过 `index-list` 属性自定义展示的索引字符列表。
 
 ```html
-<hello-index-bar :index-list="indexList">
-  <hello-index-anchor index="1">标题1</van-index-anchor>
-  <hello-cell title="文本" />
-  <hello-cell title="文本" />
-  <hello-cell title="文本" />
+<icloudata-index-bar :index-list="indexList">
+  <icloudata-index-anchor index="1">标题1</icloudata-index-anchor>
+  <icloudata-cell title="文本" />
+  <icloudata-cell title="文本" />
+  <icloudata-cell title="文本" />
 
-  <hello-index-anchor index="2">标题2</van-index-anchor>
-  <hello-cell title="文本" />
-  <hello-cell title="文本" />
-  <hello-cell title="文本" />
+  <icloudata-index-anchor index="2">标题2</icloudata-index-anchor>
+  <icloudata-cell title="文本" />
+  <icloudata-cell title="文本" />
+  <icloudata-cell title="文本" />
 
   ...
-</van-index-bar>
+</icloudata-index-bar>
 ```
 
 ```js

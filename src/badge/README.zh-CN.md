@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Badge } from 'hello';
+import { Badge } from 'cloudata';
 
 const app = createApp();
 app.use(Badge);
@@ -21,18 +21,18 @@ app.use(Badge);
 设置 `content` 属性后，Badge 会在子元素的右上角显示对应的徽标，也可以通过 `dot` 来显示小红点。
 
 ```html
-<hello-badge :content="5">
+<icloudata-badge :content="5">
   <div class="child" />
-</van-badge>
-<hello-badge :content="10">
+</icloudata-badge>
+<icloudata-badge :content="10">
   <div class="child" />
-</van-badge>
-<hello-badge content="Hot">
+</icloudata-badge>
+<icloudata-badge content="Hot">
   <div class="child" />
-</van-badge>
-<hello-badge dot>
+</icloudata-badge>
+<icloudata-badge dot>
   <div class="child" />
-</van-badge>
+</icloudata-badge>
 
 <style>
   .child {
@@ -49,15 +49,15 @@ app.use(Badge);
 设置 `max` 属性后，当 `content` 的数值超过最大值时，会自动显示为 `{max}+`。
 
 ```html
-<hello-badge :content="20" max="9">
+<icloudata-badge :content="20" max="9">
   <div class="child" />
-</van-badge>
-<hello-badge :content="50" max="20">
+</icloudata-badge>
+<icloudata-badge :content="50" max="20">
   <div class="child" />
-</van-badge>
-<hello-badge :content="200" max="99">
+</icloudata-badge>
+<icloudata-badge :content="200" max="99">
   <div class="child" />
-</van-badge>
+</icloudata-badge>
 ```
 
 ### 自定义颜色
@@ -65,15 +65,15 @@ app.use(Badge);
 通过 `color` 属性来设置徽标的颜色。
 
 ```html
-<hello-badge :content="5" color="#1989fa">
+<icloudata-badge :content="5" color="#1989fa">
   <div class="child" />
-</van-badge>
-<hello-badge :content="10" color="#1989fa">
+</icloudata-badge>
+<icloudata-badge :content="10" color="#1989fa">
   <div class="child" />
-</van-badge>
-<hello-badge dot color="#1989fa">
+</icloudata-badge>
+<icloudata-badge dot color="#1989fa">
   <div class="child" />
-</van-badge>
+</icloudata-badge>
 ```
 
 ### 自定义徽标内容
@@ -81,24 +81,24 @@ app.use(Badge);
 通过 `content` 插槽可以自定义徽标的内容，比如插入一个图标。
 
 ```html
-<hello-badge>
+<icloudata-badge>
   <div class="child" />
   <template #content>
-    <hello-icon name="success" class="badge-icon" />
+    <icloudata-icon name="success" class="badge-icon" />
   </template>
-</van-badge>
-<hello-badge>
+</icloudata-badge>
+<icloudata-badge>
   <div class="child" />
   <template #content>
-    <hello-icon name="cross" class="badge-icon" />
+    <icloudata-icon name="cross" class="badge-icon" />
   </template>
-</van-badge>
-<hello-badge>
+</icloudata-badge>
+<icloudata-badge>
   <div class="child" />
   <template #content>
-    <hello-icon name="down" class="badge-icon" />
+    <icloudata-icon name="down" class="badge-icon" />
   </template>
-</van-badge>
+</icloudata-badge>
 ```
 
 ```css
@@ -114,9 +114,9 @@ app.use(Badge);
 当 Badge 没有子元素时，会作为一个独立的元素进行展示。
 
 ```html
-<hello-badge :content="20" />
+<icloudata-badge :content="20" />
 
-<hello-badge :content="200" max="99" />
+<icloudata-badge :content="200" max="99" />
 ```
 
 ## API

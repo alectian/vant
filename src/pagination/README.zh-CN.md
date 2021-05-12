@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Pagination } from 'hello';
+import { Pagination } from 'cloudata';
 
 const app = createApp();
 app.use(Pagination);
@@ -17,7 +17,7 @@ app.use(Pagination);
 通过 `v-model` 来绑定当前页码。
 
 ```html
-<hello-pagination v-model="currentPage" :total-items="24" :items-per-page="5" />
+<icloudata-pagination v-model="currentPage" :total-items="24" :items-per-page="5" />
 ```
 
 ```js
@@ -36,7 +36,7 @@ export default {
  将 `mode` 设置为 `simple` 来切换到简单模式，此时分页器不会展示具体的页码按钮。
 
 ```html
-<hello-pagination v-model="currentPage" :page-count="12" mode="simple" />
+<icloudata-pagination v-model="currentPage" :page-count="12" mode="simple" />
 ```
 
 ### 显示省略号
@@ -44,7 +44,7 @@ export default {
 设置 `force-ellipses` 后会展示省略号按钮，点击后可以快速跳转。
 
 ```html
-<hello-pagination
+<icloudata-pagination
   v-model="currentPage"
   :total-items="125"
   :show-page-size="3"
@@ -57,15 +57,15 @@ export default {
 通过 `prev-text`、`next-text` 等插槽来自定义分页按钮的内容。
 
 ```html
-<hello-pagination v-model="currentPage" :total-items="50" :show-page-size="5">
+<icloudata-pagination v-model="currentPage" :total-items="50" :show-page-size="5">
   <template #prev-text>
-    <hello-icon name="arrow-left" />
+    <icloudata-icon name="arrow-left" />
   </template>
   <template #next-text>
-    <hello-icon name="arrow" />
+    <icloudata-icon name="arrow" />
   </template>
   <template #page="{ text }">{{ text }}</template>
-</van-pagination>
+</icloudata-pagination>
 ```
 
 ## API

@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Progress } from 'hello';
+import { Progress } from 'cloudata';
 
 const app = createApp();
 app.use(Progress);
@@ -17,19 +17,19 @@ app.use(Progress);
 Use `percentage` prop to set current progress.
 
 ```html
-<hello-progress :percentage="50" />
+<icloudata-progress :percentage="50" />
 ```
 
 ### Stroke Width
 
 ```html
-<hello-progress :percentage="50" stroke-width="8" />
+<icloudata-progress :percentage="50" stroke-width="8" />
 ```
 
 ### Inactive
 
 ```html
-<hello-progress inactive :percentage="50" />
+<icloudata-progress inactive :percentage="50" />
 ```
 
 ### Custom Style
@@ -37,9 +37,9 @@ Use `percentage` prop to set current progress.
 Use `pivot-text` to custom text，use `color` to custom bar color.
 
 ```html
-<hello-progress pivot-text="Orange" color="#f2826a" :percentage="25" />
-<hello-progress pivot-text="Red" color="#ee0a24" :percentage="50" />
-<hello-progress
+<icloudata-progress pivot-text="Orange" color="#f2826a" :percentage="25" />
+<icloudata-progress pivot-text="Red" color="#ee0a24" :percentage="50" />
+<icloudata-progress
   :percentage="75"
   pivot-text="Purple"
   pivot-color="#7232dd"

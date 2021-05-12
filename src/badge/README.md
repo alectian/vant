@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Badge } from 'hello';
+import { Badge } from 'cloudata';
 
 const app = createApp();
 app.use(Badge);
@@ -15,18 +15,18 @@ app.use(Badge);
 ### Basic Usage
 
 ```html
-<hello-badge :content="5">
+<icloudata-badge :content="5">
   <div class="child" />
-</van-badge>
-<hello-badge :content="10">
+</icloudata-badge>
+<icloudata-badge :content="10">
   <div class="child" />
-</van-badge>
-<hello-badge content="Hot">
+</icloudata-badge>
+<icloudata-badge content="Hot">
   <div class="child" />
-</van-badge>
-<hello-badge dot>
+</icloudata-badge>
+<icloudata-badge dot>
   <div class="child" />
-</van-badge>
+</icloudata-badge>
 
 <style>
   .child {
@@ -41,29 +41,29 @@ app.use(Badge);
 ### Max
 
 ```html
-<hello-badge :content="20" max="9">
+<icloudata-badge :content="20" max="9">
   <div class="child" />
-</van-badge>
-<hello-badge :content="50" max="20">
+</icloudata-badge>
+<icloudata-badge :content="50" max="20">
   <div class="child" />
-</van-badge>
-<hello-badge :content="200" max="99">
+</icloudata-badge>
+<icloudata-badge :content="200" max="99">
   <div class="child" />
-</van-badge>
+</icloudata-badge>
 ```
 
 ### Custom Color
 
 ```html
-<hello-badge :content="5" color="#1989fa">
+<icloudata-badge :content="5" color="#1989fa">
   <div class="child" />
-</van-badge>
-<hello-badge :content="10" color="#1989fa">
+</icloudata-badge>
+<icloudata-badge :content="10" color="#1989fa">
   <div class="child" />
-</van-badge>
-<hello-badge dot color="#1989fa">
+</icloudata-badge>
+<icloudata-badge dot color="#1989fa">
   <div class="child" />
-</van-badge>
+</icloudata-badge>
 ```
 
 ### Custom Content
@@ -71,24 +71,24 @@ app.use(Badge);
 Use `content` slot to custom :content of badge.
 
 ```html
-<hello-badge>
+<icloudata-badge>
   <div class="child" />
   <template #content>
-    <hello-icon name="success" class="badge-icon" />
+    <icloudata-icon name="success" class="badge-icon" />
   </template>
-</van-badge>
-<hello-badge>
+</icloudata-badge>
+<icloudata-badge>
   <div class="child" />
   <template #content>
-    <hello-icon name="cross" class="badge-icon" />
+    <icloudata-icon name="cross" class="badge-icon" />
   </template>
-</van-badge>
-<hello-badge>
+</icloudata-badge>
+<icloudata-badge>
   <div class="child" />
   <template #content>
-    <hello-icon name="down" class="badge-icon" />
+    <icloudata-icon name="down" class="badge-icon" />
   </template>
-</van-badge>
+</icloudata-badge>
 ```
 
 ```css
@@ -102,9 +102,9 @@ Use `content` slot to custom :content of badge.
 ### Standalone
 
 ```html
-<hello-badge :content="20" />
+<icloudata-badge :content="20" />
 
-<hello-badge :content="200" max="99" />
+<icloudata-badge :content="200" max="99" />
 ```
 
 ## API

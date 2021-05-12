@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { SwipeCell } from 'hello';
+import { SwipeCell } from 'cloudata';
 
 const app = createApp();
 app.use(SwipeCell);
@@ -21,16 +21,16 @@ app.use(SwipeCell);
 `SwipeCell` 组件提供了 `left` 和 `right` 两个插槽，用于定义两侧滑动区域的内容。
 
 ```html
-<hello-swipe-cell>
+<icloudata-swipe-cell>
   <template #left>
-    <hello-button square type="primary" text="选择" />
+    <icloudata-button square type="primary" text="选择" />
   </template>
-  <hello-cell :border="false" title="单元格" value="内容" />
+  <icloudata-cell :border="false" title="单元格" value="内容" />
   <template #right>
-    <hello-button square type="danger" text="删除" />
-    <hello-button square type="primary" text="收藏" />
+    <icloudata-button square type="danger" text="删除" />
+    <icloudata-button square type="primary" text="收藏" />
   </template>
-</van-swipe-cell>
+</icloudata-swipe-cell>
 ```
 
 ### 自定义内容
@@ -38,8 +38,8 @@ app.use(SwipeCell);
 `SwipeCell` 可以嵌套任意内容，比如嵌套一个商品卡片。
 
 ```html
-<hello-swipe-cell>
-  <hello-card
+<icloudata-swipe-cell>
+  <icloudata-card
     num="2"
     price="2.00"
     desc="描述信息"
@@ -48,9 +48,9 @@ app.use(SwipeCell);
     thumb="https://img.yzcdn.cn/vant/cat.jpeg"
   />
   <template #right>
-    <hello-button square text="删除" type="danger" class="delete-button" />
+    <icloudata-button square text="删除" type="danger" class="delete-button" />
   </template>
-</van-swipe-cell>
+</icloudata-swipe-cell>
 
 <style>
   .goods-card {
@@ -69,19 +69,19 @@ app.use(SwipeCell);
 通过传入 `before-close` 回调函数，可以自定义两侧滑动内容关闭时的行为。
 
 ```html
-<hello-swipe-cell :before-close="beforeClose">
+<icloudata-swipe-cell :before-close="beforeClose">
   <template #left>
-    <hello-button square type="primary" text="选择" />
+    <icloudata-button square type="primary" text="选择" />
   </template>
-  <hello-cell :border="false" title="单元格" value="内容" />
+  <icloudata-cell :border="false" title="单元格" value="内容" />
   <template #right>
-    <hello-button square type="danger" text="删除" />
+    <icloudata-button square type="danger" text="删除" />
   </template>
-</van-swipe-cell>
+</icloudata-swipe-cell>
 ```
 
 ```js
-import { Dialog } from 'hello';
+import { Dialog } from 'cloudata';
 
 export default {
   setup() {

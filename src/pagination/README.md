@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Pagination } from 'hello';
+import { Pagination } from 'cloudata';
 
 const app = createApp();
 app.use(Pagination);
@@ -15,7 +15,7 @@ app.use(Pagination);
 ### Basic Usage
 
 ```html
-<hello-pagination v-model="currentPage" :total-items="24" :items-per-page="5" />
+<icloudata-pagination v-model="currentPage" :total-items="24" :items-per-page="5" />
 ```
 
 ```js
@@ -32,13 +32,13 @@ export default {
 ### Simple mode
 
 ```html
-<hello-pagination v-model="currentPage" :page-count="12" mode="simple" />
+<icloudata-pagination v-model="currentPage" :page-count="12" mode="simple" />
 ```
 
 ### Show ellipses
 
 ```html
-<hello-pagination
+<icloudata-pagination
   v-model="currentPage"
   :total-items="125"
   :show-page-size="3"
@@ -49,15 +49,15 @@ export default {
 ### Custom Button
 
 ```html
-<hello-pagination v-model="currentPage" :total-items="50" :show-page-size="5">
+<icloudata-pagination v-model="currentPage" :total-items="50" :show-page-size="5">
   <template #prev-text>
-    <hello-icon name="arrow-left" />
+    <icloudata-icon name="arrow-left" />
   </template>
   <template #next-text>
-    <hello-icon name="arrow" />
+    <icloudata-icon name="arrow" />
   </template>
   <template #page="{ text }">{{ text }}</template>
-</van-pagination>
+</icloudata-pagination>
 ```
 
 ## API

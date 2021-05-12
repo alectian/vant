@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Overlay } from 'hello';
+import { Overlay } from 'cloudata';
 
 const app = createApp();
 app.use(Overlay);
@@ -15,8 +15,8 @@ app.use(Overlay);
 ### Basic Usage
 
 ```html
-<hello-button type="primary" text="Show Overlay" @click="show = true" />
-<hello-overlay :show="show" @click="show = false" />
+<icloudata-button type="primary" text="Show Overlay" @click="show = true" />
+<icloudata-overlay :show="show" @click="show = false" />
 ```
 
 ```js
@@ -33,11 +33,11 @@ export default {
 ### Embedded Content
 
 ```html
-<hello-overlay :show="show" @click="show = false">
+<icloudata-overlay :show="show" @click="show = false">
   <div class="wrapper" @click.stop>
     <div class="block" />
   </div>
-</van-overlay>
+</icloudata-overlay>
 
 <style>
   .wrapper {

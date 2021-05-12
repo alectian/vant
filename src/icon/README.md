@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Icon } from 'hello';
+import { Icon } from 'cloudata';
 
 const app = createApp();
 app.use(Icon);
@@ -17,8 +17,8 @@ app.use(Icon);
 Use `name` prop to set icon name or icon URL.
 
 ```html
-<hello-icon name="chat-o" />
-<hello-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png" />
+<icloudata-icon name="chat-o" />
+<icloudata-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png" />
 ```
 
 ### Show Badge
@@ -28,9 +28,9 @@ Use `dot` prop, a small red dot will be displayed in the upper right corner of t
 Use `badge` prop, the badge will be displayed in the upper right corner of the icon.
 
 ```html
-<hello-icon name="chat-o" dot />
-<hello-icon name="chat-o" badge="9" />
-<hello-icon name="chat-o" badge="99+" />
+<icloudata-icon name="chat-o" dot />
+<icloudata-icon name="chat-o" badge="9" />
+<icloudata-icon name="chat-o" badge="99+" />
 ```
 
 ### Icon Color
@@ -38,8 +38,8 @@ Use `badge` prop, the badge will be displayed in the upper right corner of the i
 Use `color` prop to set icon color.
 
 ```html
-<hello-icon name="cart-o" color="#1989fa" />
-<hello-icon name="fire-o" color="#ee0a24" />
+<icloudata-icon name="cart-o" color="#1989fa" />
+<icloudata-icon name="fire-o" color="#ee0a24" />
 ```
 
 ### Icon Size
@@ -47,7 +47,7 @@ Use `color` prop to set icon color.
 Use `size` prop to set icon size.
 
 ```html
-<hello-icon name="chat-o" size="40" /> <hello-icon name="chat-o" size="3rem" />
+<icloudata-icon name="chat-o" size="40" /> <icloudata-icon name="chat-o" size="3rem" />
 ```
 
 ### Use local font file
@@ -78,7 +78,7 @@ import 'vant/lib/icon/local.css';
 ```
 
 ```html
-<hello-icon class-prefix="my-icon" name="extra" />
+<icloudata-icon class-prefix="my-icon" name="extra" />
 ```
 
 ## API

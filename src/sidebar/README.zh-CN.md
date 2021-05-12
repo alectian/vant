@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Sidebar, SidebarItem } from 'hello';
+import { Sidebar, SidebarItem } from 'cloudata';
 
 const app = createApp();
 app.use(Sidebar);
@@ -18,11 +18,11 @@ app.use(SidebarItem);
 通过 `v-model` 绑定当前选中项的索引。
 
 ```html
-<hello-sidebar v-model="active">
-  <hello-sidebar-item title="标签名称" />
-  <hello-sidebar-item title="标签名称" />
-  <hello-sidebar-item title="标签名称" />
-</van-sidebar>
+<icloudata-sidebar v-model="active">
+  <icloudata-sidebar-item title="标签名称" />
+  <icloudata-sidebar-item title="标签名称" />
+  <icloudata-sidebar-item title="标签名称" />
+</icloudata-sidebar>
 ```
 
 ```js
@@ -41,11 +41,11 @@ export default {
 设置 `dot` 属性后，会在右上角展示一个小红点；设置 `badge` 属性后，会在右上角展示相应的徽标。
 
 ```html
-<hello-sidebar v-model="active">
-  <hello-sidebar-item title="标签名称" dot />
-  <hello-sidebar-item title="标签名称" badge="5" />
-  <hello-sidebar-item title="标签名称" badge="20" />
-</van-sidebar>
+<icloudata-sidebar v-model="active">
+  <icloudata-sidebar-item title="标签名称" dot />
+  <icloudata-sidebar-item title="标签名称" badge="5" />
+  <icloudata-sidebar-item title="标签名称" badge="20" />
+</icloudata-sidebar>
 ```
 
 ### 禁用选项
@@ -53,11 +53,11 @@ export default {
 通过 `disabled` 属性禁用选项。
 
 ```html
-<hello-sidebar v-model="active">
-  <hello-sidebar-item title="标签名称" />
-  <hello-sidebar-item title="标签名称" disabled />
-  <hello-sidebar-item title="标签名称" />
-</van-sidebar>
+<icloudata-sidebar v-model="active">
+  <icloudata-sidebar-item title="标签名称" />
+  <icloudata-sidebar-item title="标签名称" disabled />
+  <icloudata-sidebar-item title="标签名称" />
+</icloudata-sidebar>
 ```
 
 ### 监听切换事件
@@ -65,16 +65,16 @@ export default {
 设置 `change` 方法来监听切换导航项时的事件。
 
 ```html
-<hello-sidebar v-model="active" @change="onChange">
-  <hello-sidebar-item title="标签名 1" />
-  <hello-sidebar-item title="标签名 2" />
-  <hello-sidebar-item title="标签名 3" />
-</van-sidebar>
+<icloudata-sidebar v-model="active" @change="onChange">
+  <icloudata-sidebar-item title="标签名 1" />
+  <icloudata-sidebar-item title="标签名 2" />
+  <icloudata-sidebar-item title="标签名 3" />
+</icloudata-sidebar>
 ```
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

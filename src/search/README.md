@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Search } from 'hello';
+import { Search } from 'cloudata';
 
 const app = createApp();
 app.use(Search);
@@ -15,7 +15,7 @@ app.use(Search);
 ### Basic Usage
 
 ```html
-<hello-search v-model="value" placeholder="Placeholder" />
+<icloudata-search v-model="value" placeholder="Placeholder" />
 ```
 
 ```js
@@ -35,7 +35,7 @@ export default {
 
 ```html
 <form action="/">
-  <hello-search
+  <icloudata-search
     v-model="value"
     show-action
     placeholder="Placeholder"
@@ -47,7 +47,7 @@ export default {
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -72,19 +72,19 @@ export default {
 ### Input Align
 
 ```html
-<hello-search v-model="value" input-align="center" placeholder="Placeholder" />
+<icloudata-search v-model="value" input-align="center" placeholder="Placeholder" />
 ```
 
 ### Disabled
 
 ```html
-<hello-search v-model="value" disabled placeholder="Placeholder" />
+<icloudata-search v-model="value" disabled placeholder="Placeholder" />
 ```
 
 ### Custom Background Color
 
 ```html
-<hello-search
+<icloudata-search
   v-model="value"
   shape="round"
   background="#4fc08d"
@@ -97,7 +97,7 @@ export default {
 Use `action` slot to custom right button, `cancel` event will no longer be Emitted when use this slot.
 
 ```html
-<hello-search
+<icloudata-search
   v-model="value"
   show-action
   label="Address"
@@ -107,7 +107,7 @@ Use `action` slot to custom right button, `cancel` event will no longer be Emitt
   <template #action>
     <div @click="onSearch">Search</div>
   </template>
-</van-search>
+</icloudata-search>
 ```
 
 ## API

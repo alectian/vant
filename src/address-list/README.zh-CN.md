@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { AddressList } from 'hello';
+import { AddressList } from 'cloudata';
 
 const app = createApp();
 app.use(AddressList);
@@ -19,7 +19,7 @@ app.use(AddressList);
 ### 基础用法
 
 ```html
-<hello-address-list
+<icloudata-address-list
   v-model="chosenAddressId"
   :list="list"
   :disabled-list="disabledList"
@@ -32,7 +32,7 @@ app.use(AddressList);
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

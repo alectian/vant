@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { NumberKeyboard } from 'hello';
+import { NumberKeyboard } from 'cloudata';
 
 const app = createApp();
 app.use(NumberKeyboard);
@@ -15,8 +15,8 @@ app.use(NumberKeyboard);
 ### Default Keyboard
 
 ```html
-<hello-cell @touchstart.stop="show = true">Show Keyboard</van-cell>
-<hello-number-keyboard
+<icloudata-cell @touchstart.stop="show = true">Show Keyboard</icloudata-cell>
+<icloudata-number-keyboard
   :show="show"
   @blur="show = false"
   @input="onInput"
@@ -26,7 +26,7 @@ app.use(NumberKeyboard);
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -50,7 +50,7 @@ export default {
 ### Keyboard With Sidebar
 
 ```html
-<hello-number-keyboard
+<icloudata-number-keyboard
   :show="show"
   theme="custom"
   extra-key="."
@@ -66,11 +66,11 @@ export default {
 Use `extra-key` prop to set the content of bottom left button.
 
 ```html
-<hello-cell plain type="primary" @touchstart.stop="show = true">
+<icloudata-cell plain type="primary" @touchstart.stop="show = true">
   Show IdNumber Keyboard
-</van-cell>
+</icloudata-cell>
 
-<hello-number-keyboard
+<icloudata-number-keyboard
   :show="show"
   extra-key="X"
   close-button-text="Close"
@@ -85,10 +85,10 @@ Use `extra-key` prop to set the content of bottom left button.
 Use `title` prop to set keyboard title.
 
 ```html
-<hello-cell plain type="primary" @touchstart.stop="show = true">
+<icloudata-cell plain type="primary" @touchstart.stop="show = true">
   Show Keyboard With Title
-</van-cell>
-<hello-number-keyboard
+</icloudata-cell>
+<icloudata-number-keyboard
   :show="show"
   title="Keyboard Title"
   extra-key="."
@@ -102,10 +102,10 @@ Use `title` prop to set keyboard title.
 ### Multiple ExtraKey
 
 ```html
-<hello-cell plain type="primary" @touchstart.stop="show = true">
+<icloudata-cell plain type="primary" @touchstart.stop="show = true">
   Show Keyboard With Multiple ExtraKey
-</van-cell>
-<hello-number-keyboard
+</icloudata-cell>
+<icloudata-number-keyboard
   :show="show"
   :extra-key="['00', '.']"
   close-button-text="Close"
@@ -118,8 +118,8 @@ Use `title` prop to set keyboard title.
 ### Bind Value
 
 ```html
-<hello-field readonly clickable :value="value" @touchstart.stop="show = true" />
-<hello-number-keyboard
+<icloudata-field readonly clickable :value="value" @touchstart.stop="show = true" />
+<icloudata-number-keyboard
   v-model="value"
   :show="show"
   :maxlength="6"

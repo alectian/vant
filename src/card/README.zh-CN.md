@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Card } from 'hello';
+import { Card } from 'cloudata';
 
 const app = createApp();
 app.use(Card);
@@ -19,7 +19,7 @@ app.use(Card);
 ### 基础用法
 
 ```html
-<hello-card
+<icloudata-card
   num="2"
   price="2.00"
   desc="描述信息"
@@ -33,7 +33,7 @@ app.use(Card);
 通过 `origin-price` 设置商品原价，通过 `tag` 设置商品左上角标签。
 
 ```html
-<hello-card
+<icloudata-card
   num="2"
   tag="标签"
   price="2.00"
@@ -49,7 +49,7 @@ app.use(Card);
 `Card` 组件提供了多个插槽，可以灵活地自定义内容。
 
 ```html
-<hello-card
+<icloudata-card
   num="2"
   price="2.00"
   desc="描述信息"
@@ -57,14 +57,14 @@ app.use(Card);
   thumb="https://img.yzcdn.cn/vant/ipad.jpeg"
 >
   <template #tags>
-    <hello-tag plain type="danger">标签</van-tag>
-    <hello-tag plain type="danger">标签</van-tag>
+    <icloudata-tag plain type="danger">标签</icloudata-tag>
+    <icloudata-tag plain type="danger">标签</icloudata-tag>
   </template>
   <template #footer>
-    <hello-button size="mini">按钮</van-button>
-    <hello-button size="mini">按钮</van-button>
+    <icloudata-button size="mini">按钮</icloudata-button>
+    <icloudata-button size="mini">按钮</icloudata-button>
   </template>
-</van-card>
+</icloudata-card>
 ```
 
 ## API

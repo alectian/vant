@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { TreeSelect } from 'hello';
+import { TreeSelect } from 'cloudata';
 
 const app = createApp();
 app.use(TreeSelect);
@@ -17,7 +17,7 @@ app.use(TreeSelect);
 `item` 为分类显示所需的数据，数据格式见下方示例。`main-active-index` 表示左侧高亮选项的索引，`active-id` 表示右侧高亮选项的 id。
 
 ```html
-<hello-tree-select
+<icloudata-tree-select
   v-model:active-id="state.activeId"
   v-model:main-active-index="state.activeIndex"
   :items="items"
@@ -63,7 +63,7 @@ export default {
 `active-id` 为数组格式时，可以选中多个右侧选项。
 
 ```html
-<hello-tree-select
+<icloudata-tree-select
   v-model:active-id="state.activeIds"
   v-model:main-active-index="state.activeIndex"
   :items="items"
@@ -109,22 +109,22 @@ export default {
 通过 `content` 插槽可以自定义右侧区域的内容。
 
 ```html
-<hello-tree-select
+<icloudata-tree-select
   v-model:main-active-index="activeIndex"
   height="55vw"
   :items="items"
 >
   <template #content>
-    <hello-image
+    <icloudata-image
       v-if="activeIndex === 0"
       src="https://img.yzcdn.cn/vant/apple-1.jpg"
     />
-    <hello-image
+    <icloudata-image
       v-if="activeIndex === 1"
       src="https://img.yzcdn.cn/vant/apple-2.jpg"
     />
   </template>
-</van-tree-select>
+</icloudata-tree-select>
 ```
 
 ```js
@@ -146,7 +146,7 @@ export default {
 设置 `dot` 属性后，会在图标右上角展示一个小红点；设置 `badge` 属性后，会在图标右上角展示相应的徽标。
 
 ```html
-<hello-tree-select
+<icloudata-tree-select
   v-model:main-active-index="activeIndex"
   height="55vw"
   :items="items"

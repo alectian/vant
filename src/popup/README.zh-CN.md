@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Popup } from 'hello';
+import { Popup } from 'cloudata';
 
 const app = createApp();
 app.use(Popup);
@@ -21,8 +21,8 @@ app.use(Popup);
 通过 `v-model:show` 控制弹出层是否展示。
 
 ```html
-<hello-cell is-link @click="showPopup">展示弹出层</van-cell>
-<hello-popup v-model:show="show">内容</van-popup>
+<icloudata-cell is-link @click="showPopup">展示弹出层</icloudata-cell>
+<icloudata-popup v-model:show="show">内容</icloudata-popup>
 ```
 
 ```js
@@ -47,7 +47,7 @@ export default {
 通过 `position` 属性设置弹出位置，默认居中弹出，可以设置为 `top`、`bottom`、`left`、`right`。
 
 ```html
-<hello-popup v-model:show="show" position="top" :style="{ height: '30%' }" />
+<icloudata-popup v-model:show="show" position="top" :style="{ height: '30%' }" />
 ```
 
 ### 关闭图标
@@ -55,14 +55,14 @@ export default {
 设置 `closeable` 属性后，会在弹出层的右上角显示关闭图标，并且可以通过 `close-icon` 属性自定义图标，使用 `close-icon-position` 属性可以自定义图标位置。
 
 ```html
-<hello-popup
+<icloudata-popup
   v-model:show="show"
   closeable
   position="bottom"
   :style="{ height: '30%' }"
 />
 <!-- 自定义图标 -->
-<hello-popup
+<icloudata-popup
   v-model:show="show"
   closeable
   close-icon="close"
@@ -70,7 +70,7 @@ export default {
   :style="{ height: '30%' }"
 />
 <!-- 图标位置 -->
-<hello-popup
+<icloudata-popup
   v-model:show="show"
   closeable
   close-icon-position="top-left"
@@ -84,7 +84,7 @@ export default {
 设置 `round` 属性后，弹窗会根据弹出位置添加不同的圆角样式。
 
 ```html
-<hello-popup
+<icloudata-popup
   v-model:show="show"
   round
   position="bottom"
@@ -98,13 +98,13 @@ export default {
 
 ```html
 <!-- 挂载到 body 节点下 -->
-<hello-popup v-model:show="show" teleport="body" />
+<icloudata-popup v-model:show="show" teleport="body" />
 
 <!-- 挂载到 #app 节点下 -->
-<hello-popup v-model:show="show" teleport="#app" />
+<icloudata-popup v-model:show="show" teleport="#app" />
 
 <!-- 挂载到指定的元素下 -->
-<hello-popup v-model:show="show" :teleport="myContainer" />
+<icloudata-popup v-model:show="show" :teleport="myContainer" />
 ```
 
 ```js

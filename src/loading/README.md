@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Loading } from 'hello';
+import { Loading } from 'cloudata';
 
 const app = createApp();
 app.use(Loading);
@@ -15,37 +15,37 @@ app.use(Loading);
 ### Type
 
 ```html
-<hello-loading />
+<icloudata-loading />
 
-<hello-loading type="spinner" />
+<icloudata-loading type="spinner" />
 ```
 
 ### Color
 
 ```html
-<hello-loading color="#1989fa" />
+<icloudata-loading color="#1989fa" />
 
-<hello-loading type="spinner" color="#1989fa" />
+<icloudata-loading type="spinner" color="#1989fa" />
 ```
 
 ### Size
 
 ```html
-<hello-loading size="24" />
+<icloudata-loading size="24" />
 
-<hello-loading type="spinner" size="24px" />
+<icloudata-loading type="spinner" size="24px" />
 ```
 
 ### Text
 
 ```html
-<hello-loading size="24px">Loading...</van-loading>
+<icloudata-loading size="24px">Loading...</icloudata-loading>
 ```
 
 ### Vertical
 
 ```html
-<hello-loading size="24px" vertical>Loading...</van-loading>
+<icloudata-loading size="24px" vertical>Loading...</icloudata-loading>
 ```
 
 ## API

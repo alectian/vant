@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Swipe, SwipeItem } from 'hello';
+import { Swipe, SwipeItem } from 'cloudata';
 
 const app = createApp();
 app.use(Swipe);
@@ -22,12 +22,12 @@ app.use(SwipeItem);
 每个 SwipeItem 代表一张轮播卡片，可以通过 `autoplay` 属性设置自动轮播的间隔。
 
 ```html
-<hello-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-  <hello-swipe-item>1</van-swipe-item>
-  <hello-swipe-item>2</van-swipe-item>
-  <hello-swipe-item>3</van-swipe-item>
-  <hello-swipe-item>4</van-swipe-item>
-</van-swipe>
+<icloudata-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+  <icloudata-swipe-item>1</icloudata-swipe-item>
+  <icloudata-swipe-item>2</icloudata-swipe-item>
+  <icloudata-swipe-item>3</icloudata-swipe-item>
+  <icloudata-swipe-item>4</icloudata-swipe-item>
+</icloudata-swipe>
 
 <style>
   .my-swipe .van-swipe-item {
@@ -45,11 +45,11 @@ app.use(SwipeItem);
 当 Swipe 中含有图片时，可以通过 `lazy-render` 属性来开启懒加载模式。在懒加载模式下，只会渲染当前页和下一页。
 
 ```html
-<hello-swipe :autoplay="3000" lazy-render>
-  <hello-swipe-item v-for="image in images" :key="image">
+<icloudata-swipe :autoplay="3000" lazy-render>
+  <icloudata-swipe-item v-for="image in images" :key="image">
     <img :src="image" />
-  </van-swipe-item>
-</van-swipe>
+  </icloudata-swipe-item>
+</icloudata-swipe>
 ```
 
 ```js
@@ -67,16 +67,16 @@ export default {
 ### 监听 change 事件
 
 ```html
-<hello-swipe @change="onChange">
-  <hello-swipe-item>1</van-swipe-item>
-  <hello-swipe-item>2</van-swipe-item>
-  <hello-swipe-item>3</van-swipe-item>
-  <hello-swipe-item>4</van-swipe-item>
-</van-swipe>
+<icloudata-swipe @change="onChange">
+  <icloudata-swipe-item>1</icloudata-swipe-item>
+  <icloudata-swipe-item>2</icloudata-swipe-item>
+  <icloudata-swipe-item>3</icloudata-swipe-item>
+  <icloudata-swipe-item>4</icloudata-swipe-item>
+</icloudata-swipe>
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -93,12 +93,12 @@ export default {
 设置 `vertical` 属性后滑块会纵向排列，此时需要指定滑块容器的高度。
 
 ```html
-<hello-swipe style="height: 200px;" vertical>
-  <hello-swipe-item>1</van-swipe-item>
-  <hello-swipe-item>2</van-swipe-item>
-  <hello-swipe-item>3</van-swipe-item>
-  <hello-swipe-item>4</van-swipe-item>
-</van-swipe>
+<icloudata-swipe style="height: 200px;" vertical>
+  <icloudata-swipe-item>1</icloudata-swipe-item>
+  <icloudata-swipe-item>2</icloudata-swipe-item>
+  <icloudata-swipe-item>3</icloudata-swipe-item>
+  <icloudata-swipe-item>4</icloudata-swipe-item>
+</icloudata-swipe>
 ```
 
 ### 自定义滑块大小
@@ -106,12 +106,12 @@ export default {
 滑块默认宽度为 `100%`，可以通过 `width` 属性设置单个滑块的宽度。纵向滚动模式下，可以通过 `height` 属性设置单个滑块的高度。
 
 ```html
-<hello-swipe :loop="false" :width="300">
-  <hello-swipe-item>1</van-swipe-item>
-  <hello-swipe-item>2</van-swipe-item>
-  <hello-swipe-item>3</van-swipe-item>
-  <hello-swipe-item>4</van-swipe-item>
-</van-swipe>
+<icloudata-swipe :loop="false" :width="300">
+  <icloudata-swipe-item>1</icloudata-swipe-item>
+  <icloudata-swipe-item>2</icloudata-swipe-item>
+  <icloudata-swipe-item>3</icloudata-swipe-item>
+  <icloudata-swipe-item>4</icloudata-swipe-item>
+</icloudata-swipe>
 ```
 
 > 目前不支持在循环滚动模式下自定义滑块大小，因此需要将 loop 设置为 false。
@@ -121,15 +121,15 @@ export default {
 通过 `indicator` 插槽可以自定义指示器的样式。
 
 ```html
-<hello-swipe @change="onChange">
-  <hello-swipe-item>1</van-swipe-item>
-  <hello-swipe-item>2</van-swipe-item>
-  <hello-swipe-item>3</van-swipe-item>
-  <hello-swipe-item>4</van-swipe-item>
+<icloudata-swipe @change="onChange">
+  <icloudata-swipe-item>1</icloudata-swipe-item>
+  <icloudata-swipe-item>2</icloudata-swipe-item>
+  <icloudata-swipe-item>3</icloudata-swipe-item>
+  <icloudata-swipe-item>4</icloudata-swipe-item>
   <template #indicator>
     <div class="custom-indicator">{{ current + 1 }}/4</div>
   </template>
-</van-swipe>
+</icloudata-swipe>
 
 <style>
   .custom-indicator {
@@ -254,15 +254,15 @@ Swipe 组件在挂载时，会获取自身的宽度，并计算出轮播图的�
 
 ```html
 <!-- Before -->
-<hello-swipe v-show="show" />
+<icloudata-swipe v-show="show" />
 <!-- After -->
-<hello-swipe v-if="show" />
+<icloudata-swipe v-if="show" />
 ```
 
 方法二，调用组件的 resize 方法来主动触发重绘：
 
 ```html
-<hello-swipe v-show="show" ref="swipe" />
+<icloudata-swipe v-show="show" ref="swipe" />
 ```
 
 ```js

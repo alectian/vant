@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Divider } from 'hello';
+import { Divider } from 'cloudata';
 
 const app = createApp();
 app.use(Divider);
@@ -21,7 +21,7 @@ app.use(Divider);
 默认渲染一条水平分割线。
 
 ```html
-<hello-divider />
+<icloudata-divider />
 ```
 
 ### 展示文字
@@ -29,7 +29,7 @@ app.use(Divider);
 通过插槽在可以分割线中间插入内容。
 
 ```html
-<hello-divider>文字</van-divider>
+<icloudata-divider>文字</icloudata-divider>
 ```
 
 ### 内容位置
@@ -37,8 +37,8 @@ app.use(Divider);
 通过 `content-position` 指定内容所在位置。
 
 ```html
-<hello-divider content-position="left">文字</van-divider>
-<hello-divider content-position="right">文字</van-divider>
+<icloudata-divider content-position="left">文字</icloudata-divider>
+<icloudata-divider content-position="right">文字</icloudata-divider>
 ```
 
 ### 虚线
@@ -46,7 +46,7 @@ app.use(Divider);
 添加 `dashed` 属性使分割线渲染为虚线。
 
 ```html
-<hello-divider dashed>文字</van-divider>
+<icloudata-divider dashed>文字</icloudata-divider>
 ```
 
 ### 自定义样式
@@ -54,11 +54,11 @@ app.use(Divider);
 可以直接通过 `style` 属性设置分割线的样式。
 
 ```html
-<hello-divider
+<icloudata-divider
   :style="{ color: '#1989fa', borderColor: '#1989fa', padding: '0 16px' }"
 >
   文字
-</van-divider>
+</icloudata-divider>
 ```
 
 ## API

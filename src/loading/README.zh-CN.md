@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Loading } from 'hello';
+import { Loading } from 'cloudata';
 
 const app = createApp();
 app.use(Loading);
@@ -21,9 +21,9 @@ app.use(Loading);
 通过 `type` 属性可以设置加载图标的类型，默认为 `circular`，可选值为 `spinner`。
 
 ```html
-<hello-loading />
+<icloudata-loading />
 
-<hello-loading type="spinner" />
+<icloudata-loading type="spinner" />
 ```
 
 ### 自定义颜色
@@ -31,9 +31,9 @@ app.use(Loading);
 通过 `color` 属性设置加载图标的颜色。
 
 ```html
-<hello-loading color="#1989fa" />
+<icloudata-loading color="#1989fa" />
 
-<hello-loading type="spinner" color="#1989fa" />
+<icloudata-loading type="spinner" color="#1989fa" />
 ```
 
 ### 自定义大小
@@ -41,9 +41,9 @@ app.use(Loading);
 通过 `size` 属性设置加载图标的大小，默认单位为 `px`。
 
 ```html
-<hello-loading size="24" />
+<icloudata-loading size="24" />
 
-<hello-loading type="spinner" size="24px" />
+<icloudata-loading type="spinner" size="24px" />
 ```
 
 ### 加载文案
@@ -51,7 +51,7 @@ app.use(Loading);
 可以使用默认插槽在图标的右侧插入加载文案。
 
 ```html
-<hello-loading size="24px">加载中...</van-loading>
+<icloudata-loading size="24px">加载中...</icloudata-loading>
 ```
 
 ### 垂直排列
@@ -59,7 +59,7 @@ app.use(Loading);
 设置 `vertical` 属性后，图标和文案会垂直排列。
 
 ```html
-<hello-loading size="24px" vertical>加载中...</van-loading>
+<icloudata-loading size="24px" vertical>加载中...</icloudata-loading>
 ```
 
 ## API

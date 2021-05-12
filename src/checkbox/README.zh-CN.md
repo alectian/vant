@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Checkbox, CheckboxGroup } from 'hello';
+import { Checkbox, CheckboxGroup } from 'cloudata';
 
 const app = createApp();
 app.use(Checkbox);
@@ -22,7 +22,7 @@ app.use(CheckboxGroup);
 通过 `v-model` 绑定复选框的勾选状态。
 
 ```html
-<hello-checkbox v-model="checked">复选框</van-checkbox>
+<icloudata-checkbox v-model="checked">复选框</icloudata-checkbox>
 ```
 
 ```js
@@ -41,7 +41,7 @@ export default {
 通过设置 `disabled` 属性可以禁用复选框。
 
 ```html
-<hello-checkbox v-model="checked" disabled>复选框</van-checkbox>
+<icloudata-checkbox v-model="checked" disabled>复选框</icloudata-checkbox>
 ```
 
 ### 自定义形状
@@ -49,7 +49,7 @@ export default {
 将 `shape` 属性设置为 `square`，复选框的形状会变成方形。
 
 ```html
-<hello-checkbox v-model="checked" shape="square">复选框</van-checkbox>
+<icloudata-checkbox v-model="checked" shape="square">复选框</icloudata-checkbox>
 ```
 
 ### 自定义颜色
@@ -57,7 +57,7 @@ export default {
 通过 `checked-color` 属性设置选中状态的图标颜色。
 
 ```html
-<hello-checkbox v-model="checked" checked-color="#ee0a24">复选框</van-checkbox>
+<icloudata-checkbox v-model="checked" checked-color="#ee0a24">复选框</icloudata-checkbox>
 ```
 
 ### 自定义大小
@@ -65,7 +65,7 @@ export default {
 通过 `icon-size` 属性可以自定义图标的大小。
 
 ```html
-<hello-checkbox v-model="checked" icon-size="24px">复选框</van-checkbox>
+<icloudata-checkbox v-model="checked" icon-size="24px">复选框</icloudata-checkbox>
 ```
 
 ### 自定义图标
@@ -73,12 +73,12 @@ export default {
 通过 `icon` 插槽自定义图标，可以通过 `slotProps` 判断是否为选中状态.
 
 ```html
-<hello-checkbox v-model="checked">
+<icloudata-checkbox v-model="checked">
   自定义图标
   <template #icon="props">
     <img class="img-icon" :src="props.checked ? activeIcon : inactiveIcon" />
   </template>
-</van-checkbox>
+</icloudata-checkbox>
 
 <style>
   .img-icon {
@@ -107,7 +107,7 @@ export default {
 设置 `label-disabled` 属性后，点击图标以外的内容不会触发复选框切换。
 
 ```html
-<hello-checkbox v-model="checked" label-disabled>复选框</van-checkbox>
+<icloudata-checkbox v-model="checked" label-disabled>复选框</icloudata-checkbox>
 ```
 
 ### 复选框组
@@ -115,10 +115,10 @@ export default {
 复选框可以与复选框组一起使用，复选框组通过 `v-model` 数组绑定复选框的勾选状态。
 
 ```html
-<hello-checkbox-group v-model="checked">
-  <hello-checkbox name="a">复选框 a</van-checkbox>
-  <hello-checkbox name="b">复选框 b</van-checkbox>
-</van-checkbox-group>
+<icloudata-checkbox-group v-model="checked">
+  <icloudata-checkbox name="a">复选框 a</icloudata-checkbox>
+  <icloudata-checkbox name="b">复选框 b</icloudata-checkbox>
+</icloudata-checkbox-group>
 ```
 
 ```js
@@ -137,10 +137,10 @@ export default {
 将 `direction` 属性设置为 `horizontal` 后，复选框组会变成水平排列。
 
 ```html
-<hello-checkbox-group v-model="checked" direction="horizontal">
-  <hello-checkbox name="a">复选框 a</van-checkbox>
-  <hello-checkbox name="b">复选框 b</van-checkbox>
-</van-checkbox-group>
+<icloudata-checkbox-group v-model="checked" direction="horizontal">
+  <icloudata-checkbox name="a">复选框 a</icloudata-checkbox>
+  <icloudata-checkbox name="b">复选框 b</icloudata-checkbox>
+</icloudata-checkbox-group>
 ```
 
 ```js
@@ -159,11 +159,11 @@ export default {
 通过 `max` 属性可以限制复选框组的最大可选数。
 
 ```html
-<hello-checkbox-group v-model="result" :max="2">
-  <hello-checkbox name="a">复选框 a</van-checkbox>
-  <hello-checkbox name="b">复选框 b</van-checkbox>
-  <hello-checkbox name="c">复选框 c</van-checkbox>
-</van-checkbox-group>
+<icloudata-checkbox-group v-model="result" :max="2">
+  <icloudata-checkbox name="a">复选框 a</icloudata-checkbox>
+  <icloudata-checkbox name="b">复选框 b</icloudata-checkbox>
+  <icloudata-checkbox name="c">复选框 c</icloudata-checkbox>
+</icloudata-checkbox-group>
 ```
 
 ### 全选与反选
@@ -171,14 +171,14 @@ export default {
 通过 `CheckboxGroup` 实例上的 `toggleAll` 方法可以实现全选与反选。
 
 ```html
-<hello-checkbox-group v-model="result" ref="checkboxGroup">
-  <hello-checkbox name="a">复选框 a</van-checkbox>
-  <hello-checkbox name="b">复选框 b</van-checkbox>
-  <hello-checkbox name="c">复选框 c</van-checkbox>
-</van-checkbox-group>
+<icloudata-checkbox-group v-model="result" ref="checkboxGroup">
+  <icloudata-checkbox name="a">复选框 a</icloudata-checkbox>
+  <icloudata-checkbox name="b">复选框 b</icloudata-checkbox>
+  <icloudata-checkbox name="c">复选框 c</icloudata-checkbox>
+</icloudata-checkbox-group>
 
-<hello-button type="primary" @click="checkAll">全选</van-button>
-<hello-button type="primary" @click="toggleAll">反选</van-button>
+<icloudata-button type="primary" @click="checkAll">全选</icloudata-button>
+<icloudata-button type="primary" @click="toggleAll">反选</icloudata-button>
 ```
 
 ```js
@@ -211,9 +211,9 @@ export default {
 此时你需要再引入 `Cell` 和 `CellGroup` 组件，并通过 `Checkbox` 实例上的 toggle 方法触发切换。
 
 ```html
-<hello-checkbox-group v-model="checked">
-  <hello-cell-group>
-    <hello-cell
+<icloudata-checkbox-group v-model="checked">
+  <icloudata-cell-group>
+    <icloudata-cell
       v-for="(item, index) in list"
       clickable
       :key="item"
@@ -221,15 +221,15 @@ export default {
       @click="toggle(index)"
     >
       <template #right-icon>
-        <hello-checkbox
+        <icloudata-checkbox
           :name="item"
           :ref="el => checkboxRefs[index] = el"
           @click.stop
         />
       </template>
-    </van-cell>
-  </van-cell-group>
-</van-checkbox-group>
+    </icloudata-cell>
+  </icloudata-cell-group>
+</icloudata-checkbox-group>
 ```
 
 ```js

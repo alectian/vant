@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Grid, GridItem } from 'hello';
+import { Grid, GridItem } from 'cloudata';
 
 const app = createApp();
 app.use(Grid);
@@ -22,12 +22,12 @@ app.use(GridItem);
 通过 `icon` 属性设置格子内的图标，`text` 属性设置文字内容。
 
 ```html
-<hello-grid>
-  <hello-grid-item icon="photo-o" text="文字" />
-  <hello-grid-item icon="photo-o" text="文字" />
-  <hello-grid-item icon="photo-o" text="文字" />
-  <hello-grid-item icon="photo-o" text="文字" />
-</van-grid>
+<icloudata-grid>
+  <icloudata-grid-item icon="photo-o" text="文字" />
+  <icloudata-grid-item icon="photo-o" text="文字" />
+  <icloudata-grid-item icon="photo-o" text="文字" />
+  <icloudata-grid-item icon="photo-o" text="文字" />
+</icloudata-grid>
 ```
 
 ### 自定义列数
@@ -35,9 +35,9 @@ app.use(GridItem);
 默认一行展示四个格子，可以通过 `column-num` 自定义列数。
 
 ```html
-<hello-grid :column-num="3">
-  <hello-grid-item v-for="value in 6" :key="value" icon="photo-o" text="文字" />
-</van-grid>
+<icloudata-grid :column-num="3">
+  <icloudata-grid-item v-for="value in 6" :key="value" icon="photo-o" text="文字" />
+</icloudata-grid>
 ```
 
 ### 自定义内容
@@ -45,17 +45,17 @@ app.use(GridItem);
 通过插槽可以自定义格子展示的内容。
 
 ```html
-<hello-grid :border="false" :column-num="3">
-  <hello-grid-item>
-    <hello-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
-  </van-grid-item>
-  <hello-grid-item>
-    <hello-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
-  </van-grid-item>
-  <hello-grid-item>
-    <hello-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
-  </van-grid-item>
-</van-grid>
+<icloudata-grid :border="false" :column-num="3">
+  <icloudata-grid-item>
+    <icloudata-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
+  </icloudata-grid-item>
+  <icloudata-grid-item>
+    <icloudata-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
+  </icloudata-grid-item>
+  <icloudata-grid-item>
+    <icloudata-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
+  </icloudata-grid-item>
+</icloudata-grid>
 ```
 
 ### 正方形格子
@@ -63,9 +63,9 @@ app.use(GridItem);
 设置 `square` 属性后，格子的高度会和宽度保持一致。
 
 ```html
-<hello-grid square>
-  <hello-grid-item v-for="value in 8" :key="value" icon="photo-o" text="文字" />
-</van-grid>
+<icloudata-grid square>
+  <icloudata-grid-item v-for="value in 8" :key="value" icon="photo-o" text="文字" />
+</icloudata-grid>
 ```
 
 ### 格子间距
@@ -73,9 +73,9 @@ app.use(GridItem);
 通过 `gutter` 属性设置格子之间的距离。
 
 ```html
-<hello-grid :gutter="10">
-  <hello-grid-item v-for="value in 8" :key="value" icon="photo-o" text="文字" />
-</van-grid>
+<icloudata-grid :gutter="10">
+  <icloudata-grid-item v-for="value in 8" :key="value" icon="photo-o" text="文字" />
+</icloudata-grid>
 ```
 
 ### 内容横排
@@ -83,11 +83,11 @@ app.use(GridItem);
 将 `direction` 属性设置为 `horizontal`，可以让宫格的内容呈横向排列。
 
 ```html
-<hello-grid direction="horizontal" :column-num="2">
-  <hello-grid-item icon="photo-o" text="文字" />
-  <hello-grid-item icon="photo-o" text="文字" />
-  <hello-grid-item icon="photo-o" text="文字" />
-</van-grid>
+<icloudata-grid direction="horizontal" :column-num="2">
+  <icloudata-grid-item icon="photo-o" text="文字" />
+  <icloudata-grid-item icon="photo-o" text="文字" />
+  <icloudata-grid-item icon="photo-o" text="文字" />
+</icloudata-grid>
 ```
 
 ### 页面导航
@@ -95,10 +95,10 @@ app.use(GridItem);
 通过 `to` 属性设置 `vue-router` 跳转链接，通过 `url` 属性设置 URL 跳转链接。
 
 ```html
-<hello-grid clickable :column-num="2">
-  <hello-grid-item icon="home-o" text="路由跳转" to="/" />
-  <hello-grid-item icon="search" text="URL 跳转" url="/vant/mobile.html" />
-</van-grid>
+<icloudata-grid clickable :column-num="2">
+  <icloudata-grid-item icon="home-o" text="路由跳转" to="/" />
+  <icloudata-grid-item icon="search" text="URL 跳转" url="/vant/mobile.html" />
+</icloudata-grid>
 ```
 
 ### 徽标提示
@@ -106,10 +106,10 @@ app.use(GridItem);
 设置 `dot` 属性后，会在图标右上角展示一个小红点。设置 `badge` 属性后，会在图标右上角展示相应的徽标。
 
 ```html
-<hello-grid :column-num="2">
-  <hello-grid-item icon="home-o" text="文字" dot />
-  <hello-grid-item icon="search" text="文字" badge="99+" />
-</van-grid>
+<icloudata-grid :column-num="2">
+  <icloudata-grid-item icon="home-o" text="文字" dot />
+  <icloudata-grid-item icon="search" text="文字" badge="99+" />
+</icloudata-grid>
 ```
 
 ## API

@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Overlay } from 'hello';
+import { Overlay } from 'cloudata';
 
 const app = createApp();
 app.use(Overlay);
@@ -19,8 +19,8 @@ app.use(Overlay);
 ### 基础用法
 
 ```html
-<hello-button type="primary" text="显示遮罩层" @click="show = true" />
-<hello-overlay :show="show" @click="show = false" />
+<icloudata-button type="primary" text="显示遮罩层" @click="show = true" />
+<icloudata-overlay :show="show" @click="show = false" />
 ```
 
 ```js
@@ -39,11 +39,11 @@ export default {
 通过默认插槽可以在遮罩层上嵌入任意内容。
 
 ```html
-<hello-overlay :show="show" @click="show = false">
+<icloudata-overlay :show="show" @click="show = false">
   <div class="wrapper" @click.stop>
     <div class="block" />
   </div>
-</van-overlay>
+</icloudata-overlay>
 
 <style>
   .wrapper {

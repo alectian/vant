@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Tag } from 'hello';
+import { Tag } from 'cloudata';
 
 const app = createApp();
 app.use(Tag);
@@ -17,10 +17,10 @@ app.use(Tag);
 通过 `type` 属性控制标签颜色。
 
 ```html
-<hello-tag type="primary">标签</van-tag>
-<hello-tag type="success">标签</van-tag>
-<hello-tag type="danger">标签</van-tag>
-<hello-tag type="warning">标签</van-tag>
+<icloudata-tag type="primary">标签</icloudata-tag>
+<icloudata-tag type="success">标签</icloudata-tag>
+<icloudata-tag type="danger">标签</icloudata-tag>
+<icloudata-tag type="warning">标签</icloudata-tag>
 ```
 
 ### 空心样式
@@ -28,7 +28,7 @@ app.use(Tag);
 设置 `plain` 属性设置为空心样式。
 
 ```html
-<hello-tag plain type="primary">标签</van-tag>
+<icloudata-tag plain type="primary">标签</icloudata-tag>
 ```
 
 ### 圆角样式
@@ -36,7 +36,7 @@ app.use(Tag);
 通过 `round` 设置为圆角样式。
 
 ```html
-<hello-tag round type="primary">标签</van-tag>
+<icloudata-tag round type="primary">标签</icloudata-tag>
 ```
 
 ### 标记样式
@@ -44,7 +44,7 @@ app.use(Tag);
 通过 `mark` 设置为标记样式(半圆角)。
 
 ```html
-<hello-tag mark type="primary">标签</van-tag>
+<icloudata-tag mark type="primary">标签</icloudata-tag>
 ```
 
 ### 可关闭标签
@@ -52,9 +52,9 @@ app.use(Tag);
 添加 `closeable` 属性表示标签是可关闭的，关闭标签时会触发 `close` 事件，在 `close` 事件中可以执行隐藏标签的逻辑。
 
 ```html
-<hello-tag :show="show" closeable size="medium" type="primary" @close="close">
+<icloudata-tag :show="show" closeable size="medium" type="primary" @close="close">
   标签
-</van-tag>
+</icloudata-tag>
 ```
 
 ```js
@@ -80,9 +80,9 @@ export default {
 通过 `size` 属性调整标签大小。
 
 ```html
-<hello-tag type="primary">标签</van-tag>
-<hello-tag type="primary" size="medium">标签</van-tag>
-<hello-tag type="primary" size="large">标签</van-tag>
+<icloudata-tag type="primary">标签</icloudata-tag>
+<icloudata-tag type="primary" size="medium">标签</icloudata-tag>
+<icloudata-tag type="primary" size="large">标签</icloudata-tag>
 ```
 
 ### 自定义颜色
@@ -90,9 +90,9 @@ export default {
 通过 `color` 和 `text-color` 属性设置标签颜色。
 
 ```html
-<hello-tag color="#7232dd">标签</van-tag>
-<hello-tag color="#ffe1e1" text-color="#ad0000">标签</van-tag>
-<hello-tag color="#7232dd" plain>标签</van-tag>
+<icloudata-tag color="#7232dd">标签</icloudata-tag>
+<icloudata-tag color="#ffe1e1" text-color="#ad0000">标签</icloudata-tag>
+<icloudata-tag color="#7232dd" plain>标签</icloudata-tag>
 ```
 
 ## API

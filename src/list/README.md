@@ -8,7 +8,7 @@ A list component to show items and control loading status.
 
 ```js
 import { createApp } from 'vue';
-import { List } from 'hello';
+import { List } from 'cloudata';
 
 const app = createApp();
 app.use(List);
@@ -19,14 +19,14 @@ app.use(List);
 ### Basic Usage
 
 ```html
-<hello-list
+<icloudata-list
   v-model:loading="state.loading"
   :finished="state.finished"
   finished-text="Finished"
   @load="onLoad"
 >
-  <hello-cell v-for="item in state.list" :key="item" :title="item" />
-</van-list>
+  <icloudata-cell v-for="item in state.list" :key="item" :title="item" />
+</icloudata-list>
 ```
 
 ```js
@@ -64,14 +64,14 @@ export default {
 ### Error Info
 
 ```html
-<hello-list
+<icloudata-list
   v-model:loading="state.loading"
   v-model:error="state.error"
   error-text="Request failed. Click to reload"
   @load="onLoad"
 >
-  <hello-cell v-for="item in state.list" :key="item" :title="item" />
-</van-list>
+  <icloudata-cell v-for="item in state.list" :key="item" :title="item" />
+</icloudata-list>
 ```
 
 ```js
@@ -102,16 +102,16 @@ export default {
 ### PullRefresh
 
 ```html
-<hello-pull-refresh v-model="state.refreshing" @refresh="onRefresh">
-  <hello-list
+<icloudata-pull-refresh v-model="state.refreshing" @refresh="onRefresh">
+  <icloudata-list
     v-model:loading="state.loading"
     :finished="state.finished"
     finished-text="Finished"
     @load="onLoad"
   >
-    <hello-cell v-for="item in state.list" :key="item" :title="item" />
-  </van-list>
-</van-pull-refresh>
+    <icloudata-cell v-for="item in state.list" :key="item" :title="item" />
+  </icloudata-list>
+</icloudata-pull-refresh>
 ```
 
 ```js

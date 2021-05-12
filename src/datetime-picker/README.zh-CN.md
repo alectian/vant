@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { DatetimePicker } from 'hello';
+import { DatetimePicker } from 'cloudata';
 
 const app = createApp();
 app.use(DatetimePicker);
@@ -21,7 +21,7 @@ app.use(DatetimePicker);
 DatetimePicker 通过 type 属性来定义需要选择的时间类型，type 为 `date` 表示选择年月日。通过 min-date 和 max-date 属性可以确定可选的时间范围。
 
 ```html
-<hello-datetime-picker
+<icloudata-datetime-picker
   v-model="currentDate"
   type="date"
   title="选择年月日"
@@ -50,7 +50,7 @@ export default {
 将 type 设置为 `year-month` 即可选择年份和月份。通过传入 `formatter` 函数，可以对选项文字进行格式化处理。
 
 ```html
-<hello-datetime-picker
+<icloudata-datetime-picker
   v-model="currentDate"
   type="year-month"
   title="选择年月"
@@ -91,7 +91,7 @@ export default {
 将 type 设置为 `month-day` 即可选择月份和日期。
 
 ```html
-<hello-datetime-picker
+<icloudata-datetime-picker
   v-model="currentDate"
   type="month-day"
   title="选择月日"
@@ -132,7 +132,7 @@ export default {
 将 type 设置为 `time` 即可选择时间（小时和分钟）。
 
 ```html
-<hello-datetime-picker
+<icloudata-datetime-picker
   v-model="currentTime"
   type="time"
   title="选择时间"
@@ -157,7 +157,7 @@ export default {
 将 type 设置为 `datetime` 即可选择完整时间，包括年月日和小时、分钟。
 
 ```html
-<hello-datetime-picker
+<icloudata-datetime-picker
   v-model="currentDate"
   type="datetime"
   title="选择完整时间"
@@ -186,7 +186,7 @@ export default {
 将 type 设置为 `datehour` 即可选择日期和小时，包括年月日和小时。
 
 ```html
-<hello-datetime-picker
+<icloudata-datetime-picker
   v-model="currentDate"
   type="datehour"
   title="选择年月日小时"
@@ -215,7 +215,7 @@ export default {
 通过传入 `filter` 函数，可以对选项数组进行过滤，实现自定义时间间隔。
 
 ```html
-<hello-datetime-picker v-model="currentTime" type="time" :filter="filter" />
+<icloudata-datetime-picker v-model="currentTime" type="time" :filter="filter" />
 ```
 
 ```js
@@ -243,7 +243,7 @@ export default {
 ### 自定义列排序
 
 ```html
-<hello-datetime-picker
+<icloudata-datetime-picker
   v-model="currentDate"
   type="date"
   title="自定义列排序"

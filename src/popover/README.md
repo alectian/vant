@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Popover } from 'hello';
+import { Popover } from 'cloudata';
 
 const app = createApp();
 app.use(Popover);
@@ -15,16 +15,16 @@ app.use(Popover);
 ### Basic Usage
 
 ```html
-<hello-popover v-model:show="showPopover" :actions="actions" @select="onSelect">
+<icloudata-popover v-model:show="showPopover" :actions="actions" @select="onSelect">
   <template #reference>
-    <hello-button type="primary">Light Theme</van-button>
+    <icloudata-button type="primary">Light Theme</icloudata-button>
   </template>
-</van-popover>
+</icloudata-popover>
 ```
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -53,11 +53,11 @@ export default {
 Using the `theme` prop to change the style of Popover.
 
 ```html
-<hello-popover v-model:show="showPopover" theme="dark" :actions="actions">
+<icloudata-popover v-model:show="showPopover" theme="dark" :actions="actions">
   <template #reference>
-    <hello-button type="primary">Dark Theme</van-button>
+    <icloudata-button type="primary">Dark Theme</icloudata-button>
   </template>
-</van-popover>
+</icloudata-popover>
 ```
 
 ```js
@@ -83,7 +83,7 @@ export default {
 ### Placement
 
 ```html
-<hello-popover placement="top" />
+<icloudata-popover placement="top" />
 ```
 
 `placement` supports the following values:
@@ -106,11 +106,11 @@ bottom-end    # Bottom right
 ### Show Icon
 
 ```html
-<hello-popover v-model:show="showPopover" :actions="actions">
+<icloudata-popover v-model:show="showPopover" :actions="actions">
   <template #reference>
-    <hello-button type="primary">Show Icon</van-button>
+    <icloudata-button type="primary">Show Icon</icloudata-button>
   </template>
-</van-popover>
+</icloudata-popover>
 ```
 
 ```js
@@ -138,11 +138,11 @@ export default {
 Using the `disabled` option to disable an action.
 
 ```html
-<hello-popover v-model:show="showPopover" :actions="actions">
+<icloudata-popover v-model:show="showPopover" :actions="actions">
   <template #reference>
-    <hello-button type="primary">Disable Action</van-button>
+    <icloudata-button type="primary">Disable Action</icloudata-button>
   </template>
-</van-popover>
+</icloudata-popover>
 ```
 
 ```js
@@ -168,26 +168,26 @@ export default {
 ### Custom Content
 
 ```html
-<hello-popover v-model:show="showPopover">
-  <hello-grid
+<icloudata-popover v-model:show="showPopover">
+  <icloudata-grid
     square
     clickable
     :border="false"
     column-num="3"
     style="width: 240px;"
   >
-    <hello-grid-item
+    <icloudata-grid-item
       v-for="i in 6"
       :key="i"
       text="Option"
       icon="photo-o"
       @click="showPopover = false"
     />
-  </van-grid>
+  </icloudata-grid>
   <template #reference>
-    <hello-button type="primary">Custom Content</van-button>
+    <icloudata-button type="primary">Custom Content</icloudata-button>
   </template>
-</van-popover>
+</icloudata-popover>
 ```
 
 ```js

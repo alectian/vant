@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { ContactList } from 'hello';
+import { ContactList } from 'cloudata';
 
 const app = createApp();
 app.use(ContactList);
@@ -15,7 +15,7 @@ app.use(ContactList);
 ### Basic Usage
 
 ```html
-<hello-contact-list
+<icloudata-contact-list
   v-model="chosenContactId"
   :list="list"
   default-tag-text="default"
@@ -27,7 +27,7 @@ app.use(ContactList);
 
 ```js
 import { reactive } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

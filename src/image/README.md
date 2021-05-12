@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Image as VanImage } from 'hello';
+import { Image as VanImage } from 'cloudata';
 
 const app = createApp();
 app.use(VanImage);
@@ -15,13 +15,13 @@ app.use(VanImage);
 ### Basic Usage
 
 ```html
-<hello-image width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+<icloudata-image width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" />
 ```
 
 ### Fit Mode
 
 ```html
-<hello-image
+<icloudata-image
   width="10rem"
   height="10rem"
   fit="contain"
@@ -34,7 +34,7 @@ app.use(VanImage);
 Show round image, it may not works at `fit=contain` and `fit=scale-down`.
 
 ```html
-<hello-image
+<icloudata-image
   round
   width="10rem"
   height="10rem"
@@ -45,7 +45,7 @@ Show round image, it may not works at `fit=contain` and `fit=scale-down`.
 ### Lazy Load
 
 ```html
-<hello-image
+<icloudata-image
   width="100"
   height="100"
   lazy-load
@@ -55,7 +55,7 @@ Show round image, it may not works at `fit=contain` and `fit=scale-down`.
 
 ```js
 import { createApp } from 'vue';
-import { Lazyload } from 'hello';
+import { Lazyload } from 'cloudata';
 
 const app = createApp();
 app.use(Lazyload);

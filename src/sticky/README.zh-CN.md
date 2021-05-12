@@ -8,7 +8,7 @@ Sticky 组件与 CSS 中`position: sticky`属性实现的效果一致，当组�
 
 ```js
 import { createApp } from 'vue';
-import { Sticky } from 'hello';
+import { Sticky } from 'cloudata';
 
 const app = createApp();
 app.use(Sticky);
@@ -21,9 +21,9 @@ app.use(Sticky);
 将内容包裹在 `Sticky` 组件内即可。
 
 ```html
-<hello-sticky>
-  <hello-button type="primary">基础用法</van-button>
-</van-sticky>
+<icloudata-sticky>
+  <icloudata-button type="primary">基础用法</icloudata-button>
+</icloudata-sticky>
 ```
 
 ### 吸顶距离
@@ -31,9 +31,9 @@ app.use(Sticky);
 通过 `offset-top` 属性可以设置组件在吸顶时与顶部的距离。
 
 ```html
-<hello-sticky :offset-top="50">
-  <hello-button type="primary">吸顶距离</van-button>
-</van-sticky>
+<icloudata-sticky :offset-top="50">
+  <icloudata-button type="primary">吸顶距离</icloudata-button>
+</icloudata-sticky>
 ```
 
 ### 指定容器
@@ -42,9 +42,9 @@ app.use(Sticky);
 
 ```html
 <div ref="container" style="height: 150px;">
-  <hello-sticky :container="container">
-    <hello-button type="warning">指定容器</van-button>
-  </van-sticky>
+  <icloudata-sticky :container="container">
+    <icloudata-button type="warning">指定容器</icloudata-button>
+  </icloudata-sticky>
 </div>
 ```
 

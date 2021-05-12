@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Picker } from 'hello';
+import { Picker } from 'cloudata';
 
 const app = createApp();
 app.use(Picker);
@@ -27,7 +27,7 @@ Picker 组件通过 `columns` 属性配置选项数据，`columns` 是一个包�
 顶部栏包含标题、确认按钮和取消按钮，点击确认按钮触发 `confirm` 事件，点击取消按钮触发 `cancel` 事件。
 
 ```html
-<hello-picker
+<icloudata-picker
   title="标题"
   :columns="columns"
   @confirm="onConfirm"
@@ -37,7 +37,7 @@ Picker 组件通过 `columns` 属性配置选项数据，`columns` 是一个包�
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -68,7 +68,7 @@ export default {
 单列选择时，可以通过 `default-index` 属性设置初始选中项的索引。
 
 ```html
-<hello-picker title="标题" :columns="columns" :default-index="2" />
+<icloudata-picker title="标题" :columns="columns" :default-index="2" />
 ```
 
 ### 多列选择
@@ -76,7 +76,7 @@ export default {
 `columns` 属性可以通过对象数组的形式配置多列选择，对象中可以配置选项数据、初始选中项等，详细格式见[下方表格](#/zh-CN/picker#column-shu-ju-jie-gou)。
 
 ```html
-<hello-picker title="标题" :columns="columns" />
+<icloudata-picker title="标题" :columns="columns" />
 ```
 
 ```js
@@ -105,7 +105,7 @@ export default {
 使用 `columns` 的 `children` 字段可以实现选项级联的效果。
 
 ```html
-<hello-picker title="标题" :columns="columns" />
+<icloudata-picker title="标题" :columns="columns" />
 ```
 
 ```js
@@ -152,7 +152,7 @@ export default {
 选项可以为对象结构，通过设置 `disabled` 来禁用该选项。
 
 ```html
-<hello-picker :columns="columns" />
+<icloudata-picker :columns="columns" />
 ```
 
 ```js
@@ -174,7 +174,7 @@ export default {
 通过 Picker 上的实例方法可以更灵活地控制选择器，比如使用 `setColumnValues` 方法实现多列联动。
 
 ```html
-<hello-picker ref="picker" :columns="columns" @change="onChange" />
+<icloudata-picker ref="picker" :columns="columns" @change="onChange" />
 ```
 
 ```js
@@ -211,7 +211,7 @@ export default {
 若选择器数据是异步获取的，可以通过 `loading` 属性显示加载提示。
 
 ```html
-<hello-picker :columns="columns" :loading="loading" />
+<icloudata-picker :columns="columns" :loading="loading" />
 ```
 
 ```js
@@ -239,7 +239,7 @@ export default {
 在实际场景中，Picker 通常作为用于辅助表单填写，可以搭配 Popup 和 Field 实现该效果。
 
 ```html
-<hello-field
+<icloudata-field
   readonly
   clickable
   label="城市"
@@ -247,13 +247,13 @@ export default {
   placeholder="选择城市"
   @click="showPicker = true"
 />
-<hello-popup v-model:show="showPicker" round position="bottom">
-  <hello-picker
+<icloudata-popup v-model:show="showPicker" round position="bottom">
+  <icloudata-picker
     :columns="columns"
     @cancel="showPicker = false"
     @confirm="onConfirm"
   />
-</van-popup>
+</icloudata-popup>
 ```
 
 ```js

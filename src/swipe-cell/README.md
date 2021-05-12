@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { SwipeCell } from 'hello';
+import { SwipeCell } from 'cloudata';
 
 const app = createApp();
 app.use(SwipeCell);
@@ -15,23 +15,23 @@ app.use(SwipeCell);
 ### Basic Usage
 
 ```html
-<hello-swipe-cell>
+<icloudata-swipe-cell>
   <template #left>
-    <hello-button square type="primary" text="Select" />
+    <icloudata-button square type="primary" text="Select" />
   </template>
-  <hello-cell :border="false" title="Cell" value="Cell Content" />
+  <icloudata-cell :border="false" title="Cell" value="Cell Content" />
   <template #right>
-    <hello-button square type="danger" text="Delete" />
-    <hello-button square type="primary" text="Collect" />
+    <icloudata-button square type="danger" text="Delete" />
+    <icloudata-button square type="primary" text="Collect" />
   </template>
-</van-swipe-cell>
+</icloudata-swipe-cell>
 ```
 
 ### Custom Content
 
 ```html
-<hello-swipe-cell>
-  <hello-card
+<icloudata-swipe-cell>
+  <icloudata-card
     num="2"
     price="2.00"
     desc="Description"
@@ -40,9 +40,9 @@ app.use(SwipeCell);
     thumb="https://img.yzcdn.cn/vant/cat.jpeg"
   />
   <template #right>
-    <hello-button square text="Delete" type="danger" class="delete-button" />
+    <icloudata-button square text="Delete" type="danger" class="delete-button" />
   </template>
-</van-swipe-cell>
+</icloudata-swipe-cell>
 
 <style>
   .goods-card {
@@ -59,19 +59,19 @@ app.use(SwipeCell);
 ### Before Close
 
 ```html
-<hello-swipe-cell :before-close="beforeClose">
+<icloudata-swipe-cell :before-close="beforeClose">
   <template #left>
-    <hello-button square type="primary" text="Select" />
+    <icloudata-button square type="primary" text="Select" />
   </template>
-  <hello-cell :border="false" title="Cell" value="Cell Content" />
+  <icloudata-cell :border="false" title="Cell" value="Cell Content" />
   <template #right>
-    <hello-button square type="danger" text="Delete" />
+    <icloudata-button square type="danger" text="Delete" />
   </template>
-</van-swipe-cell>
+</icloudata-swipe-cell>
 ```
 
 ```js
-import { Dialog } from 'hello';
+import { Dialog } from 'cloudata';
 
 export default {
   setup() {

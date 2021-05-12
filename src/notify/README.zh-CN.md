@@ -9,7 +9,7 @@
 Notify 是一个函数，调用后会直接在页面中弹出相应的消息提示。
 
 ```js
-import { Notify } from 'hello';
+import { Notify } from 'cloudata';
 
 Notify('通知内容');
 ```
@@ -20,7 +20,7 @@ Notify('通知内容');
 
 ```js
 import { createApp } from 'vue';
-import { Notify } from 'hello';
+import { Notify } from 'cloudata';
 
 // 全局注册
 const app = createApp();
@@ -94,11 +94,11 @@ export default {
 如果需要在 Notify 内嵌入组件或其他自定义内容，可以使用组件调用的方式。
 
 ```html
-<hello-button type="primary" text="组件调用" @click="showNotify" />
-<hello-notify v-model:show="show" type="success">
-  <hello-icon name="bell" style="margin-right: 4px;" />
+<icloudata-button type="primary" text="组件调用" @click="showNotify" />
+<icloudata-notify v-model:show="show" type="success">
+  <icloudata-icon name="bell" style="margin-right: 4px;" />
   <span>通知内容</span>
-</van-notify>
+</icloudata-notify>
 ```
 
 ```js

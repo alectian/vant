@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { ContactCard } from 'hello';
+import { ContactCard } from 'cloudata';
 
 const app = createApp();
 app.use(ContactCard);
@@ -15,11 +15,11 @@ app.use(ContactCard);
 ### Add Contact
 
 ```html
-<hello-contact-card type="add" @click="onAdd" />
+<icloudata-contact-card type="add" @click="onAdd" />
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -36,7 +36,7 @@ export default {
 ### Edit Contact
 
 ```html
-<hello-contact-card
+<icloudata-contact-card
   type="edit"
   :name="currentContact.name"
   :tel="currentContact.tel"
@@ -46,7 +46,7 @@ export default {
 
 ```js
 import { reactive } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -70,7 +70,7 @@ export default {
 ### Uneditable
 
 ```html
-<hello-contact-card
+<icloudata-contact-card
   type="edit"
   name="John Snow"
   tel="13000000000"

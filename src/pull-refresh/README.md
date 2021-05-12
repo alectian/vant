@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { PullRefresh } from 'hello';
+import { PullRefresh } from 'cloudata';
 
 const app = createApp();
 app.use(PullRefresh);
@@ -17,14 +17,14 @@ app.use(PullRefresh);
 The `refresh` event will be Emitted when pull refresh, you should set `v-model` to `false` to reset loading status after process refresh event.
 
 ```html
-<hello-pull-refresh v-model="state.loading" @refresh="onRefresh">
+<icloudata-pull-refresh v-model="state.loading" @refresh="onRefresh">
   <p>Refresh Count: {{ state.count }}</p>
-</van-pull-refresh>
+</icloudata-pull-refresh>
 ```
 
 ```js
 import { reactive } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -53,13 +53,13 @@ export default {
 Use `success-text` to set the success prompt after the refresh is successful
 
 ```html
-<hello-pull-refresh
+<icloudata-pull-refresh
   v-model="isLoading"
   success-text="Refresh success"
   @refresh="onRefresh"
 >
   <p>Refresh Count: {{ count }}</p>
-</van-pull-refresh>
+</icloudata-pull-refresh>
 ```
 
 ### Custom Tips
@@ -67,7 +67,7 @@ Use `success-text` to set the success prompt after the refresh is successful
 Use slots to custom tips.
 
 ```html
-<hello-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
+<icloudata-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
   <template #pulling="props">
     <img
       class="doge"
@@ -84,7 +84,7 @@ Use slots to custom tips.
     <img class="doge" src="https://img.yzcdn.cn/vant/doge-fire.jpg" />
   </template>
   <p>Refresh Count: {{ count }}</p>
-</van-pull-refresh>
+</icloudata-pull-refresh>
 
 <style>
   .doge {

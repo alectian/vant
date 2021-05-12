@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Tab, Tabs } from 'hello';
+import { Tab, Tabs } from 'cloudata';
 
 const app = createApp();
 app.use(Tab);
@@ -18,12 +18,12 @@ app.use(Tabs);
 通过 `v-model:active` 绑定当前激活标签对应的索引值，默认情况下启用第一个标签。
 
 ```html
-<hello-tabs v-model:active="active">
-  <hello-tab title="标签 1">内容 1</van-tab>
-  <hello-tab title="标签 2">内容 2</van-tab>
-  <hello-tab title="标签 3">内容 3</van-tab>
-  <hello-tab title="标签 4">内容 4</van-tab>
-</van-tabs>
+<icloudata-tabs v-model:active="active">
+  <icloudata-tab title="标签 1">内容 1</icloudata-tab>
+  <icloudata-tab title="标签 2">内容 2</icloudata-tab>
+  <icloudata-tab title="标签 3">内容 3</icloudata-tab>
+  <icloudata-tab title="标签 4">内容 4</icloudata-tab>
+</icloudata-tabs>
 ```
 
 ```js
@@ -42,11 +42,11 @@ export default {
 在标签指定 `name` 属性的情况下，`v-model:active` 的值为当前标签的 `name`（此时无法通过索引值来匹配标签）。
 
 ```html
-<hello-tabs v-model:active="activeName">
-  <hello-tab title="标签 1" name="a">内容 1</van-tab>
-  <hello-tab title="标签 2" name="b">内容 2</van-tab>
-  <hello-tab title="标签 3" name="c">内容 3</van-tab>
-</van-tabs>
+<icloudata-tabs v-model:active="activeName">
+  <icloudata-tab title="标签 1" name="a">内容 1</icloudata-tab>
+  <icloudata-tab title="标签 2" name="b">内容 2</icloudata-tab>
+  <icloudata-tab title="标签 3" name="c">内容 3</icloudata-tab>
+</icloudata-tabs>
 ```
 
 ```js
@@ -65,11 +65,11 @@ export default {
 标签数量超过 5 个时，标签栏可以在水平方向上滚动，切换时会自动将当前标签居中。
 
 ```html
-<hello-tabs>
-  <hello-tab v-for="index in 8" :title="'标签 ' + index">
+<icloudata-tabs>
+  <icloudata-tab v-for="index in 8" :title="'标签 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ### 禁用标签
@@ -77,15 +77,15 @@ export default {
 设置 `disabled` 属性即可禁用标签，如果需要监听禁用标签的点击事件，可以在 `van-tabs` 上监听`disabled` 事件。
 
 ```html
-<hello-tabs @disabled="onClickDisabled">
-  <hello-tab title="标签 1">内容 1</van-tab>
-  <hello-tab title="标签 2" disabled>内容 2</van-tab>
-  <hello-tab title="标签 3">内容 3</van-tab>
-</van-tabs>
+<icloudata-tabs @disabled="onClickDisabled">
+  <icloudata-tab title="标签 1">内容 1</icloudata-tab>
+  <icloudata-tab title="标签 2" disabled>内容 2</icloudata-tab>
+  <icloudata-tab title="标签 3">内容 3</icloudata-tab>
+</icloudata-tabs>
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -105,11 +105,11 @@ export default {
 `Tab` 支持两种样式风格：`line` 和`card`，默认为 `line` 样式，可以通过 `type` 属性切换样式风格。
 
 ```html
-<hello-tabs type="card">
-  <hello-tab title="标签 1">内容 1</van-tab>
-  <hello-tab title="标签 2">内容 2</van-tab>
-  <hello-tab title="标签 3">内容 3</van-tab>
-</van-tabs>
+<icloudata-tabs type="card">
+  <icloudata-tab title="标签 1">内容 1</icloudata-tab>
+  <icloudata-tab title="标签 2">内容 2</icloudata-tab>
+  <icloudata-tab title="标签 3">内容 3</icloudata-tab>
+</icloudata-tabs>
 ```
 
 ### 点击事件
@@ -117,14 +117,14 @@ export default {
 可以在 `van-tabs` 上绑定 `click` 事件，事件传参为标签对应的标识符和标题。
 
 ```html
-<hello-tabs @click="onClick">
-  <hello-tab title="标签 1">内容 1</van-tab>
-  <hello-tab title="标签 2">内容 2</van-tab>
-</van-tabs>
+<icloudata-tabs @click="onClick">
+  <icloudata-tab title="标签 1">内容 1</icloudata-tab>
+  <icloudata-tab title="标签 2">内容 2</icloudata-tab>
+</icloudata-tabs>
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -144,11 +144,11 @@ export default {
 通过 `sticky` 属性可以开启粘性布局，粘性布局下，标签页滚动到顶部时会自动吸顶。
 
 ```html
-<hello-tabs v-model:active="active" sticky>
-  <hello-tab v-for="index in 4" :title="'选项 ' + index">
+<icloudata-tabs v-model:active="active" sticky>
+  <icloudata-tab v-for="index in 4" :title="'选项 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ### 自定义标签
@@ -156,12 +156,12 @@ export default {
 通过 `title` 插槽可以自定义标签内容。
 
 ```html
-<hello-tabs v-model:active="active">
-  <hello-tab v-for="index in 2" :key="index">
-    <template #title> <hello-icon name="more-o" />选项 </template>
+<icloudata-tabs v-model:active="active">
+  <icloudata-tab v-for="index in 2" :key="index">
+    <template #title> <icloudata-icon name="more-o" />选项 </template>
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ### 切换动画
@@ -169,11 +169,11 @@ export default {
 通过 `animated` 属性可以开启切换标签内容时的转场动画。
 
 ```html
-<hello-tabs v-model:active="active" animated>
-  <hello-tab v-for="index in 4" :title="'选项 ' + index">
+<icloudata-tabs v-model:active="active" animated>
+  <icloudata-tab v-for="index in 4" :title="'选项 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ### 滑动切换
@@ -181,11 +181,11 @@ export default {
 通过 `swipeable` 属性可以开启滑动切换标签页。
 
 ```html
-<hello-tabs v-model:active="active" swipeable>
-  <hello-tab v-for="index in 4" :title="'选项 ' + index">
+<icloudata-tabs v-model:active="active" swipeable>
+  <icloudata-tab v-for="index in 4" :title="'选项 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ### 滚动导航
@@ -193,11 +193,11 @@ export default {
 通过 `scrollspy` 属性可以开启滚动导航模式，该模式下，内容将会平铺展示。
 
 ```html
-<hello-tabs v-model:active="active" scrollspy sticky>
-  <hello-tab v-for="index in 8" :title="'选项 ' + index">
+<icloudata-tabs v-model:active="active" scrollspy sticky>
+  <icloudata-tab v-for="index in 8" :title="'选项 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ### 异步切换
@@ -205,11 +205,11 @@ export default {
 通过 `before-change` 属性可以在切换标签前执行特定的逻辑。
 
 ```html
-<hello-tabs :before-change="beforeChange">
-  <hello-tab v-for="index in 4" :title="'选项 ' + index">
+<icloudata-tabs :before-change="beforeChange">
+  <icloudata-tab v-for="index in 4" :title="'选项 ' + index">
     内容 {{ index }}
-  </van-tab>
-</van-tabs>
+  </icloudata-tab>
+</icloudata-tabs>
 ```
 
 ```js
@@ -340,15 +340,15 @@ Tabs 组件在挂载时，会获取自身的宽度，并计算出底部条的位
 
 ```html
 <!-- Before -->
-<hello-tabs v-show="show" />
+<icloudata-tabs v-show="show" />
 <!-- After -->
-<hello-tabs v-if="show" />
+<icloudata-tabs v-if="show" />
 ```
 
 方法二，调用组件的 resize 方法来主动触发重绘：
 
 ```html
-<hello-tabs v-show="show" ref="tabs" />
+<icloudata-tabs v-show="show" ref="tabs" />
 ```
 
 ```js

@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Dialog } from 'hello';
+import { Dialog } from 'cloudata';
 
 const app = createApp();
 app.use(Dialog);
@@ -105,9 +105,9 @@ export default {
 If you need to render vue components within a dialog, you can use dialog component.
 
 ```html
-<hello-dialog v-model:show="show" title="Title" show-cancel-button>
+<icloudata-dialog v-model:show="show" title="Title" show-cancel-button>
   <img src="https://img.yzcdn.cn/vant/apple-3.jpg" />
-</van-dialog>
+</icloudata-dialog>
 ```
 
 ```js

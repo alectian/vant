@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { ContactEdit } from 'hello';
+import { ContactEdit } from 'cloudata';
 
 const app = createApp();
 app.use(ContactEdit);
@@ -15,7 +15,7 @@ app.use(ContactEdit);
 ### Basic Usage
 
 ```html
-<hello-contact-edit
+<icloudata-contact-edit
   is-edit
   show-set-default
   :contact-info="editingContact"
@@ -27,7 +27,7 @@ app.use(ContactEdit);
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

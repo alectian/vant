@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { SubmitBar } from 'hello';
+import { SubmitBar } from 'cloudata';
 
 const app = createApp();
 app.use(SubmitBar);
@@ -15,11 +15,11 @@ app.use(SubmitBar);
 ### Basic Usage
 
 ```html
-<hello-submit-bar :price="3050" button-text="Submit" @submit="onSubmit" />
+<icloudata-submit-bar :price="3050" button-text="Submit" @submit="onSubmit" />
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -39,7 +39,7 @@ export default {
 `submit` event will not triggerd when disabled.
 
 ```html
-<hello-submit-bar
+<icloudata-submit-bar
   disabled
   :price="3050"
   button-text="Submit"
@@ -54,7 +54,7 @@ export default {
 `submit` event will not triggerd when loading.
 
 ```html
-<hello-submit-bar loading :price="3050" button-text="Submit" @submit="onSubmit" />
+<icloudata-submit-bar loading :price="3050" button-text="Submit" @submit="onSubmit" />
 ```
 
 ### Advanced Usage
@@ -62,14 +62,14 @@ export default {
 Use slot to add custom contents.
 
 ```html
-<hello-submit-bar :price="3050" button-text="Submit" @submit="onSubmit">
-  <hello-checkbox v-model="checked">Check</van-checkbox>
+<icloudata-submit-bar :price="3050" button-text="Submit" @submit="onSubmit">
+  <icloudata-checkbox v-model="checked">Check</icloudata-checkbox>
   <template #tip> Some tips, <span @click="onClickLink">Link</span> </template>
-</van-submit-bar>
+</icloudata-submit-bar>
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

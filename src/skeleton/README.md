@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Skeleton } from 'hello';
+import { Skeleton } from 'cloudata';
 
 const app = createApp();
 app.use(Skeleton);
@@ -15,21 +15,21 @@ app.use(Skeleton);
 ### Basic Usage
 
 ```html
-<hello-skeleton title :row="3" />
+<icloudata-skeleton title :row="3" />
 ```
 
 ### Show Avatar
 
 ```html
-<hello-skeleton title avatar :row="3" />
+<icloudata-skeleton title avatar :row="3" />
 ```
 
 ### Show Children
 
 ```html
-<hello-skeleton title avatar :row="3" :loading="loading">
+<icloudata-skeleton title avatar :row="3" :loading="loading">
   <div>Content</div>
-</van-skeleton>
+</icloudata-skeleton>
 ```
 
 ```js

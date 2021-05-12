@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Rate } from 'hello';
+import { Rate } from 'cloudata';
 
 const app = createApp();
 app.use(Rate);
@@ -15,7 +15,7 @@ app.use(Rate);
 ### Basic Usage
 
 ```html
-<hello-rate v-model="value" />
+<icloudata-rate v-model="value" />
 ```
 
 ```js
@@ -32,13 +32,13 @@ export default {
 ### Custom Icon
 
 ```html
-<hello-rate v-model="value" icon="like" void-icon="like-o" />
+<icloudata-rate v-model="value" icon="like" void-icon="like-o" />
 ```
 
 ### Custom Style
 
 ```html
-<hello-rate
+<icloudata-rate
   v-model="value"
   :size="25"
   color="#ffd21e"
@@ -50,7 +50,7 @@ export default {
 ### Half Star
 
 ```html
-<hello-rate v-model="value" allow-half void-icon="star" void-color="#eee" />
+<icloudata-rate v-model="value" allow-half void-icon="star" void-color="#eee" />
 ```
 
 ```js
@@ -67,30 +67,30 @@ export default {
 ### Custom Count
 
 ```html
-<hello-rate v-model="value" :count="6" />
+<icloudata-rate v-model="value" :count="6" />
 ```
 
 ### Disabled
 
 ```html
-<hello-rate v-model="value" disabled />
+<icloudata-rate v-model="value" disabled />
 ```
 
 ### Readonly
 
 ```html
-<hello-rate v-model="value" readonly />
+<icloudata-rate v-model="value" readonly />
 ```
 
 ### Change Event
 
 ```html
-<hello-rate v-model="value" @change="onChange" />
+<icloudata-rate v-model="value" @change="onChange" />
 ```
 
 ```javascript
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

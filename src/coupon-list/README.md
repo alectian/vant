@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { CouponCell, CouponList } from 'hello';
+import { CouponCell, CouponList } from 'cloudata';
 
 const app = createApp();
 app.use(CouponCell);
@@ -17,26 +17,26 @@ app.use(CouponList);
 
 ```html
 <!-- Coupon Cell -->
-<hello-coupon-cell
+<icloudata-coupon-cell
   :coupons="state.coupons"
   :chosen-coupon="state.chosenCoupon"
   @click="state.showList = true"
 />
 <!-- Coupon List -->
-<hello-popup
+<icloudata-popup
   v-model="state.showList"
   round
   position="bottom"
   style="height: 90%; padding-top: 4px;"
 >
-  <hello-coupon-list
+  <icloudata-coupon-list
     :coupons="state.coupons"
     :chosen-coupon="state.chosenCoupon"
     :disabled-coupons="disabledCoupons"
     @change="onChange"
     @exchange="onExchange"
   />
-</van-popup>
+</icloudata-popup>
 ```
 
 ```js

@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Area } from 'hello';
+import { Area } from 'cloudata';
 
 const app = createApp();
 app.use(Area);
@@ -21,7 +21,7 @@ app.use(Area);
 要初始化一个 `Area` 组件，你需要传入一个 `area-list` 属性，数据格式具体可看下面数据格式章节。
 
 ```html
-<hello-area title="标题" :area-list="areaList" />
+<icloudata-area title="标题" :area-list="areaList" />
 ```
 
 ### 选中省市区
@@ -29,7 +29,7 @@ app.use(Area);
 如果想选中某个省市区，需要传入一个 `value` 属性，绑定对应的省市区 `code`。
 
 ```html
-<hello-area title="标题" :area-list="areaList" value="110101" />
+<icloudata-area title="标题" :area-list="areaList" value="110101" />
 ```
 
 ### 配置显示列
@@ -37,7 +37,7 @@ app.use(Area);
 可以通过 `columns-num` 属性配置省市区显示的列数，默认情况下会显示省市区，当你设置为 `2`，则只会显示省市选择。
 
 ```html
-<hello-area title="标题" :area-list="areaList" :columns-num="2" />
+<icloudata-area title="标题" :area-list="areaList" :columns-num="2" />
 ```
 
 ### 配置列占位提示文字
@@ -45,7 +45,7 @@ app.use(Area);
 可以通过 `columns-placeholder` 属性配置每一列的占位提示文字。
 
 ```html
-<hello-area
+<icloudata-area
   title="标题"
   :area-list="areaList"
   :columns-placeholder="['请选择', '请选择', '请选择']"

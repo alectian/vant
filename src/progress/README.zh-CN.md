@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Progress } from 'hello';
+import { Progress } from 'cloudata';
 
 const app = createApp();
 app.use(Progress);
@@ -21,7 +21,7 @@ app.use(Progress);
 进度条默认为蓝色，使用 `percentage` 属性来设置当前进度。
 
 ```html
-<hello-progress :percentage="50" />
+<icloudata-progress :percentage="50" />
 ```
 
 ### 线条粗细
@@ -29,7 +29,7 @@ app.use(Progress);
 通过 `stroke-width` 可以设置进度条的粗细。
 
 ```html
-<hello-progress :percentage="50" stroke-width="8" />
+<icloudata-progress :percentage="50" stroke-width="8" />
 ```
 
 ### 置灰
@@ -37,7 +37,7 @@ app.use(Progress);
 设置 `inactive` 属性后进度条将置灰。
 
 ```html
-<hello-progress inactive :percentage="50" />
+<icloudata-progress inactive :percentage="50" />
 ```
 
 ### 样式定制
@@ -45,9 +45,9 @@ app.use(Progress);
 可以使用 `pivot-text` 属性自定义文字，`color` 属性自定义进度条颜色。
 
 ```html
-<hello-progress pivot-text="橙色" color="#f2826a" :percentage="25" />
-<hello-progress pivot-text="红色" color="#ee0a24" :percentage="50" />
-<hello-progress
+<icloudata-progress pivot-text="橙色" color="#f2826a" :percentage="25" />
+<icloudata-progress pivot-text="红色" color="#ee0a24" :percentage="50" />
+<icloudata-progress
   :percentage="75"
   pivot-text="紫色"
   pivot-color="#7232dd"
@@ -106,15 +106,15 @@ Progress 组件在挂载时，会获取自身的宽度，并计算出进度条�
 
 ```html
 <!-- Before -->
-<hello-progress v-show="show" />
+<icloudata-progress v-show="show" />
 <!-- After -->
-<hello-progress v-if="show" />
+<icloudata-progress v-if="show" />
 ```
 
 方法二，调用组件的 resize 方法来主动触发重绘：
 
 ```html
-<hello-progress v-show="show" ref="progress" />
+<icloudata-progress v-show="show" ref="progress" />
 ```
 
 ```js

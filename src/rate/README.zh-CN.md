@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Rate } from 'hello';
+import { Rate } from 'cloudata';
 
 const app = createApp();
 app.use(Rate);
@@ -19,7 +19,7 @@ app.use(Rate);
 ### 基础用法
 
 ```html
-<hello-rate v-model="value" />
+<icloudata-rate v-model="value" />
 ```
 
 ```js
@@ -36,13 +36,13 @@ export default {
 ### 自定义图标
 
 ```html
-<hello-rate v-model="value" icon="like" void-icon="like-o" />
+<icloudata-rate v-model="value" icon="like" void-icon="like-o" />
 ```
 
 ### 自定义样式
 
 ```html
-<hello-rate
+<icloudata-rate
   v-model="value"
   :size="25"
   color="#ffd21e"
@@ -54,7 +54,7 @@ export default {
 ### 半星
 
 ```html
-<hello-rate v-model="value" allow-half void-icon="star" void-color="#eee" />
+<icloudata-rate v-model="value" allow-half void-icon="star" void-color="#eee" />
 ```
 
 ```js
@@ -71,30 +71,30 @@ export default {
 ### 自定义数量
 
 ```html
-<hello-rate v-model="value" :count="6" />
+<icloudata-rate v-model="value" :count="6" />
 ```
 
 ### 禁用状态
 
 ```html
-<hello-rate v-model="value" disabled />
+<icloudata-rate v-model="value" disabled />
 ```
 
 ### 只读状态
 
 ```html
-<hello-rate v-model="value" readonly />
+<icloudata-rate v-model="value" readonly />
 ```
 
 ### 监听 change 事件
 
 ```html
-<hello-rate v-model="value" @change="onChange" />
+<icloudata-rate v-model="value" @change="onChange" />
 ```
 
 ```javascript
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

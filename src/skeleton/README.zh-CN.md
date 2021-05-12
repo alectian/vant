@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Skeleton } from 'hello';
+import { Skeleton } from 'cloudata';
 
 const app = createApp();
 app.use(Skeleton);
@@ -21,7 +21,7 @@ app.use(Skeleton);
 通过 `title` 属性显示标题占位图，通过 `row` 属性配置占位段落行数。
 
 ```html
-<hello-skeleton title :row="3" />
+<icloudata-skeleton title :row="3" />
 ```
 
 ### 显示头像
@@ -29,7 +29,7 @@ app.use(Skeleton);
 通过 `avatar` 属性显示头像占位图。
 
 ```html
-<hello-skeleton title avatar :row="3" />
+<icloudata-skeleton title avatar :row="3" />
 ```
 
 ### 展示子组件
@@ -37,9 +37,9 @@ app.use(Skeleton);
 将 `loading` 属性设置成 `false` 表示内容加载完成，此时会隐藏占位图，并显示 `Skeleton` 的子组件。
 
 ```html
-<hello-skeleton title avatar :row="3" :loading="loading">
+<icloudata-skeleton title avatar :row="3" :loading="loading">
   <div>实际内容</div>
-</van-skeleton>
+</icloudata-skeleton>
 ```
 
 ```js

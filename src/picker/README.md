@@ -8,7 +8,7 @@ The Picker component is usually used with [Popup](#/en-US/popup) Component.
 
 ```js
 import { createApp } from 'vue';
-import { Picker } from 'hello';
+import { Picker } from 'cloudata';
 
 const app = createApp();
 app.use(Picker);
@@ -19,7 +19,7 @@ app.use(Picker);
 ### Basic Usage
 
 ```html
-<hello-picker
+<icloudata-picker
   title="Title"
   :columns="columns"
   @confirm="onConfirm"
@@ -29,7 +29,7 @@ app.use(Picker);
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -58,13 +58,13 @@ export default {
 ### Default Index
 
 ```html
-<hello-picker title="Title" :columns="columns" :default-index="2" />
+<icloudata-picker title="Title" :columns="columns" :default-index="2" />
 ```
 
 ### Multiple Columns
 
 ```html
-<hello-picker title="Title" :columns="columns" />
+<icloudata-picker title="Title" :columns="columns" />
 ```
 
 ```js
@@ -89,7 +89,7 @@ export default {
 ### Cascade
 
 ```html
-<hello-picker title="Title" :columns="columns" />
+<icloudata-picker title="Title" :columns="columns" />
 ```
 
 ```js
@@ -132,7 +132,7 @@ export default {
 ### Disable option
 
 ```html
-<hello-picker :columns="columns" />
+<icloudata-picker :columns="columns" />
 ```
 
 ```js
@@ -152,7 +152,7 @@ export default {
 ### Set Column Values
 
 ```html
-<hello-picker ref="picker" title="Title" :columns="columns" @change="onChange" />
+<icloudata-picker ref="picker" title="Title" :columns="columns" @change="onChange" />
 ```
 
 ```js
@@ -189,7 +189,7 @@ export default {
 When Picker columns data is acquired asynchronously, use `loading` prop to show loading prompt.
 
 ```html
-<hello-picker title="Title" :columns="columns" :loading="loading" />
+<icloudata-picker title="Title" :columns="columns" :loading="loading" />
 ```
 
 ```js
@@ -215,7 +215,7 @@ export default {
 ### With Popup
 
 ```html
-<hello-field
+<icloudata-field
   readonly
   clickable
   label="City"
@@ -223,14 +223,14 @@ export default {
   placeholder="Choose City"
   @click="showPicker = true"
 />
-<hello-popup v-model:show="showPicker" round position="bottom">
-  <hello-picker
+<icloudata-popup v-model:show="showPicker" round position="bottom">
+  <icloudata-picker
     title="Title"
     :columns="columns"
     @cancel="showPicker = false"
     @confirm="onConfirm"
   />
-</van-popup>
+</icloudata-popup>
 ```
 
 ```js

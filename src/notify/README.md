@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Notify } from 'hello';
+import { Notify } from 'cloudata';
 
 const app = createApp();
 app.use(Notify);
@@ -57,11 +57,11 @@ export default {
 ### Component Call
 
 ```html
-<hello-button type="primary" text="Component Call" @click="showNotify" />
-<hello-notify v-model:show="show" type="success">
-  <hello-icon name="bell" style="margin-right: 4px;" />
+<icloudata-button type="primary" text="Component Call" @click="showNotify" />
+<icloudata-notify v-model:show="show" type="success">
+  <icloudata-icon name="bell" style="margin-right: 4px;" />
   <span>Content</span>
-</van-notify>
+</icloudata-notify>
 ```
 
 ```js

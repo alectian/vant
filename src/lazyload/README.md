@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Lazyload } from 'hello';
+import { Lazyload } from 'cloudata';
 
 const app = createApp();
 app.use(Lazyload);

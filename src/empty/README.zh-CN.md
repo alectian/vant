@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Empty } from 'hello';
+import { Empty } from 'cloudata';
 
 const app = createApp();
 app.use(Empty);
@@ -19,7 +19,7 @@ app.use(Empty);
 ### 基础用法
 
 ```html
-<hello-empty description="描述文字" />
+<icloudata-empty description="描述文字" />
 ```
 
 ### 图片类型
@@ -28,11 +28,11 @@ Empty 组件内置了多种占位图片类型，可以在不同业务场景下�
 
 ```html
 <!-- 通用错误 -->
-<hello-empty image="error" description="描述文字" />
+<icloudata-empty image="error" description="描述文字" />
 <!-- 网络错误 -->
-<hello-empty image="network" description="描述文字" />
+<icloudata-empty image="network" description="描述文字" />
 <!-- 搜索提示 -->
-<hello-empty image="search" description="描述文字" />
+<icloudata-empty image="search" description="描述文字" />
 ```
 
 ### 自定义图片
@@ -40,7 +40,7 @@ Empty 组件内置了多种占位图片类型，可以在不同业务场景下�
 需要自定义图片时，可以在 image 属性中传入任意图片 URL。
 
 ```html
-<hello-empty
+<icloudata-empty
   class="custom-image"
   image="https://img.yzcdn.cn/vant/custom-empty-image.png"
   description="描述文字"
@@ -59,9 +59,9 @@ Empty 组件内置了多种占位图片类型，可以在不同业务场景下�
 通过默认插槽可以在 Empty 组件的下方插入内容。
 
 ```html
-<hello-empty description="描述文字">
-  <hello-button round type="danger" class="bottom-button">按钮</van-button>
-</van-empty>
+<icloudata-empty description="描述文字">
+  <icloudata-button round type="danger" class="bottom-button">按钮</icloudata-button>
+</icloudata-empty>
 
 <style>
   .bottom-button {

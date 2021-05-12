@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Uploader } from 'hello';
+import { Uploader } from 'cloudata';
 
 const app = createApp();
 app.use(Uploader);
@@ -15,7 +15,7 @@ app.use(Uploader);
 ### Basic Usage
 
 ```html
-<hello-uploader :after-read="afterRead" />
+<icloudata-uploader :after-read="afterRead" />
 ```
 
 ```js
@@ -35,7 +35,7 @@ export default {
 ### Preview File
 
 ```html
-<hello-uploader v-model="fileList" multiple />
+<icloudata-uploader v-model="fileList" multiple />
 ```
 
 ```js
@@ -58,7 +58,7 @@ export default {
 ### Upload Status
 
 ```html
-<hello-uploader v-model="fileList" :after-read="afterRead" />
+<icloudata-uploader v-model="fileList" :after-read="afterRead" />
 ```
 
 ```js
@@ -100,7 +100,7 @@ export default {
 ### Max Count
 
 ```html
-<hello-uploader v-model="fileList" multiple :max-count="2" />
+<icloudata-uploader v-model="fileList" multiple :max-count="2" />
 ```
 
 ```js
@@ -120,11 +120,11 @@ export default {
 ### Max Size
 
 ```html
-<hello-uploader multiple :max-size="500 * 1024" @oversize="onOversize" />
+<icloudata-uploader multiple :max-size="500 * 1024" @oversize="onOversize" />
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -143,19 +143,19 @@ export default {
 ### Custom Upload Area
 
 ```html
-<hello-uploader>
-  <hello-button icon="plus" type="primary">Upload Image</van-button>
-</van-uploader>
+<icloudata-uploader>
+  <icloudata-button icon="plus" type="primary">Upload Image</icloudata-button>
+</icloudata-uploader>
 ```
 
 ### Preview Cover
 
 ```html
-<hello-uploader v-model="fileList">
+<icloudata-uploader v-model="fileList">
   <template #preview-cover="{ file }">
     <div class="preview-cover van-ellipsis">{{ file.name }}</div>
   </template>
-</van-uploader>
+</icloudata-uploader>
 
 <style>
   .preview-cover {
@@ -175,11 +175,11 @@ export default {
 ### Before Read
 
 ```html
-<hello-uploader :before-read="beforeRead" />
+<icloudata-uploader :before-read="beforeRead" />
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -220,18 +220,18 @@ export default {
 Use `disabled` prop to disable uploader.
 
 ```html
-<hello-uploader disabled />
+<icloudata-uploader disabled />
 ```
 
 ### Customize Single Preview Image Style
 
 ```html
-<hello-uploader v-model="fileList" :deletable="false" />
+<icloudata-uploader v-model="fileList" :deletable="false" />
 ```
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

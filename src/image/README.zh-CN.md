@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Image as VanImage } from 'hello';
+import { Image as VanImage } from 'cloudata';
 
 const app = createApp();
 app.use(VanImage);
@@ -21,7 +21,7 @@ app.use(VanImage);
 基础用法与原生 `img` 标签一致，可以设置 `src`、`width`、`height`、`alt` 等原生属性。
 
 ```html
-<hello-image width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+<icloudata-image width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" />
 ```
 
 ### 填充模式
@@ -29,7 +29,7 @@ app.use(VanImage);
 通过 `fit` 属性可以设置图片填充模式，可选值见下方表格。
 
 ```html
-<hello-image
+<icloudata-image
   width="10rem"
   height="10rem"
   fit="contain"
@@ -42,7 +42,7 @@ app.use(VanImage);
 通过 `round` 属性可以设置图片变圆，注意当图片宽高不相等且 `fit` 为 `contain` 或 `scale-down` 时，将无法填充一个完整的圆形。
 
 ```html
-<hello-image
+<icloudata-image
   round
   width="10rem"
   height="10rem"
@@ -55,7 +55,7 @@ app.use(VanImage);
 设置 `lazy-load` 属性来开启图片懒加载，需要搭配 [Lazyload](#/zh-CN/lazyload) 组件使用。
 
 ```html
-<hello-image
+<icloudata-image
   width="100"
   height="100"
   lazy-load
@@ -65,7 +65,7 @@ app.use(VanImage);
 
 ```js
 import { createApp } from 'vue';
-import { Lazyload } from 'hello';
+import { Lazyload } from 'cloudata';
 
 const app = createApp();
 app.use(Lazyload);
@@ -76,11 +76,11 @@ app.use(Lazyload);
 `Image` 组件提供了默认的加载中提示，支持通过 `loading` 插槽自定义内容。
 
 ```html
-<hello-image src="https://img.yzcdn.cn/vant/cat.jpeg">
+<icloudata-image src="https://img.yzcdn.cn/vant/cat.jpeg">
   <template v-slot:loading>
-    <hello-loading type="spinner" size="20" />
+    <icloudata-loading type="spinner" size="20" />
   </template>
-</van-image>
+</icloudata-image>
 ```
 
 ### 加载失败提示
@@ -88,9 +88,9 @@ app.use(Lazyload);
 `Image` 组件提供了默认的加载失败提示，支持通过 `error` 插槽自定义内容。
 
 ```html
-<hello-image src="https://img.yzcdn.cn/vant/cat.jpeg">
+<icloudata-image src="https://img.yzcdn.cn/vant/cat.jpeg">
   <template v-slot:error>加载失败</template>
-</van-image>
+</icloudata-image>
 ```
 
 ## API
@@ -161,10 +161,10 @@ app.use(Lazyload);
 
 ```html
 <!-- 错误写法 -->
-<hello-image src="./image.png" />
+<icloudata-image src="./image.png" />
 
 <!-- 正确写法 -->
-<hello-image :src="require('./image.png')" />
+<icloudata-image :src="require('./image.png')" />
 ```
 
 > 对此更详细的解释可以参考 vue-loader 的[处理资源路径](https://vue-loader.vuejs.org/zh/guide/asset-url.html)章节。
@@ -179,7 +179,7 @@ app.use(Lazyload);
 </template>
 
 <script>
-import { Image } from 'hello';
+import { Image } from 'cloudata';
 
 export default {
   components: {
@@ -189,4 +189,4 @@ export default {
 <script>
 ```
 
-这是因为 \<image> 标签是原生的 SVG 标签，Vue 不允许将原生标签名注册为组件名，使用 \<hello-image> 即可规避这个问题。
+这是因为 \<image> 标签是原生的 SVG 标签，Vue 不允许将原生标签名注册为组件名，使用 \<icloudata-image> 即可规避这个问题。

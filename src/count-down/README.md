@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { CountDown } from 'hello';
+import { CountDown } from 'cloudata';
 
 const app = createApp();
 app.use(CountDown);
@@ -15,7 +15,7 @@ app.use(CountDown);
 ### Basic Usage
 
 ```html
-<hello-count-down :time="time" />
+<icloudata-count-down :time="time" />
 ```
 
 ```js
@@ -32,19 +32,19 @@ export default {
 ### Custom Format
 
 ```html
-<hello-count-down :time="time" format="DD Day, HH:mm:ss" />
+<icloudata-count-down :time="time" format="DD Day, HH:mm:ss" />
 ```
 
 ### Millisecond
 
 ```html
-<hello-count-down millisecond :time="time" format="HH:mm:ss:SS" />
+<icloudata-count-down millisecond :time="time" format="HH:mm:ss:SS" />
 ```
 
 ### Custom Style
 
 ```html
-<hello-count-down :time="time">
+<icloudata-count-down :time="time">
   <template #default="timeData">
     <span class="block">{{ timeData.hours }}</span>
     <span class="colon">:</span>
@@ -52,7 +52,7 @@ export default {
     <span class="colon">:</span>
     <span class="block">{{ timeData.seconds }}</span>
   </template>
-</van-count-down>
+</icloudata-count-down>
 
 <style>
   .colon {
@@ -74,7 +74,7 @@ export default {
 ### Manual Control
 
 ```html
-<hello-count-down
+<icloudata-count-down
   ref="countDown"
   millisecond
   :time="3000"
@@ -82,15 +82,15 @@ export default {
   format="ss:SSS"
   @finish="onFinish"
 />
-<hello-grid clickable :column-num="3">
-  <hello-grid-item text="Start" icon="play-circle-o" @click="start" />
-  <hello-grid-item text="Pause" icon="pause-circle-o" @click="pause" />
-  <hello-grid-item text="Reset" icon="replay" @click="reset" />
-</van-grid>
+<icloudata-grid clickable :column-num="3">
+  <icloudata-grid-item text="Start" icon="play-circle-o" @click="start" />
+  <icloudata-grid-item text="Pause" icon="pause-circle-o" @click="pause" />
+  <icloudata-grid-item text="Reset" icon="replay" @click="reset" />
+</icloudata-grid>
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

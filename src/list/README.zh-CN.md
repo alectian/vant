@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { List } from 'hello';
+import { List } from 'cloudata';
 
 const app = createApp();
 app.use(List);
@@ -21,14 +21,14 @@ app.use(List);
 List 组件通过 `loading` 和 `finished` 两个变量控制加载状态，当组件滚动到底部时，会触发 `load` 事件并将 `loading` 设置成 `true`。此时可以发起异步操作并更新数据，数据更新完毕后，将 `loading` 设置成 `false` 即可。若数据已全部加载完毕，则直接将 `finished` 设置成 `true` 即可。
 
 ```html
-<hello-list
+<icloudata-list
   v-model:loading="state.loading"
   :finished="state.finished"
   finished-text="没有更多了"
   @load="onLoad"
 >
-  <hello-cell v-for="item in state.list" :key="item" :title="item" />
-</van-list>
+  <icloudata-cell v-for="item in state.list" :key="item" :title="item" />
+</icloudata-list>
 ```
 
 ```js
@@ -73,14 +73,14 @@ export default {
 若列表数据加载失败，将 `error` 设置成 `true` 即可显示错误提示，用户点击错误提示后会重新触发 load 事件。
 
 ```html
-<hello-list
+<icloudata-list
   v-model:loading="state.loading"
   v-model:error="state.error"
   error-text="请求失败，点击重新加载"
   @load="onLoad"
 >
-  <hello-cell v-for="item in state.list" :key="item" :title="item" />
-</van-list>
+  <icloudata-cell v-for="item in state.list" :key="item" :title="item" />
+</icloudata-list>
 ```
 
 ```js
@@ -113,16 +113,16 @@ export default {
 List 组件可以与 [PullRefresh](#/zh-CN/pull-refresh) 组件结合使用，实现下拉刷新的效果。
 
 ```html
-<hello-pull-refresh v-model="state.refreshing" @refresh="onRefresh">
-  <hello-list
+<icloudata-pull-refresh v-model="state.refreshing" @refresh="onRefresh">
+  <icloudata-list
     v-model:loading="state.loading"
     :finished="state.finished"
     finished-text="没有更多了"
     @load="onLoad"
   >
-    <hello-cell v-for="item in state.list" :key="item" :title="item" />
-  </van-list>
-</van-pull-refresh>
+    <icloudata-cell v-for="item in state.list" :key="item" :title="item" />
+  </icloudata-list>
+</icloudata-pull-refresh>
 ```
 
 ```js
@@ -253,13 +253,13 @@ List 初始化后会触发一次 load 事件，用于加载第一屏的数据，
 若 List 的内容使用了 float 布局，可以在容器上添加`van-clearfix`类名来清除浮动，使得 List 能正确判断元素位置
 
 ```html
-<hello-list>
+<icloudata-list>
   <div class="van-clearfix">
     <div class="float-item" />
     <div class="float-item" />
     <div class="float-item" />
   </div>
-</van-list>
+</icloudata-list>
 ```
 
 ### 在 html、body 上设置 overflow 后一直触发加载？

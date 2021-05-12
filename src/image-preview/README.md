@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { ImagePreview } from 'hello';
+import { ImagePreview } from 'cloudata';
 
 const app = createApp();
 app.use(ImagePreview);
@@ -50,7 +50,7 @@ ImagePreview({
 ### Close Event
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 ImagePreview({
   images: [
@@ -82,13 +82,13 @@ setTimeout(() => {
 ### Component Call
 
 ```html
-<hello-image-preview
+<icloudata-image-preview
   v-model:show="state.show"
   :images="state.images"
   @change="onChange"
 >
   <template v-slot:index>Page: {{ index }}</template>
-</van-image-preview>
+</icloudata-image-preview>
 ```
 
 ```js

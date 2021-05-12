@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { TreeSelect } from 'hello';
+import { TreeSelect } from 'cloudata';
 
 const app = createApp();
 app.use(TreeSelect);
@@ -15,7 +15,7 @@ app.use(TreeSelect);
 ### Radio Mode
 
 ```html
-<hello-tree-select
+<icloudata-tree-select
   v-model:active-id="state.activeId"
   v-model:main-active-index="state.activeIndex"
   :items="items"
@@ -59,7 +59,7 @@ export default {
 ### Multiple Mode
 
 ```html
-<hello-tree-select
+<icloudata-tree-select
   v-model:active-id="state.activeIds"
   v-model:main-active-index="state.activeIndex"
   :items="items"
@@ -103,22 +103,22 @@ export default {
 ### Custom Content
 
 ```html
-<hello-tree-select
+<icloudata-tree-select
   v-model:main-active-index="activeIndex"
   height="55vw"
   :items="items"
 >
   <template #content>
-    <hello-image
+    <icloudata-image
       v-if="activeIndex === 0"
       src="https://img.yzcdn.cn/vant/apple-1.jpg"
     />
-    <hello-image
+    <icloudata-image
       v-if="activeIndex === 1"
       src="https://img.yzcdn.cn/vant/apple-2.jpg"
     />
   </template>
-</van-tree-select>
+</icloudata-tree-select>
 ```
 
 ```js
@@ -138,7 +138,7 @@ export default {
 ### Show Badge
 
 ```html
-<hello-tree-select
+<icloudata-tree-select
   v-model:main-active-index="activeIndex"
   height="55vw"
   :items="items"

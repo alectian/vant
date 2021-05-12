@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { NavBar } from 'hello';
+import { NavBar } from 'cloudata';
 
 const app = createApp();
 app.use(NavBar);
@@ -15,7 +15,7 @@ app.use(NavBar);
 ### 基础用法
 
 ```html
-<hello-nav-bar
+<icloudata-nav-bar
   title="标题"
   left-text="返回"
   right-text="按钮"
@@ -26,7 +26,7 @@ app.use(NavBar);
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -49,11 +49,11 @@ export default {
 通过插槽自定义导航栏两侧的内容。
 
 ```html
-<hello-nav-bar title="标题" left-text="返回" left-arrow>
+<icloudata-nav-bar title="标题" left-text="返回" left-arrow>
   <template #right>
-    <hello-icon name="search" size="18" />
+    <icloudata-icon name="search" size="18" />
   </template>
-</van-nav-bar>
+</icloudata-nav-bar>
 ```
 
 ## API

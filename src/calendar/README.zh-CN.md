@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Calendar } from 'hello';
+import { Calendar } from 'cloudata';
 
 const app = createApp();
 app.use(Calendar);
@@ -21,8 +21,8 @@ app.use(Calendar);
 下面演示了结合单元格来使用日历组件的用法，日期选择完成后会触发 `confirm` 事件。
 
 ```html
-<hello-cell title="选择单个日期" :value="date" @click="show = true" />
-<hello-calendar v-model:show="show" @confirm="onConfirm" />
+<icloudata-cell title="选择单个日期" :value="date" @click="show = true" />
+<icloudata-calendar v-model:show="show" @confirm="onConfirm" />
 ```
 
 ```js
@@ -53,8 +53,8 @@ export default {
 设置 `type` 为 `multiple` 后可以选择多个日期，此时 `confirm` 事件返回的 date 为数组结构，数组包含若干个选中的日期。
 
 ```html
-<hello-cell title="选择多个日期" :value="text" @click="show = true" />
-<hello-calendar v-model:show="show" type="multiple" @confirm="onConfirm" />
+<icloudata-cell title="选择多个日期" :value="text" @click="show = true" />
+<icloudata-calendar v-model:show="show" type="multiple" @confirm="onConfirm" />
 ```
 
 ```js
@@ -84,8 +84,8 @@ export default {
 设置 `type` 为 `range` 后可以选择日期区间，此时 `confirm` 事件返回的 date 为数组结构，数组第一项为开始时间，第二项为结束时间。
 
 ```html
-<hello-cell title="选择日期区间" :value="date" @click="show = true" />
-<hello-calendar v-model:show="show" type="range" @confirm="onConfirm" />
+<icloudata-cell title="选择日期区间" :value="date" @click="show = true" />
+<icloudata-calendar v-model:show="show" type="range" @confirm="onConfirm" />
 ```
 
 ```js
@@ -119,7 +119,7 @@ export default {
 将 `show-confirm` 设置为 `false` 可以隐藏确认按钮，这种情况下选择完成后会立即触发 `confirm` 事件。
 
 ```html
-<hello-calendar v-model:show="show" :show-confirm="false" />
+<icloudata-calendar v-model:show="show" :show-confirm="false" />
 ```
 
 ### 自定义颜色
@@ -127,7 +127,7 @@ export default {
 通过 `color` 属性可以自定义日历的颜色，对选中日期和底部按钮生效。
 
 ```html
-<hello-calendar v-model:show="show" color="#1989fa" />
+<icloudata-calendar v-model:show="show" color="#1989fa" />
 ```
 
 ### 自定义日期范围
@@ -135,7 +135,7 @@ export default {
 通过 `min-date` 和 `max-date` 定义日历的范围。
 
 ```html
-<hello-calendar v-model:show="show" :min-date="minDate" :max-date="maxDate" />
+<icloudata-calendar v-model:show="show" :min-date="minDate" :max-date="maxDate" />
 ```
 
 ```js
@@ -159,7 +159,7 @@ export default {
 通过 `confirm-text` 设置按钮文字，通过 `confirm-disabled-text` 设置按钮禁用时的文字。
 
 ```html
-<hello-calendar
+<icloudata-calendar
   v-model:show="show"
   type="range"
   confirm-text="完成"
@@ -172,7 +172,7 @@ export default {
 通过传入 `formatter` 函数来对日历上每一格的内容进行格式化。
 
 ```html
-<hello-calendar v-model:show="show" type="range" :formatter="formatter" />
+<icloudata-calendar v-model:show="show" type="range" :formatter="formatter" />
 ```
 
 ```js
@@ -213,7 +213,7 @@ export default {
 通过 `position` 属性自定义弹出层的弹出位置，可选值为 `top`、`left`、`right`。
 
 ```html
-<hello-calendar v-model:show="show" :round="false" position="right" />
+<icloudata-calendar v-model:show="show" :round="false" position="right" />
 ```
 
 ### 日期区间最大范围
@@ -221,7 +221,7 @@ export default {
 选择日期区间时，可以通过 `max-range` 属性来指定最多可选天数，选择的范围超过最多可选天数时，会弹出相应的提示文案。
 
 ```html
-<hello-calendar type="range" :max-range="3" :style="{ height: '500px' }" />
+<icloudata-calendar type="range" :max-range="3" :style="{ height: '500px' }" />
 ```
 
 ### 自定义周起始日
@@ -229,7 +229,7 @@ export default {
 通过 `first-day-of-week` 属性设置一周从哪天开始。
 
 ```html
-<hello-calendar first-day-of-week="1" />
+<icloudata-calendar first-day-of-week="1" />
 ```
 
 ### 平铺展示
@@ -237,7 +237,7 @@ export default {
 将 `poppable` 设置为 `false`，日历会直接展示在页面内，而不是以弹层的形式出现。
 
 ```html
-<hello-calendar
+<icloudata-calendar
   title="日历"
   :poppable="false"
   :show-confirm="false"

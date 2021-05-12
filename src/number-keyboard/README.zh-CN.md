@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { NumberKeyboard } from 'hello';
+import { NumberKeyboard } from 'cloudata';
 
 const app = createApp();
 app.use(NumberKeyboard);
@@ -21,8 +21,8 @@ app.use(NumberKeyboard);
 数字键盘提供了 `input`、`delete`、`blur` 事件，分别对应输入内容、删除内容和失去焦点的动作。
 
 ```html
-<hello-cell @touchstart.stop="show = true">弹出默认键盘</van-cell>
-<hello-number-keyboard
+<icloudata-cell @touchstart.stop="show = true">弹出默认键盘</icloudata-cell>
+<icloudata-number-keyboard
   :show="show"
   @blur="show = false"
   @input="onInput"
@@ -32,7 +32,7 @@ app.use(NumberKeyboard);
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -60,7 +60,7 @@ export default {
 将 theme 属性设置为 `custom` 来展示键盘的右侧栏，常用于输入金额的场景。
 
 ```html
-<hello-number-keyboard
+<icloudata-number-keyboard
   :show="show"
   theme="custom"
   extra-key="."
@@ -76,10 +76,10 @@ export default {
 通过 `extra-key` 属性可以设置左下角按键内容，比如需要输入身份证号时，可以将 `extra-key` 设置为 `X`。
 
 ```html
-<hello-cell plain type="primary" @touchstart.stop="show = true">
+<icloudata-cell plain type="primary" @touchstart.stop="show = true">
   弹出身份证号键盘
-</van-cell>
-<hello-number-keyboard
+</icloudata-cell>
+<icloudata-number-keyboard
   :show="show"
   extra-key="X"
   close-button-text="完成"
@@ -94,10 +94,10 @@ export default {
 通过 `title` 属性可以设置键盘标题。
 
 ```html
-<hello-cell plain type="primary" @touchstart.stop="show = true">
+<icloudata-cell plain type="primary" @touchstart.stop="show = true">
   弹出带标题的键盘
-</van-cell>
-<hello-number-keyboard
+</icloudata-cell>
+<icloudata-number-keyboard
   :show="show"
   title="键盘标题"
   extra-key="."
@@ -113,10 +113,10 @@ export default {
 当 theme 为 `custom` 时，支持以数组的形式配置两个 `extra-key`。
 
 ```html
-<hello-cell plain type="primary" @touchstart.stop="show = true">
+<icloudata-cell plain type="primary" @touchstart.stop="show = true">
   弹出配置多个按键的键盘
-</van-cell>
-<hello-number-keyboard
+</icloudata-cell>
+<icloudata-number-keyboard
   :show="show"
   :extra-key="['00', '.']"
   close-button-text="完成"
@@ -131,8 +131,8 @@ export default {
 可以通过 `v-model` 绑定键盘当前输入值。
 
 ```html
-<hello-field readonly clickable :value="value" @touchstart.stop="show = true" />
-<hello-number-keyboard
+<icloudata-field readonly clickable :value="value" @touchstart.stop="show = true" />
+<icloudata-number-keyboard
   v-model="value"
   :show="show"
   :maxlength="6"

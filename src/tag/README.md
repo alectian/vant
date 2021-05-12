@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Tag } from 'hello';
+import { Tag } from 'cloudata';
 
 const app = createApp();
 app.use(Tag);
@@ -15,36 +15,36 @@ app.use(Tag);
 ### Basic Usage
 
 ```html
-<hello-tag type="primary">Tag</van-tag>
-<hello-tag type="success">Tag</van-tag>
-<hello-tag type="danger">Tag</van-tag>
-<hello-tag type="warning">Tag</van-tag>
+<icloudata-tag type="primary">Tag</icloudata-tag>
+<icloudata-tag type="success">Tag</icloudata-tag>
+<icloudata-tag type="danger">Tag</icloudata-tag>
+<icloudata-tag type="warning">Tag</icloudata-tag>
 ```
 
 ### Plain style
 
 ```html
-<hello-tag plain type="primary">Tag</van-tag>
+<icloudata-tag plain type="primary">Tag</icloudata-tag>
 ```
 
 ### Round style
 
 ```html
-<hello-tag round type="primary">Tag</van-tag>
+<icloudata-tag round type="primary">Tag</icloudata-tag>
 ```
 
 ### Mark style
 
 ```html
-<hello-tag mark type="primary">Tag</van-tag>
+<icloudata-tag mark type="primary">Tag</icloudata-tag>
 ```
 
 ### Closeable
 
 ```html
-<hello-tag :show="show" closeable size="medium" type="primary" @close="close">
+<icloudata-tag :show="show" closeable size="medium" type="primary" @close="close">
   Tag
-</van-tag>
+</icloudata-tag>
 ```
 
 ```js
@@ -68,17 +68,17 @@ export default {
 ### Custom Size
 
 ```html
-<hello-tag type="primary">Tag</van-tag>
-<hello-tag type="primary" size="medium">Tag</van-tag>
-<hello-tag type="primary" size="large">Tag</van-tag>
+<icloudata-tag type="primary">Tag</icloudata-tag>
+<icloudata-tag type="primary" size="medium">Tag</icloudata-tag>
+<icloudata-tag type="primary" size="large">Tag</icloudata-tag>
 ```
 
 ### Custom Color
 
 ```html
-<hello-tag color="#7232dd">Tag</van-tag>
-<hello-tag color="#ffe1e1" text-color="#ad0000">Tag</van-tag>
-<hello-tag color="#7232dd" plain>Tag</van-tag>
+<icloudata-tag color="#7232dd">Tag</icloudata-tag>
+<icloudata-tag color="#ffe1e1" text-color="#ad0000">Tag</icloudata-tag>
+<icloudata-tag color="#7232dd" plain>Tag</icloudata-tag>
 ```
 
 ## API

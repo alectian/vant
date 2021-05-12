@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Card } from 'hello';
+import { Card } from 'cloudata';
 
 const app = createApp();
 app.use(Card);
@@ -15,7 +15,7 @@ app.use(Card);
 ### Basic Usage
 
 ```html
-<hello-card
+<icloudata-card
   num="2"
   price="2.00"
   title="Title"
@@ -27,7 +27,7 @@ app.use(Card);
 ### Discount Info
 
 ```html
-<hello-card
+<icloudata-card
   num="2"
   tag="Tag"
   price="2.00"
@@ -43,7 +43,7 @@ app.use(Card);
 Use slot to custom content.
 
 ```html
-<hello-card
+<icloudata-card
   num="2"
   title="Title"
   desc="Description"
@@ -51,14 +51,14 @@ Use slot to custom content.
   thumb="https://img.yzcdn.cn/vant/ipad.jpeg"
 >
   <template #tags>
-    <hello-tag plain type="danger">Tag</van-tag>
-    <hello-tag plain type="danger">Tag</van-tag>
+    <icloudata-tag plain type="danger">Tag</icloudata-tag>
+    <icloudata-tag plain type="danger">Tag</icloudata-tag>
   </template>
   <template #footer>
-    <hello-button size="mini">Button</van-button>
-    <hello-button size="mini">Button</van-button>
+    <icloudata-button size="mini">Button</icloudata-button>
+    <icloudata-button size="mini">Button</icloudata-button>
   </template>
-</van-card>
+</icloudata-card>
 ```
 
 ## API

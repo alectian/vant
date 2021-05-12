@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Sticky } from 'hello';
+import { Sticky } from 'cloudata';
 
 const app = createApp();
 app.use(Sticky);
@@ -15,26 +15,26 @@ app.use(Sticky);
 ### Basic Usage
 
 ```html
-<hello-sticky>
-  <hello-button type="primary">Basic Usage</van-button>
-</van-sticky>
+<icloudata-sticky>
+  <icloudata-button type="primary">Basic Usage</icloudata-button>
+</icloudata-sticky>
 ```
 
 ### Offset Top
 
 ```html
-<hello-sticky :offset-top="50">
-  <hello-button type="primary">Offset Top</van-button>
-</van-sticky>
+<icloudata-sticky :offset-top="50">
+  <icloudata-button type="primary">Offset Top</icloudata-button>
+</icloudata-sticky>
 ```
 
 ### Set Container
 
 ```html
 <div ref="container" style="height: 150px;">
-  <hello-sticky :container="container">
-    <hello-button type="warning">Set Container</van-button>
-  </van-sticky>
+  <icloudata-sticky :container="container">
+    <icloudata-button type="warning">Set Container</icloudata-button>
+  </icloudata-sticky>
 </div>
 ```
 

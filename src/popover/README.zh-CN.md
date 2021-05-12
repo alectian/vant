@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Popover } from 'hello';
+import { Popover } from 'cloudata';
 
 const app = createApp();
 app.use(Popover);
@@ -21,16 +21,16 @@ app.use(Popover);
 当 Popover 弹出时，会基于 `reference` 插槽的内容进行定位。
 
 ```html
-<hello-popover v-model:show="showPopover" :actions="actions" @select="onSelect">
+<icloudata-popover v-model:show="showPopover" :actions="actions" @select="onSelect">
   <template #reference>
-    <hello-button type="primary">浅色风格</van-button>
+    <icloudata-button type="primary">浅色风格</icloudata-button>
   </template>
-</van-popover>
+</icloudata-popover>
 ```
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -61,11 +61,11 @@ export default {
 Popover 支持浅色和深色两种风格，默认为浅色风格，将 `theme` 属性设置为 `dark` 可切换为深色风格。
 
 ```html
-<hello-popover v-model:show="showPopover" theme="dark" :actions="actions">
+<icloudata-popover v-model:show="showPopover" theme="dark" :actions="actions">
   <template #reference>
-    <hello-button type="primary">深色风格</van-button>
+    <icloudata-button type="primary">深色风格</icloudata-button>
   </template>
-</van-popover>
+</icloudata-popover>
 ```
 
 ```js
@@ -93,7 +93,7 @@ export default {
 通过 `placement` 属性来控制气泡的弹出位置。
 
 ```html
-<hello-popover placement="top" />
+<icloudata-popover placement="top" />
 ```
 
 `placement` 支持以下值：
@@ -118,11 +118,11 @@ bottom-end    # 底部右侧位置
 在 `actions` 数组中，可以通过 `icon` 字段来定义选项的图标，支持传入[图标名称](#/zh-CN/icon)或图片链接。
 
 ```html
-<hello-popover v-model:show="showPopover" :actions="actions">
+<icloudata-popover v-model:show="showPopover" :actions="actions">
   <template #reference>
-    <hello-button type="primary">展示图标</van-button>
+    <icloudata-button type="primary">展示图标</icloudata-button>
   </template>
-</van-popover>
+</icloudata-popover>
 ```
 
 ```js
@@ -150,11 +150,11 @@ export default {
 在 `actions` 数组中，可以通过 `disabled` 字段来禁用某个选项。
 
 ```html
-<hello-popover v-model:show="showPopover" :actions="actions">
+<icloudata-popover v-model:show="showPopover" :actions="actions">
   <template #reference>
-    <hello-button type="primary">禁用选项</van-button>
+    <icloudata-button type="primary">禁用选项</icloudata-button>
   </template>
-</van-popover>
+</icloudata-popover>
 ```
 
 ```js
@@ -182,26 +182,26 @@ export default {
 通过默认插槽，可以在 Popover 内部放置任意内容。
 
 ```html
-<hello-popover v-model:show="showPopover">
-  <hello-grid
+<icloudata-popover v-model:show="showPopover">
+  <icloudata-grid
     square
     clickable
     :border="false"
     column-num="3"
     style="width: 240px;"
   >
-    <hello-grid-item
+    <icloudata-grid-item
       v-for="i in 6"
       :key="i"
       text="选项"
       icon="photo-o"
       @click="showPopover = false"
     />
-  </van-grid>
+  </icloudata-grid>
   <template #reference>
-    <hello-button type="primary">自定义内容</van-button>
+    <icloudata-button type="primary">自定义内容</icloudata-button>
   </template>
-</van-popover>
+</icloudata-popover>
 ```
 
 ```js

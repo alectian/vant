@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Cascader } from 'hello';
+import { Cascader } from 'cloudata';
 
 const app = createApp();
 app.use(Cascader);
@@ -21,7 +21,7 @@ app.use(Cascader);
 级联选择组件可以搭配 Field 和 Popup 组件使用，示例如下：
 
 ```html
-<hello-field
+<icloudata-field
   v-model="state.fieldValue"
   is-link
   readonly
@@ -29,15 +29,15 @@ app.use(Cascader);
   placeholder="请选择所在地区"
   @click="state.show = true"
 />
-<hello-popup v-model:show="state.show" round position="bottom">
-  <hello-cascader
+<icloudata-popup v-model:show="state.show" round position="bottom">
+  <icloudata-cascader
     v-model="state.cascaderValue"
     title="请选择所在地区"
     :options="options"
     @close="state.show = false"
     @finish="onFinish"
   />
-</van-popup>
+</icloudata-popup>
 ```
 
 ```js
@@ -83,7 +83,7 @@ export default {
 通过 `active-color` 属性来设置选中状态的高亮颜色。
 
 ```html
-<hello-cascader
+<icloudata-cascader
   v-model="state.cascaderValue"
   title="请选择所在地区"
   :options="options"
@@ -98,7 +98,7 @@ export default {
 可以监听 `change` 事件并动态设置 `options`，实现异步加载选项。
 
 ```html
-<hello-field
+<icloudata-field
   v-model="state.fieldValue"
   is-link
   readonly
@@ -106,8 +106,8 @@ export default {
   placeholder="请选择所在地区"
   @click="state.show = true"
 />
-<hello-popup v-model:show="state.show" round position="bottom">
-  <hello-cascader
+<icloudata-popup v-model:show="state.show" round position="bottom">
+  <icloudata-cascader
     v-model="state.cascaderValue"
     title="请选择所在地区"
     :options="state.options"
@@ -115,7 +115,7 @@ export default {
     @change="onChange"
     @finish="onFinish"
   />
-</van-popup>
+</icloudata-popup>
 ```
 
 ```js

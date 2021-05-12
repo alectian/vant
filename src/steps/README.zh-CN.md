@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Step, Steps } from 'hello';
+import { Step, Steps } from 'cloudata';
 
 const app = createApp();
 app.use(Step);
@@ -22,12 +22,12 @@ app.use(Steps);
 `active` 属性表示当前步骤的索引，从 0 起计。
 
 ```html
-<hello-steps :active="active">
-  <hello-step>买家下单</van-step>
-  <hello-step>商家接单</van-step>
-  <hello-step>买家提货</van-step>
-  <hello-step>交易完成</van-step>
-</van-steps>
+<icloudata-steps :active="active">
+  <icloudata-step>买家下单</icloudata-step>
+  <icloudata-step>商家接单</icloudata-step>
+  <icloudata-step>买家提货</icloudata-step>
+  <icloudata-step>交易完成</icloudata-step>
+</icloudata-steps>
 ```
 
 ```js
@@ -46,12 +46,12 @@ export default {
 可以通过 `active-icon` 和 `active-color` 属性设置激活状态下的图标和颜色。
 
 ```html
-<hello-steps :active="active" active-icon="success" active-color="#38f">
-  <hello-step>买家下单</van-step>
-  <hello-step>商家接单</van-step>
-  <hello-step>买家提货</van-step>
-  <hello-step>交易完成</van-step>
-</van-steps>
+<icloudata-steps :active="active" active-icon="success" active-color="#38f">
+  <icloudata-step>买家下单</icloudata-step>
+  <icloudata-step>商家接单</icloudata-step>
+  <icloudata-step>买家提货</icloudata-step>
+  <icloudata-step>交易完成</icloudata-step>
+</icloudata-steps>
 ```
 
 ### 竖向步骤条
@@ -59,20 +59,20 @@ export default {
 可以通过设置 `direction` 属性来改变步骤条的显示方向。
 
 ```html
-<hello-steps direction="vertical" :active="0">
-  <hello-step>
+<icloudata-steps direction="vertical" :active="0">
+  <icloudata-step>
     <h3>【城市】物流状态1</h3>
     <p>2016-07-12 12:40</p>
-  </van-step>
-  <hello-step>
+  </icloudata-step>
+  <icloudata-step>
     <h3>【城市】物流状态2</h3>
     <p>2016-07-11 10:00</p>
-  </van-step>
-  <hello-step>
+  </icloudata-step>
+  <icloudata-step>
     <h3>快件已发货</h3>
     <p>2016-07-10 09:30</p>
-  </van-step>
-</van-steps>
+  </icloudata-step>
+</icloudata-steps>
 ```
 
 ## API

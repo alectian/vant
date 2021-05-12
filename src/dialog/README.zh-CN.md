@@ -11,7 +11,7 @@
 Dialog 是一个函数，调用后会直接在页面中弹出相应的模态框。
 
 ```js
-import { Dialog } from 'hello';
+import { Dialog } from 'cloudata';
 
 Dialog({ message: '提示' });
 ```
@@ -22,7 +22,7 @@ Dialog({ message: '提示' });
 
 ```js
 import { createApp } from 'vue';
-import { Dialog } from 'hello';
+import { Dialog } from 'cloudata';
 
 // 全局注册
 const app = createApp();
@@ -138,9 +138,9 @@ export default {
 如果需要在弹窗内嵌入组件或其他自定义内容，可以使用组件调用的方式。
 
 ```html
-<hello-dialog v-model:show="show" title="标题" show-cancel-button>
+<icloudata-dialog v-model:show="show" title="标题" show-cancel-button>
   <img src="https://img.yzcdn.cn/vant/apple-3.jpg" />
-</van-dialog>
+</icloudata-dialog>
 ```
 
 ```js

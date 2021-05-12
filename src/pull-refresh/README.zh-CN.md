@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { PullRefresh } from 'hello';
+import { PullRefresh } from 'cloudata';
 
 const app = createApp();
 app.use(PullRefresh);
@@ -21,14 +21,14 @@ app.use(PullRefresh);
 下拉刷新时会触发 `refresh` 事件，在事件的回调函数中可以进行同步或异步操作，操作完成后将 `v-model` 设置为 `false`，表示加载完成。
 
 ```html
-<hello-pull-refresh v-model="state.loading" @refresh="onRefresh">
+<icloudata-pull-refresh v-model="state.loading" @refresh="onRefresh">
   <p>刷新次数: {{ state.count }}</p>
-</van-pull-refresh>
+</icloudata-pull-refresh>
 ```
 
 ```js
 import { reactive } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -57,13 +57,13 @@ export default {
 通过 `success-text` 可以设置刷新成功后的顶部提示文案。
 
 ```html
-<hello-pull-refresh
+<icloudata-pull-refresh
   v-model="isLoading"
   success-text="刷新成功"
   @refresh="onRefresh"
 >
   <p>刷新次数: {{ count }}</p>
-</van-pull-refresh>
+</icloudata-pull-refresh>
 ```
 
 ### 自定义提示
@@ -71,7 +71,7 @@ export default {
 通过插槽可以自定义下拉刷新过程中的提示内容。
 
 ```html
-<hello-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
+<icloudata-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
   <!-- 下拉提示，通过 scale 实现一个缩放效果 -->
   <template #pulling="props">
     <img
@@ -91,7 +91,7 @@ export default {
     <img class="doge" src="https://img.yzcdn.cn/vant/doge-fire.jpg" />
   </template>
   <p>刷新次数: {{ count }}</p>
-</van-pull-refresh>
+</icloudata-pull-refresh>
 
 <style>
   .doge {
@@ -153,7 +153,7 @@ export default {
 默认情况下，下拉区域的高度是和内容高度保持一致的，如果需要让下拉区域始终为全屏，可以给 PullRefresh 设置一个与屏幕大小相等的最小高度：
 
 ```html
-<hello-pull-refresh style="min-height: 100vh;" />
+<icloudata-pull-refresh style="min-height: 100vh;" />
 ```
 
 ### 在桌面端无法操作组件？

@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Sidebar, SidebarItem } from 'hello';
+import { Sidebar, SidebarItem } from 'cloudata';
 
 const app = createApp();
 app.use(Sidebar);
@@ -16,11 +16,11 @@ app.use(SidebarItem);
 ### Basic Usage
 
 ```html
-<hello-sidebar v-model="active">
-  <hello-sidebar-item title="Title" />
-  <hello-sidebar-item title="Title" />
-  <hello-sidebar-item title="Title" />
-</van-sidebar>
+<icloudata-sidebar v-model="active">
+  <icloudata-sidebar-item title="Title" />
+  <icloudata-sidebar-item title="Title" />
+  <icloudata-sidebar-item title="Title" />
+</icloudata-sidebar>
 ```
 
 ```js
@@ -37,36 +37,36 @@ export default {
 ### Show Badge
 
 ```html
-<hello-sidebar v-model="active">
-  <hello-sidebar-item title="Title" dot />
-  <hello-sidebar-item title="Title" badge="5" />
-  <hello-sidebar-item title="Title" badge="20" />
-</van-sidebar>
+<icloudata-sidebar v-model="active">
+  <icloudata-sidebar-item title="Title" dot />
+  <icloudata-sidebar-item title="Title" badge="5" />
+  <icloudata-sidebar-item title="Title" badge="20" />
+</icloudata-sidebar>
 ```
 
 ### Disabled
 
 ```html
-<hello-sidebar v-model="active">
-  <hello-sidebar-item title="Title" />
-  <hello-sidebar-item title="Title" disabled />
-  <hello-sidebar-item title="Title" />
-</van-sidebar>
+<icloudata-sidebar v-model="active">
+  <icloudata-sidebar-item title="Title" />
+  <icloudata-sidebar-item title="Title" disabled />
+  <icloudata-sidebar-item title="Title" />
+</icloudata-sidebar>
 ```
 
 ### Change Event
 
 ```html
-<hello-sidebar v-model="active" @change="onChange">
-  <hello-sidebar-item title="Title 1" />
-  <hello-sidebar-item title="Title 2" />
-  <hello-sidebar-item title="Title 3" />
-</van-sidebar>
+<icloudata-sidebar v-model="active" @change="onChange">
+  <icloudata-sidebar-item title="Title 1" />
+  <icloudata-sidebar-item title="Title 2" />
+  <icloudata-sidebar-item title="Title 3" />
+</icloudata-sidebar>
 ```
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

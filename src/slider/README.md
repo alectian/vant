@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Slider } from 'hello';
+import { Slider } from 'cloudata';
 
 const app = createApp();
 app.use(Slider);
@@ -15,12 +15,12 @@ app.use(Slider);
 ### Basic Usage
 
 ```html
-<hello-slider v-model="value" @change="onChange" />
+<icloudata-slider v-model="value" @change="onChange" />
 ```
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -41,12 +41,12 @@ export default {
 Add `range` attribute to open dual thumb mode.
 
 ```html
-<hello-slider v-model="value" range @change="onChange" />
+<icloudata-slider v-model="value" range @change="onChange" />
 ```
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -66,35 +66,35 @@ export default {
 ### Range
 
 ```html
-<hello-slider v-model="value" :min="-50" :max="50" />
+<icloudata-slider v-model="value" :min="-50" :max="50" />
 ```
 
 ### Disabled
 
 ```html
-<hello-slider v-model="value" disabled />
+<icloudata-slider v-model="value" disabled />
 ```
 
 ### Step size
 
 ```html
-<hello-slider v-model="value" :step="10" />
+<icloudata-slider v-model="value" :step="10" />
 ```
 
 ### Custom style
 
 ```html
-<hello-slider v-model="value" bar-height="4px" active-color="#ee0a24" />
+<icloudata-slider v-model="value" bar-height="4px" active-color="#ee0a24" />
 ```
 
 ### Custom button
 
 ```html
-<hello-slider v-model="value" active-color="#ee0a24">
+<icloudata-slider v-model="value" active-color="#ee0a24">
   <template #button>
     <div class="custom-button">{{ value }}</div>
   </template>
-</van-slider>
+</icloudata-slider>
 
 <style>
   .custom-button {
@@ -113,8 +113,8 @@ export default {
 
 ```html
 <div :style="{ height: '150px' }">
-  <hello-slider v-model="value" vertical @change="onChange" />
-  <hello-slider
+  <icloudata-slider v-model="value" vertical @change="onChange" />
+  <icloudata-slider
     v-model="value2"
     range
     vertical
@@ -126,7 +126,7 @@ export default {
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

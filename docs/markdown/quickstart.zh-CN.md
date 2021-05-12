@@ -36,7 +36,7 @@ npm i vant@next -S
 <script>
   // 在 #app 标签下渲染一个按钮组件
   const app = Vue.createApp({
-    template: `<hello-button>按钮</van-button>`,
+    template: `<icloudata-button>按钮</icloudata-button>`,
   });
   app.use(vant);
 
@@ -165,19 +165,19 @@ app.use(Vant);
 在 HTML 中使用 Vant 组件时，你可能会碰到部分示例代码无法正确渲染的情况，比如下面的用法：
 
 ```html
-<hello-cell-group>
-  <hello-cell title="单元格" value="内容" />
-  <hello-cell title="单元格" value="内容" />
-</van-cell-group>
+<icloudata-cell-group>
+  <icloudata-cell title="单元格" value="内容" />
+  <icloudata-cell title="单元格" value="内容" />
+</icloudata-cell-group>
 ```
 
-这是因为 HTML 并不支持自闭合的自定义元素，也就是说 `<hello-cell />` 这样的语法是不被识别的，使用完整的闭合标签可以避免这个问题：
+这是因为 HTML 并不支持自闭合的自定义元素，也就是说 `<icloudata-cell />` 这样的语法是不被识别的，使用完整的闭合标签可以避免这个问题：
 
 ```html
-<hello-cell-group>
-  <hello-cell title="单元格" value="内容"></van-cell>
-  <hello-cell title="单元格" value="内容"></van-cell>
-</van-cell-group>
+<icloudata-cell-group>
+  <icloudata-cell title="单元格" value="内容"></icloudata-cell>
+  <icloudata-cell title="单元格" value="内容"></icloudata-cell>
+</icloudata-cell-group>
 ```
 
 在单文件组件、字符串模板和 JSX 中可以使用自闭合的自定义元素，因此不会出现这个问题。

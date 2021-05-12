@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { IndexBar } from 'hello';
+import { IndexBar } from 'cloudata';
 
 const app = createApp();
 app.use(IndexBar);
@@ -16,37 +16,37 @@ app.use(IndexAnchor);
 ### Basic Usage
 
 ```html
-<hello-index-bar>
-  <hello-index-anchor index="A" />
-  <hello-cell title="Text" />
-  <hello-cell title="Text" />
-  <hello-cell title="Text" />
+<icloudata-index-bar>
+  <icloudata-index-anchor index="A" />
+  <icloudata-cell title="Text" />
+  <icloudata-cell title="Text" />
+  <icloudata-cell title="Text" />
 
-  <hello-index-anchor index="B" />
-  <hello-cell title="Text" />
-  <hello-cell title="Text" />
-  <hello-cell title="Text" />
+  <icloudata-index-anchor index="B" />
+  <icloudata-cell title="Text" />
+  <icloudata-cell title="Text" />
+  <icloudata-cell title="Text" />
 
   ...
-</van-index-bar>
+</icloudata-index-bar>
 ```
 
 ### Custom Index List
 
 ```html
-<hello-index-bar :index-list="indexList">
-  <hello-index-anchor index="1">Title 1</van-index-anchor>
-  <hello-cell title="Text" />
-  <hello-cell title="Text" />
-  <hello-cell title="Text" />
+<icloudata-index-bar :index-list="indexList">
+  <icloudata-index-anchor index="1">Title 1</icloudata-index-anchor>
+  <icloudata-cell title="Text" />
+  <icloudata-cell title="Text" />
+  <icloudata-cell title="Text" />
 
-  <hello-index-anchor index="2">Title 2</van-index-anchor>
-  <hello-cell title="Text" />
-  <hello-cell title="Text" />
-  <hello-cell title="Text" />
+  <icloudata-index-anchor index="2">Title 2</icloudata-index-anchor>
+  <icloudata-cell title="Text" />
+  <icloudata-cell title="Text" />
+  <icloudata-cell title="Text" />
 
   ...
-</van-index-bar>
+</icloudata-index-bar>
 ```
 
 ```js

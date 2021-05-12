@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { ActionBar, ActionBarIcon, ActionBarButton } from 'hello';
+import { ActionBar, ActionBarIcon, ActionBarButton } from 'cloudata';
 
 const app = createApp();
 app.use(ActionBar);
@@ -17,16 +17,16 @@ app.use(ActionBarButton);
 ### 基础用法
 
 ```html
-<hello-action-bar>
-  <hello-action-bar-icon icon="chat-o" text="客服" @click="onClickIcon" />
-  <hello-action-bar-icon icon="cart-o" text="购物车" @click="onClickIcon" />
-  <hello-action-bar-icon icon="shop-o" text="店铺" @click="onClickIcon" />
-  <hello-action-bar-button type="danger" text="立即购买" @click="onClickButton" />
-</van-action-bar>
+<icloudata-action-bar>
+  <icloudata-action-bar-icon icon="chat-o" text="客服" @click="onClickIcon" />
+  <icloudata-action-bar-icon icon="cart-o" text="购物车" @click="onClickIcon" />
+  <icloudata-action-bar-icon icon="shop-o" text="店铺" @click="onClickIcon" />
+  <icloudata-action-bar-button type="danger" text="立即购买" @click="onClickButton" />
+</icloudata-action-bar>
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -49,13 +49,13 @@ export default {
 在 ActionBarIcon 组件上设置 `dot` 属性后，会在图标右上角展示一个小红点；设置 `badge` 属性后，会在图标右上角展示相应的徽标。
 
 ```html
-<hello-action-bar>
-  <hello-action-bar-icon icon="chat-o" text="客服" dot />
-  <hello-action-bar-icon icon="cart-o" text="购物车" badge="5" />
-  <hello-action-bar-icon icon="shop-o" text="店铺" badge="12" />
-  <hello-action-bar-button type="warning" text="加入购物车" />
-  <hello-action-bar-button type="danger" text="立即购买" />
-</van-action-bar>
+<icloudata-action-bar>
+  <icloudata-action-bar-icon icon="chat-o" text="客服" dot />
+  <icloudata-action-bar-icon icon="cart-o" text="购物车" badge="5" />
+  <icloudata-action-bar-icon icon="shop-o" text="店铺" badge="12" />
+  <icloudata-action-bar-button type="warning" text="加入购物车" />
+  <icloudata-action-bar-button type="danger" text="立即购买" />
+</icloudata-action-bar>
 ```
 
 ### 自定义图标颜色
@@ -63,13 +63,13 @@ export default {
 通过 ActionBarIcon 的 `color` 属性可以自定义图标的颜色。
 
 ```html
-<hello-action-bar>
-  <hello-action-bar-icon icon="chat-o" text="客服" color="#ee0a24" />
-  <hello-action-bar-icon icon="cart-o" text="购物车" />
-  <hello-action-bar-icon icon="star" text="已收藏" color="#ff5000" />
-  <hello-action-bar-button type="warning" text="加入购物车" />
-  <hello-action-bar-button type="danger" text="立即购买" />
-</van-action-bar>
+<icloudata-action-bar>
+  <icloudata-action-bar-icon icon="chat-o" text="客服" color="#ee0a24" />
+  <icloudata-action-bar-icon icon="cart-o" text="购物车" />
+  <icloudata-action-bar-icon icon="star" text="已收藏" color="#ff5000" />
+  <icloudata-action-bar-button type="warning" text="加入购物车" />
+  <icloudata-action-bar-button type="danger" text="立即购买" />
+</icloudata-action-bar>
 ```
 
 ### 自定义按钮颜色
@@ -77,12 +77,12 @@ export default {
 通过 ActionBarButton 的 `color` 属性可以自定义按钮的颜色，支持传入 `linear-gradient` 渐变色。
 
 ```html
-<hello-action-bar>
-  <hello-action-bar-icon icon="chat-o" text="客服" />
-  <hello-action-bar-icon icon="shop-o" text="店铺" />
-  <hello-action-bar-button color="#be99ff" type="warning" text="加入购物车" />
-  <hello-action-bar-button color="#7232dd" type="danger" text="立即购买" />
-</van-action-bar>
+<icloudata-action-bar>
+  <icloudata-action-bar-icon icon="chat-o" text="客服" />
+  <icloudata-action-bar-icon icon="shop-o" text="店铺" />
+  <icloudata-action-bar-button color="#be99ff" type="warning" text="加入购物车" />
+  <icloudata-action-bar-button color="#7232dd" type="danger" text="立即购买" />
+</icloudata-action-bar>
 ```
 
 ## API

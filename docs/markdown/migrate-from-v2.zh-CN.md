@@ -22,16 +22,16 @@ GoodsAction 商品导航组件重命名为 **ActionBar 行动栏**。
 
 ```html
 <!-- Vant 2 -->
-<hello-goods-action>
-  <hello-goods-action-icon text="图标" />
-  <hello-goods-action-button text="按钮" />
-</van-goods-action>
+<icloudata-goods-action>
+  <icloudata-goods-action-icon text="图标" />
+  <icloudata-goods-action-button text="按钮" />
+</icloudata-goods-action>
 
 <!-- Vant 3 -->
-<hello-action-bar>
-  <hello-action-bar-icon text="图标" />
-  <hello-action-bar-button text="按钮" />
-</van-action-bar>
+<icloudata-action-bar>
+  <icloudata-action-bar-icon text="图标" />
+  <icloudata-action-bar-button text="按钮" />
+</icloudata-action-bar>
 ```
 
 ### 废弃组件
@@ -40,14 +40,14 @@ GoodsAction 商品导航组件重命名为 **ActionBar 行动栏**。
 
 ```html
 <!-- Vant 2 -->
-<hello-switch-cell title="标题" v-model="checked" />
+<icloudata-switch-cell title="标题" v-model="checked" />
 
 <!-- Vant 3 -->
-<hello-cell center title="标题">
+<icloudata-cell center title="标题">
   <template #right-icon>
-    <hello-switch v-model="checked" size="24" />
+    <icloudata-switch v-model="checked" size="24" />
   </template>
-</van-cell>
+</icloudata-cell>
 ```
 
 ### 弹窗型组件 v-model 变更
@@ -65,10 +65,10 @@ GoodsAction 商品导航组件重命名为 **ActionBar 行动栏**。
 
 ```html
 <!-- Vant 2 -->
-<hello-popup v-model="show" />
+<icloudata-popup v-model="show" />
 
 <!-- Vant 3 -->
-<hello-popup v-model:show="show" />
+<icloudata-popup v-model:show="show" />
 ```
 
 ### 表单型组件 v-model 内部值变更
@@ -90,10 +90,10 @@ GoodsAction 商品导航组件重命名为 **ActionBar 行动栏**。
 
 ```html
 <!-- Vant 2 -->
-<hello-field :value="value" @input="onInput" />
+<icloudata-field :value="value" @input="onInput" />
 
 <!-- Vant 3 -->
-<hello-field :model-value="value" @update:model-value="onInput" />
+<icloudata-field :model-value="value" @update:model-value="onInput" />
 ```
 
 ### 其他 v-model 调整
@@ -121,10 +121,10 @@ GoodsAction 商品导航组件重命名为 **ActionBar 行动栏**。
 
 ```html
 <!-- Vant 2 -->
-<hello-icon info="5" />
+<icloudata-icon info="5" />
 
 <!-- Vant 3 -->
-<hello-icon badge="5" />
+<icloudata-icon badge="5" />
 ```
 
 ### 重命名 get-container 属性
@@ -134,8 +134,8 @@ Vue 3.0 中增加了 `Teleport` 组件，提供将组件渲染到任意 DOM 位�
 ```html
 <!-- Vant 2 -->
 <template>
-  <hello-popup get-container="body" />
-  <hello-popup :get-container="getContainer" />
+  <icloudata-popup get-container="body" />
+  <icloudata-popup :get-container="getContainer" />
 </template>
 <script>
   export default {
@@ -149,8 +149,8 @@ Vue 3.0 中增加了 `Teleport` 组件，提供将组件渲染到任意 DOM 位�
 
 <!-- Vant 3 -->
 <template>
-  <hello-popup teleport="body" />
-  <hello-popup :teleport="container" />
+  <icloudata-popup teleport="body" />
+  <icloudata-popup :teleport="container" />
 </template>
 <script>
   export default {

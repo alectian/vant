@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { SubmitBar } from 'hello';
+import { SubmitBar } from 'cloudata';
 
 const app = createApp();
 app.use(SubmitBar);
@@ -15,11 +15,11 @@ app.use(SubmitBar);
 ### 基础用法
 
 ```html
-<hello-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit" />
+<icloudata-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit" />
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -39,7 +39,7 @@ export default {
 禁用状态下不会触发 `submit` 事件。
 
 ```html
-<hello-submit-bar
+<icloudata-submit-bar
   disabled
   :price="3050"
   button-text="提交订单"
@@ -54,7 +54,7 @@ export default {
 加载状态下不会触发 `submit` 事件。
 
 ```html
-<hello-submit-bar
+<icloudata-submit-bar
   loading
   :price="3050"
   button-text="提交订单"
@@ -67,16 +67,16 @@ export default {
 通过插槽插入自定义内容。
 
 ```html
-<hello-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit">
-  <hello-checkbox v-model="checked">全选</van-checkbox>
+<icloudata-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit">
+  <icloudata-checkbox v-model="checked">全选</icloudata-checkbox>
   <template #tip>
     你的收货地址不支持同城送, <span @click="onClickLink">修改地址</span>
   </template>
-</van-submit-bar>
+</icloudata-submit-bar>
 ```
 
 ```js
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {

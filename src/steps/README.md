@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Step, Steps } from 'hello';
+import { Step, Steps } from 'cloudata';
 
 const app = createApp();
 app.use(Step);
@@ -16,12 +16,12 @@ app.use(Steps);
 ### Basic Usage
 
 ```html
-<hello-steps :active="active">
-  <hello-step>Step1</van-step>
-  <hello-step>Step2</van-step>
-  <hello-step>Step3</van-step>
-  <hello-step>Step4</van-step>
-</van-steps>
+<icloudata-steps :active="active">
+  <icloudata-step>Step1</icloudata-step>
+  <icloudata-step>Step2</icloudata-step>
+  <icloudata-step>Step3</icloudata-step>
+  <icloudata-step>Step4</icloudata-step>
+</icloudata-steps>
 ```
 
 ```js
@@ -38,31 +38,31 @@ export default {
 ### Custom Style
 
 ```html
-<hello-steps :active="active" active-icon="success" active-color="#38f">
-  <hello-step>Step1</van-step>
-  <hello-step>Step2</van-step>
-  <hello-step>Step3</van-step>
-  <hello-step>Step4</van-step>
-</van-steps>
+<icloudata-steps :active="active" active-icon="success" active-color="#38f">
+  <icloudata-step>Step1</icloudata-step>
+  <icloudata-step>Step2</icloudata-step>
+  <icloudata-step>Step3</icloudata-step>
+  <icloudata-step>Step4</icloudata-step>
+</icloudata-steps>
 ```
 
 ### Vertical Steps
 
 ```html
-<hello-steps direction="vertical" :active="0">
-  <hello-step>
+<icloudata-steps direction="vertical" :active="0">
+  <icloudata-step>
     <h3>【City】Status1</h3>
     <p>2016-07-12 12:40</p>
-  </van-step>
-  <hello-step>
+  </icloudata-step>
+  <icloudata-step>
     <h3>【City】Status2</h3>
     <p>2016-07-11 10:00</p>
-  </van-step>
-  <hello-step>
+  </icloudata-step>
+  <icloudata-step>
     <h3>【City】Status3</h3>
     <p>2016-07-10 09:30</p>
-  </van-step>
-</van-steps>
+  </icloudata-step>
+</icloudata-steps>
 ```
 
 ## API

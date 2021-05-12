@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 const app = createApp();
 app.use(Toast);

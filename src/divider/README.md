@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Divider } from 'hello';
+import { Divider } from 'cloudata';
 
 const app = createApp();
 app.use(Divider);
@@ -15,36 +15,36 @@ app.use(Divider);
 ### Basic Usage
 
 ```html
-<hello-divider />
+<icloudata-divider />
 ```
 
 ### With Text
 
 ```html
-<hello-divider>Text</van-divider>
+<icloudata-divider>Text</icloudata-divider>
 ```
 
 ### Content Position
 
 ```html
-<hello-divider content-position="left">Text</van-divider>
-<hello-divider content-position="right">Text</van-divider>
+<icloudata-divider content-position="left">Text</icloudata-divider>
+<icloudata-divider content-position="right">Text</icloudata-divider>
 ```
 
 ### Dashed
 
 ```html
-<hello-divider dashed>Text</van-divider>
+<icloudata-divider dashed>Text</icloudata-divider>
 ```
 
 ### Custom Style
 
 ```html
-<hello-divider
+<icloudata-divider
   :style="{ color: '#1989fa', borderColor: '#1989fa', padding: '0 16px' }"
 >
   Text
-</van-divider>
+</icloudata-divider>
 ```
 
 ## API

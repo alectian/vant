@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue';
-import { Stepper } from 'hello';
+import { Stepper } from 'cloudata';
 
 const app = createApp();
 app.use(Stepper);
@@ -15,7 +15,7 @@ app.use(Stepper);
 ### Basic Usage
 
 ```html
-<hello-stepper v-model="value" />
+<icloudata-stepper v-model="value" />
 ```
 
 ```js
@@ -32,54 +32,54 @@ export default {
 ### Step
 
 ```html
-<hello-stepper v-model="value" step="2" />
+<icloudata-stepper v-model="value" step="2" />
 ```
 
 ### Range
 
 ```html
-<hello-stepper v-model="value" min="5" max="8" />
+<icloudata-stepper v-model="value" min="5" max="8" />
 ```
 
 ### Integer
 
 ```html
-<hello-stepper v-model="value" integer />
+<icloudata-stepper v-model="value" integer />
 ```
 
 ### Disabled
 
 ```html
-<hello-stepper v-model="value" disabled />
+<icloudata-stepper v-model="value" disabled />
 ```
 
 ### Disable Input
 
 ```html
-<hello-stepper v-model="value" disable-input />
+<icloudata-stepper v-model="value" disable-input />
 ```
 
 ### Decimal Length
 
 ```html
-<hello-stepper v-model="value" step="0.2" :decimal-length="1" />
+<icloudata-stepper v-model="value" step="0.2" :decimal-length="1" />
 ```
 
 ### Custom Size
 
 ```html
-<hello-stepper v-model="value" input-width="40px" button-size="32px" />
+<icloudata-stepper v-model="value" input-width="40px" button-size="32px" />
 ```
 
 ### Before Change
 
 ```html
-<hello-stepper v-model="value" :before-change="beforeChange" />
+<icloudata-stepper v-model="value" :before-change="beforeChange" />
 ```
 
 ```js
 import { ref } from 'vue';
-import { Toast } from 'hello';
+import { Toast } from 'cloudata';
 
 export default {
   setup() {
@@ -108,7 +108,7 @@ export default {
 ### Round Theme
 
 ```html
-<hello-stepper v-model="value" theme="round" button-size="22" disable-input />
+<icloudata-stepper v-model="value" theme="round" button-size="22" disable-input />
 ```
 
 ## API
