@@ -2,7 +2,7 @@
     <img alt="logo" src="https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png" width="120" style="margin-bottom: 10px;">
 </p>
 
-<h1 align="center">组件库Title</h1>
+<h1 align="center">icloudata</h1>
 
 <p align="center">轻量、可靠的移动端 Vue 组件库</p>
 
@@ -24,18 +24,17 @@
 
 ---
 
-### 介绍
+<!-- ### 介绍
 
 Vant 是**有赞前端团队**开源的移动端组件库，于 2017 年开源，已持续维护 4 年时间。Vant 对内承载了有赞所有核心业务，对外服务十多万开发者，是业界主流的移动端组件库之一。
 
-目前 Vant 官方提供了 [Vue 2 版本](https://vant-contrib.gitee.io/vant)、[Vue 3 版本](https://vant-contrib.gitee.io/vant/next)和[微信小程序版本](http://vant-contrib.gitee.io/vant-weapp)，并由社区团队维护 [React 版本](https://github.com/mxdi9i7/vant-react)和[支付宝小程序版本](https://github.com/ant-move/Vant-Aliapp)。
+目前 Vant 官方提供了 [Vue 2 版本](https://vant-contrib.gitee.io/vant)、[Vue 3 版本](https://vant-contrib.gitee.io/vant/next)和[微信小程序版本](http://vant-contrib.gitee.io/vant-weapp)，并由社区团队维护 [React 版本](https://github.com/mxdi9i7/vant-react)和[支付宝小程序版本](https://github.com/ant-move/Vant-Aliapp)。 -->
 
 ## 特性
 
 - 提供 60 多个高质量组件，覆盖移动端各类场景
 - 性能极佳，组件平均体积不到 1kb（min+gzip）
 - 单元测试覆盖率 90%+，提供稳定性保障
-- 完善的中英文文档和示例
 - 支持 Vue 2 & Vue 3
 - 支持按需引入
 - 支持主题定制

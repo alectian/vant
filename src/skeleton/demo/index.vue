@@ -29,15 +29,15 @@ const i18n = {
   'zh-CN': {
     showAvatar: '显示头像',
     showChildren: '显示子组件',
-    title: '关于 组件库',
+    title: '关于 icloudata',
     desc:
-      '组件库 是一套轻量、可靠的移动端 Vue 组件库，提供了丰富的基础组件和业务组件，帮助开发者快速搭建移动应用。',
+      'icloudata 是一套轻量、可靠的移动端 Vue 组件库，提供了丰富的基础组件和业务组件，帮助开发者快速搭建移动应用。',
   },
   'en-US': {
     showAvatar: 'Show Avatar',
     showChildren: 'Show Children',
     title: 'About 组件库',
-    desc: '组件库 is a set of 可靠的移动端组件库.',
+    desc: 'icloudata is a set of 可靠的移动端组件库.',
   },
 };
 
