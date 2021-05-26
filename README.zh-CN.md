@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="logo" src="https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png" width="120" style="margin-bottom: 10px;">
+    <img alt="logo" src="http://qtp0d90o0.hb-bkt.clouddn.com/logo.png" width="120" style="margin-bottom: 10px;">
 </p>
 
 <h1 align="center">icloudata</h1>
@@ -38,7 +38,7 @@ icloudata 是**有赞前端团队**开源的移动端组件库，于 2017 年开
 - 支持 Vue 2 & Vue 3
 - 支持按需引入
 - 支持主题定制
-- 支持国际化
+<!-- - 支持国际化 -->
 - 支持 TypeScript
 - 支持 SSR
 

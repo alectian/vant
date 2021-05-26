@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="logo" src="https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png" width="120" height="120" style="margin-bottom: 10px;">
+    <img alt="logo" src="http://qtp0d90o0.hb-bkt.clouddn.com/logo.png" width="120" height="120" style="margin-bottom: 10px;">
 </p>
 
 <h1 align="center">icloudata</h1>

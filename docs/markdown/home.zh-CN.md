@@ -1,6 +1,6 @@
 <div class="card">
   <div class="icloudata-doc-intro">
-    <img class="icloudata-doc-intro__logo" style="width: 120px; height: 120px;" src="https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png">
+    <img class="icloudata-doc-intro__logo" style="width: 120px; height: 120px;" src="http://qtp0d90o0.hb-bkt.clouddn.com/logo.png">
     <h2 style="margin: 0; font-size: 36px; line-height: 60px;">icloudata</h2>
     <p>轻量、可靠的移动端 Vue 组件库</p>
   </div>
@@ -21,7 +21,7 @@
 - 支持 Vue 2 & Vue 3
 - 支持按需引入
 - 支持主题定制
-- 支持国际化
+<!-- - 支持国际化 -->
 - 支持 TypeScript
 - 支持 SSR
 

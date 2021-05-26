@@ -31,7 +31,7 @@ module.exports = {
       'zh-CN': {
         title: 'icloudata',
         // description: '组件库description',
-        logo: 'https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png',
+        logo: 'http://qtp0d90o0.hb-bkt.clouddn.com/logo.png',
         langLabel: '中',
         // links: [
         //   {
@@ -412,7 +412,7 @@ module.exports = {
       'en-US': {
         // title: 'icloudata',
         // description: '可靠的移动端组件库',
-        // logo: 'https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png',
+        // logo: 'http://qtp0d90o0.hb-bkt.clouddn.com/logo.png',
         // langLabel: 'EN',
         // // links: [
         // //   {

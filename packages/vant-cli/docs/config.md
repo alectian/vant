@@ -39,7 +39,7 @@ module.exports = {
     // 标题
     title: 'Demo UI',
     // 图标
-    logo: 'https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png',
+    logo: 'http://qtp0d90o0.hb-bkt.clouddn.com/logo.png',
     // 描述
     description: '示例组件库',
     // 左侧导航

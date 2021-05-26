@@ -10,7 +10,7 @@ module.exports = {
   },
   site: {
     title: '<%= name %>',
-    logo: 'https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png',
+    logo: 'http://qtp0d90o0.hb-bkt.clouddn.com/logo.png',
     nav: [
       {
         title: '开发指南',

@@ -1,7 +1,7 @@
 {
   "name": "create-vant-cli-app",
   "version": "1.0.1",
-  "description": "Create Vant Cli App",
+  "description": "Create icloudata Cli App",
   "main": "lib/index.js",
   "bin": {
     "create-vant-cli-app": "./lib/index.js"
@@ -19,7 +19,7 @@
     "generators"
   ],
   "keywords": [
-    "vant"
+    "icloudata"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

@@ -117,7 +117,7 @@ export default {
     const showImageToast = () => {
       Toast({
         message: t('customImage'),
-        icon: 'https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png',
+        icon: 'http://qtp0d90o0.hb-bkt.clouddn.com/logo.png',
       });
     };
 

@@ -11,7 +11,7 @@
     <van-switch v-model="show" size="24px" />
     <van-skeleton title avatar :row="3" :loading="!show">
       <div class="demo-preview">
-        <img src="https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png" />
+        <img src="http://qtp0d90o0.hb-bkt.clouddn.com/logo.png" />
         <div class="demo-content">
           <h3>{{ t('title') }}</h3>
           <p>{{ t('desc') }}</p>

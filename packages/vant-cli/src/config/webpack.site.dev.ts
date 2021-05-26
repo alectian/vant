@@ -77,7 +77,7 @@ export function getSiteDevBaseConfig(): WebpackConfig {
     },
     plugins: [
       new WebpackBar({
-        name: 'Vant Cli',
+        name: 'icloudata Cli',
         color: GREEN,
       }),
       new VantCliSitePlugin(),

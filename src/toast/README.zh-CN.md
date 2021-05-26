@@ -54,7 +54,7 @@ Toast({
 
 Toast({
   message: '自定义图片',
-  icon: 'https://wx.picccdn.cn/mobile_image/ghapp/a/jssdk3/logo.png',
+  icon: 'http://qtp0d90o0.hb-bkt.clouddn.com/logo.png',
 });
 
 Toast.loading({
